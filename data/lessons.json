@@ -1,0 +1,2694 @@
+[
+  {
+    "id": "001",
+    "series": "algorithm-journey",
+    "lessonNumber": "001",
+    "originalTitle": "学习算法的语言问题以及如何开通gpt4",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3001%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E8%AF%AD%E8%A8%80%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E5%BC%80%E9%80%9Agpt4.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "study-strategy"
+    ]
+  },
+  {
+    "id": "002",
+    "series": "algorithm-journey",
+    "lessonNumber": "002",
+    "originalTitle": "从社会实验到入门提醒",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3002%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E4%BB%8E%E7%A4%BE%E4%BC%9A%E5%AE%9E%E9%AA%8C%E5%88%B0%E5%85%A5%E9%97%A8%E6%8F%90%E9%86%92.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "study-strategy"
+    ]
+  },
+  {
+    "id": "003",
+    "series": "algorithm-journey",
+    "lessonNumber": "003",
+    "originalTitle": "二进制和位运算",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3003%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%92%8C%E4%BD%8D%E8%BF%90%E7%AE%97.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "bits-basics"
+    ]
+  },
+  {
+    "id": "004",
+    "series": "algorithm-journey",
+    "lessonNumber": "004",
+    "originalTitle": "选择、冒泡、插入排序",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3004%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E9%80%89%E6%8B%A9%E3%80%81%E5%86%92%E6%B3%A1%E3%80%81%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "elementary-sorting"
+    ]
+  },
+  {
+    "id": "005",
+    "series": "algorithm-journey",
+    "lessonNumber": "005",
+    "originalTitle": "对数器-验证的重要手段",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3005%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E5%AF%B9%E6%95%B0%E5%99%A8-%E9%AA%8C%E8%AF%81%E7%9A%84%E9%87%8D%E8%A6%81%E6%89%8B%E6%AE%B5.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "test-harness"
+    ]
+  },
+  {
+    "id": "006",
+    "series": "algorithm-journey",
+    "lessonNumber": "006",
+    "originalTitle": "二分搜索",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3006%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "binary-search"
+    ]
+  },
+  {
+    "id": "007",
+    "series": "algorithm-journey",
+    "lessonNumber": "007",
+    "originalTitle": "时间复杂度和空间复杂度",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3007%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%92%8C%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "complexity"
+    ]
+  },
+  {
+    "id": "008",
+    "series": "algorithm-journey",
+    "lessonNumber": "008",
+    "originalTitle": "算法和数据结构简介",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3008%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%80%E4%BB%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "complexity"
+    ]
+  },
+  {
+    "id": "009",
+    "series": "algorithm-journey",
+    "lessonNumber": "009",
+    "originalTitle": "单双链表及其反转-堆栈诠释",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3009%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E5%8D%95%E5%8F%8C%E9%93%BE%E8%A1%A8%E5%8F%8A%E5%85%B6%E5%8F%8D%E8%BD%AC-%E5%A0%86%E6%A0%88%E8%AF%A0%E9%87%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "linked-list"
+    ]
+  },
+  {
+    "id": "010",
+    "series": "algorithm-journey",
+    "lessonNumber": "010",
+    "originalTitle": "链表入门题目-合并两个有序链表",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3010%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E9%93%BE%E8%A1%A8%E5%85%A5%E9%97%A8%E9%A2%98%E7%9B%AE-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "linked-list"
+    ]
+  },
+  {
+    "id": "011",
+    "series": "algorithm-journey",
+    "lessonNumber": "011",
+    "originalTitle": "链表入门题目-两个链表相加",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3011%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E9%93%BE%E8%A1%A8%E5%85%A5%E9%97%A8%E9%A2%98%E7%9B%AE-%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E7%9B%B8%E5%8A%A0.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "linked-list"
+    ]
+  },
+  {
+    "id": "012",
+    "series": "algorithm-journey",
+    "lessonNumber": "012",
+    "originalTitle": "链表入门题目-划分链表",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3012%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E9%93%BE%E8%A1%A8%E5%85%A5%E9%97%A8%E9%A2%98%E7%9B%AE-%E5%88%92%E5%88%86%E9%93%BE%E8%A1%A8.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "linked-list"
+    ]
+  },
+  {
+    "id": "013",
+    "series": "algorithm-journey",
+    "lessonNumber": "013",
+    "originalTitle": "队列和栈-链表、数组实现",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3013%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E9%98%9F%E5%88%97%E5%92%8C%E6%A0%88-%E9%93%BE%E8%A1%A8%E3%80%81%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "stack-queue"
+    ]
+  },
+  {
+    "id": "014",
+    "series": "algorithm-journey",
+    "lessonNumber": "014",
+    "originalTitle": "队列和栈入门题目-栈和队列相互实现",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3014%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E9%98%9F%E5%88%97%E5%92%8C%E6%A0%88%E5%85%A5%E9%97%A8%E9%A2%98%E7%9B%AE-%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9B%B8%E4%BA%92%E5%AE%9E%E7%8E%B0.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "stack-queue"
+    ]
+  },
+  {
+    "id": "015",
+    "series": "algorithm-journey",
+    "lessonNumber": "015",
+    "originalTitle": "栈的入门题目-最小栈",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3015%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E6%A0%88%E7%9A%84%E5%85%A5%E9%97%A8%E9%A2%98%E7%9B%AE-%E6%9C%80%E5%B0%8F%E6%A0%88.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "stack-queue"
+    ]
+  },
+  {
+    "id": "016",
+    "series": "algorithm-journey",
+    "lessonNumber": "016",
+    "originalTitle": "双端队列-双链表和固定数组实现",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3016%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97-%E5%8F%8C%E9%93%BE%E8%A1%A8%E5%92%8C%E5%9B%BA%E5%AE%9A%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "deque"
+    ]
+  },
+  {
+    "id": "017",
+    "series": "algorithm-journey",
+    "lessonNumber": "017",
+    "originalTitle": "二叉树及其三种序的递归实现",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3017%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E4%BA%8C%E5%8F%89%E6%A0%91%E5%8F%8A%E5%85%B6%E4%B8%89%E7%A7%8D%E5%BA%8F%E7%9A%84%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "binary-tree"
+    ]
+  },
+  {
+    "id": "018",
+    "series": "algorithm-journey",
+    "lessonNumber": "018",
+    "originalTitle": "二叉树遍历的非递归实现和复杂度分析",
+    "originalStage": "入门",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3018%E3%80%90%E5%85%A5%E9%97%A8%E3%80%91%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E5%AE%9E%E7%8E%B0%E5%92%8C%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "binary-tree"
+    ]
+  },
+  {
+    "id": "019",
+    "series": "algorithm-journey",
+    "lessonNumber": "019",
+    "originalTitle": "算法笔试中处理输入和输出",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3019%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E7%AE%97%E6%B3%95%E7%AC%94%E8%AF%95%E4%B8%AD%E5%A4%84%E7%90%86%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "io"
+    ]
+  },
+  {
+    "id": "020",
+    "series": "algorithm-journey",
+    "lessonNumber": "020",
+    "originalTitle": "递归和master公式",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3020%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E9%80%92%E5%BD%92%E5%92%8Cmaster%E5%85%AC%E5%BC%8F.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "recurrence"
+    ]
+  },
+  {
+    "id": "021",
+    "series": "algorithm-journey",
+    "lessonNumber": "021",
+    "originalTitle": "归并排序",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3021%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "merge-sort"
+    ]
+  },
+  {
+    "id": "022",
+    "series": "algorithm-journey",
+    "lessonNumber": "022",
+    "originalTitle": "归并分治",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3022%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%BD%92%E5%B9%B6%E5%88%86%E6%B2%BB.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "merge-sort"
+    ]
+  },
+  {
+    "id": "023",
+    "series": "algorithm-journey",
+    "lessonNumber": "023",
+    "originalTitle": "随机快速排序",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3023%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E9%9A%8F%E6%9C%BA%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "quick-sort"
+    ]
+  },
+  {
+    "id": "024",
+    "series": "algorithm-journey",
+    "lessonNumber": "024",
+    "originalTitle": "随机选择算法",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3024%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E9%9A%8F%E6%9C%BA%E9%80%89%E6%8B%A9%E7%AE%97%E6%B3%95.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "quick-sort"
+    ]
+  },
+  {
+    "id": "025",
+    "series": "algorithm-journey",
+    "lessonNumber": "025",
+    "originalTitle": "堆结构和堆排序",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3025%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%A0%86%E7%BB%93%E6%9E%84%E5%92%8C%E5%A0%86%E6%8E%92%E5%BA%8F.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "heap"
+    ]
+  },
+  {
+    "id": "026",
+    "series": "algorithm-journey",
+    "lessonNumber": "026",
+    "originalTitle": "哈希表、有序表和比较器的用法",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3026%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%93%88%E5%B8%8C%E8%A1%A8%E3%80%81%E6%9C%89%E5%BA%8F%E8%A1%A8%E5%92%8C%E6%AF%94%E8%BE%83%E5%99%A8%E7%9A%84%E7%94%A8%E6%B3%95.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "hash-engineering"
+    ]
+  },
+  {
+    "id": "027",
+    "series": "algorithm-journey",
+    "lessonNumber": "027",
+    "originalTitle": "堆结构常见题",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3027%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%A0%86%E7%BB%93%E6%9E%84%E5%B8%B8%E8%A7%81%E9%A2%98.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "heap"
+    ]
+  },
+  {
+    "id": "028",
+    "series": "algorithm-journey",
+    "lessonNumber": "028",
+    "originalTitle": "基数排序",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3028%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "radix-sort"
+    ]
+  },
+  {
+    "id": "029",
+    "series": "algorithm-journey",
+    "lessonNumber": "029",
+    "originalTitle": "重要排序算法的总结",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3029%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E9%87%8D%E8%A6%81%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%9A%84%E6%80%BB%E7%BB%93.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "radix-sort"
+    ]
+  },
+  {
+    "id": "030",
+    "series": "algorithm-journey",
+    "lessonNumber": "030",
+    "originalTitle": "异或运算的骚操作",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3030%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E7%9A%84%E9%AA%9A%E6%93%8D%E4%BD%9C.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "xor"
+    ]
+  },
+  {
+    "id": "031",
+    "series": "algorithm-journey",
+    "lessonNumber": "031",
+    "originalTitle": "位运算的骚操作",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3031%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E9%AA%9A%E6%93%8D%E4%BD%9C.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "xor"
+    ]
+  },
+  {
+    "id": "032",
+    "series": "algorithm-journey",
+    "lessonNumber": "032",
+    "originalTitle": "位图",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3032%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E4%BD%8D%E5%9B%BE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "bitmap"
+    ]
+  },
+  {
+    "id": "033",
+    "series": "algorithm-journey",
+    "lessonNumber": "033",
+    "originalTitle": "位运算实现加减乘除",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3033%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E4%BD%8D%E8%BF%90%E7%AE%97%E5%AE%9E%E7%8E%B0%E5%8A%A0%E5%87%8F%E4%B9%98%E9%99%A4.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "xor"
+    ]
+  },
+  {
+    "id": "034",
+    "series": "algorithm-journey",
+    "lessonNumber": "034",
+    "originalTitle": "链表高频题目和必备技巧",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3034%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E9%93%BE%E8%A1%A8%E9%AB%98%E9%A2%91%E9%A2%98%E7%9B%AE%E5%92%8C%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "linked-list"
+    ]
+  },
+  {
+    "id": "035",
+    "series": "algorithm-journey",
+    "lessonNumber": "035",
+    "originalTitle": "数据结构设计高频题",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3035%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E9%AB%98%E9%A2%91%E9%A2%98.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "stack-queue"
+    ]
+  },
+  {
+    "id": "036",
+    "series": "algorithm-journey",
+    "lessonNumber": "036",
+    "originalTitle": "二叉树高频题目-上-不含树型dp",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3036%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E4%BA%8C%E5%8F%89%E6%A0%91%E9%AB%98%E9%A2%91%E9%A2%98%E7%9B%AE-%E4%B8%8A-%E4%B8%8D%E5%90%AB%E6%A0%91%E5%9E%8Bdp.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "binary-tree"
+    ]
+  },
+  {
+    "id": "037",
+    "series": "algorithm-journey",
+    "lessonNumber": "037",
+    "originalTitle": "二叉树高频题目-下-不含树型dp",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3037%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E4%BA%8C%E5%8F%89%E6%A0%91%E9%AB%98%E9%A2%91%E9%A2%98%E7%9B%AE-%E4%B8%8B-%E4%B8%8D%E5%90%AB%E6%A0%91%E5%9E%8Bdp.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "binary-tree"
+    ]
+  },
+  {
+    "id": "038",
+    "series": "algorithm-journey",
+    "lessonNumber": "038",
+    "originalTitle": "常见经典递归过程解析",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3038%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%B8%B8%E8%A7%81%E7%BB%8F%E5%85%B8%E9%80%92%E5%BD%92%E8%BF%87%E7%A8%8B%E8%A7%A3%E6%9E%90.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "recursion"
+    ]
+  },
+  {
+    "id": "039",
+    "series": "algorithm-journey",
+    "lessonNumber": "039",
+    "originalTitle": "嵌套类问题的递归解题套路",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3039%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%B5%8C%E5%A5%97%E7%B1%BB%E9%97%AE%E9%A2%98%E7%9A%84%E9%80%92%E5%BD%92%E8%A7%A3%E9%A2%98%E5%A5%97%E8%B7%AF.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "recursion"
+    ]
+  },
+  {
+    "id": "040",
+    "series": "algorithm-journey",
+    "lessonNumber": "040",
+    "originalTitle": "N皇后问题-重点是位运算的版本",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3040%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91N%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98-%E9%87%8D%E7%82%B9%E6%98%AF%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E7%89%88%E6%9C%AC.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "n-queens"
+    ]
+  },
+  {
+    "id": "041",
+    "series": "algorithm-journey",
+    "lessonNumber": "041",
+    "originalTitle": "最大公约数、同余原理",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3041%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0%E3%80%81%E5%90%8C%E4%BD%99%E5%8E%9F%E7%90%86.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "gcd"
+    ]
+  },
+  {
+    "id": "042",
+    "series": "algorithm-journey",
+    "lessonNumber": "042",
+    "originalTitle": "对数器打表找规律的技巧",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3042%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%AF%B9%E6%95%B0%E5%99%A8%E6%89%93%E8%A1%A8%E6%89%BE%E8%A7%84%E5%BE%8B%E7%9A%84%E6%8A%80%E5%B7%A7.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "test-harness"
+    ]
+  },
+  {
+    "id": "043",
+    "series": "algorithm-journey",
+    "lessonNumber": "043",
+    "originalTitle": "根据数据量猜解法的技巧-天字第一号重要技巧",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3043%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%A0%B9%E6%8D%AE%E6%95%B0%E6%8D%AE%E9%87%8F%E7%8C%9C%E8%A7%A3%E6%B3%95%E7%9A%84%E6%8A%80%E5%B7%A7-%E5%A4%A9%E5%AD%97%E7%AC%AC%E4%B8%80%E5%8F%B7%E9%87%8D%E8%A6%81%E6%8A%80%E5%B7%A7.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "study-strategy"
+    ]
+  },
+  {
+    "id": "044",
+    "series": "algorithm-journey",
+    "lessonNumber": "044",
+    "originalTitle": "前缀树原理和代码详解",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3044%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%89%8D%E7%BC%80%E6%A0%91%E5%8E%9F%E7%90%86%E5%92%8C%E4%BB%A3%E7%A0%81%E8%AF%A6%E8%A7%A3.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "trie"
+    ]
+  },
+  {
+    "id": "045",
+    "series": "algorithm-journey",
+    "lessonNumber": "045",
+    "originalTitle": "前缀树的相关题目",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3045%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%89%8D%E7%BC%80%E6%A0%91%E7%9A%84%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "trie"
+    ]
+  },
+  {
+    "id": "046",
+    "series": "algorithm-journey",
+    "lessonNumber": "046",
+    "originalTitle": "构建前缀信息的技巧-解决子数组相关问题",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3046%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%9E%84%E5%BB%BA%E5%89%8D%E7%BC%80%E4%BF%A1%E6%81%AF%E7%9A%84%E6%8A%80%E5%B7%A7-%E8%A7%A3%E5%86%B3%E5%AD%90%E6%95%B0%E7%BB%84%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "prefix-sum"
+    ]
+  },
+  {
+    "id": "047",
+    "series": "algorithm-journey",
+    "lessonNumber": "047",
+    "originalTitle": "一维差分与等差数列差分",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3047%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E4%B8%80%E7%BB%B4%E5%B7%AE%E5%88%86%E4%B8%8E%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97%E5%B7%AE%E5%88%86.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "difference"
+    ]
+  },
+  {
+    "id": "048",
+    "series": "algorithm-journey",
+    "lessonNumber": "048",
+    "originalTitle": "二维前缀和、二维差分、离散化技巧",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3048%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C%E3%80%81%E4%BA%8C%E7%BB%B4%E5%B7%AE%E5%88%86%E3%80%81%E7%A6%BB%E6%95%A3%E5%8C%96%E6%8A%80%E5%B7%A7.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "prefix-sum",
+      "difference"
+    ]
+  },
+  {
+    "id": "049",
+    "series": "algorithm-journey",
+    "lessonNumber": "049",
+    "originalTitle": "滑动窗口技巧与相关题目",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3049%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%8A%80%E5%B7%A7%E4%B8%8E%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "050",
+    "series": "algorithm-journey",
+    "lessonNumber": "050",
+    "originalTitle": "双指针技巧与相关题目",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3050%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8F%8C%E6%8C%87%E9%92%88%E6%8A%80%E5%B7%A7%E4%B8%8E%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "051",
+    "series": "algorithm-journey",
+    "lessonNumber": "051",
+    "originalTitle": "二分答案法与相关题目",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3051%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88%E6%B3%95%E4%B8%8E%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "binary-answer"
+    ]
+  },
+  {
+    "id": "052",
+    "series": "algorithm-journey",
+    "lessonNumber": "052",
+    "originalTitle": "单调栈-上",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3052%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8D%95%E8%B0%83%E6%A0%88-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "053",
+    "series": "algorithm-journey",
+    "lessonNumber": "053",
+    "originalTitle": "单调栈-下",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3053%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8D%95%E8%B0%83%E6%A0%88-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "054",
+    "series": "algorithm-journey",
+    "lessonNumber": "054",
+    "originalTitle": "单调队列-上",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3054%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "monotonic-queue"
+    ]
+  },
+  {
+    "id": "055",
+    "series": "algorithm-journey",
+    "lessonNumber": "055",
+    "originalTitle": "单调队列-下",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3055%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "monotonic-queue"
+    ]
+  },
+  {
+    "id": "056",
+    "series": "algorithm-journey",
+    "lessonNumber": "056",
+    "originalTitle": "并查集-上",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3056%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%B9%B6%E6%9F%A5%E9%9B%86-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "union-find"
+    ]
+  },
+  {
+    "id": "057",
+    "series": "algorithm-journey",
+    "lessonNumber": "057",
+    "originalTitle": "并查集-下",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3057%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%B9%B6%E6%9F%A5%E9%9B%86-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "union-find"
+    ]
+  },
+  {
+    "id": "058",
+    "series": "algorithm-journey",
+    "lessonNumber": "058",
+    "originalTitle": "洪水填充",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3058%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%B4%AA%E6%B0%B4%E5%A1%AB%E5%85%85.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "flood-fill"
+    ]
+  },
+  {
+    "id": "059",
+    "series": "algorithm-journey",
+    "lessonNumber": "059",
+    "originalTitle": "建图、链式前向星、拓扑排序",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3059%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%BB%BA%E5%9B%BE%E3%80%81%E9%93%BE%E5%BC%8F%E5%89%8D%E5%90%91%E6%98%9F%E3%80%81%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "topological-sort"
+    ]
+  },
+  {
+    "id": "060",
+    "series": "algorithm-journey",
+    "lessonNumber": "060",
+    "originalTitle": "拓扑排序的扩展技巧",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3060%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F%E7%9A%84%E6%89%A9%E5%B1%95%E6%8A%80%E5%B7%A7.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "topological-sort"
+    ]
+  },
+  {
+    "id": "061",
+    "series": "algorithm-journey",
+    "lessonNumber": "061",
+    "originalTitle": "最小生成树",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3061%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "mst"
+    ]
+  },
+  {
+    "id": "062",
+    "series": "algorithm-journey",
+    "lessonNumber": "062",
+    "originalTitle": "宽度优先遍历及其扩展",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3062%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%AE%BD%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86%E5%8F%8A%E5%85%B6%E6%89%A9%E5%B1%95.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "bfs"
+    ]
+  },
+  {
+    "id": "063",
+    "series": "algorithm-journey",
+    "lessonNumber": "063",
+    "originalTitle": "双向广搜",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3063%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8F%8C%E5%90%91%E5%B9%BF%E6%90%9C.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "bfs"
+    ]
+  },
+  {
+    "id": "064",
+    "series": "algorithm-journey",
+    "lessonNumber": "064",
+    "originalTitle": "Dijkstra算法、分层图最短路",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3064%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91Dijkstra%E7%AE%97%E6%B3%95%E3%80%81%E5%88%86%E5%B1%82%E5%9B%BE%E6%9C%80%E7%9F%AD%E8%B7%AF.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "shortest-path"
+    ]
+  },
+  {
+    "id": "065",
+    "series": "algorithm-journey",
+    "lessonNumber": "065",
+    "originalTitle": "A星、Floyd、Bellman-Ford与SPFA",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3065%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91A%E6%98%9F%E3%80%81Floyd%E3%80%81Bellman-Ford%E4%B8%8ESPFA.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "shortest-path"
+    ]
+  },
+  {
+    "id": "066",
+    "series": "algorithm-journey",
+    "lessonNumber": "066",
+    "originalTitle": "从递归入手一维动态规划",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3066%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E4%BB%8E%E9%80%92%E5%BD%92%E5%85%A5%E6%89%8B%E4%B8%80%E7%BB%B4%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "dp-basics"
+    ]
+  },
+  {
+    "id": "067",
+    "series": "algorithm-journey",
+    "lessonNumber": "067",
+    "originalTitle": "从递归入手二维动态规划",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3067%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E4%BB%8E%E9%80%92%E5%BD%92%E5%85%A5%E6%89%8B%E4%BA%8C%E7%BB%B4%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "dp-basics"
+    ]
+  },
+  {
+    "id": "068",
+    "series": "algorithm-journey",
+    "lessonNumber": "068",
+    "originalTitle": "见识更多二维动态规划题目",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3068%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E8%A7%81%E8%AF%86%E6%9B%B4%E5%A4%9A%E4%BA%8C%E7%BB%B4%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "dp-basics"
+    ]
+  },
+  {
+    "id": "069",
+    "series": "algorithm-journey",
+    "lessonNumber": "069",
+    "originalTitle": "从递归入手三维动态规划",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3069%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E4%BB%8E%E9%80%92%E5%BD%92%E5%85%A5%E6%89%8B%E4%B8%89%E7%BB%B4%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "dp-basics"
+    ]
+  },
+  {
+    "id": "070",
+    "series": "algorithm-journey",
+    "lessonNumber": "070",
+    "originalTitle": "子数组最大累加和问题与扩展-上",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3070%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%AD%90%E6%95%B0%E7%BB%84%E6%9C%80%E5%A4%A7%E7%B4%AF%E5%8A%A0%E5%92%8C%E9%97%AE%E9%A2%98%E4%B8%8E%E6%89%A9%E5%B1%95-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "max-subarray"
+    ]
+  },
+  {
+    "id": "071",
+    "series": "algorithm-journey",
+    "lessonNumber": "071",
+    "originalTitle": "子数组最大累加和问题与扩展-下",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3071%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%AD%90%E6%95%B0%E7%BB%84%E6%9C%80%E5%A4%A7%E7%B4%AF%E5%8A%A0%E5%92%8C%E9%97%AE%E9%A2%98%E4%B8%8E%E6%89%A9%E5%B1%95-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "max-subarray"
+    ]
+  },
+  {
+    "id": "072",
+    "series": "algorithm-journey",
+    "lessonNumber": "072",
+    "originalTitle": "最长递增子序列问题与扩展",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3072%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98%E4%B8%8E%E6%89%A9%E5%B1%95.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "lis"
+    ]
+  },
+  {
+    "id": "073",
+    "series": "algorithm-journey",
+    "lessonNumber": "073",
+    "originalTitle": "背包dp-01背包、有依赖的背包",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3073%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E8%83%8C%E5%8C%85dp-01%E8%83%8C%E5%8C%85%E3%80%81%E6%9C%89%E4%BE%9D%E8%B5%96%E7%9A%84%E8%83%8C%E5%8C%85.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "knapsack-dp"
+    ]
+  },
+  {
+    "id": "074",
+    "series": "algorithm-journey",
+    "lessonNumber": "074",
+    "originalTitle": "背包dp-分组背包、完全背包",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3074%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E8%83%8C%E5%8C%85dp-%E5%88%86%E7%BB%84%E8%83%8C%E5%8C%85%E3%80%81%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "knapsack-dp"
+    ]
+  },
+  {
+    "id": "075",
+    "series": "algorithm-journey",
+    "lessonNumber": "075",
+    "originalTitle": "背包dp-多重背包、混合背包",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3075%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E8%83%8C%E5%8C%85dp-%E5%A4%9A%E9%87%8D%E8%83%8C%E5%8C%85%E3%80%81%E6%B7%B7%E5%90%88%E8%83%8C%E5%8C%85.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "knapsack-dp"
+    ]
+  },
+  {
+    "id": "076",
+    "series": "algorithm-journey",
+    "lessonNumber": "076",
+    "originalTitle": "区间dp-上",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3076%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8C%BA%E9%97%B4dp-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "interval-dp"
+    ]
+  },
+  {
+    "id": "077",
+    "series": "algorithm-journey",
+    "lessonNumber": "077",
+    "originalTitle": "区间dp-下",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3077%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8C%BA%E9%97%B4dp-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "interval-dp"
+    ]
+  },
+  {
+    "id": "078",
+    "series": "algorithm-journey",
+    "lessonNumber": "078",
+    "originalTitle": "树型dp-上",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3078%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%A0%91%E5%9E%8Bdp-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-dp"
+    ]
+  },
+  {
+    "id": "079",
+    "series": "algorithm-journey",
+    "lessonNumber": "079",
+    "originalTitle": "树型dp-下",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3079%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%A0%91%E5%9E%8Bdp-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-dp"
+    ]
+  },
+  {
+    "id": "080",
+    "series": "algorithm-journey",
+    "lessonNumber": "080",
+    "originalTitle": "状压dp-上",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3080%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E7%8A%B6%E5%8E%8Bdp-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "bitmask-dp"
+    ]
+  },
+  {
+    "id": "081",
+    "series": "algorithm-journey",
+    "lessonNumber": "081",
+    "originalTitle": "状压dp-下",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3081%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E7%8A%B6%E5%8E%8Bdp-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "bitmask-dp"
+    ]
+  },
+  {
+    "id": "082",
+    "series": "algorithm-journey",
+    "lessonNumber": "082",
+    "originalTitle": "动态规划中用观察优化枚举的技巧-上",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3082%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%AD%E7%94%A8%E8%A7%82%E5%AF%9F%E4%BC%98%E5%8C%96%E6%9E%9A%E4%B8%BE%E7%9A%84%E6%8A%80%E5%B7%A7-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "dp-optimization"
+    ]
+  },
+  {
+    "id": "083",
+    "series": "algorithm-journey",
+    "lessonNumber": "083",
+    "originalTitle": "动态规划中用观察优化枚举的技巧-下",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3083%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%AD%E7%94%A8%E8%A7%82%E5%AF%9F%E4%BC%98%E5%8C%96%E6%9E%9A%E4%B8%BE%E7%9A%84%E6%8A%80%E5%B7%A7-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "dp-optimization"
+    ]
+  },
+  {
+    "id": "084",
+    "series": "algorithm-journey",
+    "lessonNumber": "084",
+    "originalTitle": "数位dp-上",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3084%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%95%B0%E4%BD%8Ddp-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "digit-dp"
+    ]
+  },
+  {
+    "id": "085",
+    "series": "algorithm-journey",
+    "lessonNumber": "085",
+    "originalTitle": "数位dp-下",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3085%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E6%95%B0%E4%BD%8Ddp-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "digit-dp"
+    ]
+  },
+  {
+    "id": "086",
+    "series": "algorithm-journey",
+    "lessonNumber": "086",
+    "originalTitle": "动态规划中得到具体决策方案的技巧",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3086%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%AD%E5%BE%97%E5%88%B0%E5%85%B7%E4%BD%93%E5%86%B3%E7%AD%96%E6%96%B9%E6%A1%88%E7%9A%84%E6%8A%80%E5%B7%A7.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "dp-optimization"
+    ]
+  },
+  {
+    "id": "087",
+    "series": "algorithm-journey",
+    "lessonNumber": "087",
+    "originalTitle": "动态规划中根据数据量猜解法的技巧",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3087%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%AD%E6%A0%B9%E6%8D%AE%E6%95%B0%E6%8D%AE%E9%87%8F%E7%8C%9C%E8%A7%A3%E6%B3%95%E7%9A%84%E6%8A%80%E5%B7%A7.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "dp-optimization"
+    ]
+  },
+  {
+    "id": "088",
+    "series": "algorithm-journey",
+    "lessonNumber": "088",
+    "originalTitle": "动态规划专题总结与预告",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3088%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%93%E9%A2%98%E6%80%BB%E7%BB%93%E4%B8%8E%E9%A2%84%E5%91%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "dp-optimization"
+    ]
+  },
+  {
+    "id": "089",
+    "series": "algorithm-journey",
+    "lessonNumber": "089",
+    "originalTitle": "贪心经典题目专题1",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3089%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E8%B4%AA%E5%BF%83%E7%BB%8F%E5%85%B8%E9%A2%98%E7%9B%AE%E4%B8%93%E9%A2%981.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "greedy"
+    ]
+  },
+  {
+    "id": "090",
+    "series": "algorithm-journey",
+    "lessonNumber": "090",
+    "originalTitle": "贪心经典题目专题2",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3090%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E8%B4%AA%E5%BF%83%E7%BB%8F%E5%85%B8%E9%A2%98%E7%9B%AE%E4%B8%93%E9%A2%982.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "greedy"
+    ]
+  },
+  {
+    "id": "091",
+    "series": "algorithm-journey",
+    "lessonNumber": "091",
+    "originalTitle": "贪心经典题目专题3",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3091%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E8%B4%AA%E5%BF%83%E7%BB%8F%E5%85%B8%E9%A2%98%E7%9B%AE%E4%B8%93%E9%A2%983.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "greedy"
+    ]
+  },
+  {
+    "id": "092",
+    "series": "algorithm-journey",
+    "lessonNumber": "092",
+    "originalTitle": "贪心经典题目专题4",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3092%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E8%B4%AA%E5%BF%83%E7%BB%8F%E5%85%B8%E9%A2%98%E7%9B%AE%E4%B8%93%E9%A2%984.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "greedy"
+    ]
+  },
+  {
+    "id": "093",
+    "series": "algorithm-journey",
+    "lessonNumber": "093",
+    "originalTitle": "贪心经典题目专题5",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3093%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E8%B4%AA%E5%BF%83%E7%BB%8F%E5%85%B8%E9%A2%98%E7%9B%AE%E4%B8%93%E9%A2%985.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "greedy"
+    ]
+  },
+  {
+    "id": "094",
+    "series": "algorithm-journey",
+    "lessonNumber": "094",
+    "originalTitle": "贪心经典题目专题6",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3094%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E8%B4%AA%E5%BF%83%E7%BB%8F%E5%85%B8%E9%A2%98%E7%9B%AE%E4%B8%93%E9%A2%986.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "greedy"
+    ]
+  },
+  {
+    "id": "095",
+    "series": "algorithm-journey",
+    "lessonNumber": "095",
+    "originalTitle": "博弈类问题必备内容详解-上",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3095%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8D%9A%E5%BC%88%E7%B1%BB%E9%97%AE%E9%A2%98%E5%BF%85%E5%A4%87%E5%86%85%E5%AE%B9%E8%AF%A6%E8%A7%A3-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "game-theory"
+    ]
+  },
+  {
+    "id": "096",
+    "series": "algorithm-journey",
+    "lessonNumber": "096",
+    "originalTitle": "博弈类问题必备内容详解-下",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3096%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%8D%9A%E5%BC%88%E7%B1%BB%E9%97%AE%E9%A2%98%E5%BF%85%E5%A4%87%E5%86%85%E5%AE%B9%E8%AF%A6%E8%A7%A3-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "game-theory"
+    ]
+  },
+  {
+    "id": "097",
+    "series": "algorithm-journey",
+    "lessonNumber": "097",
+    "originalTitle": "质数判断、质因子分解、质数筛",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3097%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E8%B4%A8%E6%95%B0%E5%88%A4%E6%96%AD%E3%80%81%E8%B4%A8%E5%9B%A0%E5%AD%90%E5%88%86%E8%A7%A3%E3%80%81%E8%B4%A8%E6%95%B0%E7%AD%9B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "primes"
+    ]
+  },
+  {
+    "id": "098",
+    "series": "algorithm-journey",
+    "lessonNumber": "098",
+    "originalTitle": "快速幂、矩阵快速幂与两类问题",
+    "originalStage": "必备",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3098%E3%80%90%E5%BF%85%E5%A4%87%E3%80%91%E5%BF%AB%E9%80%9F%E5%B9%82%E3%80%81%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82%E4%B8%8E%E4%B8%A4%E7%B1%BB%E9%97%AE%E9%A2%98.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "fast-power"
+    ]
+  },
+  {
+    "id": "099",
+    "series": "algorithm-journey",
+    "lessonNumber": "099",
+    "originalTitle": "逆元和除法同余、容斥原理",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3099%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%20%E9%80%86%E5%85%83%E5%92%8C%E9%99%A4%E6%B3%95%E5%90%8C%E4%BD%99%E3%80%81%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "inverse-inclusion"
+    ]
+  },
+  {
+    "id": "100",
+    "series": "algorithm-journey",
+    "lessonNumber": "100",
+    "originalTitle": "KMP算法原理和代码详解",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3100%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%20KMP%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E5%92%8C%E4%BB%A3%E7%A0%81%E8%AF%A6%E8%A7%A3.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "kmp"
+    ]
+  },
+  {
+    "id": "101",
+    "series": "algorithm-journey",
+    "lessonNumber": "101",
+    "originalTitle": "KMP算法相关题目",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3101%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%20KMP%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "kmp"
+    ]
+  },
+  {
+    "id": "102",
+    "series": "algorithm-journey",
+    "lessonNumber": "102",
+    "originalTitle": "AC自动机原理、优化、代码详解",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3102%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%20AC%E8%87%AA%E5%8A%A8%E6%9C%BA%E5%8E%9F%E7%90%86%E3%80%81%E4%BC%98%E5%8C%96%E3%80%81%E4%BB%A3%E7%A0%81%E8%AF%A6%E8%A7%A3.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "aho-corasick"
+    ]
+  },
+  {
+    "id": "103",
+    "series": "algorithm-journey",
+    "lessonNumber": "103",
+    "originalTitle": "Manacher算法、扩展KMP",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3103%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%20Manacher%E7%AE%97%E6%B3%95%E3%80%81%E6%89%A9%E5%B1%95KMP.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "manacher"
+    ]
+  },
+  {
+    "id": "104",
+    "series": "algorithm-journey",
+    "lessonNumber": "104",
+    "originalTitle": "Manacher算法相关题目",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3104%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%20Manacher%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "manacher"
+    ]
+  },
+  {
+    "id": "105",
+    "series": "algorithm-journey",
+    "lessonNumber": "105",
+    "originalTitle": "字符串哈希原理、代码、题目详解",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3105%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%93%88%E5%B8%8C%E5%8E%9F%E7%90%86%E3%80%81%E4%BB%A3%E7%A0%81%E3%80%81%E9%A2%98%E7%9B%AE%E8%AF%A6%E8%A7%A3.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "string-hash"
+    ]
+  },
+  {
+    "id": "106",
+    "series": "algorithm-journey",
+    "lessonNumber": "106",
+    "originalTitle": "哈希函数、哈希表、布隆过滤器、一致性哈希",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3106%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%93%88%E5%B8%8C%E5%87%BD%E6%95%B0%E3%80%81%E5%93%88%E5%B8%8C%E8%A1%A8%E3%80%81%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8%E3%80%81%E4%B8%80%E8%87%B4%E6%80%A7%E5%93%88%E5%B8%8C.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "hash-engineering"
+    ]
+  },
+  {
+    "id": "107",
+    "series": "algorithm-journey",
+    "lessonNumber": "107",
+    "originalTitle": "大厂面试中经常漫聊的有趣算法问题",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3107%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E4%B8%AD%E7%BB%8F%E5%B8%B8%E6%BC%AB%E8%81%8A%E7%9A%84%E6%9C%89%E8%B6%A3%E7%AE%97%E6%B3%95%E9%97%AE%E9%A2%98.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "hash-engineering"
+    ]
+  },
+  {
+    "id": "108",
+    "series": "algorithm-journey",
+    "lessonNumber": "108",
+    "originalTitle": "树状数组原理、扩展、代码详解",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3108%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84%E5%8E%9F%E7%90%86%E3%80%81%E6%89%A9%E5%B1%95%E3%80%81%E4%BB%A3%E7%A0%81%E8%AF%A6%E8%A7%A3.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "fenwick"
+    ]
+  },
+  {
+    "id": "109",
+    "series": "algorithm-journey",
+    "lessonNumber": "109",
+    "originalTitle": "树状数组相关题目",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3109%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "fenwick"
+    ]
+  },
+  {
+    "id": "110",
+    "series": "algorithm-journey",
+    "lessonNumber": "110",
+    "originalTitle": "线段树专题1-线段树原理和代码详解",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3110%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%B8%93%E9%A2%981-%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%8E%9F%E7%90%86%E5%92%8C%E4%BB%A3%E7%A0%81%E8%AF%A6%E8%A7%A3.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "segment-tree"
+    ]
+  },
+  {
+    "id": "111",
+    "series": "algorithm-journey",
+    "lessonNumber": "111",
+    "originalTitle": "线段树专题2-线段树的离散化、二分搜索、特别修改",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3111%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%B8%93%E9%A2%982-%E7%BA%BF%E6%AE%B5%E6%A0%91%E7%9A%84%E7%A6%BB%E6%95%A3%E5%8C%96%E3%80%81%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2%E3%80%81%E7%89%B9%E5%88%AB%E4%BF%AE%E6%94%B9.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "segment-tree"
+    ]
+  },
+  {
+    "id": "112",
+    "series": "algorithm-journey",
+    "lessonNumber": "112",
+    "originalTitle": "线段树专题3-线段树维护更多类型的信息",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3112%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%B8%93%E9%A2%983-%E7%BA%BF%E6%AE%B5%E6%A0%91%E7%BB%B4%E6%8A%A4%E6%9B%B4%E5%A4%9A%E7%B1%BB%E5%9E%8B%E7%9A%84%E4%BF%A1%E6%81%AF.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "segment-tree"
+    ]
+  },
+  {
+    "id": "113",
+    "series": "algorithm-journey",
+    "lessonNumber": "113",
+    "originalTitle": "线段树专题4-线段树解决区间合并的问题",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3113%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%B8%93%E9%A2%984-%E7%BA%BF%E6%AE%B5%E6%A0%91%E8%A7%A3%E5%86%B3%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6%E7%9A%84%E9%97%AE%E9%A2%98.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "segment-tree"
+    ]
+  },
+  {
+    "id": "114",
+    "series": "algorithm-journey",
+    "lessonNumber": "114",
+    "originalTitle": "线段树专题5-开点线段树、区间最值和历史最值",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3114%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%B8%93%E9%A2%985-%E5%BC%80%E7%82%B9%E7%BA%BF%E6%AE%B5%E6%A0%91%E3%80%81%E5%8C%BA%E9%97%B4%E6%9C%80%E5%80%BC%E5%92%8C%E5%8E%86%E5%8F%B2%E6%9C%80%E5%80%BC.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "segment-tree"
+    ]
+  },
+  {
+    "id": "115",
+    "series": "algorithm-journey",
+    "lessonNumber": "115",
+    "originalTitle": "线段树专题6-线段树与扫描线结合的题目",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3115%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%B8%93%E9%A2%986-%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%B8%8E%E6%89%AB%E6%8F%8F%E7%BA%BF%E7%BB%93%E5%90%88%E7%9A%84%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "segment-tree"
+    ]
+  },
+  {
+    "id": "116",
+    "series": "algorithm-journey",
+    "lessonNumber": "116",
+    "originalTitle": "摩尔投票大加强，线段树里捉海王",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3116%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%91%A9%E5%B0%94%E6%8A%95%E7%A5%A8%E5%A4%A7%E5%8A%A0%E5%BC%BA%EF%BC%8C%E7%BA%BF%E6%AE%B5%E6%A0%91%E9%87%8C%E6%8D%89%E6%B5%B7%E7%8E%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "segment-tree"
+    ]
+  },
+  {
+    "id": "117",
+    "series": "algorithm-journey",
+    "lessonNumber": "117",
+    "originalTitle": "倍增算法和ST表",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3117%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%80%8D%E5%A2%9E%E7%AE%97%E6%B3%95%E5%92%8CST%E8%A1%A8.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "sparse-table"
+    ]
+  },
+  {
+    "id": "118",
+    "series": "algorithm-journey",
+    "lessonNumber": "118",
+    "originalTitle": "树上问题专题1-树上倍增和LCA-上",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3118%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%A0%91%E4%B8%8A%E9%97%AE%E9%A2%98%E4%B8%93%E9%A2%981-%E6%A0%91%E4%B8%8A%E5%80%8D%E5%A2%9E%E5%92%8CLCA-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "lca"
+    ]
+  },
+  {
+    "id": "119",
+    "series": "algorithm-journey",
+    "lessonNumber": "119",
+    "originalTitle": "树上问题专题2-树上倍增和LCA-下",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3119%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%A0%91%E4%B8%8A%E9%97%AE%E9%A2%98%E4%B8%93%E9%A2%982-%E6%A0%91%E4%B8%8A%E5%80%8D%E5%A2%9E%E5%92%8CLCA-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "lca"
+    ]
+  },
+  {
+    "id": "120",
+    "series": "algorithm-journey",
+    "lessonNumber": "120",
+    "originalTitle": "树上问题专题3-树的重心",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3120%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%A0%91%E4%B8%8A%E9%97%AE%E9%A2%98%E4%B8%93%E9%A2%983-%E6%A0%91%E7%9A%84%E9%87%8D%E5%BF%83.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-centroid"
+    ]
+  },
+  {
+    "id": "121",
+    "series": "algorithm-journey",
+    "lessonNumber": "121",
+    "originalTitle": "树上问题专题4-树的直径",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3121%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%A0%91%E4%B8%8A%E9%97%AE%E9%A2%98%E4%B8%93%E9%A2%984-%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-centroid"
+    ]
+  },
+  {
+    "id": "122",
+    "series": "algorithm-journey",
+    "lessonNumber": "122",
+    "originalTitle": "树上问题专题5-树上差分",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3122%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%A0%91%E4%B8%8A%E9%97%AE%E9%A2%98%E4%B8%93%E9%A2%985-%E6%A0%91%E4%B8%8A%E5%B7%AE%E5%88%86.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-difference"
+    ]
+  },
+  {
+    "id": "123",
+    "series": "algorithm-journey",
+    "lessonNumber": "123",
+    "originalTitle": "树上问题专题6-换根dp",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3123%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%A0%91%E4%B8%8A%E9%97%AE%E9%A2%98%E4%B8%93%E9%A2%986-%E6%8D%A2%E6%A0%B9dp.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-difference"
+    ]
+  },
+  {
+    "id": "124",
+    "series": "algorithm-journey",
+    "lessonNumber": "124",
+    "originalTitle": "Morris遍历",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3124%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91Morris%E9%81%8D%E5%8E%86.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "morris"
+    ]
+  },
+  {
+    "id": "125",
+    "series": "algorithm-journey",
+    "lessonNumber": "125",
+    "originalTitle": "轮廓线dp",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3125%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E8%BD%AE%E5%BB%93%E7%BA%BFdp.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "profile-dp"
+    ]
+  },
+  {
+    "id": "126",
+    "series": "algorithm-journey",
+    "lessonNumber": "126",
+    "originalTitle": "三进制状压dp",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3126%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E4%B8%89%E8%BF%9B%E5%88%B6%E7%8A%B6%E5%8E%8Bdp.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "profile-dp"
+    ]
+  },
+  {
+    "id": "127",
+    "series": "algorithm-journey",
+    "lessonNumber": "127",
+    "originalTitle": "动态规划优化专题1-优化尝试和状态设计-上",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3127%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%BC%98%E5%8C%96%E4%B8%93%E9%A2%981-%E4%BC%98%E5%8C%96%E5%B0%9D%E8%AF%95%E5%92%8C%E7%8A%B6%E6%80%81%E8%AE%BE%E8%AE%A1-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "profile-dp"
+    ]
+  },
+  {
+    "id": "128",
+    "series": "algorithm-journey",
+    "lessonNumber": "128",
+    "originalTitle": "动态规划优化专题2-优化尝试和状态设计-下",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3128%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%BC%98%E5%8C%96%E4%B8%93%E9%A2%982-%E4%BC%98%E5%8C%96%E5%B0%9D%E8%AF%95%E5%92%8C%E7%8A%B6%E6%80%81%E8%AE%BE%E8%AE%A1-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "profile-dp"
+    ]
+  },
+  {
+    "id": "129",
+    "series": "algorithm-journey",
+    "lessonNumber": "129",
+    "originalTitle": "动态规划优化专题3-倍增优化",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3129%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%BC%98%E5%8C%96%E4%B8%93%E9%A2%983-%E5%80%8D%E5%A2%9E%E4%BC%98%E5%8C%96.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "profile-dp"
+    ]
+  },
+  {
+    "id": "130",
+    "series": "algorithm-journey",
+    "lessonNumber": "130",
+    "originalTitle": "动态规划优化专题4-单调队列和单调栈优化",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3130%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%BC%98%E5%8C%96%E4%B8%93%E9%A2%984-%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%92%8C%E5%8D%95%E8%B0%83%E6%A0%88%E4%BC%98%E5%8C%96.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "profile-dp"
+    ]
+  },
+  {
+    "id": "131",
+    "series": "algorithm-journey",
+    "lessonNumber": "131",
+    "originalTitle": "动态规划优化专题5-树状数组和线段树优化",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3131%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%BC%98%E5%8C%96%E4%B8%93%E9%A2%985-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84%E5%92%8C%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%BC%98%E5%8C%96.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "profile-dp"
+    ]
+  },
+  {
+    "id": "132",
+    "series": "algorithm-journey",
+    "lessonNumber": "132",
+    "originalTitle": "动态规划优化专题6-预处理数组优化",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3132%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%BC%98%E5%8C%96%E4%B8%93%E9%A2%986-%E9%A2%84%E5%A4%84%E7%90%86%E6%95%B0%E7%BB%84%E4%BC%98%E5%8C%96.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "profile-dp"
+    ]
+  },
+  {
+    "id": "133",
+    "series": "algorithm-journey",
+    "lessonNumber": "133",
+    "originalTitle": "高斯消元专题1-解决加法方程组",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3133%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83%E4%B8%93%E9%A2%981-%E8%A7%A3%E5%86%B3%E5%8A%A0%E6%B3%95%E6%96%B9%E7%A8%8B%E7%BB%84.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "gaussian-elimination"
+    ]
+  },
+  {
+    "id": "134",
+    "series": "algorithm-journey",
+    "lessonNumber": "134",
+    "originalTitle": "高斯消元专题2-解决异或方程组",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3134%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83%E4%B8%93%E9%A2%982-%E8%A7%A3%E5%86%B3%E5%BC%82%E6%88%96%E6%96%B9%E7%A8%8B%E7%BB%84.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "gaussian-elimination"
+    ]
+  },
+  {
+    "id": "135",
+    "series": "algorithm-journey",
+    "lessonNumber": "135",
+    "originalTitle": "高斯消元专题3-解决同余方程组",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3135%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83%E4%B8%93%E9%A2%983-%E8%A7%A3%E5%86%B3%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B%E7%BB%84.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "gaussian-elimination"
+    ]
+  },
+  {
+    "id": "136",
+    "series": "algorithm-journey",
+    "lessonNumber": "136",
+    "originalTitle": "线性基-上",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3136%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E7%BA%BF%E6%80%A7%E5%9F%BA-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "gaussian-elimination"
+    ]
+  },
+  {
+    "id": "137",
+    "series": "algorithm-journey",
+    "lessonNumber": "137",
+    "originalTitle": "线性基-下",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3137%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E7%BA%BF%E6%80%A7%E5%9F%BA-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "gaussian-elimination"
+    ]
+  },
+  {
+    "id": "138",
+    "series": "algorithm-journey",
+    "lessonNumber": "138",
+    "originalTitle": "01分数规划",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3138%E3%80%90%E6%89%A9%E5%B1%95%E3%80%9101%E5%88%86%E6%95%B0%E8%A7%84%E5%88%92.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "fractional"
+    ]
+  },
+  {
+    "id": "139",
+    "series": "algorithm-journey",
+    "lessonNumber": "139",
+    "originalTitle": "裴蜀定理和扩展欧几里得算法",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3139%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86%E5%92%8C%E6%89%A9%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "extended-gcd"
+    ]
+  },
+  {
+    "id": "140",
+    "series": "algorithm-journey",
+    "lessonNumber": "140",
+    "originalTitle": "扩展欧几里得和二元一次不定方程",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3140%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%89%A9%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E5%92%8C%E4%BA%8C%E5%85%83%E4%B8%80%E6%AC%A1%E4%B8%8D%E5%AE%9A%E6%96%B9%E7%A8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "extended-gcd"
+    ]
+  },
+  {
+    "id": "141",
+    "series": "algorithm-journey",
+    "lessonNumber": "141",
+    "originalTitle": "中国剩余定理及其扩展",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3141%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86%E5%8F%8A%E5%85%B6%E6%89%A9%E5%B1%95.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "extended-gcd"
+    ]
+  },
+  {
+    "id": "142",
+    "series": "algorithm-journey",
+    "lessonNumber": "142",
+    "originalTitle": "负环和差分约束",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3142%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E8%B4%9F%E7%8E%AF%E5%92%8C%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "difference-constraints"
+    ]
+  },
+  {
+    "id": "143",
+    "series": "algorithm-journey",
+    "lessonNumber": "143",
+    "originalTitle": "同余最短路",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3143%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%90%8C%E4%BD%99%E6%9C%80%E7%9F%AD%E8%B7%AF.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "difference-constraints"
+    ]
+  },
+  {
+    "id": "144",
+    "series": "algorithm-journey",
+    "lessonNumber": "144",
+    "originalTitle": "二项式定理证明和相关题目",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3144%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%AE%9A%E7%90%86%E8%AF%81%E6%98%8E%E5%92%8C%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pdf",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "combinatorics"
+    ]
+  },
+  {
+    "id": "145",
+    "series": "algorithm-journey",
+    "lessonNumber": "145",
+    "originalTitle": "二项式反演的四种形式、证明、相关题目",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3145%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%8F%8D%E6%BC%94%E7%9A%84%E5%9B%9B%E7%A7%8D%E5%BD%A2%E5%BC%8F%E3%80%81%E8%AF%81%E6%98%8E%E3%80%81%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pdf",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "combinatorics"
+    ]
+  },
+  {
+    "id": "146",
+    "series": "algorithm-journey",
+    "lessonNumber": "146",
+    "originalTitle": "康托展开、约瑟夫环、完美洗牌",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3146%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%BA%B7%E6%89%98%E5%B1%95%E5%BC%80%E3%80%81%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF%E3%80%81%E5%AE%8C%E7%BE%8E%E6%B4%97%E7%89%8C.pdf",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "combinatorics"
+    ]
+  },
+  {
+    "id": "147",
+    "series": "algorithm-journey",
+    "lessonNumber": "147",
+    "originalTitle": "卡特兰数题型详解和取模处理",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3147%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E5%8D%A1%E7%89%B9%E5%85%B0%E6%95%B0%E9%A2%98%E5%9E%8B%E8%AF%A6%E8%A7%A3%E5%92%8C%E5%8F%96%E6%A8%A1%E5%A4%84%E7%90%86.pdf",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "combinatorics"
+    ]
+  },
+  {
+    "id": "148",
+    "series": "algorithm-journey",
+    "lessonNumber": "148",
+    "originalTitle": "有序表专题1-AVL树",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3148%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%9C%89%E5%BA%8F%E8%A1%A8%E4%B8%93%E9%A2%981-AVL%E6%A0%91.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "balanced-trees"
+    ]
+  },
+  {
+    "id": "149",
+    "series": "algorithm-journey",
+    "lessonNumber": "149",
+    "originalTitle": "有序表专题2-跳表",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3149%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%9C%89%E5%BA%8F%E8%A1%A8%E4%B8%93%E9%A2%982-%E8%B7%B3%E8%A1%A8.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "balanced-trees"
+    ]
+  },
+  {
+    "id": "150",
+    "series": "algorithm-journey",
+    "lessonNumber": "150",
+    "originalTitle": "有序表专题3-替罪羊树",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3150%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%9C%89%E5%BA%8F%E8%A1%A8%E4%B8%93%E9%A2%983-%E6%9B%BF%E7%BD%AA%E7%BE%8A%E6%A0%91.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "balanced-trees"
+    ]
+  },
+  {
+    "id": "151",
+    "series": "algorithm-journey",
+    "lessonNumber": "151",
+    "originalTitle": "有序表专题4-笛卡尔树、Treap树",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3151%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%9C%89%E5%BA%8F%E8%A1%A8%E4%B8%93%E9%A2%984-%E7%AC%9B%E5%8D%A1%E5%B0%94%E6%A0%91%E3%80%81Treap%E6%A0%91.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "balanced-trees"
+    ]
+  },
+  {
+    "id": "152",
+    "series": "algorithm-journey",
+    "lessonNumber": "152",
+    "originalTitle": "有序表专题5-FHQ Treap",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3152%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%9C%89%E5%BA%8F%E8%A1%A8%E4%B8%93%E9%A2%985-FHQ%20Treap.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "balanced-trees"
+    ]
+  },
+  {
+    "id": "153",
+    "series": "algorithm-journey",
+    "lessonNumber": "153",
+    "originalTitle": "有序表专题6-Splay树",
+    "originalStage": "扩展",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3153%E3%80%90%E6%89%A9%E5%B1%95%E3%80%91%E6%9C%89%E5%BA%8F%E8%A1%A8%E4%B8%93%E9%A2%986-Splay%E6%A0%91.pdf",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "balanced-trees"
+    ]
+  },
+  {
+    "id": "154",
+    "series": "algorithm-journey",
+    "lessonNumber": "154",
+    "originalTitle": "左偏树的原理、代码、相关题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3154%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%B7%A6%E5%81%8F%E6%A0%91%E7%9A%84%E5%8E%9F%E7%90%86%E3%80%81%E4%BB%A3%E7%A0%81%E3%80%81%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "meldable-heap"
+    ]
+  },
+  {
+    "id": "155",
+    "series": "algorithm-journey",
+    "lessonNumber": "155",
+    "originalTitle": "左偏树和懒更新、可持久化左偏树、k短路问题",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3155%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%B7%A6%E5%81%8F%E6%A0%91%E5%92%8C%E6%87%92%E6%9B%B4%E6%96%B0%E3%80%81%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B7%A6%E5%81%8F%E6%A0%91%E3%80%81k%E7%9F%AD%E8%B7%AF%E9%97%AE%E9%A2%98.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "meldable-heap"
+    ]
+  },
+  {
+    "id": "156",
+    "series": "algorithm-journey",
+    "lessonNumber": "156",
+    "originalTitle": "带权并查集的原理和扩展题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3156%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86%E7%9A%84%E5%8E%9F%E7%90%86%E5%92%8C%E6%89%A9%E5%B1%95%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "weighted-dsu"
+    ]
+  },
+  {
+    "id": "157",
+    "series": "algorithm-journey",
+    "lessonNumber": "157",
+    "originalTitle": "可持久化线段树和标记永久化",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3157%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%92%8C%E6%A0%87%E8%AE%B0%E6%B0%B8%E4%B9%85%E5%8C%96.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "persistent"
+    ]
+  },
+  {
+    "id": "158",
+    "series": "algorithm-journey",
+    "lessonNumber": "158",
+    "originalTitle": "可持久化线段树的相关题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3158%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91%E7%9A%84%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "persistent"
+    ]
+  },
+  {
+    "id": "159",
+    "series": "algorithm-journey",
+    "lessonNumber": "159",
+    "originalTitle": "可持久化前缀树和相关题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3159%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%89%8D%E7%BC%80%E6%A0%91%E5%92%8C%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "persistent"
+    ]
+  },
+  {
+    "id": "160",
+    "series": "algorithm-journey",
+    "lessonNumber": "160",
+    "originalTitle": "树套树的原理、优化、相关题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3160%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E6%A0%91%E5%A5%97%E6%A0%91%E7%9A%84%E5%8E%9F%E7%90%86%E3%80%81%E4%BC%98%E5%8C%96%E3%80%81%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "persistent"
+    ]
+  },
+  {
+    "id": "161",
+    "series": "algorithm-journey",
+    "lessonNumber": "161",
+    "originalTitle": "树链剖分-上",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3161%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "heavy-light"
+    ]
+  },
+  {
+    "id": "162",
+    "series": "algorithm-journey",
+    "lessonNumber": "162",
+    "originalTitle": "树链剖分-下",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3162%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "heavy-light"
+    ]
+  },
+  {
+    "id": "163",
+    "series": "algorithm-journey",
+    "lessonNumber": "163",
+    "originalTitle": "树上启发式合并的原理和相关题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3163%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E6%A0%91%E4%B8%8A%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6%E7%9A%84%E5%8E%9F%E7%90%86%E5%92%8C%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "heavy-light"
+    ]
+  },
+  {
+    "id": "164",
+    "series": "algorithm-journey",
+    "lessonNumber": "164",
+    "originalTitle": "Kruskal重构树的原理和相关题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3164%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91Kruskal%E9%87%8D%E6%9E%84%E6%A0%91%E7%9A%84%E5%8E%9F%E7%90%86%E5%92%8C%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "heavy-light"
+    ]
+  },
+  {
+    "id": "165",
+    "series": "algorithm-journey",
+    "lessonNumber": "165",
+    "originalTitle": "可持久化并查集、可撤销并查集",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3165%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B6%E6%9F%A5%E9%9B%86%E3%80%81%E5%8F%AF%E6%92%A4%E9%94%80%E5%B9%B6%E6%9F%A5%E9%9B%86.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "persistent"
+    ]
+  },
+  {
+    "id": "166",
+    "series": "algorithm-journey",
+    "lessonNumber": "166",
+    "originalTitle": "线段树分治-上",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3166%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "offline-divide"
+    ]
+  },
+  {
+    "id": "167",
+    "series": "algorithm-journey",
+    "lessonNumber": "167",
+    "originalTitle": "线段树分治-下",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3167%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "offline-divide"
+    ]
+  },
+  {
+    "id": "168",
+    "series": "algorithm-journey",
+    "lessonNumber": "168",
+    "originalTitle": "整体二分-上",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3168%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "offline-divide"
+    ]
+  },
+  {
+    "id": "169",
+    "series": "algorithm-journey",
+    "lessonNumber": "169",
+    "originalTitle": "整体二分-下",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3169%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "offline-divide"
+    ]
+  },
+  {
+    "id": "170",
+    "series": "algorithm-journey",
+    "lessonNumber": "170",
+    "originalTitle": "CDQ分治-上",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3170%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91CDQ%E5%88%86%E6%B2%BB-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "offline-divide"
+    ]
+  },
+  {
+    "id": "171",
+    "series": "algorithm-journey",
+    "lessonNumber": "171",
+    "originalTitle": "CDQ分治-下",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3171%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91CDQ%E5%88%86%E6%B2%BB-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "offline-divide"
+    ]
+  },
+  {
+    "id": "172",
+    "series": "algorithm-journey",
+    "lessonNumber": "172",
+    "originalTitle": "分块专题1-块状数组、块状链表",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3172%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%88%86%E5%9D%97%E4%B8%93%E9%A2%981-%E5%9D%97%E7%8A%B6%E6%95%B0%E7%BB%84%E3%80%81%E5%9D%97%E7%8A%B6%E9%93%BE%E8%A1%A8.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "sqrt-decomposition"
+    ]
+  },
+  {
+    "id": "173",
+    "series": "algorithm-journey",
+    "lessonNumber": "173",
+    "originalTitle": "分块专题2-分块的几道好题、树上分块",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3173%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%88%86%E5%9D%97%E4%B8%93%E9%A2%982-%E5%88%86%E5%9D%97%E7%9A%84%E5%87%A0%E9%81%93%E5%A5%BD%E9%A2%98%E3%80%81%E6%A0%91%E4%B8%8A%E5%88%86%E5%9D%97.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "sqrt-decomposition"
+    ]
+  },
+  {
+    "id": "174",
+    "series": "algorithm-journey",
+    "lessonNumber": "174",
+    "originalTitle": "分块专题3-双层分块、分块结合并查集",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3174%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%88%86%E5%9D%97%E4%B8%93%E9%A2%983-%E5%8F%8C%E5%B1%82%E5%88%86%E5%9D%97%E3%80%81%E5%88%86%E5%9D%97%E7%BB%93%E5%90%88%E5%B9%B6%E6%9F%A5%E9%9B%86.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "sqrt-decomposition"
+    ]
+  },
+  {
+    "id": "175",
+    "series": "algorithm-journey",
+    "lessonNumber": "175",
+    "originalTitle": "分块专题4-根号分治",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3175%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%88%86%E5%9D%97%E4%B8%93%E9%A2%984-%E6%A0%B9%E5%8F%B7%E5%88%86%E6%B2%BB.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "sqrt-decomposition"
+    ]
+  },
+  {
+    "id": "176",
+    "series": "algorithm-journey",
+    "lessonNumber": "176",
+    "originalTitle": "莫队专题1-普通莫队、带修莫队",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3176%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E8%8E%AB%E9%98%9F%E4%B8%93%E9%A2%981-%E6%99%AE%E9%80%9A%E8%8E%AB%E9%98%9F%E3%80%81%E5%B8%A6%E4%BF%AE%E8%8E%AB%E9%98%9F.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "mo"
+    ]
+  },
+  {
+    "id": "177",
+    "series": "algorithm-journey",
+    "lessonNumber": "177",
+    "originalTitle": "莫队专题2-回滚莫队、树上莫队",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3177%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E8%8E%AB%E9%98%9F%E4%B8%93%E9%A2%982-%E5%9B%9E%E6%BB%9A%E8%8E%AB%E9%98%9F%E3%80%81%E6%A0%91%E4%B8%8A%E8%8E%AB%E9%98%9F.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "mo"
+    ]
+  },
+  {
+    "id": "178",
+    "series": "algorithm-journey",
+    "lessonNumber": "178",
+    "originalTitle": "莫队专题3-莫队二次离线",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3178%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E8%8E%AB%E9%98%9F%E4%B8%93%E9%A2%983-%E8%8E%AB%E9%98%9F%E4%BA%8C%E6%AC%A1%E7%A6%BB%E7%BA%BF.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "mo"
+    ]
+  },
+  {
+    "id": "179",
+    "series": "algorithm-journey",
+    "lessonNumber": "179",
+    "originalTitle": "莫队专题4-莫队综合应用",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3179%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E8%8E%AB%E9%98%9F%E4%B8%93%E9%A2%984-%E8%8E%AB%E9%98%9F%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "mo"
+    ]
+  },
+  {
+    "id": "180",
+    "series": "algorithm-journey",
+    "lessonNumber": "180",
+    "originalTitle": "虚树的原理和相关题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3180%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E8%99%9A%E6%A0%91%E7%9A%84%E5%8E%9F%E7%90%86%E5%92%8C%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-divide"
+    ]
+  },
+  {
+    "id": "181",
+    "series": "algorithm-journey",
+    "lessonNumber": "181",
+    "originalTitle": "线段树的合并与分裂-上",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3181%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91%E7%9A%84%E5%90%88%E5%B9%B6%E4%B8%8E%E5%88%86%E8%A3%82-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-divide"
+    ]
+  },
+  {
+    "id": "182",
+    "series": "algorithm-journey",
+    "lessonNumber": "182",
+    "originalTitle": "线段树的合并与分裂-下",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3182%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91%E7%9A%84%E5%90%88%E5%B9%B6%E4%B8%8E%E5%88%86%E8%A3%82-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-divide"
+    ]
+  },
+  {
+    "id": "183",
+    "series": "algorithm-journey",
+    "lessonNumber": "183",
+    "originalTitle": "静态点分治-上",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3183%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E9%9D%99%E6%80%81%E7%82%B9%E5%88%86%E6%B2%BB-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-divide"
+    ]
+  },
+  {
+    "id": "184",
+    "series": "algorithm-journey",
+    "lessonNumber": "184",
+    "originalTitle": "静态点分治-下",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3184%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E9%9D%99%E6%80%81%E7%82%B9%E5%88%86%E6%B2%BB-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-divide"
+    ]
+  },
+  {
+    "id": "185",
+    "series": "algorithm-journey",
+    "lessonNumber": "185",
+    "originalTitle": "点分树和动态点分治",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3185%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E7%82%B9%E5%88%86%E6%A0%91%E5%92%8C%E5%8A%A8%E6%80%81%E7%82%B9%E5%88%86%E6%B2%BB.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-divide"
+    ]
+  },
+  {
+    "id": "186",
+    "series": "algorithm-journey",
+    "lessonNumber": "186",
+    "originalTitle": "欧拉序求LCA、dfn序求LCA",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3186%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E6%AC%A7%E6%8B%89%E5%BA%8F%E6%B1%82LCA%E3%80%81dfn%E5%BA%8F%E6%B1%82LCA.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-divide"
+    ]
+  },
+  {
+    "id": "187",
+    "series": "algorithm-journey",
+    "lessonNumber": "187",
+    "originalTitle": "边分治和边分树",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3187%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E8%BE%B9%E5%88%86%E6%B2%BB%E5%92%8C%E8%BE%B9%E5%88%86%E6%A0%91.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "tree-divide"
+    ]
+  },
+  {
+    "id": "188",
+    "series": "algorithm-journey",
+    "lessonNumber": "188",
+    "originalTitle": "欧拉路径与相关题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3188%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E6%AC%A7%E6%8B%89%E8%B7%AF%E5%BE%84%E4%B8%8E%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "connectivity"
+    ]
+  },
+  {
+    "id": "189",
+    "series": "algorithm-journey",
+    "lessonNumber": "189",
+    "originalTitle": "强连通分量和缩点-上",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3189%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E5%92%8C%E7%BC%A9%E7%82%B9-%E4%B8%8A.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "connectivity"
+    ]
+  },
+  {
+    "id": "190",
+    "series": "algorithm-journey",
+    "lessonNumber": "190",
+    "originalTitle": "强连通分量和缩点-下",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3190%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E5%92%8C%E7%BC%A9%E7%82%B9-%E4%B8%8B.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "connectivity"
+    ]
+  },
+  {
+    "id": "191",
+    "series": "algorithm-journey",
+    "lessonNumber": "191",
+    "originalTitle": "割边、边双连通分量和缩点",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3191%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%89%B2%E8%BE%B9%E3%80%81%E8%BE%B9%E5%8F%8C%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E5%92%8C%E7%BC%A9%E7%82%B9.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "connectivity"
+    ]
+  },
+  {
+    "id": "192",
+    "series": "algorithm-journey",
+    "lessonNumber": "192",
+    "originalTitle": "边双连通分量缩点的更多题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3192%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E8%BE%B9%E5%8F%8C%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E7%BC%A9%E7%82%B9%E7%9A%84%E6%9B%B4%E5%A4%9A%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "connectivity"
+    ]
+  },
+  {
+    "id": "193",
+    "series": "algorithm-journey",
+    "lessonNumber": "193",
+    "originalTitle": "割点和点双连通分量",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3193%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%89%B2%E7%82%B9%E5%92%8C%E7%82%B9%E5%8F%8C%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "connectivity"
+    ]
+  },
+  {
+    "id": "194",
+    "series": "algorithm-journey",
+    "lessonNumber": "194",
+    "originalTitle": "圆方树的原理和相关题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3194%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%9C%86%E6%96%B9%E6%A0%91%E7%9A%84%E5%8E%9F%E7%90%86%E5%92%8C%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "connectivity"
+    ]
+  },
+  {
+    "id": "195",
+    "series": "algorithm-journey",
+    "lessonNumber": "195",
+    "originalTitle": "优化建图的技巧和题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3195%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E4%BC%98%E5%8C%96%E5%BB%BA%E5%9B%BE%E7%9A%84%E6%8A%80%E5%B7%A7%E5%92%8C%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "graph-optimization"
+    ]
+  },
+  {
+    "id": "196",
+    "series": "algorithm-journey",
+    "lessonNumber": "196",
+    "originalTitle": "2-SAT与前缀优化建图",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3196%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%912-SAT%E4%B8%8E%E5%89%8D%E7%BC%80%E4%BC%98%E5%8C%96%E5%BB%BA%E5%9B%BE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "graph-optimization"
+    ]
+  },
+  {
+    "id": "197",
+    "series": "algorithm-journey",
+    "lessonNumber": "197",
+    "originalTitle": "2-SAT与优化建图的更多题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3197%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%912-SAT%E4%B8%8E%E4%BC%98%E5%8C%96%E5%BB%BA%E5%9B%BE%E7%9A%84%E6%9B%B4%E5%A4%9A%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "graph-optimization"
+    ]
+  },
+  {
+    "id": "198",
+    "series": "algorithm-journey",
+    "lessonNumber": "198",
+    "originalTitle": "树状数组优化建图、主席树优化建图、CDQ优化建图",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3198%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84%E4%BC%98%E5%8C%96%E5%BB%BA%E5%9B%BE%E3%80%81%E4%B8%BB%E5%B8%AD%E6%A0%91%E4%BC%98%E5%8C%96%E5%BB%BA%E5%9B%BE%E3%80%81CDQ%E4%BC%98%E5%8C%96%E5%BB%BA%E5%9B%BE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "graph-optimization"
+    ]
+  },
+  {
+    "id": "199",
+    "series": "algorithm-journey",
+    "lessonNumber": "199",
+    "originalTitle": "基环树和相关题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3199%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E5%9F%BA%E7%8E%AF%E6%A0%91%E5%92%8C%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "special-graphs"
+    ]
+  },
+  {
+    "id": "200",
+    "series": "algorithm-journey",
+    "lessonNumber": "200",
+    "originalTitle": "仙人掌图和相关题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3200%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91%E4%BB%99%E4%BA%BA%E6%8E%8C%E5%9B%BE%E5%92%8C%E7%9B%B8%E5%85%B3%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "special-graphs"
+    ]
+  },
+  {
+    "id": "201",
+    "series": "algorithm-journey",
+    "lessonNumber": "201",
+    "originalTitle": "LCT专题1-LCT的原理和模版题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3201%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91LCT%E4%B8%93%E9%A2%981-LCT%E7%9A%84%E5%8E%9F%E7%90%86%E5%92%8C%E6%A8%A1%E7%89%88%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "link-cut-tree"
+    ]
+  },
+  {
+    "id": "202",
+    "series": "algorithm-journey",
+    "lessonNumber": "202",
+    "originalTitle": "LCT专题2-LCT维护路径、边双连通分量的题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3202%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91LCT%E4%B8%93%E9%A2%982-LCT%E7%BB%B4%E6%8A%A4%E8%B7%AF%E5%BE%84%E3%80%81%E8%BE%B9%E5%8F%8C%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F%E7%9A%84%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "link-cut-tree"
+    ]
+  },
+  {
+    "id": "203",
+    "series": "algorithm-journey",
+    "lessonNumber": "203",
+    "originalTitle": "LCT专题3-LCT维护边权、生成树的题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3203%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91LCT%E4%B8%93%E9%A2%983-LCT%E7%BB%B4%E6%8A%A4%E8%BE%B9%E6%9D%83%E3%80%81%E7%94%9F%E6%88%90%E6%A0%91%E7%9A%84%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "link-cut-tree"
+    ]
+  },
+  {
+    "id": "204",
+    "series": "algorithm-journey",
+    "lessonNumber": "204",
+    "originalTitle": "LCT专题4-LCT维护子树、图结构的题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3204%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91LCT%E4%B8%93%E9%A2%984-LCT%E7%BB%B4%E6%8A%A4%E5%AD%90%E6%A0%91%E3%80%81%E5%9B%BE%E7%BB%93%E6%9E%84%E7%9A%84%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "link-cut-tree"
+    ]
+  },
+  {
+    "id": "205",
+    "series": "algorithm-journey",
+    "lessonNumber": "205",
+    "originalTitle": "K-D树的原理、代码、常见题目",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3205%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91K-D%E6%A0%91%E7%9A%84%E5%8E%9F%E7%90%86%E3%80%81%E4%BB%A3%E7%A0%81%E3%80%81%E5%B8%B8%E8%A7%81%E9%A2%98%E7%9B%AE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "kd-tree"
+    ]
+  },
+  {
+    "id": "206",
+    "series": "algorithm-journey",
+    "lessonNumber": "206",
+    "originalTitle": "K-D树的删除操作、树套树、优化建图",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3206%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91K-D%E6%A0%91%E7%9A%84%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C%E3%80%81%E6%A0%91%E5%A5%97%E6%A0%91%E3%80%81%E4%BC%98%E5%8C%96%E5%BB%BA%E5%9B%BE.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "kd-tree"
+    ]
+  },
+  {
+    "id": "207",
+    "series": "algorithm-journey",
+    "lessonNumber": "207",
+    "originalTitle": "Johnson全源最短路、传递闭包",
+    "originalStage": "挺难",
+    "sourceUrl": "https://github.com/algorithmzuo/algorithm-journey/blob/20a7e5229acb7af3f61c98b63ad3444216425606/ppt/%E7%AE%97%E6%B3%95%E8%AE%B2%E8%A7%A3207%E3%80%90%E6%8C%BA%E9%9A%BE%E3%80%91Johnson%E5%85%A8%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E3%80%81%E4%BC%A0%E9%80%92%E9%97%AD%E5%8C%85.pptx",
+    "sourceRef": "20a7e5229acb7af3f61c98b63ad3444216425606",
+    "checkedAt": "2026-10-22",
+    "algorithmIds": [
+      "johnson"
+    ]
+  }
+]

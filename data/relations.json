@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ldm-dit",
+    "fromNodeId": "ldm",
+    "toNodeId": "dit",
+    "kind": "combines",
+    "contribution": {
+      "zh-CN": "沿用潜空间中的扩散建模框架。",
+      "en": "Provides the latent-space diffusion framework."
+    },
+    "sourceUrls": [
+      "https://arxiv.org/abs/2212.09748"
+    ]
+  },
+  {
+    "id": "vit-dit",
+    "fromNodeId": "vit",
+    "toNodeId": "dit",
+    "kind": "combines",
+    "contribution": {
+      "zh-CN": "提供 patch 序列与 Transformer 主干设计；DiT 输入是潜变量 patch。",
+      "en": "Provides patch sequencing and Transformer backbone design; DiT operates on latent patches."
+    },
+    "sourceUrls": [
+      "https://arxiv.org/abs/2212.09748"
+    ]
+  },
+  {
+    "id": "ddpm-ldm",
+    "fromNodeId": "ddpm",
+    "toNodeId": "ldm",
+    "kind": "extends",
+    "contribution": {
+      "zh-CN": "把去噪扩散从像素空间移到自编码器潜空间。",
+      "en": "Moves denoising diffusion from pixels into an autoencoder latent space."
+    },
+    "sourceUrls": [
+      "https://arxiv.org/abs/2112.10752"
+    ]
+  },
+  {
+    "id": "vae-ldm",
+    "fromNodeId": "vae",
+    "toNodeId": "ldm",
+    "kind": "inspired-by",
+    "contribution": {
+      "zh-CN": "连续潜变量与正则化背景；不表示所有 LDM 使用同一种 VAE。",
+      "en": "Background in continuous latents and regularization; not a claim that all LDMs use the same VAE."
+    },
+    "sourceUrls": [
+      "https://arxiv.org/abs/2112.10752"
+    ]
+  },
+  {
+    "id": "ldm-ae-dit",
+    "fromNodeId": "ldm",
+    "toNodeId": "dit",
+    "kind": "uses-component",
+    "contribution": {
+      "zh-CN": "采用预训练潜空间自编码器处理图像压缩与解码；与主干融合关系分开。",
+      "en": "Uses a pretrained latent autoencoder for image encoding and decoding, distinct from backbone fusion."
+    },
+    "sourceUrls": [
+      "https://arxiv.org/abs/2212.09748"
+    ]
+  }
+]

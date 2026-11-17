@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ locale }}" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>{{ title }} · {{ L(profile.name) }}</title><meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ origin }}{{ current_url }}">
+{% for lang,href in (article_alternates if article_alternates is defined else alternate) %}<link rel="alternate" hreflang="{{ lang }}" href="{{ origin }}{{ href }}">{% endfor %}
+{% if noindex %}<meta name="robots" content="noindex,follow">{% endif %}
+<meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ description }}"><meta property="og:type" content="website"><meta property="og:url" content="{{ origin }}{{ current_url }}">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<script src="/assets/theme.js"></script><link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/highlight.css">
+<script id="ui-data" type="application/json">{{ ui_json|safe }}</script><script src="/assets/app.js" defer></script>
+{% block head %}{% endblock %}
+</head>
+<body data-page="{{ path }}">
+<a href="#main" class="skip-link">{{ ui.skip }}</a>
+<header class="site-header"><div class="header-inner">
+<a class="brand" href="{{ U('/') }}" aria-label="{{ L(profile.name) }} · {{ ui.home }}"><span class="brand-mark">r<span>_</span></span><span>{{ L(profile.name) }}<span class="brand-dot">.</span></span></a>
+<nav class="main-nav" aria-label="{{ ui.nav_label }}">
+{% for href,key in [('/','home'),('/skills/','skills'),('/knowledge/','knowledge'),('/blog/','blog')] %}<a href="{{ U(href) }}" {% if path==href or (href in ['/knowledge/','/blog/'] and path.startswith(href)) %}aria-current="page"{% endif %}>{{ ui[key] }}</a>{% endfor %}
+</nav>
+<div class="header-tools"><button class="icon-button search-open" aria-label="{{ ui.search_label }}"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><span class="search-word">{{ ui.search }}</span><kbd>/</kbd></button><span class="tool-divider"></span><button class="icon-button" id="theme-toggle" aria-label="{{ ui.theme }}"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></svg></button><a class="locale-switch" id="language-switch" href="{{ language_url }}" aria-label="{{ ui.language }}"><span {% if locale=='zh-CN' %}class="active"{% endif %}>中文</span><span class="muted">/</span><span {% if locale=='en' %}class="active"{% endif %}>EN</span></a></div>
+</div></header>
+<main id="main" tabindex="-1">{% block content %}{% endblock %}</main>
+<footer class="site-footer wrap"><div><a class="footer-name" href="{{ U('/') }}">{{ L(profile.name) }}<span>_</span></a><p>{{ ui.footer }}</p></div><div class="footer-links">{% for social in profile.socials %}<a href="{{ social.url }}" rel="me">{{ social.label }} ↗</a>{% endfor %}<a href="{{ U('/knowledge/') }}">{{ ui.knowledge }}</a><a href="{{ U('/blog/') }}">{{ ui.blog }}</a><button class="text-button" id="replay">{{ ui.replay }} ↻</button><span class="mono muted">© {{ year }}</span></div></footer>
+<dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">{{ ui.search_label }}</h2><button class="icon-button" data-close aria-label="{{ ui.close }}">×</button></div><label class="sr-only" for="global-search">{{ ui.search_hint }}</label><input type="search" id="global-search" placeholder="{{ ui.search_hint }}" autocomplete="off"><p id="search-status" role="status"></p><ul id="search-results" class="search-results"></ul><a href="{{ U('/knowledge/') }}">{{ ui.browse }} →</a></dialog>
+<template id="nailong-art">{% include "partials/nailong.txt" %}</template>
+<dialog id="intro" aria-label="{{ ui.terminal_label }}"><button id="skip-intro" class="text-button">{{ ui.skip_intro }} <kbd>Esc</kbd></button><div class="intro-body" aria-hidden="true"><pre id="intro-script" class="terminal-script"></pre></div><span class="sr-only">{{ ui.opening }}</span></dialog>
+</body></html>

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "dit",
+    "nodeId": "dit",
+    "familyIds": [
+      "diffusion",
+      "transformer"
+    ],
+    "incomingRelationIds": [
+      "ldm-dit",
+      "vit-dit",
+      "ldm-ae-dit"
+    ],
+    "explanation": {
+      "zh-CN": "扩散负责生成过程，Transformer 负责去噪主干；两条家族路线在此产生联系，并继续各自发展。",
+      "en": "Diffusion supplies the generative process; the Transformer supplies the denoising backbone. Both families continue beyond this connection."
+    }
+  }
+]

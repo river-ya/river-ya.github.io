@@ -1,0 +1,88 @@
+"""Typed content contracts. Runtime validation lives in validate.py."""
+from typing import TypedDict, Literal, NotRequired
+
+Locale = Literal['zh-CN', 'en']
+LocalizedText = dict[Locale, str]
+Status = Literal['planned','draft','published']
+class Source(TypedDict):
+    label: str
+    url: str
+class NodeDate(TypedDict):
+    value: str
+    precision: Literal['year','month','day']
+    event: Literal['preprint','publication','announcement','code-release']
+    sourceUrl: str
+class KnowledgeNode(TypedDict):
+    id: str
+    slug: str
+    title: LocalizedText
+    aliases: list[str]
+    kind: Literal['model','method','concept','practice','research-area']
+    dates: list[NodeDate]
+    dateVerification: Literal['verified','pending']
+    summary: LocalizedText
+    significance: LocalizedText
+    trackIds: list[str]
+    familyIds: list[str]
+    tags: list[str]
+    difficulty: Literal['foundation','core','advanced','optional']
+    prerequisiteIds: list[str]
+    relatedNodeIds: list[str]
+    contentStatus: Status
+    articleSlugs: list[str]
+    sources: list[Source]
+    authorLearningStatus: NotRequired[str]
+class ArticleMeta(TypedDict):
+    slug: str
+    translationKey: str
+    locale: Locale
+    title: str
+    summary: str
+    status: Status
+    file: str
+    publishedAt: NotRequired[str]
+    updatedAt: NotRequired[str]
+    nodeIds: list[str]
+    tags: list[str]
+class ModelRelation(TypedDict):
+    id: str
+    fromNodeId: str
+    toNodeId: str
+    kind: Literal['extends','combines','uses-component','inspired-by']
+    contribution: LocalizedText
+    sourceUrls: list[str]
+class LearningTrack(TypedDict):
+    id: str
+    kind: Literal['domain','family']
+    title: LocalizedText
+    description: LocalizedText
+    prerequisites: LocalizedText
+    exercise: LocalizedText
+    learningOrder: list[str]
+    verifiedThrough: str
+class CourseLesson(TypedDict):
+    id: str
+    lessonNumber: str
+    originalTitle: str
+    originalStage: str
+    sourceUrl: str
+    sourceRef: str
+    checkedAt: str
+    algorithmIds: list[str]
+class AlgorithmTopic(TypedDict):
+    id: str
+    slug: str
+    title: LocalizedText
+    summary: LocalizedText
+    categoryId: str
+    lessonIds: list[str]
+    prerequisiteIds: list[str]
+    contentStatus: Status
+    mainContentFiles: dict[Locale,str]
+    relatedArticleSlugs: list[str]
+class Confluence(TypedDict):
+    id: str
+    nodeId: str
+    familyIds: list[str]
+    incomingRelationIds: list[str]
+    explanation: LocalizedText

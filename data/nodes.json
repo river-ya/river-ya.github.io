@@ -1,0 +1,4457 @@
+[
+  {
+    "id": "vae",
+    "slug": "vae",
+    "title": {
+      "zh-CN": "VAE",
+      "en": "VAE"
+    },
+    "aliases": [
+      "VAE",
+      "1312.6114",
+      "变分自编码器",
+      "variational autoencoder"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2013-12-20",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1312.6114"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1312.6114",
+    "summary": {
+      "zh-CN": "用变分推断与重参数化学习连续潜空间。",
+      "en": "Learn a continuous latent space with variational inference and reparameterization."
+    },
+    "significance": {
+      "zh-CN": "用变分推断与重参数化学习连续潜空间。",
+      "en": "Learn a continuous latent space with variational inference and reparameterization."
+    },
+    "trackIds": [
+      "deep-learning"
+    ],
+    "familyIds": [
+      "vae"
+    ],
+    "tags": [
+      "model",
+      "vae",
+      "deep-learning",
+      "generation"
+    ],
+    "difficulty": "foundation",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1312.6114"
+      }
+    ]
+  },
+  {
+    "id": "gan",
+    "slug": "gan",
+    "title": {
+      "zh-CN": "GAN",
+      "en": "GAN"
+    },
+    "aliases": [
+      "GAN",
+      "1406.2661",
+      "生成对抗网络",
+      "generative adversarial network"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2014-06-10",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1406.2661"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1406.2661",
+    "summary": {
+      "zh-CN": "通过生成器与判别器的对抗目标学习生成分布。",
+      "en": "Learn a generative distribution through an adversarial objective."
+    },
+    "significance": {
+      "zh-CN": "通过生成器与判别器的对抗目标学习生成分布。",
+      "en": "Learn a generative distribution through an adversarial objective."
+    },
+    "trackIds": [
+      "deep-learning"
+    ],
+    "familyIds": [
+      "gan"
+    ],
+    "tags": [
+      "model",
+      "gan",
+      "deep-learning",
+      "generation"
+    ],
+    "difficulty": "foundation",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1406.2661"
+      }
+    ]
+  },
+  {
+    "id": "diffusion-origin",
+    "slug": "diffusion-origin",
+    "title": {
+      "zh-CN": "早期扩散生成 / Diffusion",
+      "en": "Diffusion"
+    },
+    "aliases": [
+      "早期扩散生成 / Diffusion",
+      "1503.03585"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2015-03-12",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1503.03585"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1503.03585",
+    "summary": {
+      "zh-CN": "用前向扰动与反向生成建立扩散生成框架。",
+      "en": "Connect forward perturbation with a learned reverse generative process."
+    },
+    "significance": {
+      "zh-CN": "用前向扰动与反向生成建立扩散生成框架。",
+      "en": "Connect forward perturbation with a learned reverse generative process."
+    },
+    "trackIds": [
+      "deep-learning"
+    ],
+    "familyIds": [
+      "diffusion"
+    ],
+    "tags": [
+      "method",
+      "diffusion",
+      "deep-learning",
+      "generation"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1503.03585"
+      }
+    ]
+  },
+  {
+    "id": "resnet",
+    "slug": "resnet",
+    "title": {
+      "zh-CN": "ResNet",
+      "en": "ResNet"
+    },
+    "aliases": [
+      "ResNet",
+      "1512.03385"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2015-12-10",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1512.03385"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1512.03385",
+    "summary": {
+      "zh-CN": "残差连接让更深的网络更易优化。",
+      "en": "Residual connections make deeper networks easier to optimize."
+    },
+    "significance": {
+      "zh-CN": "残差连接让更深的网络更易优化。",
+      "en": "Residual connections make deeper networks easier to optimize."
+    },
+    "trackIds": [
+      "deep-learning",
+      "computer-vision"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "deep-learning",
+      "computer-vision",
+      "classification"
+    ],
+    "difficulty": "foundation",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1512.03385"
+      }
+    ]
+  },
+  {
+    "id": "transformer",
+    "slug": "transformer",
+    "title": {
+      "zh-CN": "Transformer",
+      "en": "Transformer"
+    },
+    "aliases": [
+      "Transformer",
+      "1706.03762",
+      "变换器",
+      "注意力机制"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2017-06-12",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1706.03762"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1706.03762",
+    "summary": {
+      "zh-CN": "以注意力构建序列转换架构。",
+      "en": "Build a sequence transduction architecture around attention."
+    },
+    "significance": {
+      "zh-CN": "以注意力构建序列转换架构。",
+      "en": "Build a sequence transduction architecture around attention."
+    },
+    "trackIds": [
+      "deep-learning",
+      "nlp",
+      "multimodal"
+    ],
+    "familyIds": [
+      "transformer"
+    ],
+    "tags": [
+      "model",
+      "transformer",
+      "deep-learning",
+      "nlp",
+      "multimodal"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    ]
+  },
+  {
+    "id": "world-models",
+    "slug": "world-models",
+    "title": {
+      "zh-CN": "World Models",
+      "en": "World Models"
+    },
+    "aliases": [
+      "World Models",
+      "1803.10122",
+      "世界模型"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2018-03-27",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1803.10122"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1803.10122",
+    "summary": {
+      "zh-CN": "用压缩视觉表示与潜空间动力学辅助控制。",
+      "en": "Use compressed visual representations and latent dynamics for control."
+    },
+    "significance": {
+      "zh-CN": "用压缩视觉表示与潜空间动力学辅助控制。",
+      "en": "Use compressed visual representations and latent dynamics for control."
+    },
+    "trackIds": [
+      "world-models"
+    ],
+    "familyIds": [
+      "vae"
+    ],
+    "tags": [
+      "model",
+      "vae",
+      "world-models",
+      "latent-dynamics"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1803.10122"
+      }
+    ]
+  },
+  {
+    "id": "bert",
+    "slug": "bert",
+    "title": {
+      "zh-CN": "BERT",
+      "en": "BERT"
+    },
+    "aliases": [
+      "BERT",
+      "1810.04805"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2018-10-11",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1810.04805"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1810.04805",
+    "summary": {
+      "zh-CN": "以双向上下文预训练语言表示。",
+      "en": "Pretrain language representations using bidirectional context."
+    },
+    "significance": {
+      "zh-CN": "以双向上下文预训练语言表示。",
+      "en": "Pretrain language representations using bidirectional context."
+    },
+    "trackIds": [
+      "nlp"
+    ],
+    "familyIds": [
+      "transformer"
+    ],
+    "tags": [
+      "model",
+      "transformer",
+      "nlp",
+      "representation-learning"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "transformer"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1810.04805"
+      }
+    ]
+  },
+  {
+    "id": "dreamer",
+    "slug": "dreamer",
+    "title": {
+      "zh-CN": "Dreamer",
+      "en": "Dreamer"
+    },
+    "aliases": [
+      "Dreamer",
+      "1912.01603"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2019-12-03",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1912.01603"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1912.01603",
+    "summary": {
+      "zh-CN": "在潜空间想象轨迹中学习行为。",
+      "en": "Learn behavior from imagined trajectories in latent space."
+    },
+    "significance": {
+      "zh-CN": "在潜空间想象轨迹中学习行为。",
+      "en": "Learn behavior from imagined trajectories in latent space."
+    },
+    "trackIds": [
+      "world-models"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "world-models",
+      "latent-dynamics"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "planet"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1912.01603"
+      }
+    ]
+  },
+  {
+    "id": "nerf",
+    "slug": "nerf",
+    "title": {
+      "zh-CN": "NeRF",
+      "en": "NeRF"
+    },
+    "aliases": [
+      "NeRF",
+      "2003.08934",
+      "神经辐射场",
+      "neural radiance fields"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2020-03-19",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2003.08934"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2003.08934",
+    "summary": {
+      "zh-CN": "用连续辐射场与体渲染合成新视角。",
+      "en": "Synthesize novel views with a continuous radiance field and volume rendering."
+    },
+    "significance": {
+      "zh-CN": "用连续辐射场与体渲染合成新视角。",
+      "en": "Synthesize novel views with a continuous radiance field and volume rendering."
+    },
+    "trackIds": [
+      "3d-scenes"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "3d-scenes",
+      "neural-rendering"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2003.08934"
+      }
+    ]
+  },
+  {
+    "id": "ddpm",
+    "slug": "ddpm",
+    "title": {
+      "zh-CN": "DDPM",
+      "en": "DDPM"
+    },
+    "aliases": [
+      "DDPM",
+      "2006.11239",
+      "去噪扩散概率模型"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2020-06-19",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2006.11239"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2006.11239",
+    "summary": {
+      "zh-CN": "以逐步去噪学习图像生成分布。",
+      "en": "Learn image generation through a sequence of denoising steps."
+    },
+    "significance": {
+      "zh-CN": "以逐步去噪学习图像生成分布。",
+      "en": "Learn image generation through a sequence of denoising steps."
+    },
+    "trackIds": [
+      "deep-learning",
+      "multimodal"
+    ],
+    "familyIds": [
+      "diffusion"
+    ],
+    "tags": [
+      "model",
+      "diffusion",
+      "deep-learning",
+      "multimodal",
+      "generation"
+    ],
+    "difficulty": "foundation",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2006.11239"
+      }
+    ]
+  },
+  {
+    "id": "vit",
+    "slug": "vit",
+    "title": {
+      "zh-CN": "ViT",
+      "en": "ViT"
+    },
+    "aliases": [
+      "ViT",
+      "2010.11929",
+      "视觉变换器",
+      "vision transformer"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2020-10-22",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2010.11929"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2010.11929",
+    "summary": {
+      "zh-CN": "将图像 patch 转为 Transformer 输入序列。",
+      "en": "Represent image patches as a sequence for a Transformer."
+    },
+    "significance": {
+      "zh-CN": "将图像 patch 转为 Transformer 输入序列。",
+      "en": "Represent image patches as a sequence for a Transformer."
+    },
+    "trackIds": [
+      "computer-vision"
+    ],
+    "familyIds": [
+      "transformer"
+    ],
+    "tags": [
+      "model",
+      "transformer",
+      "computer-vision",
+      "classification"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "transformer"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2010.11929"
+      }
+    ]
+  },
+  {
+    "id": "clip",
+    "slug": "clip",
+    "title": {
+      "zh-CN": "CLIP",
+      "en": "CLIP"
+    },
+    "aliases": [
+      "CLIP",
+      "2103.00020"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2021-02-26",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2103.00020"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2103.00020",
+    "summary": {
+      "zh-CN": "用图文对比目标对齐视觉和语言表示。",
+      "en": "Align image and text representations with a contrastive objective."
+    },
+    "significance": {
+      "zh-CN": "用图文对比目标对齐视觉和语言表示。",
+      "en": "Align image and text representations with a contrastive objective."
+    },
+    "trackIds": [
+      "computer-vision",
+      "multimodal"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "computer-vision",
+      "multimodal",
+      "representation-learning",
+      "vision-language-understanding"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2103.00020"
+      }
+    ]
+  },
+  {
+    "id": "ldm",
+    "slug": "ldm",
+    "title": {
+      "zh-CN": "Latent Diffusion",
+      "en": "Latent Diffusion"
+    },
+    "aliases": [
+      "Latent Diffusion",
+      "2112.10752",
+      "潜空间扩散模型"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2021-12-20",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2112.10752"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2112.10752",
+    "summary": {
+      "zh-CN": "在预训练自编码器的潜空间执行扩散，降低计算成本。",
+      "en": "Run diffusion in a pretrained autoencoder's latent space to reduce computation."
+    },
+    "significance": {
+      "zh-CN": "在预训练自编码器的潜空间执行扩散，降低计算成本。",
+      "en": "Run diffusion in a pretrained autoencoder's latent space to reduce computation."
+    },
+    "trackIds": [
+      "multimodal"
+    ],
+    "familyIds": [
+      "diffusion"
+    ],
+    "tags": [
+      "model",
+      "diffusion",
+      "multimodal",
+      "generation"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "ddpm",
+      "vae"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2112.10752"
+      }
+    ]
+  },
+  {
+    "id": "dit",
+    "slug": "dit",
+    "title": {
+      "zh-CN": "DiT",
+      "en": "DiT"
+    },
+    "aliases": [
+      "DiT",
+      "2212.09748",
+      "扩散变换器",
+      "diffusion transformer"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2022-12-19",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2212.09748"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2212.09748",
+    "summary": {
+      "zh-CN": "以处理潜变量 patch 的 Transformer 替换潜空间扩散的 U-Net 主干。",
+      "en": "Replace the U-Net backbone in latent diffusion with a Transformer operating on latent patches."
+    },
+    "significance": {
+      "zh-CN": "以处理潜变量 patch 的 Transformer 替换潜空间扩散的 U-Net 主干。",
+      "en": "Replace the U-Net backbone in latent diffusion with a Transformer operating on latent patches."
+    },
+    "trackIds": [
+      "deep-learning",
+      "computer-vision",
+      "multimodal"
+    ],
+    "familyIds": [
+      "diffusion",
+      "transformer"
+    ],
+    "tags": [
+      "model",
+      "diffusion",
+      "transformer",
+      "deep-learning",
+      "computer-vision",
+      "multimodal",
+      "generation"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "ddpm",
+      "vit",
+      "ldm"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2212.09748"
+      }
+    ]
+  },
+  {
+    "id": "dreamerv3",
+    "slug": "dreamerv3",
+    "title": {
+      "zh-CN": "DreamerV3",
+      "en": "DreamerV3"
+    },
+    "aliases": [
+      "DreamerV3",
+      "2301.04104"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2023-01-10",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2301.04104"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2301.04104",
+    "summary": {
+      "zh-CN": "在多类控制任务中研究通用世界模型智能体。",
+      "en": "Study a general world-model agent across diverse control tasks."
+    },
+    "significance": {
+      "zh-CN": "在多类控制任务中研究通用世界模型智能体。",
+      "en": "Study a general world-model agent across diverse control tasks."
+    },
+    "trackIds": [
+      "world-models"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "world-models",
+      "latent-dynamics"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "dreamerv2"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2301.04104"
+      }
+    ]
+  },
+  {
+    "id": "3dgs",
+    "slug": "3dgs",
+    "title": {
+      "zh-CN": "3D Gaussian Splatting",
+      "en": "3D Gaussian Splatting"
+    },
+    "aliases": [
+      "3D Gaussian Splatting",
+      "2308.04079",
+      "三维高斯泼溅",
+      "高斯溅射"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2023-08-08",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2308.04079"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2308.04079",
+    "summary": {
+      "zh-CN": "用可优化的三维高斯表示实现实时新视角渲染。",
+      "en": "Optimize 3D Gaussian primitives for real-time novel-view rendering."
+    },
+    "significance": {
+      "zh-CN": "用可优化的三维高斯表示实现实时新视角渲染。",
+      "en": "Optimize 3D Gaussian primitives for real-time novel-view rendering."
+    },
+    "trackIds": [
+      "3d-scenes"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "3d-scenes",
+      "neural-rendering"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2308.04079"
+      }
+    ]
+  },
+  {
+    "id": "genie",
+    "slug": "genie",
+    "title": {
+      "zh-CN": "Genie",
+      "en": "Genie"
+    },
+    "aliases": [
+      "Genie",
+      "2402.15391"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2024-02-23",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2402.15391"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2402.15391",
+    "summary": {
+      "zh-CN": "从视频学习可由潜在动作控制的交互环境。",
+      "en": "Learn interactive environments controlled by latent actions from video."
+    },
+    "significance": {
+      "zh-CN": "从视频学习可由潜在动作控制的交互环境。",
+      "en": "Learn interactive environments controlled by latent actions from video."
+    },
+    "trackIds": [
+      "world-models"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "world-models",
+      "interactive-environments"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2402.15391"
+      }
+    ]
+  },
+  {
+    "id": "dropout",
+    "slug": "dropout",
+    "title": {
+      "zh-CN": "Dropout",
+      "en": "Dropout"
+    },
+    "aliases": [
+      "Dropout",
+      "1207.0580",
+      "随机失活"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2012-07-03",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1207.0580"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1207.0580",
+    "summary": {
+      "zh-CN": "训练时随机屏蔽单元，减少特征的共同适应。",
+      "en": "Randomly drop units during training to reduce co-adaptation."
+    },
+    "significance": {
+      "zh-CN": "训练时随机屏蔽单元，减少特征的共同适应。",
+      "en": "Randomly drop units during training to reduce co-adaptation."
+    },
+    "trackIds": [
+      "deep-learning"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "deep-learning"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1207.0580"
+      }
+    ]
+  },
+  {
+    "id": "batchnorm",
+    "slug": "batchnorm",
+    "title": {
+      "zh-CN": "Batch Normalization",
+      "en": "Batch Normalization"
+    },
+    "aliases": [
+      "Batch Normalization",
+      "1502.03167",
+      "批归一化"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2015-02-11",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1502.03167"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1502.03167",
+    "summary": {
+      "zh-CN": "通过小批量统计归一化中间激活。",
+      "en": "Normalize intermediate activations using mini-batch statistics."
+    },
+    "significance": {
+      "zh-CN": "通过小批量统计归一化中间激活。",
+      "en": "Normalize intermediate activations using mini-batch statistics."
+    },
+    "trackIds": [
+      "deep-learning"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "deep-learning"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1502.03167"
+      }
+    ]
+  },
+  {
+    "id": "attention",
+    "slug": "attention",
+    "title": {
+      "zh-CN": "Seq2Seq Attention",
+      "en": "Seq2Seq Attention"
+    },
+    "aliases": [
+      "Seq2Seq Attention",
+      "1409.0473",
+      "注意力"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2014-09-01",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1409.0473"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1409.0473",
+    "summary": {
+      "zh-CN": "让解码器动态关注输入序列的相关位置。",
+      "en": "Let a decoder attend to relevant positions in an input sequence."
+    },
+    "significance": {
+      "zh-CN": "让解码器动态关注输入序列的相关位置。",
+      "en": "Let a decoder attend to relevant positions in an input sequence."
+    },
+    "trackIds": [
+      "deep-learning",
+      "nlp"
+    ],
+    "familyIds": [
+      "transformer"
+    ],
+    "tags": [
+      "method",
+      "transformer",
+      "deep-learning",
+      "nlp"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1409.0473"
+      }
+    ]
+  },
+  {
+    "id": "word2vec",
+    "slug": "word2vec",
+    "title": {
+      "zh-CN": "word2vec",
+      "en": "word2vec"
+    },
+    "aliases": [
+      "word2vec",
+      "1301.3781"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2013-01-16",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1301.3781"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1301.3781",
+    "summary": {
+      "zh-CN": "以高效预测目标学习分布式词表示。",
+      "en": "Learn distributed word representations with efficient prediction objectives."
+    },
+    "significance": {
+      "zh-CN": "以高效预测目标学习分布式词表示。",
+      "en": "Learn distributed word representations with efficient prediction objectives."
+    },
+    "trackIds": [
+      "nlp"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "nlp",
+      "representation-learning"
+    ],
+    "difficulty": "foundation",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1301.3781"
+      }
+    ]
+  },
+  {
+    "id": "seq2seq",
+    "slug": "seq2seq",
+    "title": {
+      "zh-CN": "Seq2Seq",
+      "en": "Seq2Seq"
+    },
+    "aliases": [
+      "Seq2Seq",
+      "1409.3215"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2014-09-10",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1409.3215"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1409.3215",
+    "summary": {
+      "zh-CN": "用编码器和解码器处理变长序列映射。",
+      "en": "Map variable-length sequences with an encoder and decoder."
+    },
+    "significance": {
+      "zh-CN": "用编码器和解码器处理变长序列映射。",
+      "en": "Map variable-length sequences with an encoder and decoder."
+    },
+    "trackIds": [
+      "nlp"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "nlp"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1409.3215"
+      }
+    ]
+  },
+  {
+    "id": "t5",
+    "slug": "t5",
+    "title": {
+      "zh-CN": "T5",
+      "en": "T5"
+    },
+    "aliases": [
+      "T5",
+      "1910.10683"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2019-10-23",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1910.10683"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1910.10683",
+    "summary": {
+      "zh-CN": "用统一文本到文本接口比较迁移学习方法。",
+      "en": "Study transfer learning through a unified text-to-text interface."
+    },
+    "significance": {
+      "zh-CN": "用统一文本到文本接口比较迁移学习方法。",
+      "en": "Study transfer learning through a unified text-to-text interface."
+    },
+    "trackIds": [
+      "nlp"
+    ],
+    "familyIds": [
+      "transformer"
+    ],
+    "tags": [
+      "model",
+      "transformer",
+      "nlp"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1910.10683"
+      }
+    ]
+  },
+  {
+    "id": "gpt3",
+    "slug": "gpt3",
+    "title": {
+      "zh-CN": "GPT-3",
+      "en": "GPT-3"
+    },
+    "aliases": [
+      "GPT-3",
+      "2005.14165"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2020-05-28",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2005.14165"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2005.14165",
+    "summary": {
+      "zh-CN": "研究大规模自回归语言模型的上下文学习。",
+      "en": "Study in-context learning in a large autoregressive language model."
+    },
+    "significance": {
+      "zh-CN": "研究大规模自回归语言模型的上下文学习。",
+      "en": "Study in-context learning in a large autoregressive language model."
+    },
+    "trackIds": [
+      "nlp"
+    ],
+    "familyIds": [
+      "transformer"
+    ],
+    "tags": [
+      "model",
+      "transformer",
+      "nlp"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2005.14165"
+      }
+    ]
+  },
+  {
+    "id": "lora",
+    "slug": "lora",
+    "title": {
+      "zh-CN": "LoRA",
+      "en": "LoRA"
+    },
+    "aliases": [
+      "LoRA",
+      "2106.09685",
+      "低秩适配"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2021-06-17",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2106.09685"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2106.09685",
+    "summary": {
+      "zh-CN": "以低秩更新减少适配时的可训练参数。",
+      "en": "Reduce trainable adaptation parameters with low-rank updates."
+    },
+    "significance": {
+      "zh-CN": "以低秩更新减少适配时的可训练参数。",
+      "en": "Reduce trainable adaptation parameters with low-rank updates."
+    },
+    "trackIds": [
+      "nlp"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "nlp"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2106.09685"
+      }
+    ]
+  },
+  {
+    "id": "instructgpt",
+    "slug": "instructgpt",
+    "title": {
+      "zh-CN": "InstructGPT",
+      "en": "InstructGPT"
+    },
+    "aliases": [
+      "InstructGPT",
+      "2203.02155"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2022-03-04",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2203.02155"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2203.02155",
+    "summary": {
+      "zh-CN": "通过示范与人类偏好反馈调整语言模型行为。",
+      "en": "Align language-model behavior using demonstrations and human preferences."
+    },
+    "significance": {
+      "zh-CN": "通过示范与人类偏好反馈调整语言模型行为。",
+      "en": "Align language-model behavior using demonstrations and human preferences."
+    },
+    "trackIds": [
+      "nlp"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "nlp"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2203.02155"
+      }
+    ]
+  },
+  {
+    "id": "dpo",
+    "slug": "dpo",
+    "title": {
+      "zh-CN": "DPO",
+      "en": "DPO"
+    },
+    "aliases": [
+      "DPO",
+      "2305.18290",
+      "直接偏好优化"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2023-05-29",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2305.18290"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2305.18290",
+    "summary": {
+      "zh-CN": "将偏好优化转为直接的分类式训练目标。",
+      "en": "Express preference optimization as a direct classification-style objective."
+    },
+    "significance": {
+      "zh-CN": "将偏好优化转为直接的分类式训练目标。",
+      "en": "Express preference optimization as a direct classification-style objective."
+    },
+    "trackIds": [
+      "nlp"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "nlp"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2305.18290"
+      }
+    ]
+  },
+  {
+    "id": "rag",
+    "slug": "rag",
+    "title": {
+      "zh-CN": "RAG",
+      "en": "RAG"
+    },
+    "aliases": [
+      "RAG",
+      "2005.11401",
+      "检索增强生成"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2020-05-22",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2005.11401"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2005.11401",
+    "summary": {
+      "zh-CN": "将检索到的资料与生成模型结合。",
+      "en": "Combine retrieved evidence with a generative model."
+    },
+    "significance": {
+      "zh-CN": "将检索到的资料与生成模型结合。",
+      "en": "Combine retrieved evidence with a generative model."
+    },
+    "trackIds": [
+      "nlp"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "nlp"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2005.11401"
+      }
+    ]
+  },
+  {
+    "id": "vgg",
+    "slug": "vgg",
+    "title": {
+      "zh-CN": "VGG",
+      "en": "VGG"
+    },
+    "aliases": [
+      "VGG",
+      "1409.1556"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2014-09-04",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1409.1556"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1409.1556",
+    "summary": {
+      "zh-CN": "研究小卷积核与网络深度对视觉识别的影响。",
+      "en": "Study small convolution kernels and depth for visual recognition."
+    },
+    "significance": {
+      "zh-CN": "研究小卷积核与网络深度对视觉识别的影响。",
+      "en": "Study small convolution kernels and depth for visual recognition."
+    },
+    "trackIds": [
+      "computer-vision"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "computer-vision",
+      "classification"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1409.1556"
+      }
+    ]
+  },
+  {
+    "id": "faster-rcnn",
+    "slug": "faster-rcnn",
+    "title": {
+      "zh-CN": "Faster R-CNN",
+      "en": "Faster R-CNN"
+    },
+    "aliases": [
+      "Faster R-CNN",
+      "1506.01497"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2015-06-04",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1506.01497"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1506.01497",
+    "summary": {
+      "zh-CN": "通过区域建议网络共享检测特征。",
+      "en": "Share detection features through a region proposal network."
+    },
+    "significance": {
+      "zh-CN": "通过区域建议网络共享检测特征。",
+      "en": "Share detection features through a region proposal network."
+    },
+    "trackIds": [
+      "computer-vision"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "computer-vision",
+      "detection"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1506.01497"
+      }
+    ]
+  },
+  {
+    "id": "unet",
+    "slug": "unet",
+    "title": {
+      "zh-CN": "U-Net",
+      "en": "U-Net"
+    },
+    "aliases": [
+      "U-Net",
+      "1505.04597",
+      "图像分割"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2015-05-18",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1505.04597"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1505.04597",
+    "summary": {
+      "zh-CN": "通过跳跃连接融合编码器与解码器的分割特征。",
+      "en": "Combine encoder and decoder features with skip connections for segmentation."
+    },
+    "significance": {
+      "zh-CN": "通过跳跃连接融合编码器与解码器的分割特征。",
+      "en": "Combine encoder and decoder features with skip connections for segmentation."
+    },
+    "trackIds": [
+      "computer-vision"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "computer-vision",
+      "segmentation"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1505.04597"
+      }
+    ]
+  },
+  {
+    "id": "detr",
+    "slug": "detr",
+    "title": {
+      "zh-CN": "DETR",
+      "en": "DETR"
+    },
+    "aliases": [
+      "DETR",
+      "2005.12872"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2020-05-26",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2005.12872"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2005.12872",
+    "summary": {
+      "zh-CN": "将目标检测表述为集合预测。",
+      "en": "Formulate object detection as set prediction."
+    },
+    "significance": {
+      "zh-CN": "将目标检测表述为集合预测。",
+      "en": "Formulate object detection as set prediction."
+    },
+    "trackIds": [
+      "computer-vision"
+    ],
+    "familyIds": [
+      "transformer"
+    ],
+    "tags": [
+      "model",
+      "transformer",
+      "computer-vision",
+      "detection"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2005.12872"
+      }
+    ]
+  },
+  {
+    "id": "swin",
+    "slug": "swin",
+    "title": {
+      "zh-CN": "Swin Transformer",
+      "en": "Swin Transformer"
+    },
+    "aliases": [
+      "Swin Transformer",
+      "2103.14030"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2021-03-25",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2103.14030"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2103.14030",
+    "summary": {
+      "zh-CN": "用移位窗口和层次结构处理视觉特征。",
+      "en": "Build hierarchical visual features using shifted windows."
+    },
+    "significance": {
+      "zh-CN": "用移位窗口和层次结构处理视觉特征。",
+      "en": "Build hierarchical visual features using shifted windows."
+    },
+    "trackIds": [
+      "computer-vision"
+    ],
+    "familyIds": [
+      "transformer"
+    ],
+    "tags": [
+      "model",
+      "transformer",
+      "computer-vision",
+      "classification"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "vit"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2103.14030"
+      }
+    ]
+  },
+  {
+    "id": "mae",
+    "slug": "mae",
+    "title": {
+      "zh-CN": "MAE",
+      "en": "MAE"
+    },
+    "aliases": [
+      "MAE",
+      "2111.06377"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2021-11-11",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2111.06377"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2111.06377",
+    "summary": {
+      "zh-CN": "通过重建被遮蔽的图像 patch 学习视觉表示。",
+      "en": "Learn visual representations by reconstructing masked image patches."
+    },
+    "significance": {
+      "zh-CN": "通过重建被遮蔽的图像 patch 学习视觉表示。",
+      "en": "Learn visual representations by reconstructing masked image patches."
+    },
+    "trackIds": [
+      "computer-vision"
+    ],
+    "familyIds": [
+      "transformer"
+    ],
+    "tags": [
+      "method",
+      "transformer",
+      "computer-vision",
+      "representation-learning"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2111.06377"
+      }
+    ]
+  },
+  {
+    "id": "sam",
+    "slug": "sam",
+    "title": {
+      "zh-CN": "SAM",
+      "en": "SAM"
+    },
+    "aliases": [
+      "SAM",
+      "2304.02643"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2023-04-05",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2304.02643"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2304.02643",
+    "summary": {
+      "zh-CN": "研究可提示的通用图像分割接口。",
+      "en": "Study a promptable interface for general image segmentation."
+    },
+    "significance": {
+      "zh-CN": "研究可提示的通用图像分割接口。",
+      "en": "Study a promptable interface for general image segmentation."
+    },
+    "trackIds": [
+      "computer-vision"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "computer-vision",
+      "segmentation"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2304.02643"
+      }
+    ]
+  },
+  {
+    "id": "simclr",
+    "slug": "simclr",
+    "title": {
+      "zh-CN": "SimCLR",
+      "en": "SimCLR"
+    },
+    "aliases": [
+      "SimCLR",
+      "2002.05709"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2020-02-13",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2002.05709"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2002.05709",
+    "summary": {
+      "zh-CN": "用数据增强与对比损失学习无标签视觉表示。",
+      "en": "Learn visual representations through augmentation and contrastive learning."
+    },
+    "significance": {
+      "zh-CN": "用数据增强与对比损失学习无标签视觉表示。",
+      "en": "Learn visual representations through augmentation and contrastive learning."
+    },
+    "trackIds": [
+      "deep-learning",
+      "computer-vision"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "deep-learning",
+      "computer-vision",
+      "representation-learning"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2002.05709"
+      }
+    ]
+  },
+  {
+    "id": "scaling",
+    "slug": "scaling",
+    "title": {
+      "zh-CN": "语言模型扩展规律 / Scaling Laws",
+      "en": "Scaling Laws"
+    },
+    "aliases": [
+      "语言模型扩展规律 / Scaling Laws",
+      "2001.08361"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2020-01-23",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2001.08361"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2001.08361",
+    "summary": {
+      "zh-CN": "定量研究模型规模、数据量与计算预算的关系。",
+      "en": "Study relationships among model size, data, and compute."
+    },
+    "significance": {
+      "zh-CN": "定量研究模型规模、数据量与计算预算的关系。",
+      "en": "Study relationships among model size, data, and compute."
+    },
+    "trackIds": [
+      "deep-learning",
+      "nlp"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "deep-learning",
+      "nlp"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2001.08361"
+      }
+    ]
+  },
+  {
+    "id": "visualbert",
+    "slug": "visualbert",
+    "title": {
+      "zh-CN": "VisualBERT",
+      "en": "VisualBERT"
+    },
+    "aliases": [
+      "VisualBERT",
+      "1908.03557"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2019-08-09",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1908.03557"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1908.03557",
+    "summary": {
+      "zh-CN": "在同一 Transformer 中建模视觉与语言输入。",
+      "en": "Model vision and language inputs in a shared Transformer."
+    },
+    "significance": {
+      "zh-CN": "在同一 Transformer 中建模视觉与语言输入。",
+      "en": "Model vision and language inputs in a shared Transformer."
+    },
+    "trackIds": [
+      "multimodal"
+    ],
+    "familyIds": [
+      "transformer"
+    ],
+    "tags": [
+      "model",
+      "transformer",
+      "multimodal",
+      "vision-language-understanding"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1908.03557"
+      }
+    ]
+  },
+  {
+    "id": "vilbert",
+    "slug": "vilbert",
+    "title": {
+      "zh-CN": "ViLBERT",
+      "en": "ViLBERT"
+    },
+    "aliases": [
+      "ViLBERT",
+      "1908.02265"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2019-08-06",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1908.02265"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1908.02265",
+    "summary": {
+      "zh-CN": "用双流结构学习视觉语言表示。",
+      "en": "Learn vision-language representations with a two-stream architecture."
+    },
+    "significance": {
+      "zh-CN": "用双流结构学习视觉语言表示。",
+      "en": "Learn vision-language representations with a two-stream architecture."
+    },
+    "trackIds": [
+      "multimodal"
+    ],
+    "familyIds": [
+      "transformer"
+    ],
+    "tags": [
+      "model",
+      "transformer",
+      "multimodal",
+      "vision-language-understanding"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1908.02265"
+      }
+    ]
+  },
+  {
+    "id": "align",
+    "slug": "align",
+    "title": {
+      "zh-CN": "ALIGN",
+      "en": "ALIGN"
+    },
+    "aliases": [
+      "ALIGN",
+      "2102.05918"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2021-02-11",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2102.05918"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2102.05918",
+    "summary": {
+      "zh-CN": "利用大规模噪声图文数据学习跨模态对齐。",
+      "en": "Learn cross-modal alignment from large-scale noisy image-text data."
+    },
+    "significance": {
+      "zh-CN": "利用大规模噪声图文数据学习跨模态对齐。",
+      "en": "Learn cross-modal alignment from large-scale noisy image-text data."
+    },
+    "trackIds": [
+      "multimodal"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "multimodal",
+      "vision-language-understanding"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2102.05918"
+      }
+    ]
+  },
+  {
+    "id": "blip",
+    "slug": "blip",
+    "title": {
+      "zh-CN": "BLIP",
+      "en": "BLIP"
+    },
+    "aliases": [
+      "BLIP",
+      "2201.12086"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2022-01-28",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2201.12086"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2201.12086",
+    "summary": {
+      "zh-CN": "结合理解与生成目标构建视觉语言预训练。",
+      "en": "Combine understanding and generation in vision-language pretraining."
+    },
+    "significance": {
+      "zh-CN": "结合理解与生成目标构建视觉语言预训练。",
+      "en": "Combine understanding and generation in vision-language pretraining."
+    },
+    "trackIds": [
+      "multimodal"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "multimodal",
+      "vision-language-understanding"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2201.12086"
+      }
+    ]
+  },
+  {
+    "id": "flamingo",
+    "slug": "flamingo",
+    "title": {
+      "zh-CN": "Flamingo",
+      "en": "Flamingo"
+    },
+    "aliases": [
+      "Flamingo",
+      "2204.14198"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2022-04-29",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2204.14198"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2204.14198",
+    "summary": {
+      "zh-CN": "将视觉输入接入语言模型以支持少样本任务。",
+      "en": "Connect visual inputs to a language model for few-shot tasks."
+    },
+    "significance": {
+      "zh-CN": "将视觉输入接入语言模型以支持少样本任务。",
+      "en": "Connect visual inputs to a language model for few-shot tasks."
+    },
+    "trackIds": [
+      "multimodal"
+    ],
+    "familyIds": [
+      "transformer"
+    ],
+    "tags": [
+      "model",
+      "transformer",
+      "multimodal",
+      "vision-language-understanding"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2204.14198"
+      }
+    ]
+  },
+  {
+    "id": "blip2",
+    "slug": "blip2",
+    "title": {
+      "zh-CN": "BLIP-2",
+      "en": "BLIP-2"
+    },
+    "aliases": [
+      "BLIP-2",
+      "2301.12597"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2023-01-30",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2301.12597"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2301.12597",
+    "summary": {
+      "zh-CN": "用查询变换器连接冻结的视觉编码器和语言模型。",
+      "en": "Bridge frozen vision encoders and language models with a query transformer."
+    },
+    "significance": {
+      "zh-CN": "用查询变换器连接冻结的视觉编码器和语言模型。",
+      "en": "Bridge frozen vision encoders and language models with a query transformer."
+    },
+    "trackIds": [
+      "multimodal"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "multimodal",
+      "vision-language-understanding"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "clip"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2301.12597"
+      }
+    ]
+  },
+  {
+    "id": "llava",
+    "slug": "llava",
+    "title": {
+      "zh-CN": "LLaVA",
+      "en": "LLaVA"
+    },
+    "aliases": [
+      "LLaVA",
+      "2304.08485"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2023-04-17",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2304.08485"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2304.08485",
+    "summary": {
+      "zh-CN": "用视觉指令微调构建多模态助手。",
+      "en": "Build a multimodal assistant with visual instruction tuning."
+    },
+    "significance": {
+      "zh-CN": "用视觉指令微调构建多模态助手。",
+      "en": "Build a multimodal assistant with visual instruction tuning."
+    },
+    "trackIds": [
+      "multimodal"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "multimodal",
+      "vision-language-understanding"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2304.08485"
+      }
+    ]
+  },
+  {
+    "id": "pointnet",
+    "slug": "pointnet",
+    "title": {
+      "zh-CN": "PointNet",
+      "en": "PointNet"
+    },
+    "aliases": [
+      "PointNet",
+      "1612.00593",
+      "点云"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2016-12-02",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1612.00593"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1612.00593",
+    "summary": {
+      "zh-CN": "直接处理无序点集，学习三维识别表示。",
+      "en": "Learn 3D recognition representations directly from unordered point sets."
+    },
+    "significance": {
+      "zh-CN": "直接处理无序点集，学习三维识别表示。",
+      "en": "Learn 3D recognition representations directly from unordered point sets."
+    },
+    "trackIds": [
+      "3d-scenes"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "3d-scenes",
+      "geometry"
+    ],
+    "difficulty": "foundation",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1612.00593"
+      }
+    ]
+  },
+  {
+    "id": "deepsdf",
+    "slug": "deepsdf",
+    "title": {
+      "zh-CN": "DeepSDF",
+      "en": "DeepSDF"
+    },
+    "aliases": [
+      "DeepSDF",
+      "1901.05103"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2019-01-16",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1901.05103"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1901.05103",
+    "summary": {
+      "zh-CN": "用连续符号距离函数表达三维形状。",
+      "en": "Represent 3D shapes with continuous signed distance functions."
+    },
+    "significance": {
+      "zh-CN": "用连续符号距离函数表达三维形状。",
+      "en": "Represent 3D shapes with continuous signed distance functions."
+    },
+    "trackIds": [
+      "3d-scenes"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "3d-scenes",
+      "geometry"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1901.05103"
+      }
+    ]
+  },
+  {
+    "id": "occupancy",
+    "slug": "occupancy",
+    "title": {
+      "zh-CN": "Occupancy Networks",
+      "en": "Occupancy Networks"
+    },
+    "aliases": [
+      "Occupancy Networks",
+      "1812.03828"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2018-12-10",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1812.03828"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1812.03828",
+    "summary": {
+      "zh-CN": "通过连续占据函数表达三维表面。",
+      "en": "Represent 3D surfaces through continuous occupancy functions."
+    },
+    "significance": {
+      "zh-CN": "通过连续占据函数表达三维表面。",
+      "en": "Represent 3D surfaces through continuous occupancy functions."
+    },
+    "trackIds": [
+      "3d-scenes"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "3d-scenes",
+      "geometry"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1812.03828"
+      }
+    ]
+  },
+  {
+    "id": "mipnerf",
+    "slug": "mipnerf",
+    "title": {
+      "zh-CN": "Mip-NeRF",
+      "en": "Mip-NeRF"
+    },
+    "aliases": [
+      "Mip-NeRF",
+      "2103.13415"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2021-03-24",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2103.13415"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2103.13415",
+    "summary": {
+      "zh-CN": "用集成位置编码处理辐射场采样尺度。",
+      "en": "Address sampling scale in radiance fields with integrated positional encoding."
+    },
+    "significance": {
+      "zh-CN": "用集成位置编码处理辐射场采样尺度。",
+      "en": "Address sampling scale in radiance fields with integrated positional encoding."
+    },
+    "trackIds": [
+      "3d-scenes"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "3d-scenes",
+      "neural-rendering"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "nerf"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2103.13415"
+      }
+    ]
+  },
+  {
+    "id": "instant-ngp",
+    "slug": "instant-ngp",
+    "title": {
+      "zh-CN": "Instant-NGP",
+      "en": "Instant-NGP"
+    },
+    "aliases": [
+      "Instant-NGP",
+      "2201.05989"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2022-01-16",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2201.05989"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2201.05989",
+    "summary": {
+      "zh-CN": "用多分辨率哈希编码加速神经图形表示。",
+      "en": "Accelerate neural graphics representations with multiresolution hash encoding."
+    },
+    "significance": {
+      "zh-CN": "用多分辨率哈希编码加速神经图形表示。",
+      "en": "Accelerate neural graphics representations with multiresolution hash encoding."
+    },
+    "trackIds": [
+      "3d-scenes"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "3d-scenes",
+      "neural-rendering"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2201.05989"
+      }
+    ]
+  },
+  {
+    "id": "mipnerf360",
+    "slug": "mipnerf360",
+    "title": {
+      "zh-CN": "Mip-NeRF 360",
+      "en": "Mip-NeRF 360"
+    },
+    "aliases": [
+      "Mip-NeRF 360",
+      "2111.12077"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2021-11-23",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2111.12077"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2111.12077",
+    "summary": {
+      "zh-CN": "改进无界场景的新视角合成。",
+      "en": "Improve novel-view synthesis in unbounded scenes."
+    },
+    "significance": {
+      "zh-CN": "改进无界场景的新视角合成。",
+      "en": "Improve novel-view synthesis in unbounded scenes."
+    },
+    "trackIds": [
+      "3d-scenes"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "3d-scenes",
+      "neural-rendering"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2111.12077"
+      }
+    ]
+  },
+  {
+    "id": "dreamfusion",
+    "slug": "dreamfusion",
+    "title": {
+      "zh-CN": "DreamFusion",
+      "en": "DreamFusion"
+    },
+    "aliases": [
+      "DreamFusion",
+      "2209.14988"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2022-09-29",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2209.14988"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2209.14988",
+    "summary": {
+      "zh-CN": "用二维扩散模型的分数蒸馏监督优化三维表示。",
+      "en": "Optimize 3D representations using score distillation from a 2D diffusion model."
+    },
+    "significance": {
+      "zh-CN": "用二维扩散模型的分数蒸馏监督优化三维表示。",
+      "en": "Optimize 3D representations using score distillation from a 2D diffusion model."
+    },
+    "trackIds": [
+      "3d-scenes"
+    ],
+    "familyIds": [
+      "diffusion"
+    ],
+    "tags": [
+      "method",
+      "diffusion",
+      "3d-scenes"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2209.14988"
+      }
+    ]
+  },
+  {
+    "id": "4dgs",
+    "slug": "4dgs",
+    "title": {
+      "zh-CN": "4D Gaussian Splatting",
+      "en": "4D Gaussian Splatting"
+    },
+    "aliases": [
+      "4D Gaussian Splatting",
+      "2310.08528"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2023-10-12",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2310.08528"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2310.08528",
+    "summary": {
+      "zh-CN": "用动态高斯表示实现动态场景渲染。",
+      "en": "Render dynamic scenes using deformable Gaussian representations."
+    },
+    "significance": {
+      "zh-CN": "用动态高斯表示实现动态场景渲染。",
+      "en": "Render dynamic scenes using deformable Gaussian representations."
+    },
+    "trackIds": [
+      "3d-scenes"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "3d-scenes",
+      "neural-rendering"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2310.08528"
+      }
+    ]
+  },
+  {
+    "id": "planet",
+    "slug": "planet",
+    "title": {
+      "zh-CN": "PlaNet",
+      "en": "PlaNet"
+    },
+    "aliases": [
+      "PlaNet",
+      "1811.04551"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2018-11-12",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1811.04551"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1811.04551",
+    "summary": {
+      "zh-CN": "学习潜空间动力学以进行图像输入的规划。",
+      "en": "Learn latent dynamics for planning from image observations."
+    },
+    "significance": {
+      "zh-CN": "学习潜空间动力学以进行图像输入的规划。",
+      "en": "Learn latent dynamics for planning from image observations."
+    },
+    "trackIds": [
+      "world-models"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "world-models",
+      "latent-dynamics"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1811.04551"
+      }
+    ]
+  },
+  {
+    "id": "dreamerv2",
+    "slug": "dreamerv2",
+    "title": {
+      "zh-CN": "DreamerV2",
+      "en": "DreamerV2"
+    },
+    "aliases": [
+      "DreamerV2",
+      "2010.02193"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2020-10-05",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2010.02193"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2010.02193",
+    "summary": {
+      "zh-CN": "用离散潜变量世界模型在想象中学习 Atari 行为。",
+      "en": "Learn Atari behavior in imagination with discrete latent world models."
+    },
+    "significance": {
+      "zh-CN": "用离散潜变量世界模型在想象中学习 Atari 行为。",
+      "en": "Learn Atari behavior in imagination with discrete latent world models."
+    },
+    "trackIds": [
+      "world-models"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "world-models",
+      "latent-dynamics"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "dreamer"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2010.02193"
+      }
+    ]
+  },
+  {
+    "id": "muzero",
+    "slug": "muzero",
+    "title": {
+      "zh-CN": "MuZero",
+      "en": "MuZero"
+    },
+    "aliases": [
+      "MuZero",
+      "1911.08265"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2019-11-19",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1911.08265"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1911.08265",
+    "summary": {
+      "zh-CN": "学习服务于规划的表示、动力学与预测。",
+      "en": "Learn representations, dynamics, and predictions for planning."
+    },
+    "significance": {
+      "zh-CN": "学习服务于规划的表示、动力学与预测。",
+      "en": "Learn representations, dynamics, and predictions for planning."
+    },
+    "trackIds": [
+      "world-models"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "world-models",
+      "planning"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1911.08265"
+      }
+    ]
+  },
+  {
+    "id": "mbpo",
+    "slug": "mbpo",
+    "title": {
+      "zh-CN": "MBPO",
+      "en": "MBPO"
+    },
+    "aliases": [
+      "MBPO",
+      "1906.08253"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2019-06-19",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1906.08253"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1906.08253",
+    "summary": {
+      "zh-CN": "用短模型展开缓解基于模型强化学习的偏差。",
+      "en": "Use short model rollouts to manage model bias in reinforcement learning."
+    },
+    "significance": {
+      "zh-CN": "用短模型展开缓解基于模型强化学习的偏差。",
+      "en": "Use short model rollouts to manage model bias in reinforcement learning."
+    },
+    "trackIds": [
+      "world-models"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "world-models",
+      "planning"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1906.08253"
+      }
+    ]
+  },
+  {
+    "id": "tdmpc",
+    "slug": "tdmpc",
+    "title": {
+      "zh-CN": "TD-MPC",
+      "en": "TD-MPC"
+    },
+    "aliases": [
+      "TD-MPC",
+      "2203.04955"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2022-03-09",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2203.04955"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2203.04955",
+    "summary": {
+      "zh-CN": "联合学习潜空间动力学与价值估计以做局部规划。",
+      "en": "Jointly learn latent dynamics and value estimates for local planning."
+    },
+    "significance": {
+      "zh-CN": "联合学习潜空间动力学与价值估计以做局部规划。",
+      "en": "Jointly learn latent dynamics and value estimates for local planning."
+    },
+    "trackIds": [
+      "world-models"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "world-models",
+      "planning"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2203.04955"
+      }
+    ]
+  },
+  {
+    "id": "tdmpc2",
+    "slug": "tdmpc2",
+    "title": {
+      "zh-CN": "TD-MPC2",
+      "en": "TD-MPC2"
+    },
+    "aliases": [
+      "TD-MPC2",
+      "2310.16828"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2023-10-25",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2310.16828"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2310.16828",
+    "summary": {
+      "zh-CN": "研究可扩展的多任务潜空间模型预测控制。",
+      "en": "Study scalable multitask model-predictive control in latent space."
+    },
+    "significance": {
+      "zh-CN": "研究可扩展的多任务潜空间模型预测控制。",
+      "en": "Study scalable multitask model-predictive control in latent space."
+    },
+    "trackIds": [
+      "world-models"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "world-models",
+      "planning"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2310.16828"
+      }
+    ]
+  },
+  {
+    "id": "dreamerpro",
+    "slug": "dreamerpro",
+    "title": {
+      "zh-CN": "DreamerPro",
+      "en": "DreamerPro"
+    },
+    "aliases": [
+      "DreamerPro",
+      "2110.14565"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2021-10-27",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2110.14565"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2110.14565",
+    "summary": {
+      "zh-CN": "以原型表示探索无需重建的视觉控制。",
+      "en": "Explore reconstruction-free visual control with prototypical representations."
+    },
+    "significance": {
+      "zh-CN": "以原型表示探索无需重建的视觉控制。",
+      "en": "Explore reconstruction-free visual control with prototypical representations."
+    },
+    "trackIds": [
+      "world-models"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "world-models",
+      "latent-dynamics"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2110.14565"
+      }
+    ]
+  },
+  {
+    "id": "cgan",
+    "slug": "cgan",
+    "title": {
+      "zh-CN": "Conditional GAN",
+      "en": "Conditional GAN"
+    },
+    "aliases": [
+      "Conditional GAN",
+      "1411.1784"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2014-11-06",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1411.1784"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1411.1784",
+    "summary": {
+      "zh-CN": "将条件信息输入生成器与判别器，实现条件控制。",
+      "en": "Condition both generator and discriminator for controlled generation."
+    },
+    "significance": {
+      "zh-CN": "将条件信息输入生成器与判别器，实现条件控制。",
+      "en": "Condition both generator and discriminator for controlled generation."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "gan"
+    ],
+    "tags": [
+      "model",
+      "gan",
+      "generation"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1411.1784"
+      }
+    ]
+  },
+  {
+    "id": "dcgan",
+    "slug": "dcgan",
+    "title": {
+      "zh-CN": "DCGAN",
+      "en": "DCGAN"
+    },
+    "aliases": [
+      "DCGAN",
+      "1511.06434"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2015-11-19",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1511.06434"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1511.06434",
+    "summary": {
+      "zh-CN": "研究卷积架构在对抗生成与表示学习中的作用。",
+      "en": "Study convolutional architectures for adversarial generation and representation learning."
+    },
+    "significance": {
+      "zh-CN": "研究卷积架构在对抗生成与表示学习中的作用。",
+      "en": "Study convolutional architectures for adversarial generation and representation learning."
+    },
+    "trackIds": [
+      "deep-learning"
+    ],
+    "familyIds": [
+      "gan"
+    ],
+    "tags": [
+      "model",
+      "gan",
+      "deep-learning",
+      "generation"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1511.06434"
+      }
+    ]
+  },
+  {
+    "id": "wgan",
+    "slug": "wgan",
+    "title": {
+      "zh-CN": "WGAN",
+      "en": "WGAN"
+    },
+    "aliases": [
+      "WGAN",
+      "1701.07875"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2017-01-26",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1701.07875"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1701.07875",
+    "summary": {
+      "zh-CN": "用 Wasserstein 距离目标改善训练行为。",
+      "en": "Use a Wasserstein objective to improve training behavior."
+    },
+    "significance": {
+      "zh-CN": "用 Wasserstein 距离目标改善训练行为。",
+      "en": "Use a Wasserstein objective to improve training behavior."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "gan"
+    ],
+    "tags": [
+      "method",
+      "gan"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "gan"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1701.07875"
+      }
+    ]
+  },
+  {
+    "id": "wgan-gp",
+    "slug": "wgan-gp",
+    "title": {
+      "zh-CN": "WGAN-GP",
+      "en": "WGAN-GP"
+    },
+    "aliases": [
+      "WGAN-GP",
+      "1704.00028"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2017-03-31",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1704.00028"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1704.00028",
+    "summary": {
+      "zh-CN": "以梯度惩罚替代权重裁剪来约束 critic。",
+      "en": "Constrain the critic with a gradient penalty instead of weight clipping."
+    },
+    "significance": {
+      "zh-CN": "以梯度惩罚替代权重裁剪来约束 critic。",
+      "en": "Constrain the critic with a gradient penalty instead of weight clipping."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "gan"
+    ],
+    "tags": [
+      "method",
+      "gan"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "wgan"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1704.00028"
+      }
+    ]
+  },
+  {
+    "id": "pix2pix",
+    "slug": "pix2pix",
+    "title": {
+      "zh-CN": "pix2pix",
+      "en": "pix2pix"
+    },
+    "aliases": [
+      "pix2pix",
+      "1611.07004"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2016-11-21",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1611.07004"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1611.07004",
+    "summary": {
+      "zh-CN": "通过条件对抗目标学习配对图像转换。",
+      "en": "Learn paired image translation with a conditional adversarial objective."
+    },
+    "significance": {
+      "zh-CN": "通过条件对抗目标学习配对图像转换。",
+      "en": "Learn paired image translation with a conditional adversarial objective."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "gan"
+    ],
+    "tags": [
+      "model",
+      "gan"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1611.07004"
+      }
+    ]
+  },
+  {
+    "id": "cyclegan",
+    "slug": "cyclegan",
+    "title": {
+      "zh-CN": "CycleGAN",
+      "en": "CycleGAN"
+    },
+    "aliases": [
+      "CycleGAN",
+      "1703.10593"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2017-03-30",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1703.10593"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1703.10593",
+    "summary": {
+      "zh-CN": "用循环一致性约束学习非配对图像转换。",
+      "en": "Learn unpaired image translation with cycle consistency."
+    },
+    "significance": {
+      "zh-CN": "用循环一致性约束学习非配对图像转换。",
+      "en": "Learn unpaired image translation with cycle consistency."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "gan"
+    ],
+    "tags": [
+      "model",
+      "gan"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1703.10593"
+      }
+    ]
+  },
+  {
+    "id": "stylegan",
+    "slug": "stylegan",
+    "title": {
+      "zh-CN": "StyleGAN",
+      "en": "StyleGAN"
+    },
+    "aliases": [
+      "StyleGAN",
+      "1812.04948"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2018-12-12",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1812.04948"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1812.04948",
+    "summary": {
+      "zh-CN": "通过风格控制生成器的不同尺度特征。",
+      "en": "Control generator features at different scales using styles."
+    },
+    "significance": {
+      "zh-CN": "通过风格控制生成器的不同尺度特征。",
+      "en": "Control generator features at different scales using styles."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "gan"
+    ],
+    "tags": [
+      "model",
+      "gan",
+      "generation"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1812.04948"
+      }
+    ]
+  },
+  {
+    "id": "stylegan2",
+    "slug": "stylegan2",
+    "title": {
+      "zh-CN": "StyleGAN2",
+      "en": "StyleGAN2"
+    },
+    "aliases": [
+      "StyleGAN2",
+      "1912.04958"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2019-12-03",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1912.04958"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1912.04958",
+    "summary": {
+      "zh-CN": "分析并改善 StyleGAN 图像中的伪影与质量。",
+      "en": "Analyze and improve artifacts and quality in StyleGAN images."
+    },
+    "significance": {
+      "zh-CN": "分析并改善 StyleGAN 图像中的伪影与质量。",
+      "en": "Analyze and improve artifacts and quality in StyleGAN images."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "gan"
+    ],
+    "tags": [
+      "model",
+      "gan",
+      "generation"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "stylegan"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1912.04958"
+      }
+    ]
+  },
+  {
+    "id": "stylegan3",
+    "slug": "stylegan3",
+    "title": {
+      "zh-CN": "StyleGAN3",
+      "en": "StyleGAN3"
+    },
+    "aliases": [
+      "StyleGAN3",
+      "2106.12423"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2021-06-23",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2106.12423"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2106.12423",
+    "summary": {
+      "zh-CN": "通过无混叠设计改善生成器的等变性。",
+      "en": "Improve generator equivariance with an alias-free design."
+    },
+    "significance": {
+      "zh-CN": "通过无混叠设计改善生成器的等变性。",
+      "en": "Improve generator equivariance with an alias-free design."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "gan"
+    ],
+    "tags": [
+      "model",
+      "gan",
+      "generation"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "stylegan2"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2106.12423"
+      }
+    ]
+  },
+  {
+    "id": "iwae",
+    "slug": "iwae",
+    "title": {
+      "zh-CN": "IWAE",
+      "en": "IWAE"
+    },
+    "aliases": [
+      "IWAE",
+      "1509.00519"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2015-09-01",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1509.00519"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1509.00519",
+    "summary": {
+      "zh-CN": "用重要性加权目标收紧变分下界。",
+      "en": "Tighten the variational bound with importance weighting."
+    },
+    "significance": {
+      "zh-CN": "用重要性加权目标收紧变分下界。",
+      "en": "Tighten the variational bound with importance weighting."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "vae"
+    ],
+    "tags": [
+      "method",
+      "vae"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1509.00519"
+      }
+    ]
+  },
+  {
+    "id": "vqvae",
+    "slug": "vqvae",
+    "title": {
+      "zh-CN": "VQ-VAE",
+      "en": "VQ-VAE"
+    },
+    "aliases": [
+      "VQ-VAE",
+      "1711.00937"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2017-11-02",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1711.00937"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1711.00937",
+    "summary": {
+      "zh-CN": "用向量量化学习离散潜在表示，训练区别于连续 VAE。",
+      "en": "Learn discrete latent representations with vector quantization, using a different training setup from continuous VAEs."
+    },
+    "significance": {
+      "zh-CN": "用向量量化学习离散潜在表示，训练区别于连续 VAE。",
+      "en": "Learn discrete latent representations with vector quantization, using a different training setup from continuous VAEs."
+    },
+    "trackIds": [
+      "deep-learning"
+    ],
+    "familyIds": [
+      "vae"
+    ],
+    "tags": [
+      "model",
+      "vae",
+      "deep-learning"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1711.00937"
+      }
+    ]
+  },
+  {
+    "id": "vqvae2",
+    "slug": "vqvae2",
+    "title": {
+      "zh-CN": "VQ-VAE-2",
+      "en": "VQ-VAE-2"
+    },
+    "aliases": [
+      "VQ-VAE-2",
+      "1906.00446"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2019-06-02",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1906.00446"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1906.00446",
+    "summary": {
+      "zh-CN": "结合层次离散潜变量与自回归先验生成图像。",
+      "en": "Generate images using hierarchical discrete latents and autoregressive priors."
+    },
+    "significance": {
+      "zh-CN": "结合层次离散潜变量与自回归先验生成图像。",
+      "en": "Generate images using hierarchical discrete latents and autoregressive priors."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "vae"
+    ],
+    "tags": [
+      "model",
+      "vae"
+    ],
+    "difficulty": "advanced",
+    "prerequisiteIds": [
+      "vqvae"
+    ],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1906.00446"
+      }
+    ]
+  },
+  {
+    "id": "nvae",
+    "slug": "nvae",
+    "title": {
+      "zh-CN": "NVAE",
+      "en": "NVAE"
+    },
+    "aliases": [
+      "NVAE",
+      "2007.03898"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2020-07-08",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2007.03898"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2007.03898",
+    "summary": {
+      "zh-CN": "通过深层层次结构与架构设计扩展 VAE。",
+      "en": "Scale variational autoencoders through deep hierarchies and architectural design."
+    },
+    "significance": {
+      "zh-CN": "通过深层层次结构与架构设计扩展 VAE。",
+      "en": "Scale variational autoencoders through deep hierarchies and architectural design."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "vae"
+    ],
+    "tags": [
+      "model",
+      "vae"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2007.03898"
+      }
+    ]
+  },
+  {
+    "id": "ladder-vae",
+    "slug": "ladder-vae",
+    "title": {
+      "zh-CN": "Ladder VAE",
+      "en": "Ladder VAE"
+    },
+    "aliases": [
+      "Ladder VAE",
+      "1602.02282"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2016-02-06",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1602.02282"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1602.02282",
+    "summary": {
+      "zh-CN": "用逐层推断修正改进层次潜变量学习。",
+      "en": "Improve hierarchical latent-variable learning through layer-wise inference correction."
+    },
+    "significance": {
+      "zh-CN": "用逐层推断修正改进层次潜变量学习。",
+      "en": "Improve hierarchical latent-variable learning through layer-wise inference correction."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "vae"
+    ],
+    "tags": [
+      "model",
+      "vae"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1602.02282"
+      }
+    ]
+  },
+  {
+    "id": "vampprior",
+    "slug": "vampprior",
+    "title": {
+      "zh-CN": "VampPrior",
+      "en": "VampPrior"
+    },
+    "aliases": [
+      "VampPrior",
+      "1705.07120"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2017-05-19",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1705.07120"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1705.07120",
+    "summary": {
+      "zh-CN": "用可学习的伪输入混合后验构建灵活先验。",
+      "en": "Build a flexible prior from a mixture of variational posteriors with learned pseudo-inputs."
+    },
+    "significance": {
+      "zh-CN": "用可学习的伪输入混合后验构建灵活先验。",
+      "en": "Build a flexible prior from a mixture of variational posteriors with learned pseudo-inputs."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "vae"
+    ],
+    "tags": [
+      "method",
+      "vae"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1705.07120"
+      }
+    ]
+  },
+  {
+    "id": "beta-tcvae",
+    "slug": "beta-tcvae",
+    "title": {
+      "zh-CN": "β-TCVAE",
+      "en": "β-TCVAE"
+    },
+    "aliases": [
+      "β-TCVAE",
+      "1802.04942"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2018-02-14",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/1802.04942"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "1802.04942",
+    "summary": {
+      "zh-CN": "分解变分目标以研究独立性与解耦表示。",
+      "en": "Decompose the variational objective to study independence and disentanglement."
+    },
+    "significance": {
+      "zh-CN": "分解变分目标以研究独立性与解耦表示。",
+      "en": "Decompose the variational objective to study independence and disentanglement."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "vae"
+    ],
+    "tags": [
+      "method",
+      "vae"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/1802.04942"
+      }
+    ]
+  },
+  {
+    "id": "ddim",
+    "slug": "ddim",
+    "title": {
+      "zh-CN": "DDIM",
+      "en": "DDIM"
+    },
+    "aliases": [
+      "DDIM",
+      "2010.02502"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2020-10-06",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2010.02502"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2010.02502",
+    "summary": {
+      "zh-CN": "研究与 DDPM 训练目标兼容的隐式采样过程。",
+      "en": "Develop implicit sampling processes compatible with DDPM training."
+    },
+    "significance": {
+      "zh-CN": "研究与 DDPM 训练目标兼容的隐式采样过程。",
+      "en": "Develop implicit sampling processes compatible with DDPM training."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "diffusion"
+    ],
+    "tags": [
+      "method",
+      "diffusion"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2010.02502"
+      }
+    ]
+  },
+  {
+    "id": "score-sde",
+    "slug": "score-sde",
+    "title": {
+      "zh-CN": "Score SDE",
+      "en": "Score SDE"
+    },
+    "aliases": [
+      "Score SDE",
+      "2011.13456"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2020-11-26",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2011.13456"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2011.13456",
+    "summary": {
+      "zh-CN": "用随机微分方程统一分数生成框架。",
+      "en": "Unify score-based generative modeling through stochastic differential equations."
+    },
+    "significance": {
+      "zh-CN": "用随机微分方程统一分数生成框架。",
+      "en": "Unify score-based generative modeling through stochastic differential equations."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "diffusion"
+    ],
+    "tags": [
+      "method",
+      "diffusion"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2011.13456"
+      }
+    ]
+  },
+  {
+    "id": "classifier-guidance",
+    "slug": "classifier-guidance",
+    "title": {
+      "zh-CN": "Classifier Guidance",
+      "en": "Classifier Guidance"
+    },
+    "aliases": [
+      "Classifier Guidance",
+      "2105.05233"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2021-05-11",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2105.05233"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2105.05233",
+    "summary": {
+      "zh-CN": "利用分类器梯度引导扩散采样。",
+      "en": "Guide diffusion sampling with classifier gradients."
+    },
+    "significance": {
+      "zh-CN": "利用分类器梯度引导扩散采样。",
+      "en": "Guide diffusion sampling with classifier gradients."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "diffusion"
+    ],
+    "tags": [
+      "method",
+      "diffusion"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2105.05233"
+      }
+    ]
+  },
+  {
+    "id": "cfg",
+    "slug": "cfg",
+    "title": {
+      "zh-CN": "Classifier-free Guidance",
+      "en": "Classifier-free Guidance"
+    },
+    "aliases": [
+      "Classifier-free Guidance",
+      "2207.12598"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2022-07-26",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2207.12598"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2207.12598",
+    "summary": {
+      "zh-CN": "组合条件与无条件预测实现无需外部分类器的引导。",
+      "en": "Combine conditional and unconditional predictions for guidance without an external classifier."
+    },
+    "significance": {
+      "zh-CN": "组合条件与无条件预测实现无需外部分类器的引导。",
+      "en": "Combine conditional and unconditional predictions for guidance without an external classifier."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "diffusion"
+    ],
+    "tags": [
+      "method",
+      "diffusion"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2207.12598"
+      }
+    ]
+  },
+  {
+    "id": "dpm-solver",
+    "slug": "dpm-solver",
+    "title": {
+      "zh-CN": "DPM-Solver",
+      "en": "DPM-Solver"
+    },
+    "aliases": [
+      "DPM-Solver",
+      "2206.00927"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2022-06-02",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2206.00927"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2206.00927",
+    "summary": {
+      "zh-CN": "利用扩散常微分方程结构减少采样步骤。",
+      "en": "Exploit diffusion ODE structure to reduce sampling steps."
+    },
+    "significance": {
+      "zh-CN": "利用扩散常微分方程结构减少采样步骤。",
+      "en": "Exploit diffusion ODE structure to reduce sampling steps."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "diffusion"
+    ],
+    "tags": [
+      "method",
+      "diffusion"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2206.00927"
+      }
+    ]
+  },
+  {
+    "id": "consistency",
+    "slug": "consistency",
+    "title": {
+      "zh-CN": "Consistency Models",
+      "en": "Consistency Models"
+    },
+    "aliases": [
+      "Consistency Models",
+      "2303.01469"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "2023-03-02",
+        "precision": "day",
+        "event": "preprint",
+        "sourceUrl": "https://arxiv.org/abs/2303.01469"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": "2303.01469",
+    "summary": {
+      "zh-CN": "研究将同一路径上的噪声样本映射到一致输出的生成模型。",
+      "en": "Study generative models that map points on the same trajectory to consistent outputs."
+    },
+    "significance": {
+      "zh-CN": "研究将同一路径上的噪声样本映射到一致输出的生成模型。",
+      "en": "Study generative models that map points on the same trajectory to consistent outputs."
+    },
+    "trackIds": [],
+    "familyIds": [
+      "diffusion"
+    ],
+    "tags": [
+      "model",
+      "diffusion"
+    ],
+    "difficulty": "core",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2303.01469"
+      }
+    ]
+  },
+  {
+    "id": "backprop",
+    "slug": "backprop",
+    "title": {
+      "zh-CN": "反向传播（代表论文）",
+      "en": "Backpropagation (landmark paper)"
+    },
+    "aliases": [
+      "反向传播（代表论文）",
+      "Backpropagation (landmark paper)"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "1986-10-09",
+        "precision": "day",
+        "event": "publication",
+        "sourceUrl": "https://doi.org/10.1038/323533a0"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": null,
+    "summary": {
+      "zh-CN": "通过误差反向传播计算网络参数梯度。此日期是代表论文发表日期，不是算法唯一的起点。",
+      "en": "Compute network gradients by propagating errors backward. The date identifies a landmark paper, not the sole origin of the algorithm."
+    },
+    "significance": {
+      "zh-CN": "通过误差反向传播计算网络参数梯度。此日期是代表论文发表日期，不是算法唯一的起点。",
+      "en": "Compute network gradients by propagating errors backward. The date identifies a landmark paper, not the sole origin of the algorithm."
+    },
+    "trackIds": [
+      "deep-learning"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "deep-learning"
+    ],
+    "difficulty": "foundation",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "Original paper",
+        "url": "https://doi.org/10.1038/323533a0"
+      }
+    ]
+  },
+  {
+    "id": "lenet",
+    "slug": "lenet",
+    "title": {
+      "zh-CN": "LeNet-5",
+      "en": "LeNet-5"
+    },
+    "aliases": [
+      "LeNet-5"
+    ],
+    "kind": "model",
+    "dates": [
+      {
+        "value": "1998",
+        "precision": "year",
+        "event": "publication",
+        "sourceUrl": "https://bottou.org/papers/lecun-98h"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": null,
+    "summary": {
+      "zh-CN": "结合卷积、下采样与端到端训练完成文档识别。",
+      "en": "Combine convolution, subsampling, and end-to-end training for document recognition."
+    },
+    "significance": {
+      "zh-CN": "结合卷积、下采样与端到端训练完成文档识别。",
+      "en": "Combine convolution, subsampling, and end-to-end training for document recognition."
+    },
+    "trackIds": [
+      "deep-learning",
+      "computer-vision"
+    ],
+    "familyIds": [],
+    "tags": [
+      "model",
+      "deep-learning",
+      "computer-vision",
+      "classification"
+    ],
+    "difficulty": "foundation",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "Original paper",
+        "url": "https://bottou.org/papers/lecun-98h"
+      }
+    ]
+  },
+  {
+    "id": "dyna",
+    "slug": "dyna",
+    "title": {
+      "zh-CN": "Dyna（1991 论文）",
+      "en": "Dyna (1991 paper)"
+    },
+    "aliases": [
+      "Dyna（1991 论文）",
+      "Dyna (1991 paper)",
+      "基于模型的强化学习"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "1991-07-01",
+        "precision": "day",
+        "event": "publication",
+        "sourceUrl": "https://doi.org/10.1145/122344.122377"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": null,
+    "summary": {
+      "zh-CN": "把学习、规划和反应整合在一个架构中；世界模型研究早于 2018 年的同名论文。",
+      "en": "Integrate learning, planning, and reacting; world-model research predates the 2018 paper of that name."
+    },
+    "significance": {
+      "zh-CN": "把学习、规划和反应整合在一个架构中；世界模型研究早于 2018 年的同名论文。",
+      "en": "Integrate learning, planning, and reacting; world-model research predates the 2018 paper of that name."
+    },
+    "trackIds": [
+      "world-models"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "world-models",
+      "planning"
+    ],
+    "difficulty": "foundation",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "Original paper",
+        "url": "https://doi.org/10.1145/122344.122377"
+      }
+    ]
+  },
+  {
+    "id": "colmap",
+    "slug": "colmap",
+    "title": {
+      "zh-CN": "COLMAP / SfM",
+      "en": "COLMAP / SfM"
+    },
+    "aliases": [
+      "COLMAP / SfM",
+      "运动恢复结构",
+      "structure from motion",
+      "SfM"
+    ],
+    "kind": "method",
+    "dates": [
+      {
+        "value": "2016",
+        "precision": "year",
+        "event": "publication",
+        "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Schonberger_Structure-From-Motion_Revisited_CVPR_2016_paper.html"
+      }
+    ],
+    "dateVerification": "verified",
+    "paperId": null,
+    "summary": {
+      "zh-CN": "从多张照片估计相机和稀疏几何，连接传统重建与神经渲染流程。",
+      "en": "Estimate cameras and sparse geometry from photos, connecting traditional reconstruction with neural rendering."
+    },
+    "significance": {
+      "zh-CN": "从多张照片估计相机和稀疏几何，连接传统重建与神经渲染流程。",
+      "en": "Estimate cameras and sparse geometry from photos, connecting traditional reconstruction with neural rendering."
+    },
+    "trackIds": [
+      "3d-scenes"
+    ],
+    "familyIds": [],
+    "tags": [
+      "method",
+      "3d-scenes",
+      "geometry"
+    ],
+    "difficulty": "foundation",
+    "prerequisiteIds": [],
+    "relatedNodeIds": [],
+    "contentStatus": "planned",
+    "articleSlugs": [],
+    "sources": [
+      {
+        "label": "Original paper",
+        "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Schonberger_Structure-From-Motion_Revisited_CVPR_2016_paper.html"
+      }
+    ]
+  }
+]

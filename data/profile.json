@@ -1,0 +1,123 @@
+{
+  "name": {
+    "zh-CN": "river-ya",
+    "en": "river-ya"
+  },
+  "nameNote": {
+    "zh-CN": "使用站点账号作为昵称，可在个人配置中修改。",
+    "en": "The site account is used as a configurable nickname."
+  },
+  "intro": {
+    "zh-CN": "在模型、代码与世界之间，慢慢建立自己的理解。",
+    "en": "Building my understanding, one model, one experiment, one connection at a time."
+  },
+  "about": {
+    "zh-CN": "我正在学习深度学习、计算机视觉、自然语言处理、多模态、3D 场景搭建和世界模型。这里是我的知识工作区：用路线连接概念，用笔记记录理解，让每一次探索都有迹可循。",
+    "en": "I’m learning deep learning, computer vision, natural language processing, multimodal learning, 3D scenes, and world models. This is my knowledge workspace: connecting concepts through routes and recording understanding through notes."
+  },
+  "socials": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/river-ya"
+    }
+  ],
+  "currentTopics": [],
+  "skills": [
+    {
+      "title": {
+        "zh-CN": "编程与工具",
+        "en": "Programming & tools"
+      },
+      "items": [
+        {
+          "name": "Python",
+          "status": null
+        },
+        {
+          "name": "C++",
+          "status": null
+        },
+        {
+          "name": "Git",
+          "status": null
+        },
+        {
+          "name": "Linux",
+          "status": null
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh-CN": "AI 与数据",
+        "en": "AI & data"
+      },
+      "items": [
+        {
+          "name": "PyTorch",
+          "status": null
+        },
+        {
+          "name": "模型训练 / Model training",
+          "status": null
+        },
+        {
+          "name": "数据处理 / Data processing",
+          "status": null
+        },
+        {
+          "name": "实验评估 / Evaluation",
+          "status": null
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh-CN": "视觉与三维",
+        "en": "Vision & 3D"
+      },
+      "items": [
+        {
+          "name": "图像处理 / Image processing",
+          "status": null
+        },
+        {
+          "name": "几何基础 / Geometry",
+          "status": null
+        },
+        {
+          "name": "三维表达 / 3D representations",
+          "status": null
+        },
+        {
+          "name": "场景重建 / Reconstruction",
+          "status": null
+        }
+      ]
+    },
+    {
+      "title": {
+        "zh-CN": "工程实践",
+        "en": "Engineering"
+      },
+      "items": [
+        {
+          "name": "环境管理 / Environments",
+          "status": null
+        },
+        {
+          "name": "部署 / Deployment",
+          "status": null
+        },
+        {
+          "name": "性能分析 / Profiling",
+          "status": null
+        },
+        {
+          "name": "实验管理 / Experiments",
+          "status": null
+        }
+      ]
+    }
+  ]
+}

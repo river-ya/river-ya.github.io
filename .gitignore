@@ -1,0 +1,9 @@
+dist/
+__pycache__/
+.venv/
+*.zip
+evidence/*.png
+evidence/
+交付/
+show*.png
+个人网站设计提示词.md

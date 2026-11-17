@@ -1,0 +1,407 @@
+[
+  {
+    "id": "deep-learning",
+    "kind": "domain",
+    "title": {
+      "zh-CN": "深度学习",
+      "en": "Deep learning"
+    },
+    "description": {
+      "zh-CN": "从训练机制到表示与生成，建立共通基础。",
+      "en": "Build shared foundations, from optimization to representation and generation."
+    },
+    "prerequisites": {
+      "zh-CN": "线性代数 · 概率 · Python",
+      "en": "Linear algebra · Probability · Python"
+    },
+    "exercise": {
+      "zh-CN": "比较小模型训练与验证曲线。",
+      "en": "Compare training and validation curves of a small model."
+    },
+    "learningOrder": [
+      "lenet",
+      "backprop",
+      "resnet",
+      "batchnorm",
+      "dropout",
+      "attention",
+      "transformer",
+      "simclr",
+      "vae",
+      "gan",
+      "dcgan",
+      "vqvae",
+      "diffusion-origin",
+      "ddpm",
+      "dit",
+      "scaling"
+    ],
+    "verifiedThrough": "2026-10-22",
+    "limitations": {
+      "zh-CN": "这是一组代表性研究入口；时间先后不表示继承，论文结果依赖各自的任务与实验设置。",
+      "en": "These are representative research entry points. Chronology does not imply inheritance, and results depend on each study’s tasks and experimental setup."
+    }
+  },
+  {
+    "id": "computer-vision",
+    "kind": "domain",
+    "title": {
+      "zh-CN": "计算机视觉",
+      "en": "Computer vision"
+    },
+    "description": {
+      "zh-CN": "从图像特征到视觉理解，沿任务分支探索。",
+      "en": "Explore image features and visual understanding across parallel tasks."
+    },
+    "prerequisites": {
+      "zh-CN": "图像表示 · 卷积 · 评估指标",
+      "en": "Image representations · Convolution · Metrics"
+    },
+    "exercise": {
+      "zh-CN": "比较分类、检测与分割的输入输出。",
+      "en": "Compare inputs and outputs of classification, detection, and segmentation."
+    },
+    "learningOrder": [
+      "lenet",
+      "vgg",
+      "resnet",
+      "unet",
+      "faster-rcnn",
+      "vit",
+      "swin",
+      "detr",
+      "mae",
+      "simclr",
+      "clip",
+      "sam",
+      "dit"
+    ],
+    "verifiedThrough": "2026-10-22",
+    "limitations": {
+      "zh-CN": "这是一组代表性研究入口；时间先后不表示继承，论文结果依赖各自的任务与实验设置。",
+      "en": "These are representative research entry points. Chronology does not imply inheritance, and results depend on each study’s tasks and experimental setup."
+    }
+  },
+  {
+    "id": "nlp",
+    "kind": "domain",
+    "title": {
+      "zh-CN": "自然语言处理",
+      "en": "Natural language processing"
+    },
+    "description": {
+      "zh-CN": "理解语言表示、序列建模与预训练方法。",
+      "en": "Understand language representations, sequence modeling, and pretraining."
+    },
+    "prerequisites": {
+      "zh-CN": "分词 · 概率 · 语言建模",
+      "en": "Tokenization · Probability · Language modeling"
+    },
+    "exercise": {
+      "zh-CN": "对比不同词表示与上下文表示。",
+      "en": "Compare static word representations with contextual representations."
+    },
+    "learningOrder": [
+      "word2vec",
+      "seq2seq",
+      "attention",
+      "transformer",
+      "bert",
+      "t5",
+      "gpt3",
+      "lora",
+      "rag",
+      "instructgpt",
+      "dpo",
+      "scaling"
+    ],
+    "verifiedThrough": "2026-10-22",
+    "limitations": {
+      "zh-CN": "这是一组代表性研究入口；时间先后不表示继承，论文结果依赖各自的任务与实验设置。",
+      "en": "These are representative research entry points. Chronology does not imply inheritance, and results depend on each study’s tasks and experimental setup."
+    }
+  },
+  {
+    "id": "multimodal",
+    "kind": "domain",
+    "title": {
+      "zh-CN": "多模态",
+      "en": "Multimodal learning"
+    },
+    "description": {
+      "zh-CN": "连接视觉与语言，理解对齐、融合和生成。",
+      "en": "Connect vision and language through alignment, fusion, and generation."
+    },
+    "prerequisites": {
+      "zh-CN": "视觉编码器 · 对比学习 · 语言建模",
+      "en": "Vision encoders · Contrastive learning · Language modeling"
+    },
+    "exercise": {
+      "zh-CN": "比较一组图文相似度并分析失败案例。",
+      "en": "Compare image-text similarities and examine failure cases."
+    },
+    "learningOrder": [
+      "clip",
+      "align",
+      "visualbert",
+      "vilbert",
+      "blip",
+      "blip2",
+      "flamingo",
+      "llava",
+      "ddpm",
+      "ldm",
+      "dit",
+      "transformer"
+    ],
+    "verifiedThrough": "2026-10-22",
+    "limitations": {
+      "zh-CN": "这是一组代表性研究入口；时间先后不表示继承，论文结果依赖各自的任务与实验设置。",
+      "en": "These are representative research entry points. Chronology does not imply inheritance, and results depend on each study’s tasks and experimental setup."
+    }
+  },
+  {
+    "id": "3d-scenes",
+    "kind": "domain",
+    "title": {
+      "zh-CN": "3D 场景与重建",
+      "en": "3D scenes & reconstruction"
+    },
+    "description": {
+      "zh-CN": "几何重建、场景制作与神经表示并行发展。",
+      "en": "Explore geometry, scene authoring, and neural representations in parallel."
+    },
+    "prerequisites": {
+      "zh-CN": "坐标变换 · 相机模型 · 网格与点云",
+      "en": "Transforms · Camera models · Meshes and point clouds"
+    },
+    "exercise": {
+      "zh-CN": "制作一个小场景，再比较照片重建与新视角渲染。",
+      "en": "Build a small scene, then compare photo reconstruction and novel-view rendering."
+    },
+    "learningOrder": [
+      "colmap",
+      "pointnet",
+      "deepsdf",
+      "occupancy",
+      "nerf",
+      "mipnerf",
+      "instant-ngp",
+      "mipnerf360",
+      "3dgs",
+      "4dgs",
+      "dreamfusion"
+    ],
+    "verifiedThrough": "2026-10-22",
+    "limitations": {
+      "zh-CN": "这是一组代表性研究入口；时间先后不表示继承，论文结果依赖各自的任务与实验设置。",
+      "en": "These are representative research entry points. Chronology does not imply inheritance, and results depend on each study’s tasks and experimental setup."
+    }
+  },
+  {
+    "id": "world-models",
+    "kind": "domain",
+    "title": {
+      "zh-CN": "世界模型",
+      "en": "World models"
+    },
+    "description": {
+      "zh-CN": "从环境预测走向潜空间动力学、规划与行动。",
+      "en": "Explore environment prediction, latent dynamics, planning, and action."
+    },
+    "prerequisites": {
+      "zh-CN": "MDP · 强化学习 · 概率与潜变量",
+      "en": "MDPs · Reinforcement learning · Latent variables"
+    },
+    "exercise": {
+      "zh-CN": "区分观测预测、奖励预测与行动规划的评估。",
+      "en": "Distinguish evaluation of observation prediction, reward prediction, and action planning."
+    },
+    "learningOrder": [
+      "dyna",
+      "world-models",
+      "planet",
+      "dreamer",
+      "dreamerv2",
+      "dreamerv3",
+      "mbpo",
+      "muzero",
+      "tdmpc",
+      "tdmpc2",
+      "dreamerpro",
+      "genie"
+    ],
+    "verifiedThrough": "2026-10-22",
+    "limitations": {
+      "zh-CN": "这是一组代表性研究入口；时间先后不表示继承，论文结果依赖各自的任务与实验设置。",
+      "en": "These are representative research entry points. Chronology does not imply inheritance, and results depend on each study’s tasks and experimental setup."
+    }
+  },
+  {
+    "id": "gan",
+    "kind": "family",
+    "title": {
+      "zh-CN": "GAN",
+      "en": "GAN"
+    },
+    "description": {
+      "zh-CN": "对抗生成如何工作？探索训练稳定性、条件控制与图像转换。",
+      "en": "Explore adversarial generation, stability, conditioning, and image translation."
+    },
+    "prerequisites": {
+      "zh-CN": "概率 · 神经网络 · 优化",
+      "en": "Probability · Neural networks · Optimization"
+    },
+    "exercise": {
+      "zh-CN": "观察对抗训练中的模式崩溃。",
+      "en": "Observe mode collapse in adversarial training."
+    },
+    "learningOrder": [
+      "gan",
+      "cgan",
+      "dcgan",
+      "wgan",
+      "wgan-gp",
+      "pix2pix",
+      "cyclegan",
+      "stylegan",
+      "stylegan2",
+      "stylegan3"
+    ],
+    "verifiedThrough": "2026-10-22",
+    "limitations": {
+      "zh-CN": "这是一组代表性研究入口；时间先后不表示继承，论文结果依赖各自的任务与实验设置。",
+      "en": "These are representative research entry points. Chronology does not imply inheritance, and results depend on each study’s tasks and experimental setup."
+    },
+    "graphStyle": {
+      "color": "var(--amber)",
+      "dash": "12 4 2 4"
+    }
+  },
+  {
+    "id": "vae",
+    "kind": "family",
+    "title": {
+      "zh-CN": "VAE",
+      "en": "VAE"
+    },
+    "description": {
+      "zh-CN": "从变分推断到连续、离散与层次潜变量。",
+      "en": "Explore variational inference and continuous, discrete, and hierarchical latents."
+    },
+    "prerequisites": {
+      "zh-CN": "概率 · 变分推断 · 神经网络",
+      "en": "Probability · Variational inference · Neural networks"
+    },
+    "exercise": {
+      "zh-CN": "比较重建损失与 KL 项的作用。",
+      "en": "Compare reconstruction loss with the KL term."
+    },
+    "learningOrder": [
+      "vae",
+      "iwae",
+      "ladder-vae",
+      "vampprior",
+      "beta-tcvae",
+      "vqvae",
+      "vqvae2",
+      "nvae",
+      "world-models"
+    ],
+    "verifiedThrough": "2026-10-22",
+    "limitations": {
+      "zh-CN": "这是一组代表性研究入口；时间先后不表示继承，论文结果依赖各自的任务与实验设置。",
+      "en": "These are representative research entry points. Chronology does not imply inheritance, and results depend on each study’s tasks and experimental setup."
+    },
+    "graphStyle": {
+      "color": "var(--blue)",
+      "dash": "2 5"
+    }
+  },
+  {
+    "id": "diffusion",
+    "kind": "family",
+    "title": {
+      "zh-CN": "Diffusion",
+      "en": "Diffusion"
+    },
+    "description": {
+      "zh-CN": "从逐步加噪到可控生成，理解目标、采样与主干。",
+      "en": "Understand objectives, sampling, and backbones, from noising to controlled generation."
+    },
+    "prerequisites": {
+      "zh-CN": "概率 · 去噪 · 微分方程基础",
+      "en": "Probability · Denoising · Differential equations"
+    },
+    "exercise": {
+      "zh-CN": "比较不同采样步数下的速度与结果。",
+      "en": "Compare speed and outputs across sampling step counts."
+    },
+    "learningOrder": [
+      "ddpm",
+      "diffusion-origin",
+      "ddim",
+      "score-sde",
+      "classifier-guidance",
+      "cfg",
+      "dpm-solver",
+      "ldm",
+      "dit",
+      "consistency",
+      "dreamfusion"
+    ],
+    "verifiedThrough": "2026-10-22",
+    "limitations": {
+      "zh-CN": "这是一组代表性研究入口；时间先后不表示继承，论文结果依赖各自的任务与实验设置。",
+      "en": "These are representative research entry points. Chronology does not imply inheritance, and results depend on each study’s tasks and experimental setup."
+    },
+    "graphStyle": {
+      "color": "var(--accent)",
+      "dash": ""
+    }
+  },
+  {
+    "id": "transformer",
+    "kind": "family",
+    "title": {
+      "zh-CN": "Transformer",
+      "en": "Transformer"
+    },
+    "description": {
+      "zh-CN": "从注意力到视觉与生成，追踪架构迁移。",
+      "en": "Trace the migration of attention architectures into vision and generation."
+    },
+    "prerequisites": {
+      "zh-CN": "矩阵运算 · 序列表示 · Attention",
+      "en": "Matrix operations · Sequence representations · Attention"
+    },
+    "exercise": {
+      "zh-CN": "比较文本 token、图像 patch 与潜变量 patch。",
+      "en": "Compare text tokens, image patches, and latent patches."
+    },
+    "learningOrder": [
+      "attention",
+      "transformer",
+      "bert",
+      "t5",
+      "gpt3",
+      "vit",
+      "swin",
+      "detr",
+      "mae",
+      "visualbert",
+      "vilbert",
+      "flamingo",
+      "dit"
+    ],
+    "verifiedThrough": "2026-10-22",
+    "limitations": {
+      "zh-CN": "这是一组代表性研究入口；时间先后不表示继承，论文结果依赖各自的任务与实验设置。",
+      "en": "These are representative research entry points. Chronology does not imply inheritance, and results depend on each study’s tasks and experimental setup."
+    },
+    "graphStyle": {
+      "color": "var(--violet)",
+      "dash": "7 6"
+    }
+  }
+]

@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "bits-basics",
+    "slug": "bits-basics",
+    "title": {
+      "zh-CN": "位运算基础",
+      "en": "Bit operations"
+    },
+    "summary": {
+      "zh-CN": "表示整数与按位操作",
+      "en": "Represent integers and manipulate bits"
+    },
+    "categoryId": "basics",
+    "lessonIds": [
+      "003"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "位运算基础",
+      "Bit operations"
+    ]
+  },
+  {
+    "id": "elementary-sorting",
+    "slug": "elementary-sorting",
+    "title": {
+      "zh-CN": "基础排序",
+      "en": "Elementary sorting"
+    },
+    "summary": {
+      "zh-CN": "理解排序过程与循环不变量",
+      "en": "Understand sorting and loop invariants"
+    },
+    "categoryId": "basics",
+    "lessonIds": [
+      "004"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "基础排序",
+      "Elementary sorting"
+    ]
+  },
+  {
+    "id": "test-harness",
+    "slug": "test-harness",
+    "title": {
+      "zh-CN": "对数器",
+      "en": "Randomized test harness"
+    },
+    "summary": {
+      "zh-CN": "用暴力解验证优化算法",
+      "en": "Check optimized algorithms against a brute-force oracle"
+    },
+    "categoryId": "basics",
+    "lessonIds": [
+      "005",
+      "042"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "对数器",
+      "Randomized test harness"
+    ]
+  },
+  {
+    "id": "binary-search",
+    "slug": "binary-search",
+    "title": {
+      "zh-CN": "二分搜索",
+      "en": "Binary search"
+    },
+    "summary": {
+      "zh-CN": "在有序或单调空间定位边界",
+      "en": "Locate boundaries in ordered or monotonic spaces"
+    },
+    "categoryId": "basics",
+    "lessonIds": [
+      "006"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "二分搜索",
+      "Binary search"
+    ]
+  },
+  {
+    "id": "complexity",
+    "slug": "complexity",
+    "title": {
+      "zh-CN": "复杂度分析",
+      "en": "Complexity analysis"
+    },
+    "summary": {
+      "zh-CN": "估计时间与空间开销",
+      "en": "Estimate time and space costs"
+    },
+    "categoryId": "basics",
+    "lessonIds": [
+      "007",
+      "008"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "复杂度分析",
+      "Complexity analysis"
+    ]
+  },
+  {
+    "id": "io",
+    "slug": "io",
+    "title": {
+      "zh-CN": "输入输出",
+      "en": "Input & output"
+    },
+    "summary": {
+      "zh-CN": "处理算法题的输入输出协议",
+      "en": "Handle input and output formats"
+    },
+    "categoryId": "basics",
+    "lessonIds": [
+      "019"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "输入输出",
+      "Input & output"
+    ]
+  },
+  {
+    "id": "linked-list",
+    "slug": "linked-list",
+    "title": {
+      "zh-CN": "链表",
+      "en": "Linked lists"
+    },
+    "summary": {
+      "zh-CN": "维护链接与局部结构变化",
+      "en": "Maintain links and local structural changes"
+    },
+    "categoryId": "structures",
+    "lessonIds": [
+      "009",
+      "010",
+      "011",
+      "012",
+      "034"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "链表",
+      "Linked lists"
+    ]
+  },
+  {
+    "id": "stack-queue",
+    "slug": "stack-queue",
+    "title": {
+      "zh-CN": "栈与队列",
+      "en": "Stacks & queues"
+    },
+    "summary": {
+      "zh-CN": "组织后进先出与先进先出操作",
+      "en": "Organize LIFO and FIFO operations"
+    },
+    "categoryId": "structures",
+    "lessonIds": [
+      "013",
+      "014",
+      "015",
+      "035"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "栈与队列",
+      "Stacks & queues"
+    ]
+  },
+  {
+    "id": "deque",
+    "slug": "deque",
+    "title": {
+      "zh-CN": "双端队列",
+      "en": "Deque"
+    },
+    "summary": {
+      "zh-CN": "支持两端插入与删除",
+      "en": "Support insertion and removal at both ends"
+    },
+    "categoryId": "structures",
+    "lessonIds": [
+      "016"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "双端队列",
+      "Deque"
+    ]
+  },
+  {
+    "id": "binary-tree",
+    "slug": "binary-tree",
+    "title": {
+      "zh-CN": "二叉树遍历",
+      "en": "Binary tree traversal"
+    },
+    "summary": {
+      "zh-CN": "用递归与显式栈遍历树",
+      "en": "Traverse trees recursively or with explicit stacks"
+    },
+    "categoryId": "structures",
+    "lessonIds": [
+      "017",
+      "018",
+      "036",
+      "037"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "二叉树遍历",
+      "Binary tree traversal"
+    ]
+  },
+  {
+    "id": "recurrence",
+    "slug": "recurrence",
+    "title": {
+      "zh-CN": "递归与 Master 公式",
+      "en": "Recurrences & Master theorem"
+    },
+    "summary": {
+      "zh-CN": "分析递归子问题与合并成本",
+      "en": "Analyze recursive subproblems and merge costs"
+    },
+    "categoryId": "sorting",
+    "lessonIds": [
+      "020"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "递归与 Master 公式",
+      "Recurrences & Master theorem"
+    ]
+  },
+  {
+    "id": "merge-sort",
+    "slug": "merge-sort",
+    "title": {
+      "zh-CN": "归并与分治",
+      "en": "Merge sort & divide and conquer"
+    },
+    "summary": {
+      "zh-CN": "分解问题并统计跨区间信息",
+      "en": "Divide problems and combine information across ranges"
+    },
+    "categoryId": "sorting",
+    "lessonIds": [
+      "021",
+      "022"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "归并与分治",
+      "Merge sort & divide and conquer"
+    ]
+  },
+  {
+    "id": "quick-sort",
+    "slug": "quick-sort",
+    "title": {
+      "zh-CN": "快排与随机选择",
+      "en": "Quicksort & quickselect"
+    },
+    "summary": {
+      "zh-CN": "通过随机划分缩小问题规模",
+      "en": "Reduce problems through randomized partitioning"
+    },
+    "categoryId": "sorting",
+    "lessonIds": [
+      "023",
+      "024"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "快排与随机选择",
+      "Quicksort & quickselect"
+    ]
+  },
+  {
+    "id": "heap",
+    "slug": "heap",
+    "title": {
+      "zh-CN": "堆与优先队列",
+      "en": "Heaps & priority queues"
+    },
+    "summary": {
+      "zh-CN": "维护动态极值与优先级",
+      "en": "Maintain dynamic extrema and priorities"
+    },
+    "categoryId": "sorting",
+    "lessonIds": [
+      "025",
+      "027"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "堆与优先队列",
+      "Heaps & priority queues"
+    ]
+  },
+  {
+    "id": "radix-sort",
+    "slug": "radix-sort",
+    "title": {
+      "zh-CN": "基数排序",
+      "en": "Radix sort"
+    },
+    "summary": {
+      "zh-CN": "利用位或数位结构组织排序",
+      "en": "Sort by digits or bit structure"
+    },
+    "categoryId": "sorting",
+    "lessonIds": [
+      "028",
+      "029"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "基数排序",
+      "Radix sort"
+    ]
+  },
+  {
+    "id": "xor",
+    "slug": "xor",
+    "title": {
+      "zh-CN": "异或技巧",
+      "en": "XOR techniques"
+    },
+    "summary": {
+      "zh-CN": "利用按位运算的代数性质",
+      "en": "Use algebraic properties of bitwise operations"
+    },
+    "categoryId": "bits",
+    "lessonIds": [
+      "030",
+      "031",
+      "033"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "异或技巧",
+      "XOR techniques"
+    ]
+  },
+  {
+    "id": "bitmap",
+    "slug": "bitmap",
+    "title": {
+      "zh-CN": "位图",
+      "en": "Bitmap"
+    },
+    "summary": {
+      "zh-CN": "用位集合压缩存在性信息",
+      "en": "Compress membership information into bits"
+    },
+    "categoryId": "bits",
+    "lessonIds": [
+      "032"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "位图",
+      "Bitmap"
+    ]
+  },
+  {
+    "id": "recursion",
+    "slug": "recursion",
+    "title": {
+      "zh-CN": "递归枚举",
+      "en": "Recursive enumeration"
+    },
+    "summary": {
+      "zh-CN": "建立状态与递归返回值",
+      "en": "Define states and recursive return values"
+    },
+    "categoryId": "bits",
+    "lessonIds": [
+      "038",
+      "039"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "递归枚举",
+      "Recursive enumeration"
+    ]
+  },
+  {
+    "id": "n-queens",
+    "slug": "n-queens",
+    "title": {
+      "zh-CN": "N 皇后",
+      "en": "N-queens"
+    },
+    "summary": {
+      "zh-CN": "在约束中枚举并剪枝",
+      "en": "Enumerate and prune under constraints"
+    },
+    "categoryId": "bits",
+    "lessonIds": [
+      "040"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "N 皇后",
+      "N-queens"
+    ]
+  },
+  {
+    "id": "prefix-sum",
+    "slug": "prefix-sum",
+    "title": {
+      "zh-CN": "前缀和",
+      "en": "Prefix sums"
+    },
+    "summary": {
+      "zh-CN": "把区间查询变成前缀差",
+      "en": "Express range queries as prefix differences"
+    },
+    "categoryId": "arrays",
+    "lessonIds": [
+      "046",
+      "048"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "前缀和",
+      "Prefix sums"
+    ]
+  },
+  {
+    "id": "difference",
+    "slug": "difference",
+    "title": {
+      "zh-CN": "差分与离散化",
+      "en": "Difference arrays & compression"
+    },
+    "summary": {
+      "zh-CN": "高效表达区间更新",
+      "en": "Represent range updates efficiently"
+    },
+    "categoryId": "arrays",
+    "lessonIds": [
+      "047",
+      "048"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "差分与离散化",
+      "Difference arrays & compression"
+    ]
+  },
+  {
+    "id": "sliding-window",
+    "slug": "sliding-window",
+    "title": {
+      "zh-CN": "滑动窗口",
+      "en": "Sliding window"
+    },
+    "summary": {
+      "zh-CN": "维护连续区间中的约束",
+      "en": "Maintain constraints over contiguous windows"
+    },
+    "categoryId": "arrays",
+    "lessonIds": [
+      "049"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "滑动窗口",
+      "Sliding window"
+    ]
+  },
+  {
+    "id": "two-pointers",
+    "slug": "two-pointers",
+    "title": {
+      "zh-CN": "双指针",
+      "en": "Two pointers"
+    },
+    "summary": {
+      "zh-CN": "协调两个位置缩小搜索范围",
+      "en": "Coordinate two indices to narrow a search"
+    },
+    "categoryId": "arrays",
+    "lessonIds": [
+      "050"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "双指针",
+      "Two pointers"
+    ]
+  },
+  {
+    "id": "binary-answer",
+    "slug": "binary-answer",
+    "title": {
+      "zh-CN": "二分答案",
+      "en": "Binary search on the answer"
+    },
+    "summary": {
+      "zh-CN": "利用判定问题的单调性",
+      "en": "Exploit monotonicity of a decision problem"
+    },
+    "categoryId": "arrays",
+    "lessonIds": [
+      "051"
+    ],
+    "prerequisiteIds": [
+      "binary-search"
+    ],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "二分答案",
+      "Binary search on the answer"
+    ]
+  },
+  {
+    "id": "monotonic-stack",
+    "slug": "monotonic-stack",
+    "title": {
+      "zh-CN": "单调栈",
+      "en": "Monotonic stack"
+    },
+    "summary": {
+      "zh-CN": "寻找相邻更大或更小元素",
+      "en": "Find neighboring greater or smaller elements"
+    },
+    "categoryId": "monotonic",
+    "lessonIds": [
+      "052",
+      "053"
+    ],
+    "prerequisiteIds": [
+      "stack-queue"
+    ],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "单调栈",
+      "Monotonic stack"
+    ]
+  },
+  {
+    "id": "monotonic-queue",
+    "slug": "monotonic-queue",
+    "title": {
+      "zh-CN": "单调队列",
+      "en": "Monotonic queue"
+    },
+    "summary": {
+      "zh-CN": "维护窗口极值",
+      "en": "Maintain extrema in a moving window"
+    },
+    "categoryId": "monotonic",
+    "lessonIds": [
+      "054",
+      "055"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "单调队列",
+      "Monotonic queue"
+    ]
+  },
+  {
+    "id": "union-find",
+    "slug": "union-find",
+    "title": {
+      "zh-CN": "并查集",
+      "en": "Disjoint-set union"
+    },
+    "summary": {
+      "zh-CN": "维护集合合并与连通关系",
+      "en": "Maintain set unions and connectivity"
+    },
+    "categoryId": "monotonic",
+    "lessonIds": [
+      "056",
+      "057"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "并查集",
+      "Disjoint-set union"
+    ]
+  },
+  {
+    "id": "flood-fill",
+    "slug": "flood-fill",
+    "title": {
+      "zh-CN": "洪水填充",
+      "en": "Flood fill"
+    },
+    "summary": {
+      "zh-CN": "遍历网格连通区域",
+      "en": "Traverse connected regions in a grid"
+    },
+    "categoryId": "monotonic",
+    "lessonIds": [
+      "058"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "洪水填充",
+      "Flood fill"
+    ]
+  },
+  {
+    "id": "topological-sort",
+    "slug": "topological-sort",
+    "title": {
+      "zh-CN": "建图与拓扑排序",
+      "en": "Graph construction & topological sort"
+    },
+    "summary": {
+      "zh-CN": "处理依赖关系与有向无环图",
+      "en": "Handle dependencies and directed acyclic graphs"
+    },
+    "categoryId": "graphs",
+    "lessonIds": [
+      "059",
+      "060"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "建图与拓扑排序",
+      "Graph construction & topological sort"
+    ]
+  },
+  {
+    "id": "mst",
+    "slug": "mst",
+    "title": {
+      "zh-CN": "最小生成树",
+      "en": "Minimum spanning tree"
+    },
+    "summary": {
+      "zh-CN": "以最小代价连接所有顶点",
+      "en": "Connect all vertices with minimum total cost"
+    },
+    "categoryId": "graphs",
+    "lessonIds": [
+      "061"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "最小生成树",
+      "Minimum spanning tree"
+    ]
+  },
+  {
+    "id": "bfs",
+    "slug": "bfs",
+    "title": {
+      "zh-CN": "宽度优先遍历",
+      "en": "Breadth-first search"
+    },
+    "summary": {
+      "zh-CN": "逐层探索与双向搜索",
+      "en": "Explore by layers and search bidirectionally"
+    },
+    "categoryId": "graphs",
+    "lessonIds": [
+      "062",
+      "063"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "宽度优先遍历",
+      "Breadth-first search"
+    ]
+  },
+  {
+    "id": "shortest-path",
+    "slug": "shortest-path",
+    "title": {
+      "zh-CN": "最短路",
+      "en": "Shortest paths"
+    },
+    "summary": {
+      "zh-CN": "根据边权性质选择路径算法",
+      "en": "Choose path algorithms according to edge weights"
+    },
+    "categoryId": "graphs",
+    "lessonIds": [
+      "064",
+      "065"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "最短路",
+      "Shortest paths"
+    ]
+  },
+  {
+    "id": "dp-basics",
+    "slug": "dp-basics",
+    "title": {
+      "zh-CN": "从递归到动态规划",
+      "en": "From recursion to DP"
+    },
+    "summary": {
+      "zh-CN": "定义状态、转移和边界",
+      "en": "Define states, transitions, and base cases"
+    },
+    "categoryId": "dp",
+    "lessonIds": [
+      "066",
+      "067",
+      "068",
+      "069"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "从递归到动态规划",
+      "From recursion to DP"
+    ]
+  },
+  {
+    "id": "max-subarray",
+    "slug": "max-subarray",
+    "title": {
+      "zh-CN": "子数组问题",
+      "en": "Subarray problems"
+    },
+    "summary": {
+      "zh-CN": "维护连续区间的最优状态",
+      "en": "Maintain optimal states over contiguous ranges"
+    },
+    "categoryId": "dp",
+    "lessonIds": [
+      "070",
+      "071"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "子数组问题",
+      "Subarray problems"
+    ]
+  },
+  {
+    "id": "lis",
+    "slug": "lis",
+    "title": {
+      "zh-CN": "最长递增子序列",
+      "en": "Longest increasing subsequence"
+    },
+    "summary": {
+      "zh-CN": "处理子序列顺序约束",
+      "en": "Handle ordering constraints in subsequences"
+    },
+    "categoryId": "dp",
+    "lessonIds": [
+      "072"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "最长递增子序列",
+      "Longest increasing subsequence"
+    ]
+  },
+  {
+    "id": "knapsack-dp",
+    "slug": "knapsack-dp",
+    "title": {
+      "zh-CN": "背包 DP",
+      "en": "Knapsack DP"
+    },
+    "summary": {
+      "zh-CN": "在容量约束下分配选择",
+      "en": "Choose items under capacity constraints"
+    },
+    "categoryId": "dp-topics",
+    "lessonIds": [
+      "073",
+      "074",
+      "075"
+    ],
+    "prerequisiteIds": [
+      "dp-basics"
+    ],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "背包 DP",
+      "Knapsack DP"
+    ]
+  },
+  {
+    "id": "interval-dp",
+    "slug": "interval-dp",
+    "title": {
+      "zh-CN": "区间 DP",
+      "en": "Interval DP"
+    },
+    "summary": {
+      "zh-CN": "通过区间划分或端点组织状态",
+      "en": "Organize states by interval splits or endpoints"
+    },
+    "categoryId": "dp-topics",
+    "lessonIds": [
+      "076",
+      "077"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "区间 DP",
+      "Interval DP"
+    ]
+  },
+  {
+    "id": "tree-dp",
+    "slug": "tree-dp",
+    "title": {
+      "zh-CN": "树形 DP",
+      "en": "Tree DP"
+    },
+    "summary": {
+      "zh-CN": "汇总子树状态解决全局问题",
+      "en": "Combine subtree states to solve a global problem"
+    },
+    "categoryId": "dp-topics",
+    "lessonIds": [
+      "078",
+      "079"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "树形 DP",
+      "Tree DP"
+    ]
+  },
+  {
+    "id": "bitmask-dp",
+    "slug": "bitmask-dp",
+    "title": {
+      "zh-CN": "状压 DP",
+      "en": "Bitmask DP"
+    },
+    "summary": {
+      "zh-CN": "用集合编码有限状态",
+      "en": "Encode finite set states with bitmasks"
+    },
+    "categoryId": "dp-topics",
+    "lessonIds": [
+      "080",
+      "081"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "状压 DP",
+      "Bitmask DP"
+    ]
+  },
+  {
+    "id": "dp-optimization",
+    "slug": "dp-optimization",
+    "title": {
+      "zh-CN": "枚举优化与方案恢复",
+      "en": "DP optimization & reconstruction"
+    },
+    "summary": {
+      "zh-CN": "优化转移并恢复决策路径",
+      "en": "Optimize transitions and reconstruct decisions"
+    },
+    "categoryId": "dp-topics",
+    "lessonIds": [
+      "082",
+      "083",
+      "086",
+      "087",
+      "088"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "枚举优化与方案恢复",
+      "DP optimization & reconstruction"
+    ]
+  },
+  {
+    "id": "digit-dp",
+    "slug": "digit-dp",
+    "title": {
+      "zh-CN": "数位 DP",
+      "en": "Digit DP"
+    },
+    "summary": {
+      "zh-CN": "按数位处理受约束整数计数",
+      "en": "Count constrained integers digit by digit"
+    },
+    "categoryId": "dp-topics",
+    "lessonIds": [
+      "084",
+      "085"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "数位 DP",
+      "Digit DP"
+    ]
+  },
+  {
+    "id": "gcd",
+    "slug": "gcd",
+    "title": {
+      "zh-CN": "公约数与同余",
+      "en": "GCD & congruence"
+    },
+    "summary": {
+      "zh-CN": "分析整除与余数关系",
+      "en": "Analyze divisibility and remainders"
+    },
+    "categoryId": "math",
+    "lessonIds": [
+      "041"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "公约数与同余",
+      "GCD & congruence"
+    ]
+  },
+  {
+    "id": "greedy",
+    "slug": "greedy",
+    "title": {
+      "zh-CN": "贪心",
+      "en": "Greedy algorithms"
+    },
+    "summary": {
+      "zh-CN": "用局部选择与交换论证求解",
+      "en": "Use local choices and exchange arguments"
+    },
+    "categoryId": "math",
+    "lessonIds": [
+      "089",
+      "090",
+      "091",
+      "092",
+      "093",
+      "094"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "贪心",
+      "Greedy algorithms"
+    ]
+  },
+  {
+    "id": "game-theory",
+    "slug": "game-theory",
+    "title": {
+      "zh-CN": "博弈基础",
+      "en": "Game theory"
+    },
+    "summary": {
+      "zh-CN": "分析必胜与必败状态",
+      "en": "Analyze winning and losing states"
+    },
+    "categoryId": "math",
+    "lessonIds": [
+      "095",
+      "096"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "博弈基础",
+      "Game theory"
+    ]
+  },
+  {
+    "id": "primes",
+    "slug": "primes",
+    "title": {
+      "zh-CN": "质数筛",
+      "en": "Prime sieves"
+    },
+    "summary": {
+      "zh-CN": "筛选素数与分解因子",
+      "en": "Sieve primes and factor integers"
+    },
+    "categoryId": "math",
+    "lessonIds": [
+      "097"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "质数筛",
+      "Prime sieves"
+    ]
+  },
+  {
+    "id": "fast-power",
+    "slug": "fast-power",
+    "title": {
+      "zh-CN": "快速幂",
+      "en": "Fast exponentiation"
+    },
+    "summary": {
+      "zh-CN": "用二进制分解加速重复运算",
+      "en": "Accelerate repeated operations through binary decomposition"
+    },
+    "categoryId": "math",
+    "lessonIds": [
+      "098"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "快速幂",
+      "Fast exponentiation"
+    ]
+  },
+  {
+    "id": "inverse-inclusion",
+    "slug": "inverse-inclusion",
+    "title": {
+      "zh-CN": "逆元与容斥",
+      "en": "Modular inverses & inclusion-exclusion"
+    },
+    "summary": {
+      "zh-CN": "处理模除法与重叠计数",
+      "en": "Handle modular division and overlapping counts"
+    },
+    "categoryId": "math",
+    "lessonIds": [
+      "099"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "逆元与容斥",
+      "Modular inverses & inclusion-exclusion"
+    ]
+  },
+  {
+    "id": "trie",
+    "slug": "trie",
+    "title": {
+      "zh-CN": "前缀树",
+      "en": "Trie"
+    },
+    "summary": {
+      "zh-CN": "按公共前缀组织字符串",
+      "en": "Organize strings by shared prefixes"
+    },
+    "categoryId": "strings",
+    "lessonIds": [
+      "044",
+      "045"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "前缀树",
+      "Trie"
+    ]
+  },
+  {
+    "id": "kmp",
+    "slug": "kmp",
+    "title": {
+      "zh-CN": "KMP",
+      "en": "KMP"
+    },
+    "summary": {
+      "zh-CN": "复用前缀信息避免重复匹配",
+      "en": "Reuse prefix information during pattern matching"
+    },
+    "categoryId": "strings",
+    "lessonIds": [
+      "100",
+      "101"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "KMP",
+      "KMP"
+    ]
+  },
+  {
+    "id": "aho-corasick",
+    "slug": "aho-corasick",
+    "title": {
+      "zh-CN": "AC 自动机",
+      "en": "Aho–Corasick"
+    },
+    "summary": {
+      "zh-CN": "在文本中匹配多个模式",
+      "en": "Match multiple patterns in text"
+    },
+    "categoryId": "strings",
+    "lessonIds": [
+      "102"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "AC 自动机",
+      "Aho–Corasick"
+    ]
+  },
+  {
+    "id": "manacher",
+    "slug": "manacher",
+    "title": {
+      "zh-CN": "Manacher 与扩展 KMP",
+      "en": "Manacher & extended KMP"
+    },
+    "summary": {
+      "zh-CN": "复用对称或前缀信息",
+      "en": "Reuse symmetry and prefix information"
+    },
+    "categoryId": "strings",
+    "lessonIds": [
+      "103",
+      "104"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "Manacher 与扩展 KMP",
+      "Manacher & extended KMP"
+    ]
+  },
+  {
+    "id": "string-hash",
+    "slug": "string-hash",
+    "title": {
+      "zh-CN": "字符串哈希",
+      "en": "String hashing"
+    },
+    "summary": {
+      "zh-CN": "将子串映射到可比较摘要",
+      "en": "Map substrings to comparable fingerprints"
+    },
+    "categoryId": "strings",
+    "lessonIds": [
+      "105"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "字符串哈希",
+      "String hashing"
+    ]
+  },
+  {
+    "id": "fenwick",
+    "slug": "fenwick",
+    "title": {
+      "zh-CN": "树状数组",
+      "en": "Fenwick tree"
+    },
+    "summary": {
+      "zh-CN": "维护动态前缀聚合",
+      "en": "Maintain dynamic prefix aggregates"
+    },
+    "categoryId": "ranges",
+    "lessonIds": [
+      "108",
+      "109"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "树状数组",
+      "Fenwick tree"
+    ]
+  },
+  {
+    "id": "segment-tree",
+    "slug": "segment-tree",
+    "title": {
+      "zh-CN": "线段树",
+      "en": "Segment tree"
+    },
+    "summary": {
+      "zh-CN": "分层维护区间信息与更新",
+      "en": "Maintain range aggregates and updates hierarchically"
+    },
+    "categoryId": "ranges",
+    "lessonIds": [
+      "110",
+      "111",
+      "112",
+      "113",
+      "114",
+      "115",
+      "116"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "线段树",
+      "Segment tree"
+    ]
+  },
+  {
+    "id": "sparse-table",
+    "slug": "sparse-table",
+    "title": {
+      "zh-CN": "倍增与 ST 表",
+      "en": "Binary lifting & sparse tables"
+    },
+    "summary": {
+      "zh-CN": "预处理静态区间与跳转查询",
+      "en": "Preprocess static range and jump queries"
+    },
+    "categoryId": "ranges",
+    "lessonIds": [
+      "117"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "倍增与 ST 表",
+      "Binary lifting & sparse tables"
+    ]
+  },
+  {
+    "id": "lca",
+    "slug": "lca",
+    "title": {
+      "zh-CN": "最近公共祖先",
+      "en": "Lowest common ancestor"
+    },
+    "summary": {
+      "zh-CN": "寻找树上路径的公共结构",
+      "en": "Find shared structure in tree paths"
+    },
+    "categoryId": "trees",
+    "lessonIds": [
+      "118",
+      "119"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "最近公共祖先",
+      "Lowest common ancestor"
+    ]
+  },
+  {
+    "id": "tree-centroid",
+    "slug": "tree-centroid",
+    "title": {
+      "zh-CN": "重心与直径",
+      "en": "Centroids & diameters"
+    },
+    "summary": {
+      "zh-CN": "分析树的结构中心与最长路径",
+      "en": "Analyze structural centers and longest paths"
+    },
+    "categoryId": "trees",
+    "lessonIds": [
+      "120",
+      "121"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "重心与直径",
+      "Centroids & diameters"
+    ]
+  },
+  {
+    "id": "tree-difference",
+    "slug": "tree-difference",
+    "title": {
+      "zh-CN": "树上差分与换根",
+      "en": "Tree differences & rerooting"
+    },
+    "summary": {
+      "zh-CN": "汇总路径更新或切换根节点",
+      "en": "Aggregate path updates or change the root"
+    },
+    "categoryId": "trees",
+    "lessonIds": [
+      "122",
+      "123"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "树上差分与换根",
+      "Tree differences & rerooting"
+    ]
+  },
+  {
+    "id": "morris",
+    "slug": "morris",
+    "title": {
+      "zh-CN": "Morris 遍历",
+      "en": "Morris traversal"
+    },
+    "summary": {
+      "zh-CN": "利用临时线索完成树遍历",
+      "en": "Traverse a tree using temporary threads"
+    },
+    "categoryId": "trees",
+    "lessonIds": [
+      "124"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "Morris 遍历",
+      "Morris traversal"
+    ]
+  },
+  {
+    "id": "profile-dp",
+    "slug": "profile-dp",
+    "title": {
+      "zh-CN": "轮廓线与进阶 DP",
+      "en": "Profile & advanced DP"
+    },
+    "summary": {
+      "zh-CN": "压缩边界状态并优化转移",
+      "en": "Compress frontier states and optimize transitions"
+    },
+    "categoryId": "advanced",
+    "lessonIds": [
+      "125",
+      "126",
+      "127",
+      "128",
+      "129",
+      "130",
+      "131",
+      "132"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "轮廓线与进阶 DP",
+      "Profile & advanced DP"
+    ]
+  },
+  {
+    "id": "gaussian-elimination",
+    "slug": "gaussian-elimination",
+    "title": {
+      "zh-CN": "高斯消元与线性基",
+      "en": "Elimination & linear bases"
+    },
+    "summary": {
+      "zh-CN": "求解方程组与维护独立向量",
+      "en": "Solve equation systems and maintain independent vectors"
+    },
+    "categoryId": "advanced",
+    "lessonIds": [
+      "133",
+      "134",
+      "135",
+      "136",
+      "137"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "高斯消元与线性基",
+      "Elimination & linear bases"
+    ]
+  },
+  {
+    "id": "fractional",
+    "slug": "fractional",
+    "title": {
+      "zh-CN": "分数规划",
+      "en": "Fractional programming"
+    },
+    "summary": {
+      "zh-CN": "优化比值目标",
+      "en": "Optimize ratio objectives"
+    },
+    "categoryId": "advanced",
+    "lessonIds": [
+      "138"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "分数规划",
+      "Fractional programming"
+    ]
+  },
+  {
+    "id": "extended-gcd",
+    "slug": "extended-gcd",
+    "title": {
+      "zh-CN": "扩展欧几里得与 CRT",
+      "en": "Extended GCD & CRT"
+    },
+    "summary": {
+      "zh-CN": "处理不定方程与同余方程组",
+      "en": "Solve Diophantine equations and congruence systems"
+    },
+    "categoryId": "advanced",
+    "lessonIds": [
+      "139",
+      "140",
+      "141"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "扩展欧几里得与 CRT",
+      "Extended GCD & CRT"
+    ]
+  },
+  {
+    "id": "difference-constraints",
+    "slug": "difference-constraints",
+    "title": {
+      "zh-CN": "差分约束与同余最短路",
+      "en": "Difference constraints"
+    },
+    "summary": {
+      "zh-CN": "用路径约束表达数学关系",
+      "en": "Express mathematical relations through path constraints"
+    },
+    "categoryId": "advanced",
+    "lessonIds": [
+      "142",
+      "143"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "差分约束与同余最短路",
+      "Difference constraints"
+    ]
+  },
+  {
+    "id": "combinatorics",
+    "slug": "combinatorics",
+    "title": {
+      "zh-CN": "组合计数",
+      "en": "Combinatorics"
+    },
+    "summary": {
+      "zh-CN": "运用组合恒等式与计数映射",
+      "en": "Use combinatorial identities and counting maps"
+    },
+    "categoryId": "advanced",
+    "lessonIds": [
+      "144",
+      "145",
+      "146",
+      "147"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "组合计数",
+      "Combinatorics"
+    ]
+  },
+  {
+    "id": "balanced-trees",
+    "slug": "balanced-trees",
+    "title": {
+      "zh-CN": "平衡树与有序结构",
+      "en": "Balanced search trees"
+    },
+    "summary": {
+      "zh-CN": "维护动态有序集合",
+      "en": "Maintain dynamic ordered sets"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "平衡树与有序结构",
+      "Balanced search trees"
+    ]
+  },
+  {
+    "id": "meldable-heap",
+    "slug": "meldable-heap",
+    "title": {
+      "zh-CN": "左偏树与 k 短路",
+      "en": "Meldable heaps"
+    },
+    "summary": {
+      "zh-CN": "支持高效合并的堆结构",
+      "en": "Use heaps that support efficient merging"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "154",
+      "155"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "左偏树与 k 短路",
+      "Meldable heaps"
+    ]
+  },
+  {
+    "id": "weighted-dsu",
+    "slug": "weighted-dsu",
+    "title": {
+      "zh-CN": "带权并查集",
+      "en": "Weighted DSU"
+    },
+    "summary": {
+      "zh-CN": "维护集合内的相对关系",
+      "en": "Maintain relative relations within sets"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "156"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "带权并查集",
+      "Weighted DSU"
+    ]
+  },
+  {
+    "id": "persistent",
+    "slug": "persistent",
+    "title": {
+      "zh-CN": "可持久化结构",
+      "en": "Persistent structures"
+    },
+    "summary": {
+      "zh-CN": "查询历史版本并组织多层索引",
+      "en": "Query historical versions and organize layered indexes"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "157",
+      "158",
+      "159",
+      "160",
+      "165"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "可持久化结构",
+      "Persistent structures"
+    ]
+  },
+  {
+    "id": "heavy-light",
+    "slug": "heavy-light",
+    "title": {
+      "zh-CN": "树链剖分与合并",
+      "en": "Heavy-light decomposition"
+    },
+    "summary": {
+      "zh-CN": "把树上问题分解为可维护区间",
+      "en": "Reduce tree problems to maintainable ranges"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "161",
+      "162",
+      "163",
+      "164"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "树链剖分与合并",
+      "Heavy-light decomposition"
+    ]
+  },
+  {
+    "id": "offline-divide",
+    "slug": "offline-divide",
+    "title": {
+      "zh-CN": "离线分治",
+      "en": "Offline divide and conquer"
+    },
+    "summary": {
+      "zh-CN": "按时间、答案或维度分解问题",
+      "en": "Divide problems by time, answer, or dimension"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "166",
+      "167",
+      "168",
+      "169",
+      "170",
+      "171"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "离线分治",
+      "Offline divide and conquer"
+    ]
+  },
+  {
+    "id": "sqrt-decomposition",
+    "slug": "sqrt-decomposition",
+    "title": {
+      "zh-CN": "分块",
+      "en": "Square-root decomposition"
+    },
+    "summary": {
+      "zh-CN": "平衡块内与块间处理成本",
+      "en": "Balance processing within and between blocks"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "172",
+      "173",
+      "174",
+      "175"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "分块",
+      "Square-root decomposition"
+    ]
+  },
+  {
+    "id": "mo",
+    "slug": "mo",
+    "title": {
+      "zh-CN": "莫队",
+      "en": "Mo’s algorithm"
+    },
+    "summary": {
+      "zh-CN": "重排离线询问复用区间状态",
+      "en": "Reorder offline queries to reuse range state"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "176",
+      "177",
+      "178",
+      "179"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "莫队",
+      "Mo’s algorithm"
+    ]
+  },
+  {
+    "id": "tree-divide",
+    "slug": "tree-divide",
+    "title": {
+      "zh-CN": "虚树与点边分治",
+      "en": "Virtual trees & centroid decomposition"
+    },
+    "summary": {
+      "zh-CN": "压缩关键节点或分解树结构",
+      "en": "Compress key vertices or decompose tree structure"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "180",
+      "181",
+      "182",
+      "183",
+      "184",
+      "185",
+      "186",
+      "187"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "虚树与点边分治",
+      "Virtual trees & centroid decomposition"
+    ]
+  },
+  {
+    "id": "connectivity",
+    "slug": "connectivity",
+    "title": {
+      "zh-CN": "连通性与欧拉路径",
+      "en": "Connectivity & Euler paths"
+    },
+    "summary": {
+      "zh-CN": "分析有向与无向图的连通结构",
+      "en": "Analyze connectivity in directed and undirected graphs"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "188",
+      "189",
+      "190",
+      "191",
+      "192",
+      "193",
+      "194"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "连通性与欧拉路径",
+      "Connectivity & Euler paths"
+    ]
+  },
+  {
+    "id": "graph-optimization",
+    "slug": "graph-optimization",
+    "title": {
+      "zh-CN": "优化建图与 2-SAT",
+      "en": "Graph optimization & 2-SAT"
+    },
+    "summary": {
+      "zh-CN": "压缩依赖关系并求解逻辑约束",
+      "en": "Compress dependencies and solve logical constraints"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "195",
+      "196",
+      "197",
+      "198"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "优化建图与 2-SAT",
+      "Graph optimization & 2-SAT"
+    ]
+  },
+  {
+    "id": "special-graphs",
+    "slug": "special-graphs",
+    "title": {
+      "zh-CN": "基环树与仙人掌",
+      "en": "Special graph structures"
+    },
+    "summary": {
+      "zh-CN": "利用图中的特殊环结构",
+      "en": "Exploit special cycle structures in graphs"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "199",
+      "200"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "基环树与仙人掌",
+      "Special graph structures"
+    ]
+  },
+  {
+    "id": "link-cut-tree",
+    "slug": "link-cut-tree",
+    "title": {
+      "zh-CN": "动态树 LCT",
+      "en": "Link-cut trees"
+    },
+    "summary": {
+      "zh-CN": "维护动态森林与路径信息",
+      "en": "Maintain dynamic forests and path information"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "201",
+      "202",
+      "203",
+      "204"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "动态树 LCT",
+      "Link-cut trees"
+    ]
+  },
+  {
+    "id": "kd-tree",
+    "slug": "kd-tree",
+    "title": {
+      "zh-CN": "K-D 树",
+      "en": "K-D trees"
+    },
+    "summary": {
+      "zh-CN": "组织多维空间查询",
+      "en": "Organize multidimensional spatial queries"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "205",
+      "206"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "K-D 树",
+      "K-D trees"
+    ]
+  },
+  {
+    "id": "johnson",
+    "slug": "johnson",
+    "title": {
+      "zh-CN": "Johnson 与传递闭包",
+      "en": "Johnson & transitive closure"
+    },
+    "summary": {
+      "zh-CN": "处理全源路径与可达关系",
+      "en": "Compute all-pairs paths and reachability"
+    },
+    "categoryId": "expert",
+    "lessonIds": [
+      "207"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "Johnson 与传递闭包",
+      "Johnson & transitive closure"
+    ]
+  },
+  {
+    "id": "study-strategy",
+    "slug": "study-strategy",
+    "title": {
+      "zh-CN": "学习策略",
+      "en": "Study strategies"
+    },
+    "summary": {
+      "zh-CN": "组织学习方法与解题策略",
+      "en": "Organize study and problem-solving strategies"
+    },
+    "categoryId": "strategy",
+    "lessonIds": [
+      "001",
+      "002",
+      "043"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "学习策略",
+      "Study strategies"
+    ]
+  },
+  {
+    "id": "hash-engineering",
+    "slug": "hash-engineering",
+    "title": {
+      "zh-CN": "哈希与工程专题",
+      "en": "Hashing & engineering"
+    },
+    "summary": {
+      "zh-CN": "联系算法结构与工程应用",
+      "en": "Connect algorithmic structures with engineering"
+    },
+    "categoryId": "strategy",
+    "lessonIds": [
+      "026",
+      "106",
+      "107"
+    ],
+    "prerequisiteIds": [],
+    "contentStatus": "planned",
+    "mainContentFiles": {},
+    "relatedArticleSlugs": [],
+    "aliases": [
+      "哈希与工程专题",
+      "Hashing & engineering"
+    ]
+  }
+]

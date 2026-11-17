@@ -1,0 +1,4 @@
+<nav class="blog-nav" aria-label="{{ ui.blog }}">
+<a class="blog-wordmark" href="{{ U('/blog/') }}">river-ya <span>/ notes</span></a>
+<div>{% for section,href,key in [('posts','/blog/','blog_posts'),('archive','/blog/archive/','blog_archive'),('tags','/blog/tags/','blog_tags'),('search','/blog/search/','blog_search')] %}<a href="{{ U(href) }}" {% if blog_section|default('')==section %}aria-current="page"{% endif %}>{{ ui[key] }}</a>{% endfor %}</div>
+</nav>

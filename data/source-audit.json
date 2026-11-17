@@ -1,0 +1,678 @@
+[
+  {
+    "id": "vae",
+    "paperId": "1312.6114",
+    "date": "2013-12-20",
+    "title": "Auto-Encoding Variational Bayes",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1312.6114"
+  },
+  {
+    "id": "gan",
+    "paperId": "1406.2661",
+    "date": "2014-06-10",
+    "title": "Generative Adversarial Networks",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1406.2661"
+  },
+  {
+    "id": "diffusion-origin",
+    "paperId": "1503.03585",
+    "date": "2015-03-12",
+    "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1503.03585"
+  },
+  {
+    "id": "resnet",
+    "paperId": "1512.03385",
+    "date": "2015-12-10",
+    "title": "Deep Residual Learning for Image Recognition",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1512.03385"
+  },
+  {
+    "id": "transformer",
+    "paperId": "1706.03762",
+    "date": "2017-06-12",
+    "title": "Attention Is All You Need",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1706.03762"
+  },
+  {
+    "id": "world-models",
+    "paperId": "1803.10122",
+    "date": "2018-03-27",
+    "title": "World Models",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1803.10122"
+  },
+  {
+    "id": "bert",
+    "paperId": "1810.04805",
+    "date": "2018-10-11",
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1810.04805"
+  },
+  {
+    "id": "dreamer",
+    "paperId": "1912.01603",
+    "date": "2019-12-03",
+    "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1912.01603"
+  },
+  {
+    "id": "nerf",
+    "paperId": "2003.08934",
+    "date": "2020-03-19",
+    "title": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2003.08934"
+  },
+  {
+    "id": "ddpm",
+    "paperId": "2006.11239",
+    "date": "2020-06-19",
+    "title": "Denoising Diffusion Probabilistic Models",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2006.11239"
+  },
+  {
+    "id": "vit",
+    "paperId": "2010.11929",
+    "date": "2020-10-22",
+    "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2010.11929"
+  },
+  {
+    "id": "clip",
+    "paperId": "2103.00020",
+    "date": "2021-02-26",
+    "title": "Learning Transferable Visual Models From Natural Language Supervision",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2103.00020"
+  },
+  {
+    "id": "ldm",
+    "paperId": "2112.10752",
+    "date": "2021-12-20",
+    "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2112.10752"
+  },
+  {
+    "id": "dit",
+    "paperId": "2212.09748",
+    "date": "2022-12-19",
+    "title": "Scalable Diffusion Models with Transformers",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2212.09748"
+  },
+  {
+    "id": "dreamerv3",
+    "paperId": "2301.04104",
+    "date": "2023-01-10",
+    "title": "Mastering Diverse Domains through World Models",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2301.04104"
+  },
+  {
+    "id": "3dgs",
+    "paperId": "2308.04079",
+    "date": "2023-08-08",
+    "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2308.04079"
+  },
+  {
+    "id": "genie",
+    "paperId": "2402.15391",
+    "date": "2024-02-23",
+    "title": "Genie: Generative Interactive Environments",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2402.15391"
+  },
+  {
+    "id": "dropout",
+    "paperId": "1207.0580",
+    "date": "2012-07-03",
+    "title": "Improving neural networks by preventing co-adaptation of feature detectors",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1207.0580"
+  },
+  {
+    "id": "batchnorm",
+    "paperId": "1502.03167",
+    "date": "2015-02-11",
+    "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1502.03167"
+  },
+  {
+    "id": "attention",
+    "paperId": "1409.0473",
+    "date": "2014-09-01",
+    "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1409.0473"
+  },
+  {
+    "id": "word2vec",
+    "paperId": "1301.3781",
+    "date": "2013-01-16",
+    "title": "Efficient Estimation of Word Representations in Vector Space",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1301.3781"
+  },
+  {
+    "id": "seq2seq",
+    "paperId": "1409.3215",
+    "date": "2014-09-10",
+    "title": "Sequence to Sequence Learning with Neural Networks",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1409.3215"
+  },
+  {
+    "id": "t5",
+    "paperId": "1910.10683",
+    "date": "2019-10-23",
+    "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1910.10683"
+  },
+  {
+    "id": "gpt3",
+    "paperId": "2005.14165",
+    "date": "2020-05-28",
+    "title": "Language Models are Few-Shot Learners",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2005.14165"
+  },
+  {
+    "id": "lora",
+    "paperId": "2106.09685",
+    "date": "2021-06-17",
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2106.09685"
+  },
+  {
+    "id": "instructgpt",
+    "paperId": "2203.02155",
+    "date": "2022-03-04",
+    "title": "Training language models to follow instructions with human feedback",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2203.02155"
+  },
+  {
+    "id": "dpo",
+    "paperId": "2305.18290",
+    "date": "2023-05-29",
+    "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2305.18290"
+  },
+  {
+    "id": "rag",
+    "paperId": "2005.11401",
+    "date": "2020-05-22",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2005.11401"
+  },
+  {
+    "id": "vgg",
+    "paperId": "1409.1556",
+    "date": "2014-09-04",
+    "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1409.1556"
+  },
+  {
+    "id": "faster-rcnn",
+    "paperId": "1506.01497",
+    "date": "2015-06-04",
+    "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1506.01497"
+  },
+  {
+    "id": "unet",
+    "paperId": "1505.04597",
+    "date": "2015-05-18",
+    "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1505.04597"
+  },
+  {
+    "id": "detr",
+    "paperId": "2005.12872",
+    "date": "2020-05-26",
+    "title": "End-to-End Object Detection with Transformers",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2005.12872"
+  },
+  {
+    "id": "swin",
+    "paperId": "2103.14030",
+    "date": "2021-03-25",
+    "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2103.14030"
+  },
+  {
+    "id": "mae",
+    "paperId": "2111.06377",
+    "date": "2021-11-11",
+    "title": "Masked Autoencoders Are Scalable Vision Learners",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2111.06377"
+  },
+  {
+    "id": "sam",
+    "paperId": "2304.02643",
+    "date": "2023-04-05",
+    "title": "Segment Anything",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2304.02643"
+  },
+  {
+    "id": "simclr",
+    "paperId": "2002.05709",
+    "date": "2020-02-13",
+    "title": "A Simple Framework for Contrastive Learning of Visual Representations",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2002.05709"
+  },
+  {
+    "id": "scaling",
+    "paperId": "2001.08361",
+    "date": "2020-01-23",
+    "title": "Scaling Laws for Neural Language Models",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2001.08361"
+  },
+  {
+    "id": "visualbert",
+    "paperId": "1908.03557",
+    "date": "2019-08-09",
+    "title": "VisualBERT: A Simple and Performant Baseline for Vision and Language",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1908.03557"
+  },
+  {
+    "id": "vilbert",
+    "paperId": "1908.02265",
+    "date": "2019-08-06",
+    "title": "ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1908.02265"
+  },
+  {
+    "id": "align",
+    "paperId": "2102.05918",
+    "date": "2021-02-11",
+    "title": "Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2102.05918"
+  },
+  {
+    "id": "blip",
+    "paperId": "2201.12086",
+    "date": "2022-01-28",
+    "title": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2201.12086"
+  },
+  {
+    "id": "flamingo",
+    "paperId": "2204.14198",
+    "date": "2022-04-29",
+    "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2204.14198"
+  },
+  {
+    "id": "blip2",
+    "paperId": "2301.12597",
+    "date": "2023-01-30",
+    "title": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2301.12597"
+  },
+  {
+    "id": "llava",
+    "paperId": "2304.08485",
+    "date": "2023-04-17",
+    "title": "Visual Instruction Tuning",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2304.08485"
+  },
+  {
+    "id": "pointnet",
+    "paperId": "1612.00593",
+    "date": "2016-12-02",
+    "title": "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1612.00593"
+  },
+  {
+    "id": "deepsdf",
+    "paperId": "1901.05103",
+    "date": "2019-01-16",
+    "title": "DeepSDF: Learning Continuous Signed Distance Functions for Shape Representation",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1901.05103"
+  },
+  {
+    "id": "occupancy",
+    "paperId": "1812.03828",
+    "date": "2018-12-10",
+    "title": "Occupancy Networks: Learning 3D Reconstruction in Function Space",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1812.03828"
+  },
+  {
+    "id": "mipnerf",
+    "paperId": "2103.13415",
+    "date": "2021-03-24",
+    "title": "Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2103.13415"
+  },
+  {
+    "id": "instant-ngp",
+    "paperId": "2201.05989",
+    "date": "2022-01-16",
+    "title": "Instant Neural Graphics Primitives with a Multiresolution Hash Encoding",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2201.05989"
+  },
+  {
+    "id": "mipnerf360",
+    "paperId": "2111.12077",
+    "date": "2021-11-23",
+    "title": "Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2111.12077"
+  },
+  {
+    "id": "dreamfusion",
+    "paperId": "2209.14988",
+    "date": "2022-09-29",
+    "title": "DreamFusion: Text-to-3D using 2D Diffusion",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2209.14988"
+  },
+  {
+    "id": "4dgs",
+    "paperId": "2310.08528",
+    "date": "2023-10-12",
+    "title": "4D Gaussian Splatting for Real-Time Dynamic Scene Rendering",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2310.08528"
+  },
+  {
+    "id": "planet",
+    "paperId": "1811.04551",
+    "date": "2018-11-12",
+    "title": "Learning Latent Dynamics for Planning from Pixels",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1811.04551"
+  },
+  {
+    "id": "dreamerv2",
+    "paperId": "2010.02193",
+    "date": "2020-10-05",
+    "title": "Mastering Atari with Discrete World Models",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2010.02193"
+  },
+  {
+    "id": "muzero",
+    "paperId": "1911.08265",
+    "date": "2019-11-19",
+    "title": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1911.08265"
+  },
+  {
+    "id": "mbpo",
+    "paperId": "1906.08253",
+    "date": "2019-06-19",
+    "title": "When to Trust Your Model: Model-Based Policy Optimization",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1906.08253"
+  },
+  {
+    "id": "tdmpc",
+    "paperId": "2203.04955",
+    "date": "2022-03-09",
+    "title": "Temporal Difference Learning for Model Predictive Control",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2203.04955"
+  },
+  {
+    "id": "tdmpc2",
+    "paperId": "2310.16828",
+    "date": "2023-10-25",
+    "title": "TD-MPC2: Scalable, Robust World Models for Continuous Control",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2310.16828"
+  },
+  {
+    "id": "dreamerpro",
+    "paperId": "2110.14565",
+    "date": "2021-10-27",
+    "title": "DreamerPro: Reconstruction-Free Model-Based Reinforcement Learning with Prototypical Representations",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2110.14565"
+  },
+  {
+    "id": "cgan",
+    "paperId": "1411.1784",
+    "date": "2014-11-06",
+    "title": "Conditional Generative Adversarial Nets",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1411.1784"
+  },
+  {
+    "id": "dcgan",
+    "paperId": "1511.06434",
+    "date": "2015-11-19",
+    "title": "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1511.06434"
+  },
+  {
+    "id": "wgan",
+    "paperId": "1701.07875",
+    "date": "2017-01-26",
+    "title": "Wasserstein GAN",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1701.07875"
+  },
+  {
+    "id": "wgan-gp",
+    "paperId": "1704.00028",
+    "date": "2017-03-31",
+    "title": "Improved Training of Wasserstein GANs",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1704.00028"
+  },
+  {
+    "id": "pix2pix",
+    "paperId": "1611.07004",
+    "date": "2016-11-21",
+    "title": "Image-to-Image Translation with Conditional Adversarial Networks",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1611.07004"
+  },
+  {
+    "id": "cyclegan",
+    "paperId": "1703.10593",
+    "date": "2017-03-30",
+    "title": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1703.10593"
+  },
+  {
+    "id": "stylegan",
+    "paperId": "1812.04948",
+    "date": "2018-12-12",
+    "title": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1812.04948"
+  },
+  {
+    "id": "stylegan2",
+    "paperId": "1912.04958",
+    "date": "2019-12-03",
+    "title": "Analyzing and Improving the Image Quality of StyleGAN",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1912.04958"
+  },
+  {
+    "id": "stylegan3",
+    "paperId": "2106.12423",
+    "date": "2021-06-23",
+    "title": "Alias-Free Generative Adversarial Networks",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2106.12423"
+  },
+  {
+    "id": "iwae",
+    "paperId": "1509.00519",
+    "date": "2015-09-01",
+    "title": "Importance Weighted Autoencoders",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1509.00519"
+  },
+  {
+    "id": "vqvae",
+    "paperId": "1711.00937",
+    "date": "2017-11-02",
+    "title": "Neural Discrete Representation Learning",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1711.00937"
+  },
+  {
+    "id": "vqvae2",
+    "paperId": "1906.00446",
+    "date": "2019-06-02",
+    "title": "Generating Diverse High-Fidelity Images with VQ-VAE-2",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1906.00446"
+  },
+  {
+    "id": "nvae",
+    "paperId": "2007.03898",
+    "date": "2020-07-08",
+    "title": "NVAE: A Deep Hierarchical Variational Autoencoder",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2007.03898"
+  },
+  {
+    "id": "ladder-vae",
+    "paperId": "1602.02282",
+    "date": "2016-02-06",
+    "title": "Ladder Variational Autoencoders",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1602.02282"
+  },
+  {
+    "id": "vampprior",
+    "paperId": "1705.07120",
+    "date": "2017-05-19",
+    "title": "VAE with a VampPrior",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1705.07120"
+  },
+  {
+    "id": "beta-tcvae",
+    "paperId": "1802.04942",
+    "date": "2018-02-14",
+    "title": "Isolating Sources of Disentanglement in Variational Autoencoders",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/1802.04942"
+  },
+  {
+    "id": "ddim",
+    "paperId": "2010.02502",
+    "date": "2020-10-06",
+    "title": "Denoising Diffusion Implicit Models",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2010.02502"
+  },
+  {
+    "id": "score-sde",
+    "paperId": "2011.13456",
+    "date": "2020-11-26",
+    "title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2011.13456"
+  },
+  {
+    "id": "classifier-guidance",
+    "paperId": "2105.05233",
+    "date": "2021-05-11",
+    "title": "Diffusion Models Beat GANs on Image Synthesis",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2105.05233"
+  },
+  {
+    "id": "cfg",
+    "paperId": "2207.12598",
+    "date": "2022-07-26",
+    "title": "Classifier-Free Diffusion Guidance",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2207.12598"
+  },
+  {
+    "id": "dpm-solver",
+    "paperId": "2206.00927",
+    "date": "2022-06-02",
+    "title": "DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2206.00927"
+  },
+  {
+    "id": "consistency",
+    "paperId": "2303.01469",
+    "date": "2023-03-02",
+    "title": "Consistency Models",
+    "checkedAt": "2026-10-22",
+    "sourceUrl": "https://arxiv.org/abs/2303.01469"
+  },
+  {
+    "id": "backprop",
+    "date": "1986-10-09",
+    "title": "Backpropagation (landmark paper)",
+    "sourceUrl": "https://doi.org/10.1038/323533a0",
+    "checkedAt": "2026-10-22"
+  },
+  {
+    "id": "lenet",
+    "date": "1998",
+    "title": "LeNet-5",
+    "sourceUrl": "https://bottou.org/papers/lecun-98h",
+    "checkedAt": "2026-10-22"
+  },
+  {
+    "id": "dyna",
+    "date": "1991-07-01",
+    "title": "Dyna (1991 paper)",
+    "sourceUrl": "https://doi.org/10.1145/122344.122377",
+    "checkedAt": "2026-10-22"
+  },
+  {
+    "id": "colmap",
+    "date": "2016",
+    "title": "COLMAP / SfM",
+    "sourceUrl": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Schonberger_Structure-From-Motion_Revisited_CVPR_2016_paper.html",
+    "checkedAt": "2026-10-22"
+  }
+]

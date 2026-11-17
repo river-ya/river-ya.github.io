@@ -1,0 +1,834 @@
+{
+  "sha": "20a7e5229acb7af3f61c98b63ad3444216425606",
+  "checkedAt": "2026-10-22",
+  "files": [
+    {
+      "path": "ppt/算法讲解001【入门】学习算法的语言问题以及如何开通gpt4.pptx",
+      "sha": "832bb434a1ef345257e610ef32478ddfa69bdd19"
+    },
+    {
+      "path": "ppt/算法讲解002【入门】从社会实验到入门提醒.pptx",
+      "sha": "af8ddeafa59fd696a6dd20404b1a9ad7a811b4b2"
+    },
+    {
+      "path": "ppt/算法讲解003【入门】二进制和位运算.pptx",
+      "sha": "c981943bb21c209fb1b70b416546c1bb37ddf2aa"
+    },
+    {
+      "path": "ppt/算法讲解004【入门】选择、冒泡、插入排序.pptx",
+      "sha": "8e383324d0efa92690fcaff4c8eed115b0d10e16"
+    },
+    {
+      "path": "ppt/算法讲解005【入门】对数器-验证的重要手段.pptx",
+      "sha": "7a06503aaa319da3423e43c4e26c8ff6393f19ef"
+    },
+    {
+      "path": "ppt/算法讲解006【入门】二分搜索.pptx",
+      "sha": "811a515ea97c6f7e1f5d1d8c9a90458548406627"
+    },
+    {
+      "path": "ppt/算法讲解007【入门】时间复杂度和空间复杂度.pptx",
+      "sha": "663ca4f0b52dc415e98a185785e41b9c0b975dfa"
+    },
+    {
+      "path": "ppt/算法讲解008【入门】算法和数据结构简介.pptx",
+      "sha": "a4d07d5da324e3c6de7c03bfb7dcfa2ad83c96b4"
+    },
+    {
+      "path": "ppt/算法讲解009【入门】单双链表及其反转-堆栈诠释.pptx",
+      "sha": "c541f833670b5aa28d80d8f64df44227658e0659"
+    },
+    {
+      "path": "ppt/算法讲解010【入门】链表入门题目-合并两个有序链表.pptx",
+      "sha": "aff9d3402899e427741f68738d23410bc38eb820"
+    },
+    {
+      "path": "ppt/算法讲解011【入门】链表入门题目-两个链表相加.pptx",
+      "sha": "24692b1b571fab0e85fa75b6259e772ad465b9a7"
+    },
+    {
+      "path": "ppt/算法讲解012【入门】链表入门题目-划分链表.pptx",
+      "sha": "410e86b736df7a0136d5f14ac2609fb8ee082f73"
+    },
+    {
+      "path": "ppt/算法讲解013【入门】队列和栈-链表、数组实现.pptx",
+      "sha": "ac59b5e6dcef285e0b85438eff30032a1b26d2cf"
+    },
+    {
+      "path": "ppt/算法讲解014【入门】队列和栈入门题目-栈和队列相互实现.pptx",
+      "sha": "8b8e68e4446e0ca78640ac782d93676ece6a037f"
+    },
+    {
+      "path": "ppt/算法讲解015【入门】栈的入门题目-最小栈.pptx",
+      "sha": "b41d14b9b37c2707d4fce8a361684bcfa13e5632"
+    },
+    {
+      "path": "ppt/算法讲解016【入门】双端队列-双链表和固定数组实现.pptx",
+      "sha": "d43533d3d748d8badf31c011d9e5f7dff34eb87e"
+    },
+    {
+      "path": "ppt/算法讲解017【入门】二叉树及其三种序的递归实现.pptx",
+      "sha": "65b5a663b3dd16b503b90b99dd42924375dd2c28"
+    },
+    {
+      "path": "ppt/算法讲解018【入门】二叉树遍历的非递归实现和复杂度分析.pptx",
+      "sha": "a0c7beb5a34d6727771fba1e6fcb4d8a958c728d"
+    },
+    {
+      "path": "ppt/算法讲解019【必备】算法笔试中处理输入和输出.pptx",
+      "sha": "5e27a7cd7ffae458659578fbd6ded231dd93aad5"
+    },
+    {
+      "path": "ppt/算法讲解020【必备】递归和master公式.pptx",
+      "sha": "3db69fcaaa4af4ceed954c368a200089feea2932"
+    },
+    {
+      "path": "ppt/算法讲解021【必备】归并排序.pptx",
+      "sha": "8fe819e786844ebdceeb9aa6a68766f869a095c3"
+    },
+    {
+      "path": "ppt/算法讲解022【必备】归并分治.pptx",
+      "sha": "9127d88d7f0c36cf98e27b13f25afd03cd4002bf"
+    },
+    {
+      "path": "ppt/算法讲解023【必备】随机快速排序.pptx",
+      "sha": "2dd9d0644aa6ada592f3e728a247b5c8aefb62a8"
+    },
+    {
+      "path": "ppt/算法讲解024【必备】随机选择算法.pptx",
+      "sha": "271b3fe81f857db82f0b9d2351eba45cfe631c7e"
+    },
+    {
+      "path": "ppt/算法讲解025【必备】堆结构和堆排序.pptx",
+      "sha": "0eec37e9eeb07c2e60c4126b2665c04f6676f00f"
+    },
+    {
+      "path": "ppt/算法讲解026【必备】哈希表、有序表和比较器的用法.pptx",
+      "sha": "d0f7c27709eab75f673fe69b4e5d718dd43375e0"
+    },
+    {
+      "path": "ppt/算法讲解027【必备】堆结构常见题.pptx",
+      "sha": "b915a5c051134ed8c20902b6ff3bfc2a85445368"
+    },
+    {
+      "path": "ppt/算法讲解028【必备】基数排序.pptx",
+      "sha": "57c0c3d7eddb0c9e5c25ec56f591b96fb0b9389c"
+    },
+    {
+      "path": "ppt/算法讲解029【必备】重要排序算法的总结.pptx",
+      "sha": "df2ae9211da3ff3d211455227dd514e648f7989c"
+    },
+    {
+      "path": "ppt/算法讲解030【必备】异或运算的骚操作.pptx",
+      "sha": "618967c108f9103dcfb43ecd6b75e6ad13b63d00"
+    },
+    {
+      "path": "ppt/算法讲解031【必备】位运算的骚操作.pptx",
+      "sha": "8963051a98dbeafd5c0410793f7324cc5ea9b982"
+    },
+    {
+      "path": "ppt/算法讲解032【必备】位图.pptx",
+      "sha": "c6c7bc8fdd5a61781f5a8a3b603a929ff150deda"
+    },
+    {
+      "path": "ppt/算法讲解033【必备】位运算实现加减乘除.pptx",
+      "sha": "85197bf8e519cf8fa149d7ba48d5204aefb9f006"
+    },
+    {
+      "path": "ppt/算法讲解034【必备】链表高频题目和必备技巧.pptx",
+      "sha": "fb4fd1ac762f50b533b76ce7bc63d0ab7a311c7f"
+    },
+    {
+      "path": "ppt/算法讲解035【必备】数据结构设计高频题.pptx",
+      "sha": "fd23a087b8baac5309fd0d036298208ebc52d08e"
+    },
+    {
+      "path": "ppt/算法讲解036【必备】二叉树高频题目-上-不含树型dp.pptx",
+      "sha": "3b2f3e13cafb142d19fcce15f8386ae71818c506"
+    },
+    {
+      "path": "ppt/算法讲解037【必备】二叉树高频题目-下-不含树型dp.pptx",
+      "sha": "e79c37b4de2e3421e7d842348c541b32d7524eab"
+    },
+    {
+      "path": "ppt/算法讲解038【必备】常见经典递归过程解析.pptx",
+      "sha": "34de6f778c56e47ef4da3b06896233b0ec9cb401"
+    },
+    {
+      "path": "ppt/算法讲解039【必备】嵌套类问题的递归解题套路.pptx",
+      "sha": "663725a583373313d401112bb5ac724a271b880c"
+    },
+    {
+      "path": "ppt/算法讲解040【必备】N皇后问题-重点是位运算的版本.pptx",
+      "sha": "fe7a498d0f58108d81213df9fd55430a57564df2"
+    },
+    {
+      "path": "ppt/算法讲解041【必备】最大公约数、同余原理.pptx",
+      "sha": "e02b703f5f3d91f6006055484500349c81fd05d0"
+    },
+    {
+      "path": "ppt/算法讲解042【必备】对数器打表找规律的技巧.pptx",
+      "sha": "5755e81f780e03a88e4162b24d7abac6cbf13d01"
+    },
+    {
+      "path": "ppt/算法讲解043【必备】根据数据量猜解法的技巧-天字第一号重要技巧.pptx",
+      "sha": "74603e590b0724e2c6bab5b9eb1796fc2adee3ed"
+    },
+    {
+      "path": "ppt/算法讲解044【必备】前缀树原理和代码详解.pptx",
+      "sha": "984f8942e366ec920b17e19143e1a078d0ff2a31"
+    },
+    {
+      "path": "ppt/算法讲解045【必备】前缀树的相关题目.pptx",
+      "sha": "042303835c5b1a7966da6230154084ef5cf79fc0"
+    },
+    {
+      "path": "ppt/算法讲解046【必备】构建前缀信息的技巧-解决子数组相关问题.pptx",
+      "sha": "37cc626adbba25d248ff5c20180e90aa148b6448"
+    },
+    {
+      "path": "ppt/算法讲解047【必备】一维差分与等差数列差分.pptx",
+      "sha": "94ad1658fa56a127f11aaeed06aecd274ce45389"
+    },
+    {
+      "path": "ppt/算法讲解048【必备】二维前缀和、二维差分、离散化技巧.pptx",
+      "sha": "1e0c0e77b2625766f08f5ed42cfa646b4a279436"
+    },
+    {
+      "path": "ppt/算法讲解049【必备】滑动窗口技巧与相关题目.pptx",
+      "sha": "57f52367f8b882a057350123a33f97160fa9c54e"
+    },
+    {
+      "path": "ppt/算法讲解050【必备】双指针技巧与相关题目.pptx",
+      "sha": "7daff80bd814c1cd1fe7f4f5f23e7f20d626e81c"
+    },
+    {
+      "path": "ppt/算法讲解051【必备】二分答案法与相关题目.pptx",
+      "sha": "b19388c2288741197b8f3a086097cc66f0aac934"
+    },
+    {
+      "path": "ppt/算法讲解052【必备】单调栈-上.pptx",
+      "sha": "9dd0948e0e8a565a313b1b3769773d68d05e694b"
+    },
+    {
+      "path": "ppt/算法讲解053【必备】单调栈-下.pptx",
+      "sha": "87ba284bd9dae3e803d11adf7f348cfd4b283fce"
+    },
+    {
+      "path": "ppt/算法讲解054【必备】单调队列-上.pptx",
+      "sha": "e5098faa0db537829b8e8b9a1a9a9d37c3a5c014"
+    },
+    {
+      "path": "ppt/算法讲解055【必备】单调队列-下.pptx",
+      "sha": "c34546447be163a89c2fa07129583de958718936"
+    },
+    {
+      "path": "ppt/算法讲解056【必备】并查集-上.pptx",
+      "sha": "c3ac8087d8fe2f536fde9fe3e4a7538137554fb1"
+    },
+    {
+      "path": "ppt/算法讲解057【必备】并查集-下.pptx",
+      "sha": "9d28106e821bd0d529feb70e3c1c686d2e7e9818"
+    },
+    {
+      "path": "ppt/算法讲解058【必备】洪水填充.pptx",
+      "sha": "eec2724f242153c038f603abd2d02e701ec388dd"
+    },
+    {
+      "path": "ppt/算法讲解059【必备】建图、链式前向星、拓扑排序.pptx",
+      "sha": "dd561f711d2e55c4e071b83ff4e1773d8aa65bb5"
+    },
+    {
+      "path": "ppt/算法讲解060【必备】拓扑排序的扩展技巧.pptx",
+      "sha": "5f4e1744c47fe87a991a838038ed0b86f405c6a0"
+    },
+    {
+      "path": "ppt/算法讲解061【必备】最小生成树.pptx",
+      "sha": "99f0e60f78523cbfcbe4b3c932fa45c8c244e056"
+    },
+    {
+      "path": "ppt/算法讲解062【必备】宽度优先遍历及其扩展.pptx",
+      "sha": "d1ced2d4b2f45139dfc1d034c65abf8699086025"
+    },
+    {
+      "path": "ppt/算法讲解063【必备】双向广搜.pptx",
+      "sha": "17fd082c3ee3c9f46c425682a33c7ca7466095b7"
+    },
+    {
+      "path": "ppt/算法讲解064【必备】Dijkstra算法、分层图最短路.pptx",
+      "sha": "0f929b657b657fc906f36f99d40289816c35e4cd"
+    },
+    {
+      "path": "ppt/算法讲解065【必备】A星、Floyd、Bellman-Ford与SPFA.pptx",
+      "sha": "007d270adfebdf0043717b3d1acf302518700656"
+    },
+    {
+      "path": "ppt/算法讲解066【必备】从递归入手一维动态规划.pptx",
+      "sha": "27f9046f62712eab286af6905151305dd9e04761"
+    },
+    {
+      "path": "ppt/算法讲解067【必备】从递归入手二维动态规划.pptx",
+      "sha": "2b219e3a73f5b12b29532a2953caa823800dfb78"
+    },
+    {
+      "path": "ppt/算法讲解068【必备】见识更多二维动态规划题目.pptx",
+      "sha": "c79dbe05df13620399ddcbfb13c92f6d5d6def8c"
+    },
+    {
+      "path": "ppt/算法讲解069【必备】从递归入手三维动态规划.pptx",
+      "sha": "a87ddfebb11d184c81a8ea36205f195863dec150"
+    },
+    {
+      "path": "ppt/算法讲解070【必备】子数组最大累加和问题与扩展-上.pptx",
+      "sha": "5bbce6931eab8d37568cca22cb514d381c40eaee"
+    },
+    {
+      "path": "ppt/算法讲解071【必备】子数组最大累加和问题与扩展-下.pptx",
+      "sha": "32af65f12a4dd31ac7919153619c299ef533b70a"
+    },
+    {
+      "path": "ppt/算法讲解072【必备】最长递增子序列问题与扩展.pptx",
+      "sha": "6760ee5669cd5812e96fa184bbf9c0f3d75d162a"
+    },
+    {
+      "path": "ppt/算法讲解073【必备】背包dp-01背包、有依赖的背包.pptx",
+      "sha": "cc477cb6e0d6b90b2f891ff4b1aeabc8037c191a"
+    },
+    {
+      "path": "ppt/算法讲解074【必备】背包dp-分组背包、完全背包.pptx",
+      "sha": "1552994303b64554ca90ca3cff71f0375fdebcfa"
+    },
+    {
+      "path": "ppt/算法讲解075【必备】背包dp-多重背包、混合背包.pptx",
+      "sha": "b041eec14d6eaf8641f653e00f125d82038ddfd2"
+    },
+    {
+      "path": "ppt/算法讲解076【必备】区间dp-上.pptx",
+      "sha": "5af59139f673161b564278199d3698c571dfb56b"
+    },
+    {
+      "path": "ppt/算法讲解077【必备】区间dp-下.pptx",
+      "sha": "9e76376f9b74b2fbb12df99363703efcbbce5315"
+    },
+    {
+      "path": "ppt/算法讲解078【必备】树型dp-上.pptx",
+      "sha": "705680bc9b0b386c15f7a7c03e063823558f355d"
+    },
+    {
+      "path": "ppt/算法讲解079【必备】树型dp-下.pptx",
+      "sha": "b83d59d23326bac322499197c4557d4fc5bedc63"
+    },
+    {
+      "path": "ppt/算法讲解080【必备】状压dp-上.pptx",
+      "sha": "6750234d53b10e2dfe8fe9d46c1c0a3a148d7311"
+    },
+    {
+      "path": "ppt/算法讲解081【必备】状压dp-下.pptx",
+      "sha": "88d5575d1bd3d29ecf36265b65bbceabd4d372b1"
+    },
+    {
+      "path": "ppt/算法讲解082【必备】动态规划中用观察优化枚举的技巧-上.pptx",
+      "sha": "8ead6ac92c1f9bb3d6f7b9e93f52e67f451c6984"
+    },
+    {
+      "path": "ppt/算法讲解083【必备】动态规划中用观察优化枚举的技巧-下.pptx",
+      "sha": "f8148428e4b728cb6c495f9970748052ca12a507"
+    },
+    {
+      "path": "ppt/算法讲解084【必备】数位dp-上.pptx",
+      "sha": "b5592424ea64a4efd0f8f4671de4b4b492ee236e"
+    },
+    {
+      "path": "ppt/算法讲解085【必备】数位dp-下.pptx",
+      "sha": "3709471eade96b5ed24a0af311fe6904de4b8d70"
+    },
+    {
+      "path": "ppt/算法讲解086【必备】动态规划中得到具体决策方案的技巧.pptx",
+      "sha": "8114d740e777901439039ad1782dcf0f90f62815"
+    },
+    {
+      "path": "ppt/算法讲解087【必备】动态规划中根据数据量猜解法的技巧.pptx",
+      "sha": "fe7345b53ff64629f213f7764b7055e39cd05a52"
+    },
+    {
+      "path": "ppt/算法讲解088【必备】动态规划专题总结与预告.pptx",
+      "sha": "71dfcc833bd76fb600839417693d6d6659aea5b4"
+    },
+    {
+      "path": "ppt/算法讲解089【必备】贪心经典题目专题1.pptx",
+      "sha": "12f47d2cb35cc5041a2e8a8a2c796c3aa92beef9"
+    },
+    {
+      "path": "ppt/算法讲解090【必备】贪心经典题目专题2.pptx",
+      "sha": "303cc8d7e45458d68dfb8e9a20cf02bdca49be6f"
+    },
+    {
+      "path": "ppt/算法讲解091【必备】贪心经典题目专题3.pptx",
+      "sha": "47cd1a17ea02a5762b6b31c8393bb915898c35b4"
+    },
+    {
+      "path": "ppt/算法讲解092【必备】贪心经典题目专题4.pptx",
+      "sha": "2cdcf6b99dae716d313764c633697b9fe470cda4"
+    },
+    {
+      "path": "ppt/算法讲解093【必备】贪心经典题目专题5.pptx",
+      "sha": "47f2e9dd9e488cc8cf38018d29f723660ec4d412"
+    },
+    {
+      "path": "ppt/算法讲解094【必备】贪心经典题目专题6.pptx",
+      "sha": "b2a2ad58cdd781001a0613e84530dfd6e5d894f2"
+    },
+    {
+      "path": "ppt/算法讲解095【必备】博弈类问题必备内容详解-上.pptx",
+      "sha": "9213479c76dd7fbe51f526dce02a41147e1ddea2"
+    },
+    {
+      "path": "ppt/算法讲解096【必备】博弈类问题必备内容详解-下.pptx",
+      "sha": "494c6fe2686315955d96042239af50d7d9da4f86"
+    },
+    {
+      "path": "ppt/算法讲解097【必备】质数判断、质因子分解、质数筛.pptx",
+      "sha": "cf23c01720005dedde167060ddce530d36e90de6"
+    },
+    {
+      "path": "ppt/算法讲解098【必备】快速幂、矩阵快速幂与两类问题.pptx",
+      "sha": "eb769c5c5b60da21b1739565c19386891f0a7020"
+    },
+    {
+      "path": "ppt/算法讲解099【扩展】 逆元和除法同余、容斥原理.pptx",
+      "sha": "4057c6a5dbd22138ad22d65d493b73187a901b73"
+    },
+    {
+      "path": "ppt/算法讲解100【扩展】 KMP算法原理和代码详解.pptx",
+      "sha": "ae3229686109d8289bd3fab0b97156e6305f2dc6"
+    },
+    {
+      "path": "ppt/算法讲解101【扩展】 KMP算法相关题目.pptx",
+      "sha": "00a0d6bba666266894244a1908eeee26f51d8719"
+    },
+    {
+      "path": "ppt/算法讲解102【扩展】 AC自动机原理、优化、代码详解.pptx",
+      "sha": "8da6f9eba465643e1f662cf05a7b6c1026ad8e50"
+    },
+    {
+      "path": "ppt/算法讲解103【扩展】 Manacher算法、扩展KMP.pptx",
+      "sha": "cff71bbeb2ebe9c6b8e9641ba20055812071f620"
+    },
+    {
+      "path": "ppt/算法讲解104【扩展】 Manacher算法相关题目.pptx",
+      "sha": "1544dd0312e82cebf2553004016c6a6600ec8aec"
+    },
+    {
+      "path": "ppt/算法讲解105【扩展】字符串哈希原理、代码、题目详解.pptx",
+      "sha": "a602b18aea5847443f4d8559937dc40644329493"
+    },
+    {
+      "path": "ppt/算法讲解106【扩展】哈希函数、哈希表、布隆过滤器、一致性哈希.pptx",
+      "sha": "d1d24048885203f0e3b2af84892727995b22bdc9"
+    },
+    {
+      "path": "ppt/算法讲解107【扩展】大厂面试中经常漫聊的有趣算法问题.pptx",
+      "sha": "ea33682ca595ae97983312895adf42c39e364014"
+    },
+    {
+      "path": "ppt/算法讲解108【扩展】树状数组原理、扩展、代码详解.pptx",
+      "sha": "cae2675c85d899b840ca53e797cf8d114ebe3e81"
+    },
+    {
+      "path": "ppt/算法讲解109【扩展】树状数组相关题目.pptx",
+      "sha": "5515c9705d070fe65e5c01481568847bbfd29be7"
+    },
+    {
+      "path": "ppt/算法讲解110【扩展】线段树专题1-线段树原理和代码详解.pptx",
+      "sha": "cd37be837a512508a5574c85b44f5175cc9a2060"
+    },
+    {
+      "path": "ppt/算法讲解111【扩展】线段树专题2-线段树的离散化、二分搜索、特别修改.pptx",
+      "sha": "4e90dd0d8f8cdfa34d71f2a0079cc7ff1d72021e"
+    },
+    {
+      "path": "ppt/算法讲解112【扩展】线段树专题3-线段树维护更多类型的信息.pptx",
+      "sha": "11cbba761b962e6a61928116495aaac8910536b3"
+    },
+    {
+      "path": "ppt/算法讲解113【扩展】线段树专题4-线段树解决区间合并的问题.pptx",
+      "sha": "c62cbd7fa0c76642a751c2774a4e9f66f4638b5b"
+    },
+    {
+      "path": "ppt/算法讲解114【扩展】线段树专题5-开点线段树、区间最值和历史最值.pptx",
+      "sha": "f1619596b9379db297460baf84525248edfeb581"
+    },
+    {
+      "path": "ppt/算法讲解115【扩展】线段树专题6-线段树与扫描线结合的题目.pptx",
+      "sha": "1d904370b48787c163425463f36c911d5929ea7c"
+    },
+    {
+      "path": "ppt/算法讲解116【扩展】摩尔投票大加强，线段树里捉海王.pptx",
+      "sha": "ba618dc5bd9976cfe080d1be3dfa01f30c8ee3b1"
+    },
+    {
+      "path": "ppt/算法讲解117【扩展】倍增算法和ST表.pptx",
+      "sha": "b464c0b47d61e70dee2fcbbfd5507d1f479f83af"
+    },
+    {
+      "path": "ppt/算法讲解118【扩展】树上问题专题1-树上倍增和LCA-上.pptx",
+      "sha": "93b42cc63ec9e8ec0e0b58a5a677cb7762de8211"
+    },
+    {
+      "path": "ppt/算法讲解119【扩展】树上问题专题2-树上倍增和LCA-下.pptx",
+      "sha": "2270ff6a5243198a19d2cc88745b9a137d2ffa26"
+    },
+    {
+      "path": "ppt/算法讲解120【扩展】树上问题专题3-树的重心.pptx",
+      "sha": "87824d7add866907535b884a9ab28358b1a7732e"
+    },
+    {
+      "path": "ppt/算法讲解121【扩展】树上问题专题4-树的直径.pptx",
+      "sha": "855bd9d95e8eaacefb49d286e4e36dff1212a239"
+    },
+    {
+      "path": "ppt/算法讲解122【扩展】树上问题专题5-树上差分.pptx",
+      "sha": "d3e5e6ced13c5f6e0e8a0adc0ba682be595baaea"
+    },
+    {
+      "path": "ppt/算法讲解123【扩展】树上问题专题6-换根dp.pptx",
+      "sha": "d77e3af4660f2e354c01a38bb24cb1a9ec9a747f"
+    },
+    {
+      "path": "ppt/算法讲解124【扩展】Morris遍历.pptx",
+      "sha": "5064634109b33880356136b61a5b55df727619c5"
+    },
+    {
+      "path": "ppt/算法讲解125【扩展】轮廓线dp.pptx",
+      "sha": "0d0d8a3201e8cdeb08ca6aba30208a5f9c1c6eba"
+    },
+    {
+      "path": "ppt/算法讲解126【扩展】三进制状压dp.pptx",
+      "sha": "9f9111234eeaac609c3538765e56e9ca6930ac87"
+    },
+    {
+      "path": "ppt/算法讲解127【扩展】动态规划优化专题1-优化尝试和状态设计-上.pptx",
+      "sha": "18e88d85e11b8f29783fc5757849836574631854"
+    },
+    {
+      "path": "ppt/算法讲解128【扩展】动态规划优化专题2-优化尝试和状态设计-下.pptx",
+      "sha": "f68880d04af6c95ff55e9e98d5c40dc37a991de7"
+    },
+    {
+      "path": "ppt/算法讲解129【扩展】动态规划优化专题3-倍增优化.pptx",
+      "sha": "727d9a59bc5e625ac33a02cda2d321b229f464bd"
+    },
+    {
+      "path": "ppt/算法讲解130【扩展】动态规划优化专题4-单调队列和单调栈优化.pptx",
+      "sha": "bd94e1fdf97c3b4fc2c8ef5fe7193bef5ec7a7ef"
+    },
+    {
+      "path": "ppt/算法讲解131【扩展】动态规划优化专题5-树状数组和线段树优化.pptx",
+      "sha": "3521ade3a7047eda13e4d263fbfaf60276dd2258"
+    },
+    {
+      "path": "ppt/算法讲解132【扩展】动态规划优化专题6-预处理数组优化.pptx",
+      "sha": "32fb961c11fb814cfde2f8171b6a79c652c79e38"
+    },
+    {
+      "path": "ppt/算法讲解133【扩展】高斯消元专题1-解决加法方程组.pptx",
+      "sha": "b593e91d4e027d1fe08d15a16d7325cd159ad351"
+    },
+    {
+      "path": "ppt/算法讲解134【扩展】高斯消元专题2-解决异或方程组.pptx",
+      "sha": "69b1e2bf24e9cefceeec8ec9870b948227b124ce"
+    },
+    {
+      "path": "ppt/算法讲解135【扩展】高斯消元专题3-解决同余方程组.pptx",
+      "sha": "19057e6cd07095c99285796bfeb2b09a4496b1ce"
+    },
+    {
+      "path": "ppt/算法讲解136【扩展】线性基-上.pptx",
+      "sha": "a4f29cbfc07506696029dbf97b892d35e2848ea6"
+    },
+    {
+      "path": "ppt/算法讲解137【扩展】线性基-下.pptx",
+      "sha": "9c49280d3235f96588240b41b477baa7daab8f3c"
+    },
+    {
+      "path": "ppt/算法讲解138【扩展】01分数规划.pptx",
+      "sha": "d2e640e39f974ffca59e9914e5d6e4483759d204"
+    },
+    {
+      "path": "ppt/算法讲解139【扩展】裴蜀定理和扩展欧几里得算法.pptx",
+      "sha": "1127f96dab6e07531d6d5be9f43adda7984e03ab"
+    },
+    {
+      "path": "ppt/算法讲解140【扩展】扩展欧几里得和二元一次不定方程.pptx",
+      "sha": "916949baf8ee82e9c06e55f6887a8903a96f70a7"
+    },
+    {
+      "path": "ppt/算法讲解141【扩展】中国剩余定理及其扩展.pptx",
+      "sha": "e82b89b47711fe9166b2b45699201357aaaa74da"
+    },
+    {
+      "path": "ppt/算法讲解142【扩展】负环和差分约束.pptx",
+      "sha": "ef62f0f47163672cb89e7c6f3cb0a6bf222e3c3e"
+    },
+    {
+      "path": "ppt/算法讲解143【扩展】同余最短路.pptx",
+      "sha": "c03ac2506ba086b8f5c5d50a090f47de6adf4565"
+    },
+    {
+      "path": "ppt/算法讲解144【扩展】二项式定理证明和相关题目.pdf",
+      "sha": "3495713770b92c7fd708ee17f0ea31c56c7b9e27"
+    },
+    {
+      "path": "ppt/算法讲解145【扩展】二项式反演的四种形式、证明、相关题目.pdf",
+      "sha": "09de3374beefd1729b55a4c9c4aa18b30f705320"
+    },
+    {
+      "path": "ppt/算法讲解146【扩展】康托展开、约瑟夫环、完美洗牌.pdf",
+      "sha": "c74235a7db51cdd6970912b6b56cbcde20ccfbc2"
+    },
+    {
+      "path": "ppt/算法讲解147【扩展】卡特兰数题型详解和取模处理.pdf",
+      "sha": "050c9a7c11eb7b5bccc8a438d1bcde44272398c7"
+    },
+    {
+      "path": "ppt/算法讲解148【扩展】有序表专题1-AVL树.pptx",
+      "sha": "94efe887ee1802770952b721ad977b89faccce46"
+    },
+    {
+      "path": "ppt/算法讲解149【扩展】有序表专题2-跳表.pptx",
+      "sha": "2e146bd9a1e79d8e365d06408d3bf81da5436ef0"
+    },
+    {
+      "path": "ppt/算法讲解150【扩展】有序表专题3-替罪羊树.pptx",
+      "sha": "8d104c44719bf70f27db8d07c22d50bc59c9a637"
+    },
+    {
+      "path": "ppt/算法讲解151【扩展】有序表专题4-笛卡尔树、Treap树.pptx",
+      "sha": "a80149fcfda0df91ab86c24c82bc161b86b2c28e"
+    },
+    {
+      "path": "ppt/算法讲解152【扩展】有序表专题5-FHQ Treap.pptx",
+      "sha": "0de3a278288c95610a8f78fe1b351310ec59950a"
+    },
+    {
+      "path": "ppt/算法讲解153【扩展】有序表专题6-Splay树.pdf",
+      "sha": "030f1a1ed9e3048441289db10770f9f05227368d"
+    },
+    {
+      "path": "ppt/算法讲解154【挺难】左偏树的原理、代码、相关题目.pptx",
+      "sha": "0e14d1b3c9b36720de62d75fffd332d918a5d6b7"
+    },
+    {
+      "path": "ppt/算法讲解155【挺难】左偏树和懒更新、可持久化左偏树、k短路问题.pptx",
+      "sha": "7f847a7ef90d5eb4999474a6db53c7d959b4de50"
+    },
+    {
+      "path": "ppt/算法讲解156【挺难】带权并查集的原理和扩展题目.pptx",
+      "sha": "85e5b81674a1e2e479f46b210e1eff0e3ab55dd4"
+    },
+    {
+      "path": "ppt/算法讲解157【挺难】可持久化线段树和标记永久化.pptx",
+      "sha": "ac8fd7d3f9a940a989ce6b376e1defb459923890"
+    },
+    {
+      "path": "ppt/算法讲解158【挺难】可持久化线段树的相关题目.pptx",
+      "sha": "65c50aa3ad26827bed0a9d39c08607ea65a8150c"
+    },
+    {
+      "path": "ppt/算法讲解159【挺难】可持久化前缀树和相关题目.pptx",
+      "sha": "285a603fbfd9548282a80bf622615efc20dd39c1"
+    },
+    {
+      "path": "ppt/算法讲解160【挺难】树套树的原理、优化、相关题目.pptx",
+      "sha": "d3ea4445694fe7be19e66f42b37c90030faf783f"
+    },
+    {
+      "path": "ppt/算法讲解161【挺难】树链剖分-上.pptx",
+      "sha": "3d9c5f3f7caaa9f3042448b6fe35fb06372edf63"
+    },
+    {
+      "path": "ppt/算法讲解162【挺难】树链剖分-下.pptx",
+      "sha": "56b4990bd57ae8a80966a61660d0abe1043f8934"
+    },
+    {
+      "path": "ppt/算法讲解163【挺难】树上启发式合并的原理和相关题目.pptx",
+      "sha": "4f93db08743c2f8e3ff722464770391d5e6a95b3"
+    },
+    {
+      "path": "ppt/算法讲解164【挺难】Kruskal重构树的原理和相关题目.pptx",
+      "sha": "ec51dfcce1b1de2bbfb628952bf228d75dad3849"
+    },
+    {
+      "path": "ppt/算法讲解165【挺难】可持久化并查集、可撤销并查集.pptx",
+      "sha": "e1a1c8353254d0175c9aa06fa22f7d5d54be021d"
+    },
+    {
+      "path": "ppt/算法讲解166【挺难】线段树分治-上.pptx",
+      "sha": "2210c9654a931078bda58ae3bc38200c596fea5b"
+    },
+    {
+      "path": "ppt/算法讲解167【挺难】线段树分治-下.pptx",
+      "sha": "a1bd74b722975164d6c5a9a147743ceefa23676e"
+    },
+    {
+      "path": "ppt/算法讲解168【挺难】整体二分-上.pptx",
+      "sha": "6e3c91d83a203c62d828309a250d666b739789ad"
+    },
+    {
+      "path": "ppt/算法讲解169【挺难】整体二分-下.pptx",
+      "sha": "c0eb0cf562a015da005395dfe00495f2c76402b7"
+    },
+    {
+      "path": "ppt/算法讲解170【挺难】CDQ分治-上.pptx",
+      "sha": "8355427c2ddf14bbeed18b3b5fb4cae8a14746c6"
+    },
+    {
+      "path": "ppt/算法讲解171【挺难】CDQ分治-下.pptx",
+      "sha": "2418474b4b6b46a1b7c4c9fe0c81af608534c8de"
+    },
+    {
+      "path": "ppt/算法讲解172【挺难】分块专题1-块状数组、块状链表.pptx",
+      "sha": "158b950809c1bebcefda8132bba40e5418d5ddda"
+    },
+    {
+      "path": "ppt/算法讲解173【挺难】分块专题2-分块的几道好题、树上分块.pptx",
+      "sha": "066f41b0fe6106917711f3cce00a374f602a5fc6"
+    },
+    {
+      "path": "ppt/算法讲解174【挺难】分块专题3-双层分块、分块结合并查集.pptx",
+      "sha": "16e2b92f6c12f5491b05e579b534bb6775150634"
+    },
+    {
+      "path": "ppt/算法讲解175【挺难】分块专题4-根号分治.pptx",
+      "sha": "ef506834435332aac705106e78fc455beffe719a"
+    },
+    {
+      "path": "ppt/算法讲解176【挺难】莫队专题1-普通莫队、带修莫队.pptx",
+      "sha": "6e1e73b7a3e0e8b850ee99b0507edb1e8b0d5c24"
+    },
+    {
+      "path": "ppt/算法讲解177【挺难】莫队专题2-回滚莫队、树上莫队.pptx",
+      "sha": "83056ab8c409f15f96b0dc44ed31b2c12b4a41cc"
+    },
+    {
+      "path": "ppt/算法讲解178【挺难】莫队专题3-莫队二次离线.pptx",
+      "sha": "13a4577e8685deb391776cf6599db1724eaee207"
+    },
+    {
+      "path": "ppt/算法讲解179【挺难】莫队专题4-莫队综合应用.pptx",
+      "sha": "873f6938995dd6bdf5928935257a63413e3cb5b4"
+    },
+    {
+      "path": "ppt/算法讲解180【挺难】虚树的原理和相关题目.pptx",
+      "sha": "2664c00f8c87eab92a67153481687309d16e2b08"
+    },
+    {
+      "path": "ppt/算法讲解181【挺难】线段树的合并与分裂-上.pptx",
+      "sha": "0144dd136b363a6e2cde5f63071d236c0e661af9"
+    },
+    {
+      "path": "ppt/算法讲解182【挺难】线段树的合并与分裂-下.pptx",
+      "sha": "74c4eed286af8d959a94e3fe61b21058441eb3cf"
+    },
+    {
+      "path": "ppt/算法讲解183【挺难】静态点分治-上.pptx",
+      "sha": "14378fcb7c0f8572bf267c0d7b1023828596833e"
+    },
+    {
+      "path": "ppt/算法讲解184【挺难】静态点分治-下.pptx",
+      "sha": "df9c37bce4ae36e2b8bd7fb02f3a96e722f2f217"
+    },
+    {
+      "path": "ppt/算法讲解185【挺难】点分树和动态点分治.pptx",
+      "sha": "19332c85a54af887dc13b6a90c30f4df77ed26ac"
+    },
+    {
+      "path": "ppt/算法讲解186【挺难】欧拉序求LCA、dfn序求LCA.pptx",
+      "sha": "523e3096ce733387c2bb3c0c7c613ca799e733d7"
+    },
+    {
+      "path": "ppt/算法讲解187【挺难】边分治和边分树.pptx",
+      "sha": "9a23de0b1512c7eec6fdd0f8fddefcd9628d6993"
+    },
+    {
+      "path": "ppt/算法讲解188【挺难】欧拉路径与相关题目.pptx",
+      "sha": "b737b8cc30c60edfa60896873cde2e6f84487eb8"
+    },
+    {
+      "path": "ppt/算法讲解189【挺难】强连通分量和缩点-上.pptx",
+      "sha": "6d76bace2b844a56ae9582f3df12e5a06f0fb9cc"
+    },
+    {
+      "path": "ppt/算法讲解190【挺难】强连通分量和缩点-下.pptx",
+      "sha": "68c776df477d5ee3fd1528ff617a5466f6702602"
+    },
+    {
+      "path": "ppt/算法讲解191【挺难】割边、边双连通分量和缩点.pptx",
+      "sha": "525feba9a5e5f35321bab736b217efbf473c3e21"
+    },
+    {
+      "path": "ppt/算法讲解192【挺难】边双连通分量缩点的更多题目.pptx",
+      "sha": "904e35a7b02af6ce598d0d1f6dc1a5137fc6bfc8"
+    },
+    {
+      "path": "ppt/算法讲解193【挺难】割点和点双连通分量.pptx",
+      "sha": "cdb586d71a2188f334cb227e125d58caa099680f"
+    },
+    {
+      "path": "ppt/算法讲解194【挺难】圆方树的原理和相关题目.pptx",
+      "sha": "defbd1f40d7fa6dc1f9a06ae232cf519523176e1"
+    },
+    {
+      "path": "ppt/算法讲解195【挺难】优化建图的技巧和题目.pptx",
+      "sha": "8d73e3213e11e6b6a4294194dd1ebcf6f3a54a5e"
+    },
+    {
+      "path": "ppt/算法讲解196【挺难】2-SAT与前缀优化建图.pptx",
+      "sha": "f246b5c5206cf7a63db335d05a0297ce5af04d7a"
+    },
+    {
+      "path": "ppt/算法讲解197【挺难】2-SAT与优化建图的更多题目.pptx",
+      "sha": "c6822af5831dc7a8c2cbf4fe985c757503164a07"
+    },
+    {
+      "path": "ppt/算法讲解198【挺难】树状数组优化建图、主席树优化建图、CDQ优化建图.pptx",
+      "sha": "244fd3f94fddec244753ef646d636ae90588070d"
+    },
+    {
+      "path": "ppt/算法讲解199【挺难】基环树和相关题目.pptx",
+      "sha": "b0796d729f0bedf3ae55ba46e230bcd649ed87d1"
+    },
+    {
+      "path": "ppt/算法讲解200【挺难】仙人掌图和相关题目.pptx",
+      "sha": "de84a06a602bc859e4c4cfc16d999bbcb373b1cf"
+    },
+    {
+      "path": "ppt/算法讲解201【挺难】LCT专题1-LCT的原理和模版题目.pptx",
+      "sha": "fd63619021780808b9f8e5013dff43e7ef110697"
+    },
+    {
+      "path": "ppt/算法讲解202【挺难】LCT专题2-LCT维护路径、边双连通分量的题目.pptx",
+      "sha": "3ca5e0b45e1491c5f90c46fadf86456ae3b5da5f"
+    },
+    {
+      "path": "ppt/算法讲解203【挺难】LCT专题3-LCT维护边权、生成树的题目.pptx",
+      "sha": "3a2c0f1f5b5b4c8a8652e369b87b4ca5f19b66f8"
+    },
+    {
+      "path": "ppt/算法讲解204【挺难】LCT专题4-LCT维护子树、图结构的题目.pptx",
+      "sha": "f4aee980745a1ae39b59d32531a146d16f1cab3f"
+    },
+    {
+      "path": "ppt/算法讲解205【挺难】K-D树的原理、代码、常见题目.pptx",
+      "sha": "5c0381648f361cc13c560198bcede79b9f4d6b4e"
+    },
+    {
+      "path": "ppt/算法讲解206【挺难】K-D树的删除操作、树套树、优化建图.pptx",
+      "sha": "ff6108d05290b19f01ae976d1b53902530d95e6c"
+    },
+    {
+      "path": "ppt/算法讲解207【挺难】Johnson全源最短路、传递闭包.pptx",
+      "sha": "d280cacbb2f8f60b390fab033a33368dbcbf49a1"
+    }
+  ]
+}

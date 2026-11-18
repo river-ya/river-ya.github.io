@@ -16,12 +16,12 @@
 <script src="/assets/crane-entry.js" defer></script>
 {% block head %}{% endblock %}
 </head>
-<body data-page="{{ path }}">
+<body data-page="{{ path }}"{% if category %} data-collection="{{ category }}"{% endif %}>
 <a href="#main" class="skip-link">{{ ui.skip }}</a>
 <header class="site-header"><div class="header-inner">
 <a class="brand" href="{{ U('/') }}" aria-label="{{ L(profile.name) }} · {{ ui.home }}"><span class="brand-mark" aria-hidden="true">/</span><span>{{ L(profile.name) }}<span class="brand-dot">.</span></span></a>
 <nav class="main-nav" aria-label="{{ ui.nav_label }}">
-{% for href,key in [('/','home'),('/skills/','skills'),('/knowledge/','notebooks'),('/blog/','blog')] %}<a href="{{ U(href) }}" {% if path==href or (href in ['/knowledge/','/blog/'] and path.startswith(href)) or (href=='/knowledge/' and path.startswith('/notes/')) %}aria-current="page"{% endif %}>{{ ui[key] }}</a>{% endfor %}
+{% for href,key in [('/','home'),('/skills/','skills'),('/knowledge/','notebooks'),('/blog/','blog'),('/terminal/','terminal_nav')] %}<a href="{{ U(href) }}" {% if path==href or (href in ['/knowledge/','/blog/'] and path.startswith(href)) or (href=='/knowledge/' and path.startswith('/notes/')) %}aria-current="page"{% endif %}>{{ ui[key] }}</a>{% endfor %}
 </nav>
 <div class="header-tools"><button class="icon-button search-open" aria-label="{{ ui.search_label }}"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><span class="search-word">{{ ui.search }}</span><kbd>/</kbd></button><span class="tool-divider"></span>{% include 'partials/type-toggle.html' %}<button class="icon-button" id="theme-toggle" aria-label="{{ ui.theme }}"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></svg></button><a class="locale-switch" id="language-switch" href="{{ language_url }}" aria-label="{{ ui.language }}"><span {% if locale=='zh-CN' %}class="active"{% endif %}>中文</span><span class="muted">/</span><span {% if locale=='en' %}class="active"{% endif %}>EN</span></a></div>
 </div></header>

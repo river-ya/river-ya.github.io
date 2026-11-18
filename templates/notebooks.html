@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block head %}<link rel="stylesheet" href="/assets/notes-dock.css">{% endblock %}
+{% block head %}<link rel="stylesheet" href="/assets/notes-dock.css">{% if category %}<script defer src="/assets/collection-signal.js"></script>{% endif %}{% endblock %}
 {% block content %}
 <div class="desk">
   {% if view=='home' %}
@@ -8,15 +8,26 @@
       <p class="byline"><span>{{ L(profile.name) }}</span></p>
       <h1>{{ ui.notebook_title }}</h1>
       <p class="hero-intro">{{ L(profile.intro) }}</p>
-      <div class="desk-links"><a href="{{ U('/blog/') }}">{{ ui.visit_blog }} ↗</a>{% for social in profile.socials %}<a href="{{ social.url }}">{{ social.label }} ↗</a>{% endfor %}</div>
+      <div class="desk-links"><a href="{{ U('/blog/') }}">{{ ui.visit_blog }} ↗</a><a class="terminal-link" href="{{ U('/terminal/') }}"><code aria-hidden="true">&gt;_</code> {{ ui.site_terminal }}</a>{% for social in profile.socials %}<a href="{{ social.url }}">{{ social.label }} ↗</a>{% endfor %}</div>
       <a id="remembered-locale" href="/en/" hidden>{{ ui.remembered }}</a>
     </div>
   </section>
+  {% elif category %}
+  <header class="collection-cover">
+    <div class="collection-copy">
+      <a class="collection-path" href="{{ U('/notes/ai/' if subcategory else '/knowledge/') }}">← {{ ui.shelf_ai if subcategory else ui.all_notes }}</a>
+      <h1>{{ title }}</h1>
+      <div class="collection-links">
+        {% if category=='ai' and not subcategory %}<a class="shelf-sub" href="{{ U('/notes/ai/computer-vision/') }}">{{ ui.cv_shelf }} ↗</a>{% endif %}
+        <a class="terminal-link" href="{{ U('/terminal/') }}?cwd=/{{ category }}{{ '/computer-vision' if subcategory else '' }}"><code aria-hidden="true">&gt;_</code> {{ ui.terminal_here }}</a>
+      </div>
+    </div>
+    <div class="collection-figure" aria-hidden="true"><canvas width="360" height="220" data-signal="{{ category }}"></canvas></div>
+  </header>
   {% else %}
   <header class="desk-heading">
-    <a class="desk-back" href="{{ U('/notes/ai/' if subcategory else '/') }}">← {{ ui.shelf_ai if subcategory else ui.home }}</a>
+    <a class="desk-back" href="{{ U('/') }}">← {{ ui.home }}</a>
     <h1>{{ title }}</h1>
-    {% if category=='ai' and not subcategory %}<a class="shelf-sub" href="{{ U('/notes/ai/computer-vision/') }}">{{ ui.cv_shelf }} ↗</a>{% endif %}
   </header>
   {% endif %}
   <section class="shelf" aria-label="{{ ui.recent }}">

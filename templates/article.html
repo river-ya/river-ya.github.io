@@ -18,7 +18,7 @@
     <ul>{% for heading in toc %}<li><a href="#{{ heading.id }}">{{ heading.title }}</a></li>{% endfor %}</ul>
   </details>
   {% endif %}
-  <div class="prose">{{ body }}
+  <div class="prose" data-terminal-text>{{ body }}
     {% if source %}<details class="source-code"><summary>{{ ui.source_code }} · <code>{{ article.sourceFile }}</code></summary>{{ source }}</details>{% endif %}
   </div>
   {% if article.tags %}<div class="tags">{% for tag in article.tags %}<a href="{{ U('/blog/') }}?tag={{ tag|urlencode }}#posts">{{ tag }}</a>{% endfor %}</div>{% endif %}

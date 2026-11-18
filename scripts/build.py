@@ -84,6 +84,39 @@ def notebook_entries(locale):
     return sorted(notes, key=lambda entry: (entry['date'], entry['url']), reverse=True)
 
 
+def terminal_catalog(locale, notes):
+    ui = UI[locale]
+    catalog = {}
+
+    def add(path, route, title, directory=False):
+        catalog[path] = dict(url=url(route, locale), title=title, directory=directory)
+
+    add('/', '/', ui['home'], True)
+    for category in SHELF_TAGS:
+        add('/'+category, '/notes/'+category+'/', ui['shelf_'+category], True)
+    add('/ai/computer-vision', '/notes/ai/computer-vision/', ui['cv_shelf'], True)
+    add('/blog', '/blog/', ui['blog'], True)
+    for path, route, key in [('home','/','home'), ('skills','/skills/','skills'),
+                             ('notes','/knowledge/','all_notes')]:
+        add('/'+path, route, ui[key])
+    for page in ['archive', 'tags', 'search', 'faq']:
+        add('/blog/'+page, '/blog/'+page+'/', ui[{'faq':'faq_title'}.get(page,'blog_'+page)])
+    for note in notes:
+        slug = note['url'].rstrip('/').rsplit('/', 1)[-1]
+        folders = [key for key in SHELF_TAGS if key in note['groups']]
+        if 'computer-vision' in note['groups']:
+            folders.append('ai/computer-vision')
+        if '/blog/' in note['url']:
+            folders.append('blog')
+        for folder in folders:
+            path = '/'+folder+'/'+slug
+            while path in catalog:
+                path += '-note'
+            catalog[path] = dict(url=note['url'], title=note['title'], summary=note['summary'],
+                                 directory=False)
+    return catalog
+
+
 @lru_cache(maxsize=None)
 def reading_minutes(file):
     text=(ROOT/file).read_text()
@@ -144,6 +177,9 @@ def main():
         def index(title,path,kind,summary='',tags='',status='planned'):
             search[locale].append(dict(title=title,url=url(path,locale),kind=kind,summary=summary,tags=tags,status=status))
         notes = notebook_entries(locale)
+        render('/terminal/', 'terminal.html', ui['site_terminal'], locale, ui['terminal_hint'],
+               catalog=terminal_catalog(locale, notes))
+        index(ui['site_terminal'], '/terminal/', ui['nav_label'], ui['terminal_hint'])
         render('/', 'notebooks.html', L(DATA['profile']['name']), locale, L(DATA['profile']['intro']),
                view='home', entries=notes[:5])
         render('/knowledge/', 'notebooks.html', ui['all_notes'], locale, view='notes', entries=notes)

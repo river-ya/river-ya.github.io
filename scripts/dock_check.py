@@ -14,6 +14,46 @@ class StaticFiles(SimpleHTTPRequestHandler):
         pass
 
 
+def check_terminal(page, site, prefix):
+    page.locator('.collection-links .terminal-link').click()
+    prompt = page.locator('#shell-input')
+    log = page.locator('#shell-log')
+
+    def run(text):
+        prompt.fill(text)
+        prompt.press('Enter')
+
+    expect(page.locator('#shell-path')).to_have_text('/ai/computer-vision')
+    first_note = log.locator('.shell-list a').first
+    if first_note.count():
+        run('cat '+first_note.inner_text())
+        expect(log.locator('.shell-reading div')).not_to_be_empty()
+        expect(log.locator('.shell-reading .shell-error')).to_have_count(0)
+    run('cd ../..')
+    expect(page.locator('#shell-path')).to_have_text('/')
+    run('search infra')
+    expect(log.locator('button').last).to_have_text('/infra/')
+    run('cd /infra')
+    page.reload()
+    expect(page.locator('#shell-path')).to_have_text('/infra')
+    run('open /missing-page')
+    expect(log.locator('.shell-error')).to_be_visible()
+    prompt.fill('cd /algo')
+    prompt.press('Tab')
+    expect(prompt).to_have_value('cd /algorithms/')
+    prompt.press('Enter')
+    expect(page.locator('#shell-path')).to_have_text('/algorithms')
+    prompt.press('ArrowUp')
+    expect(prompt).to_have_value('cd /algorithms/')
+    run('clear')
+    expect(log).to_be_empty()
+    page.locator('[data-command="help"]').click()
+    expect(log).to_contain_text('pwd')
+    assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
+    run('open /blog')
+    page.wait_for_url(site+prefix+'/blog/')
+
+
 def main():
     handler = partial(StaticFiles, directory=str(ROOT/'dist'))
     with ThreadingHTTPServer(('127.0.0.1', 0), handler) as server, sync_playwright() as playwright:
@@ -42,10 +82,11 @@ def main():
                 expect(page.locator('.article-header')).to_be_visible()
                 page.locator('[data-blog-back]').click()
                 page.wait_for_url('**/notes/ai/computer-vision/')
+            check_terminal(page, site, prefix)
             page.close()
         browser.close()
         server.shutdown()
-    print('Notes Dock, responsive layouts and retired timeline bookmarks passed.')
+    print('Notes Dock, responsive layouts, retired bookmarks and site terminal passed.')
 
 
 if __name__ == '__main__':

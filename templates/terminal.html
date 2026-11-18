@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" href="/assets/site-terminal.css">
+<script src="/assets/site-terminal.js" defer></script>
+{% endblock %}
+{% block content %}
+<section class="shell-page">
+  <header class="shell-heading">
+    <h1>{{ ui.site_terminal }}<span aria-hidden="true">_</span></h1>
+    <p>{{ ui.terminal_hint }}</p>
+  </header>
+  <div class="shell-window" data-web-shell hidden>
+    <div class="shell-bar"><span><i aria-hidden="true"></i>river-ya.github.io</span><span id="shell-path">/</span></div>
+    <div id="shell-log" role="log" aria-label="{{ ui.site_terminal }}" aria-live="polite" tabindex="0"></div>
+    <form id="shell-form" autocomplete="off">
+      <label for="shell-input"><span class="shell-user" aria-hidden="true">river-ya</span><span class="shell-dollar" aria-hidden="true">$</span><span class="sr-only">{{ ui.command }}</span></label>
+      <input id="shell-input" name="command" type="text" placeholder="help" maxlength="512" autocapitalize="off" autocomplete="off" spellcheck="false" enterkeyhint="go">
+      <button class="shell-run" type="submit" aria-label="{{ ui.run_command }}">{{ ui.terminal_submit }} ↵</button>
+    </form>
+  </div>
+  <div class="shell-shortcuts" data-web-shell hidden>
+    <div>{% for example in ['help','ls','search diffusion'] %}<button type="button" data-command="{{ example }}">{{ example }}</button>{% endfor %}</div>
+    <small>{{ ui.terminal_keys }}</small>
+  </div>
+  <noscript><p>{{ ui.terminal_noscript }}</p><ul>{% for path in ['/ai','/algorithms','/infra','/blog'] %}<li><a href="{{ catalog[path].url }}">{{ catalog[path].title }}</a></li>{% endfor %}</ul></noscript>
+  <script id="shell-catalog" type="application/json">{{ catalog|tojson }}</script>
+</section>
+{% endblock %}

@@ -32,6 +32,7 @@ python -B -m unittest discover -s tests -v
 ## 页面与内容
 
 - 首页及笔记页右侧的 Dock 提供 AI、算法、Infra 三个入口，中文和英文分别使用 `/notes/` 与 `/en/notes/` 路径。
+- 从导航的“终端”可进入 `/terminal/` 或 `/en/terminal/`。输入 `ls` 列出内容，`cd /ai/computer-vision` 切换分类，`cat diffusion-demo` 阅读正文，`open diffusion-demo` 打开文章页。`search diffusion` 可跨目录搜索。目录来自构建时的发布索引，分类页的“在终端中浏览”会带入当前路径。
 - AI 计算机视觉目前收录 Diffusion 复现，站内提供完整 Python 源码，Notebook 链接固定到原仓库同一提交。
 - 原 AI 时间线与交汇图下架，历史网址跳转到对应笔记页。路线资料仍在 data/。
 - 85 个知识节点；日期有事件口径和一手来源。路线是代表性选编，不宣称覆盖截至核验日的所有研究。

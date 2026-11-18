@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} | River’s Log</title>
+  <meta name="description" content="{{ description }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ origin }}{{ current_url }}">
+  <meta property="og:type" content="{{ 'article' if article is defined else 'website' }}">
+  <link rel="canonical" href="{{ origin }}{{ current_url }}">
+  {% for lang, href in (article_alternates if article_alternates is defined else alternate) %}
+  <link rel="alternate" hreflang="{{ lang }}" href="{{ origin }}{{ href }}">
+  {% endfor %}
+  {% if noindex %}<meta name="robots" content="noindex,follow">{% endif %}
+  <link rel="icon" href="/assets/favicon.svg">
+  <script>try {
+    const theme = localStorage.getItem('blog-theme');
+    if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+  } catch {}</script>
+  <link rel="stylesheet" href="/assets/blog.css">
+  {% if article is defined %}<link rel="stylesheet" href="/assets/highlight.css">{% endif %}
+  <script defer src="/assets/blog.js?v=2"></script>
+</head>
+<body class="{{ 'single' if article is defined or blog_section == 'faq' else 'listing' }}">
+  <a class="skip" href="#main">{{ ui.skip }}</a>
+  <header>{% include 'partials/blog-nav.html' %}</header>
+  <main id="main" tabindex="-1">{% block content %}{% endblock %}</main>
+  <footer class="blog-footer">© {{ year }} <a href="{{ U('/blog/') }}">River’s Log</a> · <a href="{{ U('/') }}">{{ ui.return_home }}</a></footer>
+</body>
+</html>

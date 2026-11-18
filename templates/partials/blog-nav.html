@@ -1,4 +1,16 @@
 <nav class="blog-nav" aria-label="{{ ui.blog }}">
-<a class="blog-wordmark" href="{{ U('/blog/') }}">river-ya <span>/ notes</span></a>
-<div>{% for section,href,key in [('posts','/blog/','blog_posts'),('archive','/blog/archive/','blog_archive'),('tags','/blog/tags/','blog_tags'),('search','/blog/search/','blog_search')] %}<a href="{{ U(href) }}" {% if blog_section|default('')==section %}aria-current="page"{% endif %}>{{ ui[key] }}</a>{% endfor %}</div>
+  <div class="identity">
+    <a class="wordmark" href="{{ U('/blog/') }}">River’s Log</a>
+    <button id="theme-toggle" aria-label="{{ ui.theme }}" title="{{ ui.theme }}" hidden>
+      <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 13.1A9 9 0 0 1 10.9 3.2a9 9 0 1 0 9.9 9.9Z"/></svg>
+      <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg>
+    </button>
+    <span aria-hidden="true">|</span>
+    <a id="language-switch" href="{{ language_url }}" aria-label="{{ ui.language }}">{{ 'EN' if locale=='zh-CN' else '中文' }}</a>
+  </div>
+  <div class="menu">
+    {% for section, href, label in [('posts','/blog/',ui.blog_posts),('archive','/blog/archive/',ui.blog_archive),('search','/blog/search/',ui.search),('tags','/blog/tags/',ui.blog_tags),('faq','/blog/faq/','FAQ')] %}
+    <a href="{{ U(href) }}" {% if blog_section==section %}aria-current="page"{% endif %}>{{ label }}</a>
+    {% endfor %}
+  </div>
 </nav>

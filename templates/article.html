@@ -1,2 +1,30 @@
-{% extends 'base.html' %}{% from 'macros.html' import breadcrumbs with context %}
-{% block content %}<div class="wrap page">{% include 'partials/blog-nav.html' %}<a class="back-link" data-back data-blog-back href="{{ U('/blog/') }}">← {{ ui.blog_back }}</a><div class="article-layout"><article class="prose"><header>{% if translation_unavailable %}<p class="notice" lang="en">English translation is not available yet. This is the original {{ article.locale }} article.</p>{% endif %}{% if article.demo %}<p class="notice">{{ ui.demo }}</p>{% endif %}<h1>{{ article.title }}</h1><p class="lead">{{ article.summary }}</p>{% if article.publishedAt %}<p class="small muted">{{ ui.published_at }} <time>{{ article.publishedAt }}</time>{% if article.updatedAt %} · {{ ui.updated_at }} <time>{{ article.updatedAt }}</time>{% endif %}</p>{% endif %}<div class="tags">{% for tag in article.tags %}<a href="{{ U('/blog/') }}?tag={{ tag|urlencode }}#posts">{{ tag }}</a>{% endfor %}</div></header>{{ body }}<section><h2>{{ ui.related }}</h2>{% for id in article.nodeIds %}<a href="{{ U('/knowledge/nodes/'+id+'/') }}">{{ L(nodes[id].title) }} →</a>{% endfor %}</section><nav class="article-pagination">{% if previous %}<a href="{{ U('/blog/'+previous.slug+'/') }}">← {{ ui.previous }} · {{ previous.title }}</a>{% endif %}{% if next_article %}<a href="{{ U('/blog/'+next_article.slug+'/') }}">{{ ui.next_article }} · {{ next_article.title }} →</a>{% endif %}</nav></article><aside class="article-aside"><details open><summary>{{ ui.toc }}</summary>{% for h in toc %}<a href="#{{ h.id }}">{{ h.title }}</a>{% endfor %}</details></aside></div></div>{% endblock %}
+{% extends 'blog-base.html' %}
+{% from 'partials/post-meta.html' import metadata %}
+{% block content %}
+<article>
+  <header class="article-header">
+    <h1>{{ ui.blog_preview if article.demo else article.title }}</h1>
+    {% if article.demo %}
+    <small class="post-meta">{{ ui.demo }}</small>
+    {% else %}
+    {{ metadata(article, ui, reading_minutes) }}
+    {% if article.updatedAt %}<small class="post-meta">{{ ui.updated_at }} <time>{{ article.updatedAt }}</time></small>{% endif %}
+    {% if article.summary %}<p>{{ article.summary }}</p>{% endif %}
+    {% endif %}
+    {% if translation_unavailable %}<small class="muted">{{ ui.blog_untranslated }} · {{ ui.blog_original }} {{ article.locale }}</small>{% endif %}
+  </header>
+  {% if toc %}
+  <details class="toc" open><summary>{{ ui.toc }}</summary>
+    <ul>{% for heading in toc %}<li><a href="#{{ heading.id }}">{{ heading.title }}</a></li>{% endfor %}</ul>
+  </details>
+  {% endif %}
+  <div class="prose">{{ body }}</div>
+  {% if article.tags %}<div class="tags">{% for tag in article.tags %}<a href="{{ U('/blog/') }}?tag={{ tag|urlencode }}#posts">{{ tag }}</a>{% endfor %}</div>{% endif %}
+  {% if article.nodeIds %}<section class="related"><h2>{{ ui.related }}</h2>{% for id in article.nodeIds %}<p><a href="{{ U('/knowledge/nodes/'+id+'/') }}">{{ L(nodes[id].title) }}</a></p>{% endfor %}</section>{% endif %}
+  <nav class="pagination">
+    {% if previous %}<a href="{{ article_url(previous) }}">← {{ previous.title }}</a>{% endif %}
+    {% if next_article %}<a href="{{ article_url(next_article) }}">{{ next_article.title }} →</a>{% endif %}
+  </nav>
+  <a data-blog-back data-route-label="{{ ui.back }}" href="{{ U('/blog/') }}">← {{ ui.blog_back }}</a>
+</article>
+{% endblock %}

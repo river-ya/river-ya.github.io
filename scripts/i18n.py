@@ -2,7 +2,12 @@
 PAIRS={
  'blog':('博客','Blog'),'visit_blog':('阅读博客','Read the blog'),
 'blog_posts':('文章','Posts'),'blog_archive':('归档','Archive'),'blog_tags':('标签','Tags'),'blog_search':('搜索文章','Search posts'),
-'blog_title':('把理解，写下来。','Thinking, in writing.'),'blog_intro':('你好，我是 river-ya。这里记录模型、算法与工程实践中的问题、推导和思考。慢慢探索，认真写下。','Hi, I’m river-ya. A notebook for questions, ideas, and explanations about models, algorithms, and engineering. Explore slowly. Write thoughtfully.'),
+'blog_title':('欢迎来到 River’s Log','Welcome to River’s Log'),
+'blog_intro':('你好，我是 river-ya。我在这里记录关于人工智能、算法与工程实践的学习笔记。','Hi, I’m river-ya. This is where I keep my learning notes on AI, algorithms, and engineering.'),
+'blog_untranslated':('这篇文章目前仅有原文。','This post is available in its original language.'),
+'preview_summary':('看看一篇笔记的阅读效果，包括目录、代码、数学公式和插图。','A reading sample with a table of contents, code, mathematical notation, and an illustration.'),
+'blog_date':('日期','Date:'),'blog_reading':('预计阅读时间','Estimated reading time:'),'blog_min':('分钟','min'),'blog_author':('作者','Author:'),
+'faq_title':('FAQ','FAQ'),'faq_subject':('这里记录什么？','What do you write about?'),'faq_find':('如何查找文章？','How can I find a post?'),'faq_home':('个人主页在哪里？','Where is your personal site?'),
 'blog_desc':('关于 AI、算法与工程实践的学习笔记。','Learning notes on AI, algorithms, and engineering.'),
 'blog_latest':('最近的文字','Latest writing'),'blog_empty_title':('第一篇笔记，还在路上。','The first note is on its way.'),'blog_empty_desc':('这个博客刚刚开启。正式笔记发布前，可以先沿着知识路线浏览，或者看看长文的阅读排版。','This notebook is just getting started. While the first post takes shape, explore the knowledge routes or preview the reading layout.'),
 'blog_preview':('预览文章排版','Preview the reading layout'),'blog_topics':('从一个问题开始','Start with a question'),'blog_back':('返回博客','Back to the blog'),

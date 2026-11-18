@@ -1,27 +1,97 @@
 (() => {
   'use strict';
-  const root=document.querySelector('[data-blog]');if(!root)return;
-  const input=root.querySelector('#blog-query'),form=root.querySelector('.blog-search-form');if(!input)return;
-  const posts=[...root.querySelectorAll('[data-blog-post]')];
-  const count=root.querySelector('#blog-result-count'),empty=root.querySelector('#blog-no-results'),tagLine=root.querySelector('#blog-filter');
-  const ui=JSON.parse(document.querySelector('#ui-data').textContent);
-  let tag='';
-  function filter(write=false){
-    const words=input.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);let matches=0;
-    posts.forEach(post=>{
-      const tags=JSON.parse(post.dataset.tags),haystack=[post.dataset.title,post.dataset.summary,...tags].join(' ').toLocaleLowerCase();
-      post.hidden=!(words.every(word=>haystack.includes(word))&&(!tag||tags.includes(tag)));
-      if(!post.hidden)matches++;
-    });
-    count.hidden=posts.length===0;count.textContent=matches+' '+ui.blog_count;
-    empty.hidden=!(matches===0&&(posts.length>0||input.value.trim()||tag));
-    tagLine.hidden=!tag;tagLine.querySelector('strong').textContent=tag;
-    if(write){const url=new URL(location.href);input.value.trim()?url.searchParams.set('q',input.value.trim()):url.searchParams.delete('q');tag?url.searchParams.set('tag',tag):url.searchParams.delete('tag');history.replaceState(null,'',url);}
-    const link=document.querySelector('#language-switch'),other=new URL(link.href);other.search=location.search;other.hash=location.hash;link.href=other.pathname+other.search+other.hash;
+  const page = document.documentElement;
+  const system = matchMedia('(prefers-color-scheme: dark)');
+  const toggle = document.querySelector('#theme-toggle');
+  let preference = page.dataset.theme;
+  function showTheme() {
+    page.dataset.theme = preference || (system.matches ? 'dark' : 'light');
+    toggle.setAttribute('aria-pressed', String(page.dataset.theme === 'dark'));
   }
-  function restore(){const params=new URLSearchParams(location.search);input.value=params.get('q')||'';tag=params.get('tag')||'';filter();}
-  input.addEventListener('input',()=>filter(true));
-  form.addEventListener('submit',event=>{event.preventDefault();filter(true);});
-  root.querySelectorAll('[data-blog-reset]').forEach(button=>button.addEventListener('click',()=>{input.value='';tag='';filter(true);input.focus();}));
-  window.addEventListener('popstate',restore);restore();
+  showTheme();
+  toggle.hidden = false;
+  toggle.addEventListener('click', () => {
+    preference = page.dataset.theme === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('blog-theme', preference); } catch {}
+    showTheme();
+  });
+  system.addEventListener('change', showTheme);
+
+  const language = document.querySelector('#language-switch');
+  const translation = new URL(language.href);
+  function syncLanguage() {
+    const target = new URL(translation);
+    const params = new URLSearchParams(location.search);
+    params.delete('translation');
+    for (const [key, value] of translation.searchParams) params.set(key, value);
+    target.search = params;
+    target.hash = location.hash;
+    language.href = target.href;
+  }
+  syncLanguage();
+  window.addEventListener('hashchange', syncLanguage);
+
+  const back = document.querySelector('[data-blog-back]');
+  const from = new URLSearchParams(location.search).get('from');
+  if (back && from) {
+    try {
+      const route = new URL(from, location.origin);
+      if (route.origin === location.origin && /^\/(en\/)?knowledge\//.test(route.pathname)) {
+        const path = route.pathname.replace(/^\/en\//, '/');
+        back.href = (page.lang === 'en' ? '/en' : '') + path + route.search + route.hash;
+        back.textContent = '← ' + back.dataset.routeLabel;
+      }
+    } catch {}
+  }
+
+  const section = document.querySelector('#posts');
+  if (!section) return;
+  const input = section.querySelector('#blog-query');
+  const cards = [...section.querySelectorAll('[data-blog-post]')].map(node => {
+    const tags = JSON.parse(node.dataset.tags);
+    const text = [node.querySelector('h2').textContent, node.querySelector('.excerpt').textContent, ...tags].join(' ').toLocaleLowerCase();
+    return { node, tags, text };
+  });
+  const count = section.querySelector('#blog-result-count');
+  const filter = section.querySelector('#blog-filter');
+  function render() {
+    const params = new URLSearchParams(location.search);
+    const query = params.get('q') || '';
+    const tag = params.get('tag') || '';
+    if (input && input.value !== query) input.value = query;
+    const words = query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+    let matches = 0;
+    for (const card of cards) {
+      card.node.hidden = !words.every(word => card.text.includes(word)) || Boolean(tag && !card.tags.includes(tag));
+      if (!card.node.hidden) matches++;
+    }
+    const filtering = Boolean(words.length || tag);
+    count.hidden = !filtering;
+    count.textContent = matches + ' ' + section.dataset.countLabel;
+    filter.hidden = !tag;
+    filter.querySelector('strong').textContent = tag;
+    section.querySelector('#blog-no-results').hidden = !filtering || matches > 0;
+    const empty = section.querySelector('.blog-empty, #search-empty');
+    if (empty) empty.hidden = filtering;
+    syncLanguage();
+  }
+  function update(url) {
+    history.replaceState(null, '', url);
+    render();
+  }
+  input?.addEventListener('input', () => {
+    const url = new URL(location.href);
+    if (input.value) url.searchParams.set('q', input.value);
+    else url.searchParams.delete('q');
+    update(url);
+  });
+  section.querySelectorAll('[data-blog-reset]').forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      update(link.href);
+      input?.focus();
+    });
+  });
+  window.addEventListener('popstate', render);
+  render();
 })();

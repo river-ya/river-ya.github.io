@@ -176,9 +176,9 @@ python scripts/timeline_check.py
 
 ## 独立博客
 
-主导航、主页按钮与页脚的“博客”入口通往 `/blog/`，英文版为 `/en/blog/`。页面借鉴 Lil’Log 的单列阅读布局，包括文章列表、日期、阅读时长、归档、标签和站内文章搜索，沿用本站的深浅主题。
+主导航、主页按钮与页脚的“博客”入口通往 `/blog/`，英文版为 `/en/blog/`。River’s Log 使用独立页头、页脚和样式表。博客首页、归档、搜索、标签、FAQ 和文章正文采用 Lil’Log 风格的单栏布局。博客主题初次跟随系统，手动选择后单独记忆。
 
-发布文章仍使用 `data/articles.json` 和 Markdown 正文：将文章状态设为 `published`，填写真实 `publishedAt`、`locale`、`translationKey`、`tags` 后重新构建，即会自动进入博客列表、年份归档及标签计数。草稿与演示不进入正式列表；同一文章的中英文版本按当前界面语言优先显示，缺译时链接原文并标明原文语言。文章 slug 不能使用 `archive`、`tags`、`search`。当前没有正式文章，因此显示真实空状态与单独的排版预览入口。
+发布文章仍使用 `data/articles.json` 和 Markdown 正文：将文章状态设为 `published`，填写真实 `publishedAt`、`locale`、`translationKey`、`tags` 后重新构建，即会自动进入博客列表、年份归档及标签计数。草稿与演示不进入正式列表；同一文章的中英文版本按当前界面语言优先显示，缺译时链接原文并标明原文语言。文章 slug 不能使用 `archive`、`tags`、`search`、`faq`。当前没有正式文章，因此显示真实空状态与单独的排版预览入口。
 
 博客专项检查：`python scripts/blog_check.py`。测试中的样例文章只在临时目录构建，不会发布到实际网站。
 

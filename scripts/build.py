@@ -121,7 +121,7 @@ def main():
         posts=sorted(preferred_articles(locale),key=lambda a:(a['publishedAt'],a['slug']),reverse=True)
         archive={y:[a for a in posts if a['publishedAt'].startswith(y)] for y in sorted({a['publishedAt'][:4] for a in posts},reverse=True)}
         tag_counts={tag:sum(tag in a['tags'] for a in posts) for tag in sorted({tag for a in posts for tag in a['tags']},key=str.casefold)}
-        for section,key in [('posts','blog'),('archive','blog_archive'),('tags','blog_tags'),('search','blog_search')]:
+        for section,key in [('posts','blog'),('archive','blog_archive'),('tags','blog_tags'),('search','blog_search'),('faq','faq_title')]:
             path='/blog/'+('' if section=='posts' else section+'/')
             render(path,'blog.html',ui[key],locale,ui['blog_desc'],blog_section=section,posts=posts,archive=archive,tag_counts=tag_counts)
         index(ui['blog'],'/blog/',ui['blog'],ui['blog_desc'])

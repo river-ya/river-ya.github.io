@@ -21,14 +21,17 @@ def main():
             ctx=browser.new_context(viewport={'width':width,'height':1000},reduced_motion='reduce');ctx.route('**/*',serve)
             page=ctx.new_page();page.on('pageerror',lambda e:errors.append(str(e)))
             page.goto(ORIGIN+'/');page.locator('.main-nav a[href="/blog/"]').click()
-            expect(page.locator('h1')).to_have_text('把理解，写下来。')
-            expect(page.locator('#intro')).to_be_hidden()
+            expect(page.locator('h1')).to_contain_text('欢迎来到 River’s Log')
+            expect(page.locator('.site-header, #intro, .site-footer')).to_have_count(0)
+            expect(page.locator('.blog-nav')).to_have_count(1)
+            assert page.locator('.post-card').bounding_box()['width'] <= 721
+            expect(page.locator('html')).to_have_attribute('data-theme','light')
             expect(page.locator('.blog-empty')).to_be_visible();expect(page.locator('[data-blog-post]')).to_have_count(0)
             assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
-            page.screenshot(path=str(EVIDENCE/f'blog-dark-{width}.png'),full_page=True)
-            page.locator('#theme-toggle').click();page.reload();expect(page.locator('html')).to_have_attribute('data-theme','light')
             page.screenshot(path=str(EVIDENCE/f'blog-light-{width}.png'),full_page=True)
-            for part in ['archive','tags','search']:
+            page.locator('#theme-toggle').click();page.reload();expect(page.locator('html')).to_have_attribute('data-theme','dark')
+            page.screenshot(path=str(EVIDENCE/f'blog-dark-{width}.png'),full_page=True)
+            for part in ['faq','archive','tags','search']:
                 page.locator(f'.blog-nav a[href="/blog/{part}/"]').click()
                 expect(page.locator('h1')).to_be_visible()
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
@@ -36,8 +39,11 @@ def main():
             page.locator('#language-switch').click();assert '/en/blog/search/' in page.url
             expect(page.locator('#blog-query')).to_have_value('不存在的内容')
             page.locator('#blog-no-results [data-blog-reset]').click();assert 'q=' not in page.url
-            page.goto(ORIGIN+'/demo/article/');page.locator('[data-blog-back]').click();assert page.url==ORIGIN+'/blog/'
-            ctx.close();checks.append(f'{width}px: entry links, 4 blog pages, dark/light themes, empty state, language/query preservation, preview return and no overflow')
+            page.goto(ORIGIN+'/blog/');page.locator('.blog-empty a').click()
+            expect(page.locator('.toc summary')).to_be_visible()
+            expect(page.locator('.site-header')).to_have_count(0)
+            page.locator('[data-blog-back]').click();assert page.url==ORIGIN+'/blog/'
+            ctx.close();checks.append(f'{width}px: entry links, 5 standalone blog pages, dark/light themes, empty state, language/query preservation, preview return and no overflow')
         fixture=Path(tmp)
         for folder in ['scripts','templates','static','data','content']:
             shutil.copytree(ROOT/folder,fixture/folder,ignore=shutil.ignore_patterns('__pycache__'))
@@ -52,8 +58,10 @@ def main():
         expect(page.locator('[data-blog-post]')).to_have_count(2)
         expect(page.locator('[data-blog-post] h2').first).to_contain_text('Diffusion')
         expect(page.locator('body')).not_to_contain_text('PRIVATE DRAFT')
+        page.locator('.blog-nav a[href="/blog/search/"]').click()
         page.locator('#blog-query').fill('diffusion');expect(page.locator('[data-blog-post]:visible')).to_have_count(1)
-        page.locator('[data-blog-post]:visible .blog-tag-list a').filter(has_text='C++').click()
+        page.locator('.blog-nav a[href="/blog/tags/"]').click()
+        page.locator('.tags a').filter(has_text='C++').click()
         expect(page.locator('#blog-filter strong')).to_have_text('C++');expect(page.locator('[data-blog-post]:visible')).to_have_count(1)
         page.locator('#blog-filter [data-blog-reset]').click();expect(page.locator('[data-blog-post]:visible')).to_have_count(2)
         page.locator('.blog-nav a[href="/blog/archive/"]').click()

@@ -1,28 +1,70 @@
-{% extends 'base.html' %}
-{% block head %}<script src="/assets/blog.js" defer></script>{% endblock %}
+{% extends 'blog-base.html' %}
+{% from 'partials/post-meta.html' import metadata %}
 {% block content %}
-<div class="blog-shell" data-blog="{{ blog_section }}">
-{% include 'partials/blog-nav.html' %}
-{% if blog_section=='posts' %}
-<header class="blog-intro"><p class="eyebrow">A NOTEBOOK BY RIVER-YA</p><h1>{{ ui.blog_title }}</h1><p>{{ ui.blog_intro }}</p><div class="blog-signature"><span class="status-light"></span>{{ ui.focus }}</div></header>
-{% else %}<header class="blog-page-heading"><p class="eyebrow">RIVER-YA / NOTES</p><h1>{{ ui['blog_'+blog_section] }}</h1><p>{{ ui['blog_'+blog_section+'_desc'] }}</p></header>{% endif %}
+{% if blog_section == 'posts' %}
+<header class="welcome">
+  <h1><span aria-hidden="true">👋</span> {{ ui.blog_title }}</h1>
+  <p>{{ ui.blog_intro }}</p>
+  <div class="socials">
+    {% for social in profile.socials if social.label == 'GitHub' %}
+    <a href="{{ social.url }}" rel="me" title="GitHub" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.5 1.4-4.5-2-6-2.5M15 22v-3.9c0-1-.3-1.7-.9-2.2 3-.4 6.2-1.6 6.2-6.7a5.2 5.2 0 0 0-1.4-3.6 5 5 0 0 0-.2-3.6s-1.1-.4-3.8 1.4a13 13 0 0 0-6.8 0C5.4 1.6 4.3 2 4.3 2a5 5 0 0 0-.2 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.1 3.2 6.3 6.2 6.7-.6.5-.9 1.4-.9 2.3V22"/></svg></a>
+    {% endfor %}
+    <a href="{{ U('/') }}" title="{{ ui.return_home }}" aria-label="{{ ui.return_home }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 11 10-8 10 8M5 9v12h5v-7h4v7h5V9"/></svg></a>
+  </div>
+</header>
+{% else %}
+<h1 class="page-title">{{ 'FAQ' if blog_section=='faq' else ui['blog_'+blog_section] }}</h1>
+{% endif %}
+
 {% if blog_section in ['posts','search'] %}
-<section id="posts" aria-label="{{ ui.blog_posts }}">
-{% if blog_section=='posts' %}<div class="blog-section-heading"><h2>{{ ui.blog_latest }}</h2><span class="mono">{{ posts|length }} {{ ui.blog_count }}</span></div>{% endif %}
-<form class="blog-search-form" action="{{ U('/blog/search/') }}" method="get" {% if blog_section=='posts' and not posts %}hidden{% endif %}><label for="blog-query">{{ ui.blog_search }}</label><div><input id="blog-query" name="q" type="search" placeholder="{{ ui.blog_query }}" autocomplete="off"><button type="submit">{{ ui.search }}</button></div></form>
-<p id="blog-filter" class="blog-filter" hidden>{{ ui.blog_filter_tag }}: <strong></strong> <button type="button" data-blog-reset>{{ ui.clear }}</button></p>
-<p id="blog-result-count" role="status" class="small muted" {% if not posts %}hidden{% endif %}>{{ posts|length }} {{ ui.blog_count }}</p>
-<div class="blog-posts">{% for a in posts %}<article class="blog-post" data-blog-post data-title="{{ a.title }}" data-summary="{{ a.summary }}" data-tags="{{ a.tags|tojson|forceescape }}"><div class="blog-post-meta"><time datetime="{{ a.publishedAt }}">{{ a.publishedAt }}</time><span>·</span><span>{{ reading_minutes(a.file) }} {{ ui.blog_minutes }}</span><span>·</span><span>river-ya</span></div><h2><a lang="{{ a.locale }}" href="{{ article_url(a) }}">{{ a.title }} <span aria-hidden="true">↗</span></a></h2><p lang="{{ a.locale }}">{{ a.summary }}</p><div class="blog-tag-list">{% for tag in a.tags %}<a href="{{ U('/blog/') }}?tag={{ tag|urlencode }}#posts"># {{ tag }}</a>{% endfor %}</div>{% if a.locale!=locale %}<p class="blog-language">{{ ui.blog_original }}: {{ a.locale }}</p>{% endif %}</article>{% endfor %}</div>
-<p id="blog-no-results" class="notice" hidden>{{ ui.no_results }} <button type="button" data-blog-reset>{{ ui.clear }}</button></p>
-{% if not posts %}<div class="blog-empty"><span class="eyebrow">01 / FIELD NOTES</span><div class="blog-empty-mark" aria-hidden="true">✳</div><h2>{{ ui.blog_empty_title }}</h2><p>{{ ui.blog_empty_desc }}</p><div class="actions"><a class="button primary" href="{{ U('/knowledge/') }}">{{ ui.explore }} →</a><a class="button subtle" href="{{ U('/demo/article/') }}">{{ ui.blog_preview }} ↗</a></div></div>{% endif %}
-<noscript><p class="small muted">{{ ui.browse }}: <a href="{{ U('/blog/') }}">{{ ui.blog_posts }}</a></p></noscript>
+<section id="posts" data-count-label="{{ ui.blog_count }}" aria-label="{{ ui.blog_posts }}">
+  {% if blog_section=='search' %}
+  <form class="blog-search-form" action="{{ U('/blog/search/') }}">
+    <input id="blog-query" type="search" name="q" aria-label="{{ ui.search }}" placeholder="{{ ui.blog_query }}" autocomplete="off">
+  </form>
+  {% endif %}
+  <p id="blog-filter" hidden>{{ ui.blog_filter_tag }} <strong></strong> · <a href="{{ U('/blog/') }}" data-blog-reset>{{ ui.clear }}</a></p>
+  <p id="blog-result-count" role="status" hidden></p>
+  {% for post in posts %}
+  <article class="post-card" data-blog-post data-tags="{{ post.tags|tojson|forceescape }}">
+    <h2><a href="{{ article_url(post) }}" lang="{{ post.locale }}">{{ post.title }}</a></h2>
+    <p class="excerpt" lang="{{ post.locale }}">{{ post.summary }}</p>
+    {{ metadata(post, ui, reading_minutes) }}
+    {% if post.locale!=locale %}<small class="blog-language">{{ ui.blog_original }} · {{ post.locale }}</small>{% endif %}
+  </article>
+  {% else %}
+    {% if blog_section=='posts' %}
+    <article class="post-card blog-empty">
+      <h2><a href="{{ U('/demo/article/') }}">{{ ui.blog_preview }}</a></h2>
+      <p class="excerpt">{{ ui.preview_summary }}</p>
+      <small class="post-meta">{{ ui.demo }} · {{ ui.published_empty }}</small>
+    </article>
+    {% else %}<p class="muted" id="search-empty">{{ ui.published_empty }}</p>{% endif %}
+  {% endfor %}
+  <p id="blog-no-results" hidden>{{ ui.no_results }} · <a href="{{ U('/blog/search/') }}" data-blog-reset>{{ ui.clear }}</a></p>
 </section>
 {% elif blog_section=='archive' %}
-{% for y,items in archive.items() %}<section class="blog-archive-year"><h2>{{ y }} <small>{{ items|length }}</small></h2>{% for a in items %}<a class="blog-archive-row" href="{{ article_url(a) }}"><time datetime="{{ a.publishedAt }}">{{ a.publishedAt[5:] }}</time><span lang="{{ a.locale }}">{{ a.title }}</span><span aria-hidden="true">↗</span></a>{% endfor %}</section>{% else %}<div class="blog-simple-empty"><span aria-hidden="true">—</span><p>{{ ui.blog_no_archive }}</p><a href="{{ U('/blog/') }}">← {{ ui.blog_back }}</a></div>{% endfor %}
+  {% for year, items in archive.items() %}
+  <section class="blog-archive-year">
+    <h2>{{ year }} <small>{{ items|length }}</small></h2>
+    {% for post in items %}
+      {% if loop.changed(post.publishedAt[5:7]) %}<h3>{{ post.publishedAt[5:7]|int ~ '月' if locale=='zh-CN' else ('January','February','March','April','May','June','July','August','September','October','November','December')[post.publishedAt[5:7]|int - 1] }}</h3>{% endif %}
+      <div class="archive-entry"><a class="blog-archive-row" href="{{ article_url(post) }}">{{ post.title }}</a>
+      {{ metadata(post, ui, reading_minutes) }}</div>
+    {% endfor %}
+  </section>
+  {% else %}<p class="muted">{{ ui.blog_no_archive }}</p>{% endfor %}
 {% elif blog_section=='tags' %}
-<div class="blog-topics">{% for tag,count in tag_counts.items() %}<a href="{{ U('/blog/') }}?tag={{ tag|urlencode }}#posts">{{ tag }} <span>{{ count }}</span></a>{% else %}<div class="blog-simple-empty"><span aria-hidden="true">#</span><p>{{ ui.blog_no_tags }}</p><a href="{{ U('/blog/') }}">← {{ ui.blog_back }}</a></div>{% endfor %}</div>
+  <div class="tags">
+  {% for tag,count in tag_counts.items() %}
+    <a href="{{ U('/blog/') }}?tag={{ tag|urlencode }}#posts">{{ tag }} <sup>{{ count }}</sup></a>
+  {% else %}<p class="muted">{{ ui.blog_no_tags }}</p>{% endfor %}
+  </div>
+{% elif blog_section=='faq' %}
+  <div class="prose">
+    <h2>{{ ui.faq_subject }}</h2><p>{{ ui.blog_desc }}</p>
+    <h2>{{ ui.faq_find }}</h2><p><a href="{{ U('/blog/archive/') }}">{{ ui.blog_archive }}</a> · <a href="{{ U('/blog/tags/') }}">{{ ui.blog_tags }}</a> · <a href="{{ U('/blog/search/') }}">{{ ui.blog_search }}</a></p>
+    <h2>{{ ui.faq_home }}</h2><p><a href="{{ U('/')}}">{{ ui.return_home }}</a></p>
+  </div>
 {% endif %}
-{% if blog_section=='posts' %}<section class="blog-reading-paths"><div class="blog-section-heading"><h2>{{ ui.blog_topics }}</h2><span class="eyebrow">READING PATHS</span></div>{% for key,number in [('ai','01'),('algorithms','02'),('infra','03')] %}<a href="{{ U('/knowledge/'+key+'/') }}"><span class="mono">{{ number }}</span><div><h3>{{ ui[key] }}</h3><p>{{ ui[key+'_desc'] }}</p></div><span aria-hidden="true">↗</span></a>{% endfor %}</section>{% endif %}
-<div class="blog-colophon"><span class="mono">river-ya / notes</span><p>{{ ui.footer }}</p><a href="{{ U('/') }}">{{ ui.return_home }} ↗</a></div>
-</div>
 {% endblock %}

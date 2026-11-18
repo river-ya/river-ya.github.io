@@ -35,7 +35,7 @@ def validate_content():
         for skill in group['items']:need(skill['status'] in [None,'learning','practiced','independent'],'Unknown skill status')
     article_keys=set();translation_keys=set()
     for a in articles:
-        need(re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',a['slug']) and a['slug'] not in {'archive','tags','search'},'Invalid or reserved blog slug')
+        need(re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',a['slug']) and a['slug'] not in {'archive','tags','search','faq'},'Invalid or reserved blog slug')
         k=(a['locale'],a['slug']);need(k not in article_keys,f'Duplicate article: {k}');article_keys.add(k)
         tk=(a['locale'],a['translationKey']);need(tk not in translation_keys,f'Duplicate translation key: {tk}');translation_keys.add(tk)
         need(a['locale'] in UI,'Invalid article locale');need(a['status'] in ['planned','draft','published'],'Invalid article status')

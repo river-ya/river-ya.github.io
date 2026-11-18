@@ -7,3 +7,7 @@ tinos-*.woff2: Latin subsets of Tinos Regular, Italic, Bold and Bold Italic.
 https://github.com/googlefonts/tinos/tree/3b4482a99b80ea5fc75f187b1be3120a3f5905b3
 The site uses locally installed Times New Roman first, then Tinos.
 License and copyright notices: OFL-Tinos.txt.
+
+ubuntu-mono.ttf: unmodified Ubuntu Mono variable font from Ubuntu's fonts-ubuntu
+package, identical to the font installed for the Windows Terminal Ubuntu profile.
+License and copyright notices: UFL-Ubuntu-Mono.txt.

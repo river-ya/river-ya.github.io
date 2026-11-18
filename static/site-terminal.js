@@ -3,7 +3,10 @@
   const catalog = new Map(Object.entries(JSON.parse(document.querySelector('#shell-catalog').textContent)));
   const ui = JSON.parse(document.querySelector('#ui-data').textContent);
   const log = document.querySelector('#shell-log');
+  const screen = document.querySelector('#shell-screen');
   const input = document.querySelector('#shell-input');
+  const prompt = document.querySelector('#shell-form .shell-prompt');
+  const edit = input.parentElement;
   const history = [];
   let historyCursor = 0, draft = '', lastCompletion = null;
   let cwd = '/';
@@ -37,6 +40,19 @@
     alternate.search = url.search;
     language.href = alternate.href;
     document.querySelector('#shell-path').textContent = cwd;
+    prompt.querySelector('.prompt-dir').textContent = cwd === '/' ? '~' : '~' + cwd;
+    fitInput();
+  }
+
+  function fitInput() {
+    // The prompt may wrap on phones. Start editing immediately after its last cell.
+    const bounds = input.form.getBoundingClientRect();
+    if (!bounds.width) return;
+    const dollar = document.createRange();
+    dollar.selectNodeContents(prompt.lastChild);
+    const lastCell = dollar.getBoundingClientRect();
+    const available = Math.floor(bounds.right - lastCell.right - lastCell.width - 1);
+    edit.style.width = (available >= lastCell.width * 2 ? available : bounds.width) + 'px';
   }
 
   function element(tag, text = '', className = '') {
@@ -125,7 +141,9 @@
       body.querySelectorAll('.source-code,script,style,[hidden]').forEach(node => node.remove());
       body.querySelectorAll('li').forEach(node => node.prepend('• '));
       body.querySelectorAll('br,p,li,pre,tr,h1,h2,h3,h4,h5,h6').forEach(node => node.append('\n'));
+      const followOutput = output.isConnected && screen.scrollHeight - screen.clientHeight - screen.scrollTop <= 1;
       output.append(element('div', body.textContent.trim()));
+      if (followOutput) screen.scrollTop = screen.scrollHeight;
     } catch {
       output.append(element('div', ui.terminal_read_error, 'shell-error'));
     }
@@ -139,8 +157,7 @@
     draft = '';
     lastCompletion = null;
     const echo = element('div', '', 'shell-command');
-    echo.append(element('span', 'river-ya:' + (cwd === '/' ? '~' : '~' + cwd) + '$ ', 'shell-prompt'),
-      document.createTextNode(text));
+    echo.append(prompt.cloneNode(true), document.createTextNode(' ' + text));
     log.append(echo);
     const [name, ...args] = text.split(/\s+/);
     const cmd = name.toLowerCase();
@@ -169,7 +186,7 @@
       }
     }
     input.value = '';
-    log.scrollTop = log.scrollHeight;
+    screen.scrollTop = screen.scrollHeight;
   }
 
   function complete() {
@@ -195,12 +212,37 @@
     input.value = prefix + common;
     if (matches.length > 1) {
       message(matches.join('  '));
-      log.scrollTop = log.scrollHeight;
+      screen.scrollTop = screen.scrollHeight;
     }
     lastCompletion = input.value;
     return true;
   }
 
+  // Older browsers only draw a bar. Mirror the insertion point while leaving
+  // editing, text selection, horizontal scrolling and IME to the native input.
+  if (!CSS.supports('caret-shape', 'block')) {
+    const mirror = document.querySelector('.shell-mirror');
+    const prefix = mirror.querySelector('.cursor-prefix');
+    const block = mirror.querySelector('.block-cursor');
+    let composing = false;
+    function updateCursor() {
+      mirror.hidden = composing || document.activeElement !== input || input.selectionStart !== input.selectionEnd;
+      if (mirror.hidden) return;
+      const position = input.selectionStart;
+      prefix.textContent = input.value.slice(0, position);
+      block.textContent = Array.from(input.value.slice(position))[0] || '\u00a0';
+      mirror.style.transform = 'translateX(' + -input.scrollLeft + 'px)';
+    }
+    for (const event of ['input','keydown','focus','blur','scroll','selectionchange']) {
+      input.addEventListener(event, () => requestAnimationFrame(updateCursor));
+    }
+    document.addEventListener('selectionchange', updateCursor);
+    input.addEventListener('compositionstart', () => { composing = true; updateCursor(); });
+    input.addEventListener('compositionend', () => { composing = false; updateCursor(); });
+  }
+  screen.addEventListener('click', event => {
+    if (event.target === screen && !window.getSelection()?.toString()) input.focus({preventScroll:true});
+  });
   document.querySelector('#shell-form').addEventListener('submit', event => {
     event.preventDefault();
     execute(input.value);
@@ -227,6 +269,9 @@
   const initial = resolve(new URL(location.href).searchParams.get('cwd') || '/');
   setDirectory(catalog.get(initial)?.directory ? initial : '/');
   document.querySelectorAll('[data-web-shell]').forEach(part => { part.hidden = false; });
+  if ('ResizeObserver' in window) new ResizeObserver(fitInput).observe(screen);
+  else window.addEventListener('resize', fitInput);
+  document.fonts.ready.then(fitInput);
   execute('ls');
   if (matchMedia('(pointer:fine)').matches) input.focus({preventScroll:true});
 })();

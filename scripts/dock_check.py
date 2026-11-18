@@ -24,6 +24,15 @@ def check_terminal(page, site, prefix):
         prompt.press('Enter')
 
     expect(page.locator('#shell-path')).to_have_text('/ai/computer-vision')
+    active = page.locator('#shell-form .shell-prompt')
+    expect(active).to_have_text('river_ya@knowledge:~/ai/computer-vision$')
+    expect(log.locator('.shell-command .shell-prompt')).to_have_text(active.inner_text())
+    for _ in range(2):
+        expect(page.locator('.shell-window')).to_have_css('background-color','rgb(48, 10, 36)')
+        expect(active.locator('.prompt-user')).to_have_css('color','rgb(38, 162, 105)')
+        expect(active.locator('.prompt-dir')).to_have_css('color','rgb(8, 69, 143)')
+        page.locator('#theme-toggle').click()
+    assert page.evaluate("""async () => (await document.fonts.load('13pt "Site Ubuntu Mono"')).length > 0""")
     first_note = log.locator('.shell-list a').first
     if first_note.count():
         run('cat '+first_note.inner_text())
@@ -47,6 +56,8 @@ def check_terminal(page, site, prefix):
     expect(prompt).to_have_value('cd /algorithms/')
     run('clear')
     expect(log).to_be_empty()
+    expect(active).to_have_text('river_ya@knowledge:~/algorithms$')
+    assert abs(page.locator('#shell-form').bounding_box()['y'] - page.locator('#shell-screen').bounding_box()['y'] - 8) <= 1
     page.locator('[data-command="help"]').click()
     expect(log).to_contain_text('pwd')
     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')

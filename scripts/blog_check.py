@@ -24,6 +24,7 @@ def main():
             expect(page.locator('h1')).to_contain_text('欢迎来到 River’s Log')
             expect(page.locator('.site-header, #intro, .site-footer')).to_have_count(0)
             expect(page.locator('.blog-nav')).to_have_count(1)
+            expect(page.locator('.crane-sheet')).to_have_count(0)
             assert page.locator('.post-card').bounding_box()['width'] <= 721
             expect(page.locator('html')).to_have_attribute('data-theme','light')
             expect(page.locator('.blog-empty')).to_be_visible();expect(page.locator('[data-blog-post]')).to_have_count(0)
@@ -44,6 +45,28 @@ def main():
             expect(page.locator('.site-header')).to_have_count(0)
             page.locator('[data-blog-back]').click();assert page.url==ORIGIN+'/blog/'
             ctx.close();checks.append(f'{width}px: entry links, 5 standalone blog pages, dark/light themes, empty state, language/query preservation, preview return and no overflow')
+        # Render the fold on a real link activation and check its one-shot lifecycle.
+        for width, start in [(375, '/en/'), (1440, '/')]:
+            ctx = browser.new_context(viewport={'width': width, 'height': 900}, reduced_motion='no-preference')
+            ctx.route('**/*', serve)
+            ctx.add_init_script("sessionStorage.setItem('intro-seen', '1')")
+            page = ctx.new_page()
+            page.on('pageerror', lambda error: errors.append(str(error)))
+            page.goto(ORIGIN + start)
+            page.locator('.hero a[href$="/blog/"]').click()
+            crane = page.locator('.crane-sheet')
+            expect(crane).to_be_visible()
+            wing = crane.locator('polygon').nth(1)
+            initial = wing.get_attribute('points')
+            page.wait_for_function("points => document.querySelectorAll('.crane-sheet polygon')[1]?.getAttribute('points') !== points", arg=initial)
+            if width == 375:
+                page.keyboard.press('Escape')
+            expect(crane).to_have_count(0, timeout=3500)
+            page.reload()
+            expect(page.locator('h1')).to_contain_text('River’s Log')
+            expect(crane).to_have_count(0)
+            ctx.close()
+        checks.append('Crane entrance on Chinese and English home links, animated folds, automatic cleanup, Escape and no replay on refresh')
         fixture=Path(tmp)
         for folder in ['scripts','templates','static','data','content']:
             shutil.copytree(ROOT/folder,fixture/folder,ignore=shutil.ignore_patterns('__pycache__'))

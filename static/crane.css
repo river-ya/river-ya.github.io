@@ -1,0 +1,41 @@
+/* Keep the live reading page below the outgoing sheet. */
+:root.crane-entry::view-transition-group(root),
+:root.crane-entry::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+:root.crane-entry::view-transition-old(root) {
+  z-index: 1;
+  mix-blend-mode: normal;
+  transform-origin: center;
+  animation: fold-viewport 560ms cubic-bezier(.42,0,.4,1) both;
+}
+@keyframes fold-viewport {
+  from {
+    transform: none;
+    clip-path: polygon(0 50%, 0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(var(--fold-width), var(--fold-height));
+    clip-path: polygon(0 50%, 25% 25%, 50% 0, 75% 25%, 100% 50%, 75% 75%, 50% 100%, 25% 75%);
+    opacity: 0;
+  }
+}
+.crane-sheet {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+.crane-sheet polygon {
+  stroke-linejoin: round;
+  stroke-width: .65px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .crane-sheet { display: none; }
+  :root.crane-entry::view-transition-old(root) { animation: none; opacity: 0; }
+}

@@ -2,6 +2,13 @@
 PAIRS={
  'blog':('博客','Blog'),'visit_blog':('阅读博客','Read the blog'),
 'blog_posts':('文章','Posts'),'blog_archive':('归档','Archive'),'blog_tags':('标签','Tags'),'blog_search':('搜索文章','Search posts'),
+'notebook_title':('开发手记','Developer’s notebook'),
+'notebook_index':('知识目录','Knowledge index'),
+'trace_title':('二分查找，逐步演算','Tracing a binary search'),
+'trace_answer':('第 3 次比较，在下标 4 找到 23。','Third comparison: 23 is at index 4.'),
+'trace_description':('在升序数组中查找 23。区间从 [0, 6] 缩小到 [4, 6]，再到 [4, 4]。依次比较 17、31、23。','Searching a sorted array for 23. The bounds narrow from [0, 6] to [4, 6] to [4, 4]. The probes are 17, 31 and 23.'),
+'trace_link':('查看算法条目','Open algorithm entry'),
+'handwriting':('中文手写体','Chinese handwriting'),
 'blog_title':('欢迎来到 River’s Log','Welcome to River’s Log'),
 'blog_intro':('你好，我是 river-ya。我在这里记录关于人工智能、算法与工程实践的学习笔记。','Hi, I’m river-ya. This is where I keep my learning notes on AI, algorithms, and engineering.'),
 'blog_untranslated':('这篇文章目前仅有原文。','This post is available in its original language.'),

@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="/assets/crane.css">
   <script src="/assets/crane.js"></script>
   {% if article is defined %}<link rel="stylesheet" href="/assets/highlight.css">{% endif %}
+  {% include 'partials/type-head.html' %}
   <script defer src="/assets/blog.js?v=2"></script>
 </head>
 <body class="{{ 'single' if article is defined or blog_section == 'faq' else 'listing' }}">

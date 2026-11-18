@@ -1,0 +1,21 @@
+<figure class="hero-visual trace">
+  <div class="trace-sheet">
+    <header class="trace-header">
+      <span class="mono">binary_search.py</span>
+      <span class="trace-target mono">target = 23</span>
+    </header>
+    <h2>{{ ui.trace_title }}</h2>
+    <div class="trace-grid" role="img" aria-label="{{ ui.trace_description }}">
+      {% for lo, hi, mid, result in [(0, 6, 3, '<'), (4, 6, 5, '>'), (4, 4, 4, '=')] %}
+      <div class="trace-row">
+        <span class="trace-range mono">[{{ lo }}, {{ hi }}]</span>
+        {% for value in [3, 7, 12, 17, 23, 31, 42] %}
+        <span class="trace-cell{% if loop.index0 == mid %} probe{% if result == '=' %} found{% endif %}{% elif loop.index0 < lo or loop.index0 > hi %} excluded{% endif %}">{{ value }}</span>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    <p class="trace-note"><span aria-hidden="true">↳</span> {{ ui.trace_answer }}</p>
+    <figcaption><span class="mono">O(log n)</span><a href="{{ U('/knowledge/algorithms/binary-search/') }}">{{ ui.trace_link }} ↗</a></figcaption>
+  </div>
+</figure>

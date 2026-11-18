@@ -1,6 +1,15 @@
 {% macro arrow() %}<span class="arrow" aria-hidden="true">↗</span>{% endmacro %}
 {% macro section_head(number,title,subtitle='') %}<div class="section-heading"><span class="eyebrow">{{ number }}</span><div><h2>{{ title }}</h2>{% if subtitle %}<p>{{ subtitle }}</p>{% endif %}</div></div>{% endmacro %}
-{% macro track_tiles(items) %}<div class="track-tiles">{% for t in items %}<a class="track-tile color-{{ t.id }}" href="{{ U(track_path(t)) }}"><span class="tile-number mono">{{ '%02d'|format(loop.index) }} <span>↗</span></span><h3>{{ L(t.title) }}</h3><p>{{ L(t.description) }}</p><span class="small muted">{{ t.learningOrder|length }} {{ ui.nodes }}</span></a>{% endfor %}</div>{% endmacro %}
+{% macro track_tiles(items) %}
+<div class="track-tiles">
+  {% for t in items %}
+  <a class="track-tile color-{{ t.id }}" href="{{ U(track_path(t)) }}">
+    <code class="track-path">{{ t.id }}/</code><h3>{{ L(t.title) }}</h3>
+    <p>{{ L(t.description) }}</p><span class="track-count">{{ t.learningOrder|length }} {{ ui.nodes }} ↗</span>
+  </a>
+  {% endfor %}
+</div>
+{% endmacro %}
 {% macro family_links() %}<div class="family-links">{% for t in tracks if t.kind=='family' %}<a class="family-link family-{{ t.id }}" href="{{ U(track_path(t)) }}"><span class="family-dot"></span><strong>{{ L(t.title) }}</strong><span class="muted">{{ t.learningOrder|length }} {{ ui.nodes }}</span>{{ arrow() }}</a>{% endfor %}</div>{% endmacro %}
 {% macro map_preview() %}<div class="map-preview" role="img" aria-label="{{ ui.confluence_desc }}"><div class="map-grid"></div><span class="map-axis mono">2020<br>2021<br>2022<br>2023</span><svg viewBox="0 0 480 340" aria-hidden="true"><path class="map-route mint" d="M135 20V320"/><path class="map-route violet" d="M360 20V320" stroke-dasharray="5 6"/><path class="map-route mint" d="M135 134C135 192 247 168 247 225"/><path class="map-route violet" d="M360 60C360 173 247 168 247 225" stroke-dasharray="5 6"/><circle cx="135" cy="134" r="5"/><circle cx="360" cy="60" r="5"/><circle cx="247" cy="225" r="12" class="confluence-ring"/></svg><span class="preview-label label-vit">ViT <small>2020</small></span><span class="preview-label label-ldm">Latent Diffusion <small>2021</small></span><span class="preview-label label-dit">DiT <small>2022.12</small></span><span class="preview-family family-diffusion">Diffusion</span><span class="preview-family family-transformer">Transformer</span></div>{% endmacro %}
 {% macro breadcrumbs(last,parent='/knowledge/ai/',parent_label='ai') %}<nav class="breadcrumbs" aria-label="{{ ui.knowledge }}"><a href="{{ U('/knowledge/') }}">{{ ui.knowledge }}</a><span>/</span>{% if parent %}<a href="{{ U(parent) }}">{{ ui[parent_label] }}</a><span>/</span>{% endif %}<span>{{ last }}</span></nav>{% endmacro %}

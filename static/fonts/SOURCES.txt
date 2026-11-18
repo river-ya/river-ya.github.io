@@ -1,0 +1,9 @@
+wenkai-*.woff2: LXGW WenKai Regular v1.530, used for Chinese handwriting.
+https://github.com/lxgw/LxgwWenKai/releases/tag/v1.530
+These web subsets cover Chinese characters in the shipped interface and content.
+License and copyright notices: OFL-WenKai.txt.
+
+tinos-*.woff2: Latin subsets of Tinos Regular, Italic, Bold and Bold Italic.
+https://github.com/googlefonts/tinos/tree/3b4482a99b80ea5fc75f187b1be3120a3f5905b3
+The site uses locally installed Times New Roman first, then Tinos.
+License and copyright notices: OFL-Tinos.txt.

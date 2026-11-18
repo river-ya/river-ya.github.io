@@ -2,6 +2,7 @@
 PAIRS={
  'blog':('博客','Blog'),'visit_blog':('阅读博客','Read the blog'),
 'blog_posts':('文章','Posts'),'blog_archive':('归档','Archive'),'blog_tags':('标签','Tags'),'blog_search':('搜索文章','Search posts'),
+'notebooks':('笔记','Notes'),'shelf_ai':('AI','AI'),'shelf_algorithms':('算法','Algorithms'),'shelf_infra':('Infra','Infra'),'cv_shelf':('计算机视觉','Computer vision'),'all_notes':('全部笔记','All notes'),'shelf_empty':('这个分类还没有发布笔记。','No notes published in this collection yet.'),'entry_unit':('篇','notes'),'source_code':('完整源代码','Full source code'),
 'notebook_title':('开发手记','Developer’s notebook'),
 'notebook_index':('知识目录','Knowledge index'),
 'trace_title':('二分查找，逐步演算','Tracing a binary search'),

@@ -31,16 +31,15 @@ python -B -m unittest discover -s tests -v
 
 ## 页面与内容
 
-- 双语主页、技能、专业知识总览和 AI 总览。
-- 深度学习、计算机视觉、NLP、多模态、3D 场景与重建、世界模型六个领域路线。
-- GAN、VAE、Diffusion、Transformer 四个家族路线；历史与学习顺序使用同一份节点数据。
-- DiT 交汇图：家族选择、年份范围、节点选择、关系详情、缩放、横向移动、交汇过滤、分享 URL；移动端优先显示时间列表。
+- 首页及笔记页右侧的 Dock 提供 AI、算法、Infra 三个入口，中文和英文分别使用 `/notes/` 与 `/en/notes/` 路径。
+- AI 计算机视觉目前收录 Diffusion 复现，站内提供完整 Python 源码，Notebook 链接固定到原仓库同一提交。
+- 原 AI 时间线与交汇图下架，历史网址跳转到对应笔记页。路线资料仍在 data/。
 - 85 个知识节点；日期有事件口径和一手来源。路线是代表性选编，不宣称覆盖截至核验日的所有研究。
 - 左程云公开课程的 207 条原目录记录，映射成 82 个算法专题页面；课程顺序和专题双视图。
 - Infra 五个有效分类页；独立文章模板、自动目录、代码高亮、表格、图片、引用和原生 MathML 公式。
 - 深浅主题、全站本地搜索、语言与筛选状态恢复、终端开场、键盘入口、减少动态效果支持。
 
-没有虚构履历、技能熟练度、阅读量、学习进度或个人文章。当前真实已发布文章为 **0**。`/demo/article/` 与 `/en/demo/article/` 是明确标记的排版演示，不进入搜索、sitemap 或发布统计。
+没有虚构履历、技能熟练度、阅读量、学习进度或个人文章。同一篇中英文内容按一篇笔记统计。`/demo/article/` 与 `/en/demo/article/` 是明确标记的排版演示，不进入搜索、sitemap 或发布统计。
 
 ## 文件结构
 
@@ -101,7 +100,7 @@ dist/                   构建产物
 }
 ```
 
-日期应改为真实发布日期；尚未完成时使用 `draft`。草稿不会生成公开正文页面，不进入搜索或 sitemap。发布后关联节点、路线上的“阅读笔记”、最近更新、搜索自动联动，无需逐个修改组件。`nodeIds` 实现文章与节点多对多关联。
+日期应改为真实发布日期；尚未完成时使用 `draft`。草稿不会生成公开正文页面，不进入搜索或 sitemap。发布后关联节点、右侧 Dock 对应分类、最近更新、搜索自动联动，无需逐个修改组件。`nodeIds` 实现文章与节点多对多关联。
 
 提供真实英文译文时，另加一条 `locale: "en"` 的文章，使用相同 `translationKey`，正文指向独立 Markdown 文件。slug 可以不同，构建器按实际版本生成 `hreflang` 和语言切换链接。没有英文正文时不生成 `/en/blog/.../`，英文界面展示中文原文入口及缺译提示；在原文页点击 EN 仍保留原文位置并说明缺译。
 
@@ -124,20 +123,11 @@ Markdown 支持常规段落、列表、引用、围栏代码、表格和图片�
 
 `prepare_courses.py` 是课程数据初始化工具，会覆盖生成文件，不用于日常加笔记。更新官方课程目录时先保留人工维护的正文路径、状态与先修配置，再合并新快照；普通构建不抓取远程课程，也不会覆盖这些配置。
 
-## 新增节点、路线与交汇
+## 笔记分类和源码
 
-节点在 `data/nodes.json` 新建稳定 `id` 与相同 `slug`。填写双语名称与简介、类型、标签、先修、来源，日期按 `year`、`month`、`day` 保留原精度。历史排序使用所选日期，页面不把补齐值冒充真实日期。尚未核实的节点用 `dateVerification: "pending"`，留在待核实分组，不混入已核实时间线。核实完成后添加 `source-audit.json` 记录。
+在 `data/articles.json` 中设置 `status: published`，并填写真实发布日期和标签。AI、算法、Infra 标签匹配对应分类，关联 AI 节点或算法条目的文章也自动归类。计算机视觉节点或 `计算机视觉`、`Computer vision` 标签会将文章列入 AI 的计算机视觉子目录。同一作品的译文共享分类，列表按 `updatedAt` 或 `publishedAt` 倒序排列。
 
-在节点 `trackIds` / `familyIds` 与路线 `learningOrder` 两端登记归属，校验器会检查一致性。建议学习顺序独立配置，不通过日期推导；必要先修只写入 `prerequisiteIds`，不把学习依赖误作技术继承。
-
-新增家族时在 `tracks.json` 增加 `kind: "family"` 条目，沿用已有家族字段，并设置 `graphStyle.color` 和 `graphStyle.dash`。家族入口、页面、图谱选择器自动生成，图谱最多同时选择四条线。领域路线也由数据生成，但首页定位仍以本次六个方向为准。
-
-新增融合模型时先建普通节点，再分别添加：
-
-- `relations.json`：稳定关系 ID、起终节点、`extends` / `combines` / `uses-component` / `inspired-by`、双语贡献与证据 URL。
-- `confluences.json`：引用既有 `nodeId`、参与家族和 `incomingRelationIds`。
-
-图谱不会根据关键词或几何交叉猜测技术融合。主干关系画实质连接，组件和启发关系在详情里单独列出。DiT 使用原论文支持的 LDM 与 ViT 关系，以及自编码器组件说明；两条家族线在交汇后继续延伸。所有节点的日期决定纵坐标；密集标签可以避让，并通过引导线连接到真实日期点。
+已发布且有 Markdown 正文的算法专题也会出现在算法笔记页。可选的文章字段 `sourceFile` 对应 `static/source/` 中的 Python 文件，构建器将其高亮展示；正文可链接同一静态文件供下载。
 
 ## GitHub Pages 发布
 
@@ -164,21 +154,20 @@ python -m playwright install chromium
 python scripts/browser_check.py
 # 只复验开场动画：
 python scripts/browser_check.py --intro-only
-# 复验 AI 时间线、悬停和筛选：
-python scripts/timeline_check.py
+# 复验 Dock、分类跳转与旧时间线地址：
+python scripts/dock_check.py
 ```
 
 脚本通过 Playwright 把 `dist/` 的原始文件提供给隔离测试域名，检查 375、768、1440px 布局、语言恢复、搜索、主题、路线返回、算法课号、交汇图、开场、减少动态效果、关闭 JavaScript 与存储不可用情形。验收结果写入 `evidence/browser-results.json`，截图保存在 `evidence/`。这里的测试域名不是线上部署地址。
 
 **本次复验：** 运行环境已允许 Chromium 启动，真实浏览器交互检查通过，375、768、1440px 的页面与开屏截图已生成。开屏为全视口纯黑背景，终端文字区域居中，桌面 22px / 手机 18px，采用高对比度提示符、等宽字体、两屏终端流程：先逐字输入 `ssh river_ya@192.0.2.24`，连接成功后展示奶龙字符画，再输入 `clear` 清屏；第二屏输入 `npm run start` 并显示启动回显，终端画面随后碎裂下落，主页模块依次入场；下方模块滚动进入视口时出现（全程约 10.5 秒，可随时跳过，支持减少动态效果）；可通过页脚“重播开场”查看，或播放 `evidence/intro-transition.webm`。尚未进行线上部署验证。文章、个人资料细节、技能程度仍由本人补充。
 
-实际滚动与悬停录像见 `evidence/ai-timeline-motion.webm`。AI 路线采用单列年份轴、连接圆点与节点卡片。轴线随滚动显示阅读进度，年份索引高亮当前节点；卡片支持悬停放大与键盘聚焦高亮。AI 总览里程碑在桌面横向连接，手机纵向排列。关闭 JavaScript 后仍可阅读完整时间线；减少动态效果时关闭入场及缩放。
 
 ## 独立博客
 
 主导航、主页按钮与页脚的“博客”入口通往 `/blog/`，英文版为 `/en/blog/`。River’s Log 使用独立页头、页脚和样式表。博客首页、归档、搜索、标签、FAQ 和文章正文采用 Lil’Log 风格的单栏布局。博客主题初次跟随系统，手动选择后单独记忆。
 
-发布文章仍使用 `data/articles.json` 和 Markdown 正文：将文章状态设为 `published`，填写真实 `publishedAt`、`locale`、`translationKey`、`tags` 后重新构建，即会自动进入博客列表、年份归档及标签计数。草稿与演示不进入正式列表；同一文章的中英文版本按当前界面语言优先显示，缺译时链接原文并标明原文语言。文章 slug 不能使用 `archive`、`tags`、`search`、`faq`。当前没有正式文章，因此显示真实空状态与单独的排版预览入口。
+发布文章仍使用 `data/articles.json` 和 Markdown 正文：将文章状态设为 `published`，填写真实 `publishedAt`、`locale`、`translationKey`、`tags` 后重新构建，即会自动进入博客列表、年份归档及标签计数。草稿与演示不进入正式列表；同一文章的中英文版本按当前界面语言优先显示，缺译时链接原文并标明原文语言。文章 slug 不能使用 `archive`、`tags`、`search`、`faq`。
 
 博客专项检查：`python scripts/blog_check.py`。测试中的样例文章只在临时目录构建，不会发布到实际网站。
 

@@ -35,7 +35,7 @@ jobs:
       - name: Check responsive layout and interactions
         run: |
           python scripts/browser_check.py
-          python scripts/timeline_check.py
+          python scripts/dock_check.py
           python scripts/blog_check.py
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)

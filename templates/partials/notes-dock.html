@@ -1,0 +1,18 @@
+<nav class="notes-dock" aria-label="{{ ui.notebooks }}">
+  {% for key in ['ai','algorithms','infra'] %}
+  <a class="dock-app app-{{ key }}" data-notebook="{{ key }}" href="{{ U('/notes/'+key+'/') }}" {% if key==category %}aria-current="true"{% endif %}>
+    <span class="dock-tile" aria-hidden="true">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        {% if key=='ai' %}
+        <path d="M8 22 15 9l10 11-17 2"/><circle cx="8" cy="22" r="2.8"/><circle cx="15" cy="9" r="2.8"/><circle cx="25" cy="20" r="2.8"/>
+        {% elif key=='algorithms' %}
+        <path d="M16 10v6M7 22v-6h18v6"/><rect x="12" y="4" width="8" height="7" rx="1.5"/><rect x="3" y="22" width="8" height="6" rx="1.5"/><rect x="21" y="22" width="8" height="6" rx="1.5"/>
+        {% else %}
+        <rect x="4" y="5" width="24" height="9" rx="2"/><rect x="4" y="18" width="24" height="9" rx="2"/><path d="M9 9.5h1m4 0h1m-6 13h1m4 0h1"/>
+        {% endif %}
+      </svg>
+    </span>
+    <span class="dock-label">{{ ui['shelf_'+key] }}</span>
+  </a>
+  {% endfor %}
+</nav>

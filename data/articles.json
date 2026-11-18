@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "slug": "diffusion-demo",
+    "translationKey": "diffusion-demo",
+    "locale": "zh-CN",
+    "title": "Diffusion 复现：从加噪到采样",
+    "summary": "用 PyTorch 在 Fashion-MNIST 上实现扩散模型，附完整 Python 源码与 Notebook。",
+    "status": "published",
+    "publishedAt": "2026-11-18",
+    "nodeIds": [
+      "ddpm"
+    ],
+    "tags": [
+      "AI",
+      "计算机视觉",
+      "Diffusion",
+      "PyTorch"
+    ],
+    "file": "content/diffusion-demo.zh.md",
+    "sourceFile": "diffusionDemo.py"
+  },
+  {
+    "slug": "diffusion-demo",
+    "translationKey": "diffusion-demo",
+    "locale": "en",
+    "title": "Diffusion reproduction: from noise to samples",
+    "summary": "A PyTorch diffusion model for Fashion-MNIST, with the complete Python source and companion notebook.",
+    "status": "published",
+    "publishedAt": "2026-11-18",
+    "nodeIds": [
+      "ddpm"
+    ],
+    "tags": [
+      "AI",
+      "Computer vision",
+      "Diffusion",
+      "PyTorch"
+    ],
+    "file": "content/diffusion-demo.en.md",
+    "sourceFile": "diffusionDemo.py"
+  }
+]

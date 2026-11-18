@@ -13,7 +13,7 @@
   const replaceURL=url=>{history.replaceState(null,'',url);updateLanguage();};
 
   // Static links remain usable when script is disabled; enhancement records the route.
-  const validReturn=raw=>{try{const u=new URL(raw,location.origin);return u.origin===location.origin && /^\/(en\/)?knowledge\//.test(u.pathname)?u:null;}catch(_){return null;}};
+  const validReturn=raw=>{try{const u=new URL(raw,location.origin);return u.origin===location.origin && /^\/(en\/)?(?:knowledge|notes)\//.test(u.pathname)?u:null;}catch(_){return null;}};
   $$('[data-return-link]').forEach(a=>a.addEventListener('click',()=>{const source=new URL(location.href);const item=a.closest('[data-filter-item]');if(item?.id)source.hash=item.id;safeStore('sessionStorage','scroll:'+source.pathname+source.search,String(scrollY));const dest=new URL(a.href);dest.searchParams.set('from',source.pathname+source.search+source.hash);a.href=dest.pathname+dest.search+dest.hash;}));
   const from=validReturn(new URL(location.href).searchParams.get('from')||'');
   if(from)$$('[data-back]').forEach(a=>{let p=from.pathname.replace(/^\/en\//,'/');if(locale==='en')p='/en'+p;a.href=p+from.search+from.hash;if(a.hasAttribute('data-blog-back'))a.textContent='← '+ui.back;});
@@ -83,7 +83,7 @@
   // Home modules reveal in reading order; below-the-fold modules wait for scroll.
   function createHomeEntrance(){
     if(!$('.hero'))return {prepare(){},start(){},stop(){},showAll(){}};
-    const items=$$('.site-header, .hero-copy > *, .hero-visual, .hero-foot, .about-section > *, .hero ~ .section > .section-heading, .knowledge-gate, .home-routes, .article-list, .empty-notes, .contact-section > *, .site-footer');
+    const items=$$('.site-header, .hero-copy > *, .shelf, .notes-dock, .site-footer');
     let observer=null,started=false;
     const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
     const reveal=(item,delay=0)=>{item.style.setProperty('--reveal-delay',delay+'ms');item.classList.add('is-revealed');observer?.unobserve(item);};

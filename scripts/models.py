@@ -33,6 +33,7 @@ class KnowledgeNode(TypedDict):
     sources: list[Source]
     authorLearningStatus: NotRequired[str]
 class ArticleMeta(TypedDict):
+    sourceFile: NotRequired[str]
     slug: str
     translationKey: str
     locale: Locale

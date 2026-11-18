@@ -36,10 +36,10 @@
   if (back && from) {
     try {
       const route = new URL(from, location.origin);
-      if (route.origin === location.origin && /^\/(en\/)?knowledge\//.test(route.pathname)) {
+      if (route.origin === location.origin && /^\/(en\/)?(?:knowledge|notes)\//.test(route.pathname)) {
         const path = route.pathname.replace(/^\/en\//, '/');
         back.href = (page.lang === 'en' ? '/en' : '') + path + route.search + route.hash;
-        back.textContent = '← ' + back.dataset.routeLabel;
+        back.textContent = '← ' + (path.startsWith('/notes/') || path === '/knowledge/' ? back.dataset.notesLabel : back.dataset.routeLabel);
       }
     } catch {}
   }

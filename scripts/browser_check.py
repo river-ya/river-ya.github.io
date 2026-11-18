@@ -37,25 +37,16 @@ def main(intro_only=False):
                 page.goto(ORIGIN+'/en/');page.screenshot(path=str(EVIDENCE/f'home-en-{width}.png'),full_page=True)
                 checks.append(f'{width}px: {len(paths)} pages, no horizontal overflow')
             page.set_viewport_size({'width':1440,'height':1000})
-            page.goto(ORIGIN+'/knowledge/ai/families/diffusion/?view=learning&q=DiT#learn-node-dit')
-            expect(page.locator('[data-panel=learning]')).to_be_visible();expect(page.locator('[data-panel=learning] [data-filter-item]:visible')).to_have_count(1)
-            page.locator('#language-switch').click();assert '/en/knowledge/ai/families/diffusion/' in page.url and 'q=DiT' in page.url and '#learn-node-dit' in page.url
+            page.goto(ORIGIN+'/notes/ai/')
+            page.locator('#language-switch').click()
             expect(page.locator('html')).to_have_attribute('lang','en')
-            page.locator('#learn-node-dit a.node-link').click();expect(page.locator('h1')).to_have_text('DiT')
-            page.locator('[data-back]').first.click();assert 'q=DiT' in page.url
-            page.locator('input[name=q]').fill('no-such-node');expect(page.locator('[data-empty]')).to_be_visible();page.locator('[data-empty] [data-reset]').click();expect(page.locator('[data-empty]')).to_be_hidden()
-            checks.append('Language switch, filtering, deep links, and return-to-route state')
+            expect(page.locator('.notes-dock a[aria-current]')).to_have_attribute('data-notebook','ai')
             page.keyboard.press('/');expect(page.locator('#search-dialog')).to_be_visible();page.locator('#global-search').fill('变分自编码器');expect(page.locator('#search-results a').first).to_be_visible();page.keyboard.press('Escape');expect(page.locator('#search-dialog')).to_be_hidden()
             page.locator('#theme-toggle').click();expect(page.locator('html')).to_have_attribute('data-theme','light');page.reload();expect(page.locator('html')).to_have_attribute('data-theme','light')
             checks.append('Keyboard search/Escape and persisted theme')
             page.goto(ORIGIN+'/knowledge/algorithms/?view=course&q=006');expect(page.locator('[data-panel=course] [data-filter-item]:visible')).to_have_count(1)
             page.locator('[data-panel=course] [data-return-link]:visible').click();assert '/binary-search/' in page.url;page.locator('[data-back]').first.click();assert 'q=006' in page.url
             checks.append('Course number search and stable algorithm article URLs')
-            page.goto(ORIGIN+'/knowledge/ai/confluence/');expect(page.locator('[data-node=dit]')).to_be_visible();page.locator('[data-node=dit]').click();expect(page.locator('#graph-detail')).to_contain_text('Transformer')
-            page.locator('#only-confluence').check();expect(page.locator('.graph-node')).to_have_count(1)
-            page.locator('#language-switch').click();assert 'only=1' in page.url and 'node=dit' in page.url
-            page.set_viewport_size({'width':375,'height':850});expect(page.locator('#graph-list')).to_be_visible();page.locator('[data-list-node=dit]').click();expect(page.locator('.mini-sources')).to_contain_text('Latent Diffusion')
-            checks.append('Confluence selection, filtering, sharing URL and mobile relationship list')
             page.goto(ORIGIN+'/');expect(page.locator('#intro')).to_be_hidden();checks.append('Reduced-motion intro bypass')
             nojs=browser.new_context(java_script_enabled=False,viewport={'width':375,'height':850});nojs.route('**/*',serve);static=nojs.new_page();static.goto(ORIGIN+'/knowledge/nodes/dit/');expect(static.locator('h1')).to_have_text('DiT');nojs.close();checks.append('No-JavaScript deep page readability')
         for width in [375,768,1440]:
@@ -124,10 +115,11 @@ def main(intro_only=False):
             expect(intro.locator('.terminal-shatter')).to_have_count(0)
             intro.clock.run_for(1400)
             expect(intro.locator('.hero-copy h1')).to_have_class('is-revealed')
+            expect(intro.locator('.notes-dock')).to_have_class('notes-dock is-revealed')
             # Reveal the lower modules when they enter the viewport.
-            intro.locator('.knowledge-gate').first.scroll_into_view_if_needed()
+            intro.locator('.shelf').scroll_into_view_if_needed()
             intro.clock.run_for(1400)
-            expect(intro.locator('.knowledge-gate').first).to_have_class('knowledge-gate ai-gate is-revealed')
+            expect(intro.locator('.shelf')).to_have_class('shelf is-revealed')
             intro.evaluate('scrollTo({top:0,behavior:"instant"})')
             assert not intro.locator('html').evaluate("el=>el.classList.contains('intro-open')")
             intro.locator('#replay').click();expect(intro.locator('#intro')).to_be_visible()

@@ -18,13 +18,15 @@
     <ul>{% for heading in toc %}<li><a href="#{{ heading.id }}">{{ heading.title }}</a></li>{% endfor %}</ul>
   </details>
   {% endif %}
-  <div class="prose">{{ body }}</div>
+  <div class="prose">{{ body }}
+    {% if source %}<details class="source-code"><summary>{{ ui.source_code }} · <code>{{ article.sourceFile }}</code></summary>{{ source }}</details>{% endif %}
+  </div>
   {% if article.tags %}<div class="tags">{% for tag in article.tags %}<a href="{{ U('/blog/') }}?tag={{ tag|urlencode }}#posts">{{ tag }}</a>{% endfor %}</div>{% endif %}
   {% if article.nodeIds %}<section class="related"><h2>{{ ui.related }}</h2>{% for id in article.nodeIds %}<p><a href="{{ U('/knowledge/nodes/'+id+'/') }}">{{ L(nodes[id].title) }}</a></p>{% endfor %}</section>{% endif %}
   <nav class="pagination">
     {% if previous %}<a href="{{ article_url(previous) }}">← {{ previous.title }}</a>{% endif %}
     {% if next_article %}<a href="{{ article_url(next_article) }}">{{ next_article.title }} →</a>{% endif %}
   </nav>
-  <a data-blog-back data-route-label="{{ ui.back }}" href="{{ U('/blog/') }}">← {{ ui.blog_back }}</a>
+  <a data-blog-back data-notes-label="{{ ui.notebooks }}" data-route-label="{{ ui.back }}" href="{{ U('/blog/') }}">← {{ ui.blog_back }}</a>
 </article>
 {% endblock %}

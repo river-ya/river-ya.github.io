@@ -108,3 +108,7 @@ main { width: 100%; max-width: calc(720px + 2 * var(--gap)); margin: 0 auto; pad
   .menu { width: 100%; min-height: 38px; }
   .welcome h1, .article-header h1 { font-size: 30px; }
 }
+
+.source-code { margin: 20px 0; }
+.source-code summary { cursor: pointer; font-weight: 600; }
+.source-code .highlight { max-height: 65vh; overflow: auto; }

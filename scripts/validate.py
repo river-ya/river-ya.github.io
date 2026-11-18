@@ -41,6 +41,10 @@ def validate_content():
         need(a['locale'] in UI,'Invalid article locale');need(a['status'] in ['planned','draft','published'],'Invalid article status')
         need(set(a['nodeIds'])<=nodes.keys(),'Unknown article node')
         file=(ROOT/a['file']).resolve();need(file.is_relative_to(ROOT/'content') and file.is_file(),f'Missing content file: {a["file"]}')
+        if 'sourceFile' in a:
+            name = a['sourceFile']
+            need(isinstance(name,str) and re.fullmatch(r'[\w-]+\.py',name)
+                 and (ROOT/'static/source'/name).is_file(), 'Invalid article source file')
         if a['status']=='published':date.fromisoformat(a['publishedAt']);need(file.read_text().strip(),'Published article has no body')
         if a.get('updatedAt'):date.fromisoformat(a['updatedAt']);need(a['updatedAt']>=a.get('publishedAt',''),'Update precedes publication')
     for id,n in nodes.items():

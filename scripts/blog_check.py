@@ -27,7 +27,9 @@ def main():
             expect(page.locator('.crane-sheet')).to_have_count(0)
             assert page.locator('.post-card').bounding_box()['width'] <= 721
             expect(page.locator('html')).to_have_attribute('data-theme','light')
-            expect(page.locator('.blog-empty')).to_be_visible();expect(page.locator('[data-blog-post]')).to_have_count(0)
+            published = {a['translationKey'] for a in json.loads((ROOT/'data/articles.json').read_text())
+                         if a['status']=='published' and not a.get('demo')}
+            expect(page.locator('[data-blog-post]')).to_have_count(len(published))
             assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
             page.screenshot(path=str(EVIDENCE/f'blog-light-{width}.png'),full_page=True)
             page.locator('#theme-toggle').click();page.reload();expect(page.locator('html')).to_have_attribute('data-theme','dark')
@@ -40,11 +42,11 @@ def main():
             page.locator('#language-switch').click();assert '/en/blog/search/' in page.url
             expect(page.locator('#blog-query')).to_have_value('不存在的内容')
             page.locator('#blog-no-results [data-blog-reset]').click();assert 'q=' not in page.url
-            page.goto(ORIGIN+'/blog/');page.locator('.blog-empty a').click()
-            expect(page.locator('.toc summary')).to_be_visible()
+            page.goto(ORIGIN+'/blog/');page.locator('.post-card h2 a').first.click()
+            expect(page.locator('article h1')).to_be_visible()
             expect(page.locator('.site-header')).to_have_count(0)
             page.locator('[data-blog-back]').click();assert page.url==ORIGIN+'/blog/'
-            ctx.close();checks.append(f'{width}px: entry links, 5 standalone blog pages, dark/light themes, empty state, language/query preservation, preview return and no overflow')
+            ctx.close();checks.append(f'{width}px: entry links, 5 standalone blog pages, dark/light themes, publication list, language/query preservation, preview return and no overflow')
         # Render the fold on a real link activation and check its one-shot lifecycle.
         for width, start in [(375, '/en/'), (1440, '/')]:
             ctx = browser.new_context(viewport={'width': width, 'height': 900}, reduced_motion='no-preference')

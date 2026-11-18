@@ -1,69 +1,9 @@
 {% extends 'base.html' %}{% from 'macros.html' import section_head,track_tiles,family_links,map_preview,empty_notes,breadcrumbs with context %}
-{% block head %}{% if view=='ai' %}<script src="/assets/timeline.js" defer></script>{% endif %}{% endblock %}
 {% block content %}
-{% if view=='home' %}
-<div class="wrap notebook">
-  <section class="hero">
-    <div class="hero-copy">
-      <p class="byline"><span>{{ L(profile.name) }}</span> <code>~/README.md</code></p>
-      <h1>{{ ui.notebook_title }}</h1>
-      <p class="hero-intro">{{ L(profile.intro) }}</p>
-      <p class="focus-line">{{ ui.focus }}</p>
-      <div class="actions">
-        <a class="button primary" href="{{ U('/knowledge/') }}">{{ ui.explore }} →</a>
-        <a class="button subtle" href="{{ U('/blog/') }}">{{ ui.visit_blog }} ↗</a>
-      </div>
-      <a id="remembered-locale" href="/en/" hidden class="small">{{ ui.remembered }}</a>
-    </div>
-    {% include 'partials/search-trace.html' %}
-  </section>
-  <nav class="hero-foot" aria-label="{{ ui.toc }}">
-    {% for id,key in [('about','about'),('index','notebook_index'),('changes','recent'),('contact','contact')] %}
-    <a href="#{{ id }}"><small>{{ '%02d'|format(loop.index) }}</small>{{ ui[key] }}</a>
-    {% endfor %}
-  </nav>
-  <section class="about-section" id="about">
-    {{ section_head('01', ui.about) }}
-    <div><p class="about-text">{{ L(profile.about) }}</p>
-      <div class="interest-line">
-        <span class="small muted">{{ ui.current_topics if profile.currentTopics else ui.interests }}</span>
-        {% if profile.currentTopics %}
-          {% for id in profile.currentTopics %}<a href="{{ U('/knowledge/nodes/'+id+'/') }}">{{ L(nodes[id].title) }}</a>{% endfor %}
-        {% else %}
-          {% for t in tracks if t.kind=='domain' %}<a href="{{ U(track_path(t)) }}">{{ L(t.title) }}</a>{% endfor %}
-        {% endif %}
-      </div>
-    </div>
-  </section>
-  <section class="section" id="index">
-    {{ section_head('02',ui.notebook_index) }}
-    <div class="knowledge-gates">
-      {% for key in ['ai','algorithms','infra'] %}
-      <a class="knowledge-gate{% if key=='ai' %} ai-gate{% endif %}" href="{{ U('/knowledge/'+key+'/') }}">
-        <code>{{ key }}/</code><h3>{{ ui[key] }}</h3><p>{{ ui[key+'_desc'] }}</p><span aria-hidden="true">↗</span>
-      </a>
-      {% endfor %}
-    </div>
-  </section>
-  <section class="section" id="changes">
-    {{ section_head('03',ui.recent) }}
-    {% if recent %}<div class="article-list">{% for a in recent %}<a href="{{ article_url(a) }}"><time>{{ a.updatedAt or a.publishedAt }}</time><h3>{{ a.title }}</h3><p>{{ a.summary }}</p>{% if a.locale!=locale %}<span class="small muted">{{ ui.translation_missing }} · {{ a.locale }}</span>{% endif %}</a>{% endfor %}</div>
-    {% else %}<p class="empty-notes">{{ ui.published_empty }}</p>{% endif %}
-    <a class="blog-home-link" href="{{ U('/blog/') }}">{{ ui.visit_blog }} →</a>
-  </section>
-  <section class="contact-section" id="contact">
-    {{ section_head('04', ui.contact) }}
-    <div>{% for s in profile.socials %}<a href="{{ s.url }}">{{ s.label }} ↗</a>{% endfor %}</div>
-  </section>
-</div>
-{% else %}
 <div class="wrap page"><div class="page-header">{{ breadcrumbs(title,'','') }}<code class="file-path">{{ path }}</code><h1>{{ title }}</h1><p class="lead">{{ description }}</p></div>
 {% if view=='skills' %}<p class="notice">{{ ui.skills_note }}</p><div class="skills-grid">{% for group in profile.skills %}<section class="skill-group"><span class="eyebrow">{{ '%02d'|format(loop.index) }}</span><h2>{{ L(group.title) }}</h2><ul>{% for item in group["items"] %}<li>{{ item.name.split(' / ')[1] if locale=='en' and ' / ' in item.name else item.name.split(' / ')[0] }}{% if item.status %}<span class="badge">{{ ui['learning_status'] if item.status=='learning' else ui.get(item.status,item.status) }}</span>{% endif %}</li>{% endfor %}</ul></section>{% endfor %}</div><a class="button primary" href="{{ U('/knowledge/') }}">{{ ui.explore }} →</a>
-{% elif view=='knowledge' %}<div class="overview-rows">{% for key in ['ai','algorithms','infra'] %}<a href="{{ U('/knowledge/'+key+'/') }}"><span class="eyebrow">0{{ loop.index }}</span><div><h2>{{ ui[key] }}</h2><p>{{ ui[key+'_desc'] }}</p></div><span class="row-arrow">↗</span></a>{% endfor %}</div><section class="section">{{ section_head('AI /',ui.domains) }}{{ track_tiles(tracks|selectattr('kind','equalto','domain')|list) }}</section>
-{% elif view in ['ai','families'] %}{% if view=='ai' %}<div class="data-strip"><span><strong>{{ nodes|length }}</strong> {{ ui.nodes }}</span><span><strong>{{ published_count }}</strong> {{ ui.articles }}</span><span class="muted">{{ ui.verified }} 2026-10-22</span></div>{{ track_tiles(tracks|selectattr('kind','equalto','domain')|list) }}<section class="section">{{ section_head('01 /',ui.milestones) }}<div class="milestones">{% for id in ['backprop','vae','transformer','nerf','dit','genie'] %}<a href="{{ U('/knowledge/nodes/'+id+'/') }}"><time class="mono">{{ node_date(nodes[id]).value[:4] }}</time><span class="milestone-dot"></span><strong>{{ L(nodes[id].title) }}</strong></a>{% endfor %}</div><p class="small muted">{{ ui.date_note }}</p></section>{% endif %}<section class="section">{{ section_head('02 /',ui.families) }}{{ family_links() }}</section><section class="confluence-feature"><div><span class="eyebrow">CROSSROADS / 2022.12</span><h2>Diffusion <span class="muted">×</span><br>Transformer <span class="mint">→ DiT</span></h2><p>{{ ui.confluence_desc }}</p><a class="button primary" href="{{ U('/knowledge/ai/confluence/') }}">{{ ui.confluence }} →</a></div>{{ map_preview() }}</section>
 {% elif view=='infra' %}<p class="notice">{{ ui.infra_note }}</p><div class="overview-rows">{% for item in infra %}<a href="{{ U('/knowledge/infra/'+item.id+'/') }}"><span class="eyebrow">0{{ loop.index }}</span><div><h2>{{ L(item.title) }}</h2><p>{{ L(item.description) }}</p></div><span class="badge">{{ ui.planned }}</span><span>↗</span></a>{% endfor %}</div>
 {% elif view=='infra-detail' %}<p class="notice">{{ ui.infra_note }}</p>{{ empty_notes() }}<a href="{{ U('/knowledge/infra/') }}">← Infra</a>
 {% elif view=='404' %}<h2>{{ ui.not_found }}</h2><a class="button primary" href="{{ U('/') }}">{{ ui.return_home }} →</a>
 {% endif %}</div>
-{% endif %}
 {% endblock %}

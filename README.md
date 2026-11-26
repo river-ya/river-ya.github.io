@@ -31,7 +31,7 @@ python -B -m unittest discover -s tests -v
 
 ## 页面与内容
 
-- 已发布的内容统一收录在博客。首页只提供博客与终端入口，博客中的 AI、算法、Infra 分类位于 `/blog/category/`，中英文旧笔记地址会自动跳转。
+- 已发布的内容统一收录在博客。首页显示最近更新和博客、终端入口，右侧的 AI、算法、Infra 通向博客分类 `/blog/category/`，中英文旧笔记地址会自动跳转。
 - 从导航的“终端”可进入 `/terminal/` 或 `/en/terminal/`。输入 `ls` 列出内容，`cd /ai/computer-vision` 切换分类，`cat diffusion-demo` 阅读正文，`open diffusion-demo` 打开文章页。`search diffusion` 可跨目录搜索。目录来自构建时的博客发布索引。
 - AI 计算机视觉目前收录 Diffusion 复现，站内提供完整 Python 源码，Notebook 链接固定到原仓库同一提交。
 - 原 AI 时间线与交汇图下架，历史网址跳转到对应笔记页。路线资料仍在 data/。

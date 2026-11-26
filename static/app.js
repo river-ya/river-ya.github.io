@@ -82,7 +82,7 @@
   // Home modules reveal in reading order; below-the-fold modules wait for scroll.
   function createHomeEntrance(){
     if(!$('.hero'))return {prepare(){},start(){},stop(){},showAll(){}};
-    const items=$$('.site-header, .hero-copy > *, .site-footer');
+    const items=$$('.site-header, .hero-copy > *, .shelf, .notes-dock, .site-footer');
     let observer=null,started=false;
     const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
     const reveal=(item,delay=0)=>{item.style.setProperty('--reveal-delay',delay+'ms');item.classList.add('is-revealed');observer?.unobserve(item);};

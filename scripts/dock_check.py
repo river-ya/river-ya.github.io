@@ -78,13 +78,19 @@ def main():
             expect(home_links).to_have_count(2)
             expect(home_links.nth(0)).to_have_attribute('href', prefix+'/blog/')
             expect(home_links.nth(1)).to_have_attribute('href', prefix+'/terminal/')
-            home_links.nth(0).click()
+            expect(page.locator('.notes-dock a')).to_have_count(3)
+            shelf = page.locator('.update-list')
+            if shelf.count():
+                assert shelf.bounding_box()['x'] + shelf.bounding_box()['width'] < page.locator('.notes-dock').bounding_box()['x']
+                dates = shelf.locator('time').all_text_contents()
+                assert dates == sorted(dates, reverse=True)
             for category in ['ai','algorithms','infra']:
-                page.locator(f'.blog-categories a[href$="/{category}/"]').click()
+                page.locator(f'.notes-dock a[data-notebook="{category}"]').click()
                 page.wait_for_url(site+prefix+'/blog/category/'+category+'/')
                 expect(page.locator('.blog-categories a[aria-current]')).to_have_attribute(
                     'href', prefix+'/blog/category/'+category+'/')
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
+                page.goto(site+prefix+'/')
             page.goto(site+prefix+'/knowledge/ai/computer-vision/')
             page.wait_for_url('**/blog/category/computer-vision/')
             expect(page.locator('.timeline, .milestones, #graph')).to_have_count(0)

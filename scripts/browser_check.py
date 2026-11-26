@@ -119,6 +119,8 @@ def main(intro_only=False):
             expect(intro.locator('.hero-copy h1')).to_have_class('is-revealed')
             expect(intro.locator('.desk-links')).to_have_class('desk-links is-revealed')
             expect(intro.locator('.desk-links a[href="/blog/"]')).to_be_visible()
+            expect(intro.locator('.shelf')).to_have_class('shelf is-revealed')
+            expect(intro.locator('.notes-dock')).to_have_class('notes-dock is-revealed')
             intro.evaluate('scrollTo({top:0,behavior:"instant"})')
             assert not intro.locator('html').evaluate("el=>el.classList.contains('intro-open')")
             intro.locator('#replay').click();expect(intro.locator('#intro')).to_be_visible()

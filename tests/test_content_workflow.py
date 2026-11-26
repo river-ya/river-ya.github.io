@@ -98,6 +98,9 @@ class ContentWorkflow(unittest.TestCase):
         self.assertIn('/blog/algo-note/',shelf('algorithms'))
         for slug in ['draft','algo-note','infra-note']: self.assertNotIn('/blog/'+slug+'/',ai)
         self.assertNotIn('/blog/updated/',shelf('algorithms'))
+        home=(self.root/'dist/index.html').read_text()
+        self.assertLess(home.index('/blog/updated/'),home.index('/blog/recent/'))
+        self.assertNotIn('/blog/draft/',home)
 
     def test_reserved_blog_slug_is_rejected(self):
         self.write('articles',[self.article(slug='archive')])

@@ -186,7 +186,8 @@ def main():
         render('/terminal/', 'terminal.html', ui['site_terminal'], locale, ui['terminal_hint'],
                catalog=terminal_catalog(locale, posts, groups))
         index(ui['site_terminal'], '/terminal/', ui['nav_label'], ui['terminal_hint'])
-        render('/', 'notebooks.html', L(DATA['profile']['name']), locale)
+        updates = [post for post in recent if post.get('updatedAt') or post['publishedAt']][:5]
+        render('/', 'notebooks.html', L(DATA['profile']['name']), locale, updates=updates)
         archive = defaultdict(list)
         for article in posts:
             archive[article['publishedAt'][:4]].append(article)

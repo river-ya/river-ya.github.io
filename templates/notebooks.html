@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block head %}<link rel="stylesheet" href="/assets/notes-dock.css?v=2">{% endblock %}
+{% block head %}<link rel="stylesheet" href="/assets/notes-dock.css?v=3">{% endblock %}
 {% block content %}
 <div class="desk">
   <section class="hero desk-intro">
@@ -11,5 +11,22 @@
       </nav>
     </div>
   </section>
+  {% if updates %}
+  <section class="shelf" aria-labelledby="recent-title">
+    <h2 id="recent-title">{{ ui.recent }}</h2>
+    <ul class="update-list">
+      {% for post in updates %}
+      {% set date = post.updatedAt or post.publishedAt %}
+      <li>
+        <a href="{{ article_url(post) }}">
+          <span class="update-title" lang="{{ post.locale }}">{{ post.title }}</span>
+          <time datetime="{{ date }}">{{ date }}</time>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  {% include 'partials/notes-dock.html' %}
 </div>
 {% endblock %}

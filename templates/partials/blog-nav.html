@@ -10,7 +10,7 @@
     <a id="language-switch" href="{{ language_url }}" aria-label="{{ ui.language }}">{{ 'EN' if locale=='zh-CN' else '中文' }}</a>
   </div>
   <div class="menu">
-    {% for section, href, label in [('posts','/blog/',ui.blog_posts),('archive','/blog/archive/',ui.blog_archive),('search','/blog/search/',ui.search),('tags','/blog/tags/',ui.blog_tags),('faq','/blog/faq/','FAQ')] %}
+    {% for section, href, label in [('posts','/blog/',ui.blog_posts),('archive','/blog/archive/',ui.blog_archive),('search','/blog/search/',ui.search),('tags','/blog/tags/',ui.blog_tags)] %}
     <a href="{{ U(href) }}" {% if blog_section==section or (section=='posts' and blog_section=='category') %}aria-current="page"{% endif %}>{{ label }}</a>
     {% endfor %}
   </div>

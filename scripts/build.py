@@ -3,8 +3,7 @@
 No runtime Python/Node server, database, or SPA fallback is required.
 """
 from __future__ import annotations
-import json, re, shutil, sys, html, math
-from functools import lru_cache
+import json, re, shutil, sys, html
 from pathlib import Path
 from collections import defaultdict
 from datetime import date
@@ -98,11 +97,10 @@ def terminal_catalog(locale, posts, groups):
         add('/'+category, blog_category(category), ui['shelf_'+category], True)
     add('/ai/computer-vision', blog_category('computer-vision'), ui['cv_shelf'], True)
     add('/blog', '/blog/', ui['blog'], True)
-    for path, route, key in [('home','/','home'), ('skills','/skills/','skills'),
-                             ('notes','/blog/','all_notes')]:
+    for path, route, key in [('home','/','home'), ('notes','/blog/','all_notes')]:
         add('/'+path, route, ui[key])
-    for page in ['archive', 'tags', 'search', 'faq']:
-        add('/blog/'+page, '/blog/'+page+'/', ui[{'faq':'faq_title'}.get(page,'blog_'+page)])
+    for page in ['archive', 'tags', 'search']:
+        add('/blog/'+page, '/blog/'+page+'/', ui['blog_'+page])
     for post in posts:
         slug = post.get('terminalSlug', post['slug'])
         memberships = groups[post['translationKey']]
@@ -118,13 +116,6 @@ def terminal_catalog(locale, posts, groups):
                                  directory=False)
     return catalog
 
-
-@lru_cache(maxsize=None)
-def reading_minutes(file):
-    text=(ROOT/file).read_text()
-    chinese=len(re.findall(r'[\u4e00-\u9fff]',text))
-    words=len(re.findall(r'[a-zA-Z0-9]+',text))
-    return max(1,math.ceil(chinese/400+words/220))
 
 def code_highlight(code,lang,*args):
     try:
@@ -181,7 +172,7 @@ def main():
         def stage_label(s):return UI[locale][{'入门':'intro_stage','必备':'essential_stage','扩展':'extended_stage','挺难':'hard_stage'}[s]]
         def article_url(a):return url('/blog/'+a['slug']+'/',a['locale'])
         pairs=[('zh-CN',url(path,'zh-CN')),('en',url(path,'en'))] if alternate else [(locale,p)]
-        ctx=dict(locale=locale,ui=UI[locale],ui_json=json.dumps(UI[locale],ensure_ascii=False).replace("<", "\\u003c"),L=loc,U=U,label_tag=label_tag,path=path,current_url=p,origin=ORIGIN,title=title,description=description or title,alternate=pairs,language_url=url(path,'zh-CN' if locale=='en' else 'en') if alternate else url('/blog/','zh-CN' if locale=='en' else 'en'),noindex=noindex,profile=DATA['profile'],tracks=DATA['tracks'],nodes=NODES,topics=TOPICS,lessons=LESSONS,categories=DATA['categories'],relations=DATA['relations'],node_date=node_date,track_path=track_path,reading_minutes=reading_minutes,year='2026',infra=INFRA)
+        ctx=dict(locale=locale,ui=UI[locale],ui_json=json.dumps(UI[locale],ensure_ascii=False).replace("<", "\\u003c"),L=loc,U=U,label_tag=label_tag,path=path,current_url=p,origin=ORIGIN,title=title,description=description or title,alternate=pairs,language_url=url(path,'zh-CN' if locale=='en' else 'en') if alternate else url('/blog/','zh-CN' if locale=='en' else 'en'),noindex=noindex,profile=DATA['profile'],tracks=DATA['tracks'],nodes=NODES,topics=TOPICS,lessons=LESSONS,categories=DATA['categories'],relations=DATA['relations'],node_date=node_date,track_path=track_path,year='2026',infra=INFRA)
         ctx.update(stage_label=stage_label,article_url=article_url,blog_category=blog_category,preferred_articles=preferred_articles,recent=sorted(preferred_articles(locale),key=lambda a:a.get('updatedAt') or a['publishedAt'],reverse=True)[:4],published_count=len({a['translationKey'] for a in published()}))
         ctx.update(extra);target.write_text(env.get_template(template).render(**ctx),encoding='utf-8')
         if not noindex:urls.append(ORIGIN+p)
@@ -195,15 +186,12 @@ def main():
         render('/terminal/', 'terminal.html', ui['site_terminal'], locale, ui['terminal_hint'],
                catalog=terminal_catalog(locale, posts, groups))
         index(ui['site_terminal'], '/terminal/', ui['nav_label'], ui['terminal_hint'])
-        render('/', 'notebooks.html', L(DATA['profile']['name']), locale, L(DATA['profile']['intro']),
-               entries=recent[:5])
-        render('/skills/', 'overview.html', ui['skills'], locale, ui['skills_intro'], view='skills')
-        index(ui['skills'], '/skills/', ui['skills'], ui['skills_intro'])
+        render('/', 'notebooks.html', L(DATA['profile']['name']), locale)
         archive = defaultdict(list)
         for article in posts:
             archive[article['publishedAt'][:4]].append(article)
         tag_counts={tag:sum(tag in a['tags'] for a in posts) for tag in sorted({tag for a in posts for tag in a['tags']},key=str.casefold)}
-        for section,key in [('posts','blog'),('archive','blog_archive'),('tags','blog_tags'),('search','blog_search'),('faq','faq_title')]:
+        for section,key in [('posts','blog'),('archive','blog_archive'),('tags','blog_tags'),('search','blog_search')]:
             path='/blog/'+('' if section=='posts' else section+'/')
             render(path,'blog.html',ui[key],locale,ui['blog_desc'],blog_section=section,posts=posts,archive=archive,tag_counts=tag_counts)
         for category in [*SHELF_TAGS, 'computer-vision']:
@@ -217,6 +205,8 @@ def main():
             render(path, 'retired.html', ui['blog'], locale, noindex=True, destination=destination,
                    alternate=False)
 
+        redirect('/skills/', url('/', locale))
+        redirect('/blog/faq/', url('/blog/', locale))
         redirect('/notes/', url('/blog/', locale))
         redirect('/knowledge/', url('/blog/', locale))
         for category in SHELF_TAGS:

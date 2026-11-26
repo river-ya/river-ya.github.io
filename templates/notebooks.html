@@ -1,28 +1,15 @@
 {% extends 'base.html' %}
-{% block head %}<link rel="stylesheet" href="/assets/notes-dock.css">{% endblock %}
+{% block head %}<link rel="stylesheet" href="/assets/notes-dock.css?v=2">{% endblock %}
 {% block content %}
 <div class="desk">
   <section class="hero desk-intro">
     <div class="hero-copy">
-      <p class="byline"><span>{{ L(profile.name) }}</span></p>
-      <h1>{{ ui.notebook_title }}</h1>
-      <p class="hero-intro">{{ L(profile.intro) }}</p>
-      <div class="desk-links"><a href="{{ U('/blog/') }}">{{ ui.visit_blog }} ↗</a><a class="terminal-link" href="{{ U('/terminal/') }}"><code aria-hidden="true">&gt;_</code> {{ ui.site_terminal }}</a>{% for social in profile.socials %}<a href="{{ social.url }}">{{ social.label }} ↗</a>{% endfor %}</div>
-      <a id="remembered-locale" href="/en/" hidden>{{ ui.remembered }}</a>
+      <h1>{{ L(profile.name) }}</h1>
+      <nav class="desk-links" aria-label="{{ ui.nav_label }}">
+        <a href="{{ U('/blog/') }}">{{ ui.blog }} <span aria-hidden="true">↗</span></a>
+        <a href="{{ U('/terminal/') }}">{{ ui.terminal_nav }} <span aria-hidden="true">&gt;_</span></a>
+      </nav>
     </div>
   </section>
-  <section class="shelf" aria-label="{{ ui.recent }}">
-    <div class="shelf-heading"><h2>{{ ui.recent }}</h2></div>
-    {% for post in entries %}
-    <article class="shelf-entry">
-      {% set date = post.updatedAt or post.publishedAt %}
-      {% if date %}<time datetime="{{ date }}">{{ date }}</time>{% endif %}
-      <h3><a href="{{ article_url(post) }}" lang="{{ post.locale }}">{{ post.title }}</a></h3>
-      {% if post.summary %}<p lang="{{ post.locale }}">{{ post.summary }}</p>{% endif %}
-      {% if post.locale != locale %}<small>{{ ui.blog_original }} · {{ post.locale }}</small>{% endif %}
-    </article>
-    {% else %}<p class="shelf-empty">{{ ui.shelf_empty }}</p>{% endfor %}
-  </section>
-  {% include 'partials/notes-dock.html' %}
 </div>
 {% endblock %}

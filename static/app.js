@@ -8,7 +8,6 @@
   updateLanguage();
   language.addEventListener('click',()=>{safeStore('localStorage','language',locale==='en'?'zh-CN':'en');safeStore('sessionStorage','intro-seen','1');});
   if(location.pathname==='/en/')safeStore('localStorage','language','en');
-  if(location.pathname==='/' && safeStore('localStorage','language')==='en')$('#remembered-locale')?.removeAttribute('hidden');
   $('#theme-toggle').addEventListener('click',()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=theme;safeStore('localStorage','theme',theme);});
   const replaceURL=url=>{history.replaceState(null,'',url);updateLanguage();};
 
@@ -83,7 +82,7 @@
   // Home modules reveal in reading order; below-the-fold modules wait for scroll.
   function createHomeEntrance(){
     if(!$('.hero'))return {prepare(){},start(){},stop(){},showAll(){}};
-    const items=$$('.site-header, .hero-copy > *, .shelf, .notes-dock, .site-footer');
+    const items=$$('.site-header, .hero-copy > *, .site-footer');
     let observer=null,started=false;
     const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
     const reveal=(item,delay=0)=>{item.style.setProperty('--reveal-delay',delay+'ms');item.classList.add('is-revealed');observer?.unobserve(item);};

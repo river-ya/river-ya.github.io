@@ -10,7 +10,7 @@
 </head>
 <body>
   <h1>{{ title }}</h1>
-  <a id="destination" href="{{ destination }}">{{ ui.blog }} →</a>
+  <a id="destination" href="{{ destination }}">{{ ui.home if destination in ['/', '/en/'] else ui.blog }} →</a>
   <script>
     if (location.hash) location.replace(document.getElementById('destination').href + location.hash);
   </script>

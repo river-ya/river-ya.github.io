@@ -36,6 +36,5 @@ body { font-family: var(--editorial); }
 .type-toggle[aria-pressed="false"] { border-bottom-color: transparent; }
 .type-toggle[hidden] { display: none; }
 .blog-nav .wordmark { font-style: italic; }
-.listing .welcome h1, .single .article-header h1 { font-weight: 500; }
-.listing .welcome p { font-size: 18px; }
+.single .article-header h1 { font-weight: 500; }
 .blog-footer, .post-meta { font-variant-numeric: tabular-nums; }

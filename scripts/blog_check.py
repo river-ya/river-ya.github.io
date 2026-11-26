@@ -21,13 +21,13 @@ def main():
         for width in [375,768,1440]:
             ctx=browser.new_context(viewport={'width':width,'height':1000},reduced_motion='reduce');ctx.route('**/*',serve)
             page=ctx.new_page();page.on('pageerror',lambda e:errors.append(str(e)))
-            page.goto(ORIGIN+'/');page.locator('.main-nav a[href="/blog/"]').click()
-            expect(page.locator('h1')).to_contain_text('欢迎来到 River’s Log')
+            page.goto(ORIGIN+'/');page.locator('.desk-links a[href="/blog/"]').click()
+            expect(page.locator('h1')).to_have_text('文章')
             expect(page.locator('.site-header, #intro, .site-footer')).to_have_count(0)
             expect(page.locator('.blog-nav')).to_have_count(1)
             expect(page.locator('.crane-sheet')).to_have_count(0)
             for card in page.locator('.post-card').all():
-                assert card.bounding_box()['width'] <= 721
+                assert card.bounding_box()['width'] >= min(width, 1440) - 80
             expect(page.locator('html')).to_have_attribute('data-theme','light')
             published = {a['translationKey'] for a in json.loads((ROOT/'data/articles.json').read_text())
                          if a['status']=='published' and not a.get('demo')}
@@ -36,7 +36,7 @@ def main():
             page.screenshot(path=str(EVIDENCE/f'blog-light-{width}.png'),full_page=True)
             page.locator('#theme-toggle').click();page.reload();expect(page.locator('html')).to_have_attribute('data-theme','dark')
             page.screenshot(path=str(EVIDENCE/f'blog-dark-{width}.png'),full_page=True)
-            for part in ['faq','archive','tags','search']:
+            for part in ['archive','tags','search']:
                 page.locator(f'.blog-nav a[href="/blog/{part}/"]').click()
                 expect(page.locator('h1')).to_be_visible()
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
@@ -48,7 +48,7 @@ def main():
             expect(page.locator('article h1')).to_be_visible()
             expect(page.locator('.site-header')).to_have_count(0)
             page.locator('[data-blog-back]').click();assert page.url==ORIGIN+'/blog/'
-            ctx.close();checks.append(f'{width}px: entry links, 5 standalone blog pages, dark/light themes, publication list, language/query preservation, preview return and no overflow')
+            ctx.close();checks.append(f'{width}px: entry links, 4 standalone blog pages, dark/light themes, publication list, language/query preservation, preview return and no overflow')
         # Render the fold on a real link activation and check its one-shot lifecycle.
         for width, start in [(375, '/en/'), (1440, '/')]:
             ctx = browser.new_context(viewport={'width': width, 'height': 900}, reduced_motion='no-preference')
@@ -67,7 +67,7 @@ def main():
                 page.keyboard.press('Escape')
             expect(crane).to_have_count(0, timeout=3500)
             page.reload()
-            expect(page.locator('h1')).to_contain_text('River’s Log')
+            expect(page.locator('.wordmark')).to_have_text('River’s Log')
             expect(crane).to_have_count(0)
             ctx.close()
         checks.append('Crane entrance on Chinese and English home links, animated folds, automatic cleanup, Escape and no replay on refresh')

@@ -31,7 +31,7 @@ python -B -m unittest discover -s tests -v
 
 ## 页面与内容
 
-- 已发布的内容统一收录在博客。首页右侧的 AI、算法、Infra 入口链接到 `/blog/category/` 下的博客分类，中英文旧笔记地址会自动跳转。
+- 已发布的内容统一收录在博客。首页只提供博客与终端入口，博客中的 AI、算法、Infra 分类位于 `/blog/category/`，中英文旧笔记地址会自动跳转。
 - 从导航的“终端”可进入 `/terminal/` 或 `/en/terminal/`。输入 `ls` 列出内容，`cd /ai/computer-vision` 切换分类，`cat diffusion-demo` 阅读正文，`open diffusion-demo` 打开文章页。`search diffusion` 可跨目录搜索。目录来自构建时的博客发布索引。
 - AI 计算机视觉目前收录 Diffusion 复现，站内提供完整 Python 源码，Notebook 链接固定到原仓库同一提交。
 - 原 AI 时间线与交汇图下架，历史网址跳转到对应笔记页。路线资料仍在 data/。
@@ -75,7 +75,7 @@ dist/                   构建产物
 
 ## 修改个人资料与双语文案
 
-编辑 `data/profile.json`。`name`、`intro`、`about` 均为 `{"zh-CN": "中文", "en": "English"}`。当前昵称 `river-ya` 来自指定站点账号，可以修改；没有使用 GitHub 返回的真实姓名或邮箱填充个人经历。
+编辑 `data/profile.json`。昵称 `name` 使用 `{"zh-CN": "中文", "en": "English"}`。当前昵称 `river-ya` 来自指定站点账号，可以修改；没有使用 GitHub 返回的真实姓名或邮箱填充个人经历。
 
 `socials` 只保留想公开的链接。`currentTopics` 填已有节点 ID，例如 `["dit", "nerf"]`；为空时主页显示“关注方向”。技能 `status` 可以为 `null`、`learning`、`practiced`、`independent`，对应不显示程度、学习中、已实践、可独立应用。请仅填写真实状态。
 

@@ -74,14 +74,17 @@ def main():
         for width, prefix in [(375,''), (768,'/en'), (1440,'')]:
             page = browser.new_page(viewport={'width':width,'height':850},reduced_motion='reduce')
             page.goto(site+prefix+'/')
+            home_links = page.locator('.desk-links a')
+            expect(home_links).to_have_count(2)
+            expect(home_links.nth(0)).to_have_attribute('href', prefix+'/blog/')
+            expect(home_links.nth(1)).to_have_attribute('href', prefix+'/terminal/')
+            home_links.nth(0).click()
             for category in ['ai','algorithms','infra']:
-                link = page.locator(f'[data-notebook="{category}"]')
-                link.click()
+                page.locator(f'.blog-categories a[href$="/{category}/"]').click()
                 page.wait_for_url(site+prefix+'/blog/category/'+category+'/')
                 expect(page.locator('.blog-categories a[aria-current]')).to_have_attribute(
                     'href', prefix+'/blog/category/'+category+'/')
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
-                page.goto(site+prefix+'/')
             page.goto(site+prefix+'/knowledge/ai/computer-vision/')
             page.wait_for_url('**/blog/category/computer-vision/')
             expect(page.locator('.timeline, .milestones, #graph')).to_have_count(0)

@@ -49,8 +49,8 @@
   const input = section.querySelector('#blog-query');
   const cards = [...section.querySelectorAll('[data-blog-post]')].map(node => {
     const tags = JSON.parse(node.dataset.tags);
-    const excerpt = node.querySelector('.excerpt')?.textContent ?? '';
-    const text = [node.querySelector('h2').textContent, excerpt, ...tags].join(' ').toLocaleLowerCase();
+    const summary = node.dataset.summary ?? '';
+    const text = [node.querySelector('h2').textContent, summary, ...tags].join(' ').toLocaleLowerCase();
     return { node, tags, text };
   });
   const count = section.querySelector('#blog-result-count');

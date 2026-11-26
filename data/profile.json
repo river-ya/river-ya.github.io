@@ -7,14 +7,6 @@
     "zh-CN": "使用站点账号作为昵称，可在个人配置中修改。",
     "en": "The site account is used as a configurable nickname."
   },
-  "intro": {
-    "zh-CN": "在模型、代码与世界之间，慢慢建立自己的理解。",
-    "en": "Building my understanding, one model, one experiment, one connection at a time."
-  },
-  "about": {
-    "zh-CN": "我正在学习深度学习、计算机视觉、自然语言处理、多模态、3D 场景搭建和世界模型。这里是我的知识工作区：用路线连接概念，用笔记记录理解，让每一次探索都有迹可循。",
-    "en": "I’m learning deep learning, computer vision, natural language processing, multimodal learning, 3D scenes, and world models. This is my knowledge workspace: connecting concepts through routes and recording understanding through notes."
-  },
   "socials": [
     {
       "label": "GitHub",

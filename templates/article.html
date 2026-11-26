@@ -7,9 +7,8 @@
     {% if article.demo %}
     <small class="post-meta">{{ ui.demo }}</small>
     {% else %}
-    {{ metadata(article, ui, reading_minutes) }}
+    {{ metadata(article, ui) }}
     {% if article.updatedAt %}<small class="post-meta">{{ ui.updated_at }} <time>{{ article.updatedAt }}</time></small>{% endif %}
-    {% if article.summary %}<p>{{ article.summary }}</p>{% endif %}
     {% endif %}
     {% if translation_unavailable %}<small class="muted">{{ ui.blog_untranslated }} · {{ ui.blog_original }} {{ article.locale }}</small>{% endif %}
   </header>

@@ -7,8 +7,15 @@
 }
 :root[data-type="print"] { --chinese-type: var(--chinese-print); }
 body { font-family: var(--editorial); }
+.prose :not(pre) > code {
+  font: inherit;
+}
+:root:not([data-type="print"]) .prose pre {
+  font-family: "Notebook Kai", ui-monospace, monospace;
+}
+.prose pre code { font-family: inherit; }
+.prose math { font-family: inherit; }
 .prose math[display="inline"] {
-  font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
   margin: 0;

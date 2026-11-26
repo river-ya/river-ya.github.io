@@ -13,10 +13,22 @@
   </div>
 </header>
 {% else %}
-<h1 class="page-title">{{ 'FAQ' if blog_section=='faq' else ui['blog_'+blog_section] }}</h1>
+<h1 class="page-title">{{ title if blog_section=='category' else 'FAQ' if blog_section=='faq' else ui['blog_'+blog_section] }}</h1>
 {% endif %}
 
-{% if blog_section in ['posts','search'] %}
+{% if blog_section in ['posts','category'] %}
+<nav class="blog-categories" aria-label="{{ ui.category }}">
+  <a href="{{ U('/blog/') }}"{% if not category %} aria-current="page"{% endif %}>{{ ui.all }}</a>
+  {% for key in ['ai','algorithms','infra'] %}
+  <a href="{{ U(blog_category(key)) }}"{% if key==category %} aria-current="page"{% endif %}>{{ ui['shelf_'+key] }}</a>
+  {% endfor %}
+  {% if category in ['ai','computer-vision'] %}
+  <a href="{{ U(blog_category('computer-vision')) }}"{% if category=='computer-vision' %} aria-current="page"{% endif %}>{{ ui.cv_shelf }}</a>
+  {% endif %}
+</nav>
+{% endif %}
+
+{% if blog_section in ['posts','search','category'] %}
 <section id="posts" data-count-label="{{ ui.blog_count }}" aria-label="{{ ui.blog_posts }}">
   {% if blog_section=='search' %}
   <form class="blog-search-form" action="{{ U('/blog/search/') }}">
@@ -27,7 +39,7 @@
   <p id="blog-result-count" role="status" hidden></p>
   {% for post in posts %}
   <article class="post-card" data-blog-post data-tags="{{ post.tags|tojson|forceescape }}">
-    <h2><a href="{{ article_url(post) }}" lang="{{ post.locale }}">{{ post.title }}</a></h2>
+    <h2><a href="{{ article_url(post) }}{% if category %}?from={{ current_url }}{% endif %}" lang="{{ post.locale }}">{{ post.title }}</a></h2>
     {% if post.summary %}<p class="excerpt" lang="{{ post.locale }}">{{ post.summary }}</p>{% endif %}
     {{ metadata(post, ui, reading_minutes) }}
     {% if post.locale!=locale %}<small class="blog-language">{{ ui.blog_original }} · {{ post.locale }}</small>{% endif %}
@@ -39,16 +51,16 @@
       <p class="excerpt">{{ ui.preview_summary }}</p>
       <small class="post-meta">{{ ui.demo }} · {{ ui.published_empty }}</small>
     </article>
-    {% else %}<p class="muted" id="search-empty">{{ ui.published_empty }}</p>{% endif %}
+    {% else %}<p class="muted" id="search-empty">{{ ui.shelf_empty if category else ui.published_empty }}</p>{% endif %}
   {% endfor %}
   <p id="blog-no-results" hidden>{{ ui.no_results }} · <a href="{{ U('/blog/search/') }}" data-blog-reset>{{ ui.clear }}</a></p>
 </section>
 {% elif blog_section=='archive' %}
   {% for year, items in archive.items() %}
   <section class="blog-archive-year">
-    <h2>{{ year }} <small>{{ items|length }}</small></h2>
+    <h2>{{ year or ui.undated }} <small>{{ items|length }}</small></h2>
     {% for post in items %}
-      {% if loop.changed(post.publishedAt[5:7]) %}<h3>{{ post.publishedAt[5:7]|int ~ '月' if locale=='zh-CN' else ('January','February','March','April','May','June','July','August','September','October','November','December')[post.publishedAt[5:7]|int - 1] }}</h3>{% endif %}
+      {% if year and loop.changed(post.publishedAt[5:7]) %}<h3>{{ post.publishedAt[5:7]|int ~ '月' if locale=='zh-CN' else ('January','February','March','April','May','June','July','August','September','October','November','December')[post.publishedAt[5:7]|int - 1] }}</h3>{% endif %}
       <div class="archive-entry"><a class="blog-archive-row" href="{{ article_url(post) }}">{{ post.title }}</a>
       {{ metadata(post, ui, reading_minutes) }}</div>
     {% endfor %}

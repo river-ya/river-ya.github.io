@@ -11,7 +11,7 @@
   </div>
   <div class="menu">
     {% for section, href, label in [('posts','/blog/',ui.blog_posts),('archive','/blog/archive/',ui.blog_archive),('search','/blog/search/',ui.search),('tags','/blog/tags/',ui.blog_tags),('faq','/blog/faq/','FAQ')] %}
-    <a href="{{ U(href) }}" {% if blog_section==section %}aria-current="page"{% endif %}>{{ label }}</a>
+    <a href="{{ U(href) }}" {% if blog_section==section or (section=='posts' and blog_section=='category') %}aria-current="page"{% endif %}>{{ label }}</a>
     {% endfor %}
   </div>
 </nav>

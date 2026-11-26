@@ -3,7 +3,7 @@
 {% block content %}
 <div class="wrap page">
   {% set published_note = topic.contentStatus=='published' %}
-  {% set parent_route = '/notes/algorithms/' if published_note else '/knowledge/algorithms/' %}
+  {% set parent_route = blog_category('algorithms') %}
   {{ breadcrumbs(L(topic.title), parent_route, 'algorithms') }}
   <a class="back-link" data-back href="{{ U(parent_route) }}">← {{ ui.back }}</a>
   <div class="article-layout">

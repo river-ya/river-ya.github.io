@@ -27,6 +27,6 @@
     {% if previous %}<a href="{{ article_url(previous) }}">← {{ previous.title }}</a>{% endif %}
     {% if next_article %}<a href="{{ article_url(next_article) }}">{{ next_article.title }} →</a>{% endif %}
   </nav>
-  <a data-blog-back data-notes-label="{{ ui.notebooks }}" data-route-label="{{ ui.back }}" href="{{ U('/blog/') }}">← {{ ui.blog_back }}</a>
+  <a data-blog-back data-route-label="{{ ui.back }}" href="{{ U('/blog/') }}">← {{ ui.blog_back }}</a>
 </article>
 {% endblock %}

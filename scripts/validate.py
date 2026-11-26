@@ -35,9 +35,9 @@ def validate_content():
         for skill in group['items']:need(skill['status'] in [None,'learning','practiced','independent'],'Unknown skill status')
     article_keys=set();translation_keys=set()
     for a in articles:
-        need(re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',a['slug']) and a['slug'] not in {'archive','tags','search','faq'},'Invalid or reserved blog slug')
+        need(re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',a['slug']) and a['slug'] not in {'archive','tags','search','faq','category'} and not a['slug'].startswith('algorithm-'),'Invalid or reserved blog slug')
         k=(a['locale'],a['slug']);need(k not in article_keys,f'Duplicate article: {k}');article_keys.add(k)
-        tk=(a['locale'],a['translationKey']);need(tk not in translation_keys,f'Duplicate translation key: {tk}');translation_keys.add(tk)
+        tk=(a['locale'],a['translationKey']);need(not a['translationKey'].startswith('algorithm-'),'Reserved algorithm translation key');need(tk not in translation_keys,f'Duplicate translation key: {tk}');translation_keys.add(tk)
         need(a['locale'] in UI,'Invalid article locale');need(a['status'] in ['planned','draft','published'],'Invalid article status')
         need(set(a['nodeIds'])<=nodes.keys(),'Unknown article node')
         file=(ROOT/a['file']).resolve();need(file.is_relative_to(ROOT/'content') and file.is_file(),f'Missing content file: {a["file"]}')

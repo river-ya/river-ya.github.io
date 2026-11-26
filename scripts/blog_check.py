@@ -8,6 +8,7 @@ ROOT=Path(__file__).resolve().parents[1];EVIDENCE=ROOT/'evidence';ORIGIN='http:/
 def main():
     EVIDENCE.mkdir(exist_ok=True)
     base=ROOT/'dist';errors=[];missing=[];checks=[]
+    topics = sum(t['contentStatus']=='published' for t in json.loads((ROOT/'data/algorithms.json').read_text()))
     def serve(route):
         target=base/unquote(urlsplit(route.request.url).path).lstrip('/')
         if target.is_dir():target=target/'index.html'
@@ -30,7 +31,7 @@ def main():
             expect(page.locator('html')).to_have_attribute('data-theme','light')
             published = {a['translationKey'] for a in json.loads((ROOT/'data/articles.json').read_text())
                          if a['status']=='published' and not a.get('demo')}
-            expect(page.locator('[data-blog-post]')).to_have_count(len(published))
+            expect(page.locator('[data-blog-post]')).to_have_count(len(published)+topics)
             assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
             page.screenshot(path=str(EVIDENCE/f'blog-light-{width}.png'),full_page=True)
             page.locator('#theme-toggle').click();page.reload();expect(page.locator('html')).to_have_attribute('data-theme','dark')
@@ -81,7 +82,7 @@ def main():
         subprocess.run([sys.executable,'scripts/build.py'],cwd=fixture,check=True,capture_output=True)
         base=fixture/'dist';ctx=browser.new_context(reduced_motion='reduce');ctx.route('**/*',serve);page=ctx.new_page();page.on('pageerror',lambda e:errors.append(str(e)))
         page.goto(ORIGIN+'/blog/')
-        expect(page.locator('[data-blog-post]')).to_have_count(2)
+        expect(page.locator('[data-blog-post]')).to_have_count(2+topics)
         expect(page.locator('[data-blog-post] h2').first).to_contain_text('Diffusion')
         expect(page.locator('body')).not_to_contain_text('PRIVATE DRAFT')
         page.locator('.blog-nav a[href="/blog/search/"]').click()
@@ -89,17 +90,17 @@ def main():
         page.locator('.blog-nav a[href="/blog/tags/"]').click()
         page.locator('.tags a').filter(has_text='C++').click()
         expect(page.locator('#blog-filter strong')).to_have_text('C++');expect(page.locator('[data-blog-post]:visible')).to_have_count(1)
-        page.locator('#blog-filter [data-blog-reset]').click();expect(page.locator('[data-blog-post]:visible')).to_have_count(2)
+        page.locator('#blog-filter [data-blog-reset]').click();expect(page.locator('[data-blog-post]:visible')).to_have_count(2+topics)
         page.locator('.blog-nav a[href="/blog/archive/"]').click()
         expect(page.locator('.blog-archive-year h2').first).to_contain_text('2026')
         page.locator('.blog-archive-row').first.click();expect(page.locator('h1')).to_have_text('Diffusion 实验')
         page.locator('[data-blog-back]').click();assert page.url==ORIGIN+'/blog/'
-        page.goto(ORIGIN+'/en/blog/');expect(page.locator('[data-blog-post]')).to_have_count(2)
+        page.goto(ORIGIN+'/en/blog/');expect(page.locator('[data-blog-post]')).to_have_count(2+topics)
         expect(page.locator('.blog-language').first).to_contain_text('zh-CN')
         page.locator('[data-blog-post] h2 a').first.click();assert '/en/blog/new-note/' not in page.url
         ctx.close();checks.append('Isolated fixtures: newest first, draft exclusion, keyword and encoded-tag filters, reset, archive/year order, article return and real-language fallback')
         ctx=browser.new_context(java_script_enabled=False);ctx.route('**/*',serve);page=ctx.new_page();page.goto(ORIGIN+'/blog/')
-        expect(page.locator('[data-blog-post]')).to_have_count(2);expect(page.locator('[data-blog-post] h2 a').first).to_be_visible()
+        expect(page.locator('[data-blog-post]')).to_have_count(2+topics);expect(page.locator('[data-blog-post] h2 a').first).to_be_visible()
         ctx.close();browser.close();checks.append('Published list remains readable without JavaScript')
     report={'status':'passed' if not errors and not missing else 'failed','checks':checks,'pageErrors':errors,'missingAssets':missing}
     (EVIDENCE/'blog-results.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');assert not errors and not missing,report

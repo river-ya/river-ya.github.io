@@ -15,7 +15,7 @@ class StaticFiles(SimpleHTTPRequestHandler):
 
 
 def check_terminal(page, site, prefix):
-    page.locator('.collection-links .terminal-link').click()
+    page.goto(site+prefix+'/terminal/?cwd=/ai/computer-vision')
     prompt = page.locator('#shell-input')
     log = page.locator('#shell-log')
 
@@ -77,27 +77,26 @@ def main():
             for category in ['ai','algorithms','infra']:
                 link = page.locator(f'[data-notebook="{category}"]')
                 link.click()
-                expect(link).to_have_attribute('aria-current','true')
-                assert page.url == site+prefix+'/notes/'+category+'/'
-                panel = page.locator('.shelf').bounding_box()
-                dock = page.locator('.notes-dock').bounding_box()
-                assert panel['x'] + panel['width'] < dock['x']
+                page.wait_for_url(site+prefix+'/blog/category/'+category+'/')
+                expect(page.locator('.blog-categories a[aria-current]')).to_have_attribute(
+                    'href', prefix+'/blog/category/'+category+'/')
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
+                page.goto(site+prefix+'/')
             page.goto(site+prefix+'/knowledge/ai/computer-vision/')
-            page.wait_for_url('**/notes/ai/computer-vision/')
+            page.wait_for_url('**/blog/category/computer-vision/')
             expect(page.locator('.timeline, .milestones, #graph')).to_have_count(0)
             expect(page.locator('h1')).to_be_visible()
-            first = page.locator('.shelf-entry h3 a').first
+            first = page.locator('.post-card[data-blog-post] h2 a').first
             if first.count():
                 first.click()
                 expect(page.locator('.article-header')).to_be_visible()
                 page.locator('[data-blog-back]').click()
-                page.wait_for_url('**/notes/ai/computer-vision/')
+                page.wait_for_url('**/blog/category/computer-vision/')
             check_terminal(page, site, prefix)
             page.close()
         browser.close()
         server.shutdown()
-    print('Notes Dock, responsive layouts, retired bookmarks and site terminal passed.')
+    print('Blog categories, responsive layouts, legacy bookmarks and site terminal passed.')
 
 
 if __name__ == '__main__':

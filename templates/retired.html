@@ -1,5 +1,18 @@
 <!doctype html>
-<html lang="{{ locale }}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ title }}</title><link rel="canonical" href="{{ origin }}{{ current_url }}"><meta name="robots" content="noindex,follow">
-<meta http-equiv="refresh" content="0; url={{ U(destination) }}"></head>
-<body><h1>{{ title }}</h1><a href="{{ U(destination) }}">{{ ui.notebooks }} →</a></body></html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <link rel="canonical" href="{{ origin }}{{ current_url }}">
+  <meta name="robots" content="noindex,follow">
+  <meta http-equiv="refresh" content="0; url={{ destination }}">
+</head>
+<body>
+  <h1>{{ title }}</h1>
+  <a id="destination" href="{{ destination }}">{{ ui.blog }} →</a>
+  <script>
+    if (location.hash) location.replace(document.getElementById('destination').href + location.hash);
+  </script>
+</body>
+</html>

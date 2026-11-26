@@ -1,6 +1,6 @@
 <nav class="notes-dock" aria-label="{{ ui.notebooks }}">
   {% for key in ['ai','algorithms','infra'] %}
-  <a class="dock-app app-{{ key }}" data-notebook="{{ key }}" href="{{ U('/notes/'+key+'/') }}" {% if key==category %}aria-current="true"{% endif %}>
+  <a class="dock-app app-{{ key }}" data-notebook="{{ key }}" href="{{ U(blog_category(key)) }}">
     <span class="dock-tile" aria-hidden="true">
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
         {% if key=='ai' %}

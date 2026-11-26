@@ -51,9 +51,23 @@ SHELF_TAGS = {
 }
 VISION_TAGS = {'计算机视觉', 'computer vision', 'computer-vision', 'cv'}
 
+def blog_category(key):
+    return f'/blog/category/{key}/'
 
-def notebook_entries(locale):
-    """Index actual publications, merging translations and their topic links."""
+
+def algorithm_publications():
+    for topic in TOPICS.values():
+        if topic['contentStatus'] != 'published':
+            continue
+        for locale, file in topic['mainContentFiles'].items():
+            slug = 'algorithm-' + topic['slug']
+            yield dict(slug=slug, translationKey=slug, locale=locale, title=topic['title'][locale],
+                       summary='', status='published', file=file, nodeIds=[], tags=[UI[locale]['shelf_algorithms']],
+                       publishedAt=topic.get('publishedAt', ''), updatedAt=topic.get('updatedAt'),
+                       terminalSlug=topic['slug'])
+
+
+def publication_groups():
     topics_by_work = defaultdict(set)
     algorithm_posts = {slug for t in TOPICS.values() for slug in t['relatedArticleSlugs']}
     vision_nodes = set(TRACKS['computer-vision']['learningOrder'])
@@ -62,34 +76,17 @@ def notebook_entries(locale):
         tags = {part.strip().casefold() for tag in article['tags'] for part in tag.split('/')}
         groups.update(key for key, names in SHELF_TAGS.items() if names & tags)
         if tags & {'算法实验', 'algorithm lab'}:
-            groups.update(('algorithms', 'lab'))
+            groups.add('algorithms')
         if article['nodeIds']:
             groups.add('ai')
         if vision_nodes.intersection(article['nodeIds']) or VISION_TAGS & tags:
             groups.update(('ai', 'computer-vision'))
         if article['slug'] in algorithm_posts:
             groups.add('algorithms')
-
-    notes = []
-    for a in preferred_articles(locale):
-        notes.append(dict(title=a['title'], summary=a['summary'], lang=a['locale'],
-                          url=url('/blog/'+a['slug']+'/', a['locale']),
-                          date=a.get('updatedAt') or a['publishedAt'],
-                          groups=topics_by_work[a['translationKey']],
-                          kind='lab' if 'lab' in topics_by_work[a['translationKey']] else 'article'))
-    for topic in TOPICS.values():
-        versions = topic['mainContentFiles']
-        if topic['contentStatus'] != 'published' or not versions:
-            continue
-        lang = locale if locale in versions else next(iter(versions))
-        notes.append(dict(title=topic['title'][lang], summary=topic['summary'][lang], lang=lang,
-                          url=url('/knowledge/algorithms/'+topic['slug']+'/', lang),
-                          date=topic.get('updatedAt') or topic.get('publishedAt', ''),
-                          groups={'algorithms'}, kind='topic'))
-    return sorted(notes, key=lambda entry: (entry['date'], entry['url']), reverse=True)
+    return topics_by_work
 
 
-def terminal_catalog(locale, notes):
+def terminal_catalog(locale, posts, groups):
     ui = UI[locale]
     catalog = {}
 
@@ -98,26 +95,26 @@ def terminal_catalog(locale, notes):
 
     add('/', '/', ui['home'], True)
     for category in SHELF_TAGS:
-        add('/'+category, '/notes/'+category+'/', ui['shelf_'+category], True)
-    add('/ai/computer-vision', '/notes/ai/computer-vision/', ui['cv_shelf'], True)
+        add('/'+category, blog_category(category), ui['shelf_'+category], True)
+    add('/ai/computer-vision', blog_category('computer-vision'), ui['cv_shelf'], True)
     add('/blog', '/blog/', ui['blog'], True)
     for path, route, key in [('home','/','home'), ('skills','/skills/','skills'),
-                             ('notes','/knowledge/','all_notes')]:
+                             ('notes','/blog/','all_notes')]:
         add('/'+path, route, ui[key])
     for page in ['archive', 'tags', 'search', 'faq']:
         add('/blog/'+page, '/blog/'+page+'/', ui[{'faq':'faq_title'}.get(page,'blog_'+page)])
-    for note in notes:
-        slug = note['url'].rstrip('/').rsplit('/', 1)[-1]
-        folders = [key for key in SHELF_TAGS if key in note['groups']]
-        if 'computer-vision' in note['groups']:
+    for post in posts:
+        slug = post.get('terminalSlug', post['slug'])
+        memberships = groups[post['translationKey']]
+        folders = ['blog', *(key for key in SHELF_TAGS if key in memberships)]
+        if 'computer-vision' in memberships:
             folders.append('ai/computer-vision')
-        if '/blog/' in note['url']:
-            folders.append('blog')
         for folder in folders:
-            path = '/'+folder+'/'+slug
+            path = '/'+folder+'/'+(post['slug'] if folder=='blog' else slug)
             while path in catalog:
                 path += '-note'
-            catalog[path] = dict(url=note['url'], title=note['title'], summary=note['summary'],
+            catalog[path] = dict(url=url('/blog/'+post['slug']+'/', post['locale']),
+                                 title=post['title'], summary=post['summary'],
                                  directory=False)
     return catalog
 
@@ -164,13 +161,15 @@ def markdown_file(file):
 def main():
     from validate import validate_content
     validate_content()
+    DATA['articles'].extend(algorithm_publications())
+    groups = publication_groups()
     # Published article relationships are derived, so one metadata edit updates all views.
     for n in DATA['nodes']:
         linked=[a for a in published() if n['id'] in a['nodeIds']]
         if linked:n['contentStatus']='published'
         n['articleSlugs']=list(dict.fromkeys(n['articleSlugs']+[a['slug'] for a in linked]))
     if OUT.exists():shutil.rmtree(OUT)
-    OUT.mkdir();shutil.copytree(ROOT/'static',OUT/'assets',ignore=shutil.ignore_patterns('timeline.js','graph.js'))
+    OUT.mkdir();shutil.copytree(ROOT/'static',OUT/'assets',ignore=shutil.ignore_patterns('timeline.js','graph.js','collection-signal.js'))
     (OUT/'assets/highlight.css').write_text(HtmlFormatter().get_style_defs('.highlight'))
     env=Environment(loader=FileSystemLoader(ROOT/'templates'),autoescape=select_autoescape(['html']),trim_blocks=True,lstrip_blocks=True)
     urls=[];search={locale:[] for locale in UI}
@@ -182,8 +181,8 @@ def main():
         def stage_label(s):return UI[locale][{'入门':'intro_stage','必备':'essential_stage','扩展':'extended_stage','挺难':'hard_stage'}[s]]
         def article_url(a):return url('/blog/'+a['slug']+'/',a['locale'])
         pairs=[('zh-CN',url(path,'zh-CN')),('en',url(path,'en'))] if alternate else [(locale,p)]
-        ctx=dict(locale=locale,ui=UI[locale],ui_json=json.dumps(UI[locale],ensure_ascii=False).replace("<", "\\u003c"),L=loc,U=U,label_tag=label_tag,path=path,current_url=p,origin=ORIGIN,title=title,description=description or title,alternate=pairs,language_url=url(path,'zh-CN' if locale=='en' else 'en') if alternate else url('/knowledge/','zh-CN' if locale=='en' else 'en'),noindex=noindex,profile=DATA['profile'],tracks=DATA['tracks'],nodes=NODES,topics=TOPICS,lessons=LESSONS,categories=DATA['categories'],relations=DATA['relations'],node_date=node_date,track_path=track_path,reading_minutes=reading_minutes,year='2026',published_count=len(published()),recent=sorted(published(locale),key=lambda a:a.get('updatedAt',a['publishedAt']),reverse=True)[:4],infra=INFRA)
-        ctx.update(stage_label=stage_label,article_url=article_url,preferred_articles=preferred_articles,recent=sorted(preferred_articles(locale),key=lambda a:a.get('updatedAt',a['publishedAt']),reverse=True)[:4],published_count=len({a['translationKey'] for a in published()}))
+        ctx=dict(locale=locale,ui=UI[locale],ui_json=json.dumps(UI[locale],ensure_ascii=False).replace("<", "\\u003c"),L=loc,U=U,label_tag=label_tag,path=path,current_url=p,origin=ORIGIN,title=title,description=description or title,alternate=pairs,language_url=url(path,'zh-CN' if locale=='en' else 'en') if alternate else url('/blog/','zh-CN' if locale=='en' else 'en'),noindex=noindex,profile=DATA['profile'],tracks=DATA['tracks'],nodes=NODES,topics=TOPICS,lessons=LESSONS,categories=DATA['categories'],relations=DATA['relations'],node_date=node_date,track_path=track_path,reading_minutes=reading_minutes,year='2026',infra=INFRA)
+        ctx.update(stage_label=stage_label,article_url=article_url,blog_category=blog_category,preferred_articles=preferred_articles,recent=sorted(preferred_articles(locale),key=lambda a:a.get('updatedAt') or a['publishedAt'],reverse=True)[:4],published_count=len({a['translationKey'] for a in published()}))
         ctx.update(extra);target.write_text(env.get_template(template).render(**ctx),encoding='utf-8')
         if not noindex:urls.append(ORIGIN+p)
         return p
@@ -191,52 +190,64 @@ def main():
         ui=UI[locale];L=lambda x:x.get(locale,x.get('zh-CN',''))
         def index(title,path,kind,summary='',tags='',status='planned'):
             search[locale].append(dict(title=title,url=url(path,locale),kind=kind,summary=summary,tags=tags,status=status))
-        notes = notebook_entries(locale)
+        posts = sorted(preferred_articles(locale), key=lambda a:(a['publishedAt'],a['slug']), reverse=True)
+        recent = sorted(posts, key=lambda a:a.get('updatedAt') or a['publishedAt'], reverse=True)
         render('/terminal/', 'terminal.html', ui['site_terminal'], locale, ui['terminal_hint'],
-               catalog=terminal_catalog(locale, notes))
+               catalog=terminal_catalog(locale, posts, groups))
         index(ui['site_terminal'], '/terminal/', ui['nav_label'], ui['terminal_hint'])
         render('/', 'notebooks.html', L(DATA['profile']['name']), locale, L(DATA['profile']['intro']),
-               view='home', entries=notes[:5])
-        render('/knowledge/', 'notebooks.html', ui['all_notes'], locale, view='notes', entries=notes)
-        for category in SHELF_TAGS:
-            name = ui['shelf_'+category]
-            title = name+' 笔记' if locale=='zh-CN' else name+' notes'
-            path = '/notes/'+category+'/'
-            render(path, 'notebooks.html', title, locale, view='notes', category=category,
-                   entries=[note for note in notes if category in note['groups']])
-            index(title, path, ui['notebooks'])
-        render('/notes/ai/computer-vision/', 'notebooks.html', ui['cv_shelf'], locale,
-               view='notes', category='ai', subcategory='computer-vision',
-               entries=[note for note in notes if 'computer-vision' in note['groups']])
-        for path,view,title,desc in [('/skills/','skills',ui['skills'],ui['skills_intro']),('/knowledge/infra/','infra',ui['infra'],ui['infra_desc'])]:
-            render(path,'overview.html',title,locale,desc,view=view)
-            index(title,path,ui['knowledge'],desc)
-        posts=sorted(preferred_articles(locale),key=lambda a:(a['publishedAt'],a['slug']),reverse=True)
-        archive={y:[a for a in posts if a['publishedAt'].startswith(y)] for y in sorted({a['publishedAt'][:4] for a in posts},reverse=True)}
+               entries=recent[:5])
+        render('/skills/', 'overview.html', ui['skills'], locale, ui['skills_intro'], view='skills')
+        index(ui['skills'], '/skills/', ui['skills'], ui['skills_intro'])
+        archive = defaultdict(list)
+        for article in posts:
+            archive[article['publishedAt'][:4]].append(article)
         tag_counts={tag:sum(tag in a['tags'] for a in posts) for tag in sorted({tag for a in posts for tag in a['tags']},key=str.casefold)}
         for section,key in [('posts','blog'),('archive','blog_archive'),('tags','blog_tags'),('search','blog_search'),('faq','faq_title')]:
             path='/blog/'+('' if section=='posts' else section+'/')
             render(path,'blog.html',ui[key],locale,ui['blog_desc'],blog_section=section,posts=posts,archive=archive,tag_counts=tag_counts)
+        for category in [*SHELF_TAGS, 'computer-vision']:
+            title = ui['cv_shelf'] if category=='computer-vision' else ui['shelf_'+category]
+            render(blog_category(category), 'blog.html', title, locale,
+                   blog_section='category', category=category,
+                   posts=[a for a in recent if category in groups[a['translationKey']]])
         index(ui['blog'],'/blog/',ui['blog'],ui['blog_desc'])
-        # Keep bookmarked timeline URLs useful after retiring the timeline views.
-        retired = {'/knowledge/ai/','/knowledge/ai/families/','/knowledge/ai/confluence/'}
-        retired.update(track_path(t) for t in DATA['tracks'])
-        for path in sorted(retired):
-            target = '/notes/ai/computer-vision/' if path.endswith('/computer-vision/') else '/notes/ai/'
-            render(path, 'retired.html', ui['notebooks'], locale, noindex=True, destination=target)
+
+        def redirect(path, destination):
+            render(path, 'retired.html', ui['blog'], locale, noindex=True, destination=destination,
+                   alternate=False)
+
+        redirect('/notes/', url('/blog/', locale))
+        redirect('/knowledge/', url('/blog/', locale))
+        for category in SHELF_TAGS:
+            redirect('/notes/'+category+'/', url(blog_category(category), locale))
+        vision = url(blog_category('computer-vision'), locale)
+        redirect('/notes/ai/computer-vision/', vision)
+        retired_ai = {'/knowledge/ai/','/knowledge/ai/families/','/knowledge/ai/confluence/'}
+        retired_ai.update(track_path(t) for t in DATA['tracks'])
+        for path in sorted(retired_ai):
+            redirect(path, vision if path.endswith('/computer-vision/') else url(blog_category('ai'), locale))
+        redirect('/knowledge/algorithms/', url(blog_category('algorithms'), locale))
+        for path in ['/knowledge/infra/', *('/knowledge/infra/'+item['id']+'/' for item in INFRA)]:
+            redirect(path, url(blog_category('infra'), locale))
         for n in DATA['nodes']:
             path='/knowledge/nodes/'+n['slug']+'/'
             related_articles=preferred_articles(locale,[a for a in published() if n['id'] in a['nodeIds']])
             render(path,'node.html',L(n['title']),locale,L(n['summary']),node=n,related_articles=related_articles)
             index(L(n['title']),path,ui[n['kind']],L(n['summary']),' '.join(n['aliases']+n['tags']),n['contentStatus'])
-        render('/knowledge/algorithms/','algorithms.html',ui['algorithms'],locale,ui['algorithms_desc'])
-        for topic in DATA['algorithms']:
-            file=topic['mainContentFiles'].get(locale);body,toc=markdown_file(file)
-            related_articles=preferred_articles(locale,[a for a in published() if a['slug'] in topic['relatedArticleSlugs']])
-            render('/knowledge/algorithms/'+topic['slug']+'/','algorithm.html',L(topic['title']),locale,L(topic['summary']),topic=topic,body=body,toc=toc,related_articles=related_articles,missing_translation=locale=='en' and not file and bool(topic['mainContentFiles'].get('zh-CN')))
-            index(L(topic['title']),'/knowledge/algorithms/'+topic['slug']+'/',ui['algorithms'],L(topic['summary']),' '.join(topic['aliases']+topic['lessonIds']),topic['contentStatus'])
-        for item in INFRA:
-            render('/knowledge/infra/'+item['id']+'/','overview.html',L(item['title']),locale,L(item['description']),view='infra-detail',infra_item=item)
+        for topic in TOPICS.values():
+            path = '/knowledge/algorithms/'+topic['slug']+'/'
+            if topic['contentStatus']=='published':
+                files = topic['mainContentFiles']
+                language = locale if locale in files else 'zh-CN' if 'zh-CN' in files else next(iter(files))
+                redirect(path, url('/blog/algorithm-'+topic['slug']+'/', language))
+                continue
+            file = topic['mainContentFiles'].get(locale)
+            body, toc = markdown_file(file)
+            related = preferred_articles(locale, [a for a in published() if a['slug'] in topic['relatedArticleSlugs']])
+            render(path, 'algorithm.html', L(topic['title']), locale, L(topic['summary']), noindex=True,
+                   topic=topic, body=body, toc=toc, related_articles=related,
+                   missing_translation=locale=='en' and not file and bool(topic['mainContentFiles'].get('zh-CN')))
         body,toc=markdown_file('content/demo.'+('en' if locale=='en' else 'zh')+'.md')
         render('/demo/article/','article.html',ui['demo'],locale,noindex=True,article=dict(title=ui['demo'],summary=ui['demo'],tags=[],nodeIds=['dit'],demo=True),body=body,toc=toc,previous=None,next_article=None)
         render('/404/','overview.html','404',locale,noindex=True,view='404')

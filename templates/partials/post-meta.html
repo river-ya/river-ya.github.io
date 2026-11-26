@@ -1,5 +1,5 @@
 {% macro metadata(post, ui, reading_minutes) -%}
-<small class="post-meta">{{ ui.blog_date }} <time datetime="{{ post.publishedAt }}">{{ post.publishedAt }}</time>
-  | {{ ui.blog_reading }} {{ reading_minutes(post.file) }} {{ ui.blog_min }}
+<small class="post-meta">{% if post.publishedAt %}{{ ui.blog_date }} <time datetime="{{ post.publishedAt }}">{{ post.publishedAt }}</time> | {% endif %}
+  {{ ui.blog_reading }} {{ reading_minutes(post.file) }} {{ ui.blog_min }}
   | {{ ui.blog_author }} river-ya</small>
 {%- endmacro %}

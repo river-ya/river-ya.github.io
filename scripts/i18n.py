@@ -1,6 +1,6 @@
 """Public interface strings: both locales have exactly the same keys."""
 PAIRS={
- 'algorithm_labs':('算法实验','Algorithm labs'), 'study_notes':('学习笔记','Study notes'), 'course_topics':('按专题浏览','Browse topics'),
+ 'undated':('未注明日期','Undated'),
  'site_terminal':('网站终端','Site terminal'), 'terminal_nav':('终端','Terminal'),
  'terminal_hint':('用命令浏览分类、查找笔记，或直接打开文章。','Browse collections, find notes and open pages from the command line.'),
  'terminal_here':('在终端中浏览','Browse in terminal'), 'command':('命令','Command'), 'run_command':('执行命令','Run command'),

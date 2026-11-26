@@ -112,3 +112,11 @@ main { width: 100%; max-width: calc(720px + 2 * var(--gap)); margin: 0 auto; pad
 .source-code { margin: 20px 0; }
 .source-code summary { cursor: pointer; font-weight: 600; }
 .source-code .highlight { max-height: 65vh; overflow: auto; }
+
+.blog-categories {
+  display: flex; flex-wrap: wrap; gap: 10px 20px;
+  margin: 0 0 var(--gap); padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.blog-categories a { color: var(--muted); text-underline-offset: 4px; }
+.blog-categories a[aria-current], .blog-categories a:hover { color: var(--ink); text-decoration: underline; }

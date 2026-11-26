@@ -31,13 +31,13 @@ python -B -m unittest discover -s tests -v
 
 ## 页面与内容
 
-- 首页及笔记页右侧的 Dock 提供 AI、算法、Infra 三个入口，中文和英文分别使用 `/notes/` 与 `/en/notes/` 路径。
-- 从导航的“终端”可进入 `/terminal/` 或 `/en/terminal/`。输入 `ls` 列出内容，`cd /ai/computer-vision` 切换分类，`cat diffusion-demo` 阅读正文，`open diffusion-demo` 打开文章页。`search diffusion` 可跨目录搜索。目录来自构建时的发布索引，分类页的“在终端中浏览”会带入当前路径。
+- 已发布的内容统一收录在博客。首页右侧的 AI、算法、Infra 入口链接到 `/blog/category/` 下的博客分类，中英文旧笔记地址会自动跳转。
+- 从导航的“终端”可进入 `/terminal/` 或 `/en/terminal/`。输入 `ls` 列出内容，`cd /ai/computer-vision` 切换分类，`cat diffusion-demo` 阅读正文，`open diffusion-demo` 打开文章页。`search diffusion` 可跨目录搜索。目录来自构建时的博客发布索引。
 - AI 计算机视觉目前收录 Diffusion 复现，站内提供完整 Python 源码，Notebook 链接固定到原仓库同一提交。
 - 原 AI 时间线与交汇图下架，历史网址跳转到对应笔记页。路线资料仍在 data/。
 - 85 个知识节点；日期有事件口径和一手来源。路线是代表性选编，不宣称覆盖截至核验日的所有研究。
-- 左程云公开课程的 207 条原目录记录，映射成 82 个算法专题页面；课程顺序和专题双视图。
-- Infra 五个有效分类页；独立文章模板、自动目录、代码高亮、表格、图片、引用和原生 MathML 公式。
+- 左程云公开课程的 207 条原目录记录，映射成 82 个算法专题，已发布的专题正文进入博客。
+- 博客有独立文章模板、自动目录、代码高亮、表格、图片、引用和原生 MathML 公式。
 - 深浅主题、全站本地搜索、语言与筛选状态恢复、终端开场、键盘入口、减少动态效果支持。
 
 没有虚构履历、技能熟练度、阅读量、学习进度或个人文章。同一篇中英文内容按一篇笔记统计。`/demo/article/` 与 `/en/demo/article/` 是明确标记的排版演示，不进入搜索、sitemap 或发布统计。
@@ -128,7 +128,7 @@ Markdown 支持常规段落、列表、引用、围栏代码、表格和图片�
 
 在 `data/articles.json` 中设置 `status: published`，并填写真实发布日期和标签。AI、算法、Infra 标签匹配对应分类，关联 AI 节点或算法条目的文章也自动归类。计算机视觉节点或 `计算机视觉`、`Computer vision` 标签会将文章列入 AI 的计算机视觉子目录。同一作品的译文共享分类，列表按 `updatedAt` 或 `publishedAt` 倒序排列。
 
-已发布且有 Markdown 正文的算法专题也会出现在算法笔记页。文章字段 `sourceFile` 可指向 `static/source/` 中的 Python 或 C++ 文件，正文可链接同一份高亮源码供下载。
+已发布且有 Markdown 正文的算法专题自动成为博客文章，地址为 `/blog/algorithm-<slug>/`。文章字段 `sourceFile` 可指向 `static/source/` 中的 Python 或 C++ 文件，正文可链接同一份高亮源码供下载。
 
 ## GitHub Pages 发布
 

@@ -7,9 +7,7 @@
 * 建立一个**check函数**，当答案固定的情况下，判断给定的条件是否达标（check函数复杂度尽可能的低，**最坏O(n)**）
 * 达标后记录答案去某侧二分，不断不断的二分，最终找到答案
 
-### T1 爱吃香蕉的珂珂 leetcode No.875
-
-[原题](https://leetcode.cn/problems/koko-eating-bananas/description/)
+### T1 [爱吃香蕉的珂珂 leetcode No.875](https://leetcode.cn/problems/koko-eating-bananas/description/)
 
 珂珂喜欢吃香蕉。这里有 n 堆香蕉，第 i 堆中有 **piles[i]** 根香蕉。警卫已经离开了，将在 h 小时后回来。
 
@@ -75,9 +73,7 @@ bool check(vector<int> & piles, int k, int h){
 时间复杂度：<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msub><mi>log</mi><mn>2</mn></msub><mo stretchy="false">&#x00028;</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002A;</mo><mi>n</mi><mo stretchy="false">&#x00029;</mo></mrow></math>
 额外空间复杂度： O(1)
 
-### T2 分割数组的最大值(画匠问题) leetcode No.410
-
-[原题](https://leetcode.cn/problems/split-array-largest-sum/)
+### T2 [分割数组的最大值(画匠问题) leetcode No.410](https://leetcode.cn/problems/split-array-largest-sum/)
 
 *这道题实际上可以用动态规划（），但此处用二分答案就够用了*
 给定一个非负整数数组 nums 和一个整数 k ，你需要将这个数组分成 k 个非空的连续子数组，使得这 k 个子数组各自和的最大值 最小。
@@ -151,9 +147,7 @@ bool check(vector<int> & nums, int k, int max_val){
 时间复杂度：<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msub><mi>log</mi><mn>2</mn></msub><mo stretchy="false">&#x00028;</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002A;</mo><mi>n</mi><mo stretchy="false">&#x00029;</mo></mrow></math>
 额外空间复杂度： O(1)
 
-### T3 机器人跳跃问题 newcode REAL254
-
-[原题](https://www.nowcoder.com/practice/7037a3d57bbd4336856b8e16a9cafd71)
+### T3 [机器人跳跃问题 newcode REAL254](https://www.nowcoder.com/practice/7037a3d57bbd4336856b8e16a9cafd71)
 
 机器人正在玩一个古老的基于DOS的游戏。游戏中有N+1座建筑——从0到N编号，从左到右排列。编号为0的建筑高度为0个单位，编号为i的建筑的高度为H(i)个单位。
 
@@ -239,9 +233,7 @@ int main() {
 时间复杂度：<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msub><mi>log</mi><mn>2</mn></msub><mo stretchy="false">&#x00028;</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002A;</mo><mi>n</mi><mo stretchy="false">&#x00029;</mo></mrow></math>
 额外空间复杂度： O(1)
 
-### T4 找出第K小的数对距离 leetcode No.719
-
-[原题](https://leetcode.cn/problems/find-k-th-smallest-pair-distance/description/)
+### T4 [找出第K小的数对距离 leetcode No.719](https://leetcode.cn/problems/find-k-th-smallest-pair-distance/description/)
 
 数对 (a,b) 由整数 a 和 b 组成，其数对距离定义为 a 和 b 的绝对差值。
 
@@ -310,9 +302,7 @@ n == nums.length
 时间复杂度：<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><mi>n</mi><mo>&#x0002A;</mo><mi>log</mi><mi>n</mi><mo>&#x0002B;</mo><mi>n</mi><mo>&#x0002A;</mo><msub><mi>log</mi><mn>2</mn></msub><mo stretchy="false">&#x00028;</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo>&#x02212;</mo><mi>m</mi><mi>i</mi><mi>n</mi><mo stretchy="false">&#x00029;</mo><mo stretchy="false">&#x00029;</mo></mrow></math>
 额外空间复杂度： O(1)
 
-### T5 同时运行N台电脑的最长时间 leetcode No.2141
-
-[原题](https://leetcode.cn/problems/maximum-running-time-of-n-computers/description/)
+### T5 [同时运行N台电脑的最长时间 leetcode No.2141](https://leetcode.cn/problems/maximum-running-time-of-n-computers/description/)
 
 你有 n 台电脑。给你整数 n 和一个下标从 0 开始的整数数组 batteries ，其中第 i 个电池可以让一台电脑 运行 batteries[i] 分钟。你想使用这些电池让 全部 n 台电脑 同时 运行。
 
@@ -392,7 +382,9 @@ n == nums.length
 //可以优化 二分答案+贪心
 
 
-cpp
+```
+
+```cpp
     bool check(vector<int> & nums, long long val,int n){
         long long sum = 0;
         for(auto num : nums){
@@ -487,7 +479,9 @@ int waitingname(vector<int> & arr, int m){
 //但是当m很大的时候会超时,只做验算，即对数器方法
 //时间复杂度：O(m * log(n))
 //额外空间复杂度：O(n)
-cpp
+```
+
+```cpp
 //时间复杂度： O(log(min * m) * n)
 //额外空间复杂度：O(1)
 bool check(vector<int> & nums, int time, int m){

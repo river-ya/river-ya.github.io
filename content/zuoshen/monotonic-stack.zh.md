@@ -17,9 +17,7 @@
 
 栈[大 -------> 小]
 
-## nowcoder 单调栈结构(进阶)
-
-[原题](https://www.nowcoder.com/practice/2a2c00e7a88a498693568cef63a4b7bb)
+## [nowcoder 单调栈结构(进阶)](https://www.nowcoder.com/practice/2a2c00e7a88a498693568cef63a4b7bb)
 
 给定一个可能含有重复值的数组 arr，找到每一个 i 位置左边和右边离 i 位置最近且值比 arr[i] 小的位置。返回所有位置相应的信息。
 
@@ -71,9 +69,7 @@ int main(){
 }
 ```
 
-## leetcode LCR 038. 每日温度
-
-[原题](https://leetcode.cn/problems/iIQa4I/description/)
+## [leetcode LCR 038. 每日温度](https://leetcode.cn/problems/iIQa4I/description/)
 
 请根据每日 `气温` 列表 `temperatures` ，重新生成一个列表，要求其对应位置的输出为：要想观测到更高的气温，至少需要等待的天数。如果气温在这之后都不会升高，请在该位置用 `0` 来代替。
 
@@ -152,9 +148,7 @@ public:
 };
 ```
 
-## leetcode 907. 子数组的最小值之和
-
-[原题](https://leetcode.cn/problems/sum-of-subarray-minimums/description/)
+## [leetcode 907. 子数组的最小值之和](https://leetcode.cn/problems/sum-of-subarray-minimums/description/)
 
 给定一个整数数组 `arr`，找到 `min(b)` 的总和，其中 `b` 的范围为 `arr` 的每个（连续）子数组。
 
@@ -218,9 +212,7 @@ public:
 };
 ```
 
-## leetcode LCR 039. 柱状图中最大的矩形
-
-[原题](https://leetcode.cn/problems/0ynMMM/description/)
+## [leetcode LCR 039. 柱状图中最大的矩形](https://leetcode.cn/problems/0ynMMM/description/)
 
 给定非负整数数组 `heights` ，数组中的数字用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 `1` 。
 
@@ -230,7 +222,7 @@ public:
 
 **示例 1:**
 
-[原题配图](https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg)
+![img](https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg)
 
 ```
 输入：heights = [2,1,5,6,2,3]
@@ -240,7 +232,7 @@ public:
 
 **示例 2：**
 
-[原题配图](https://assets.leetcode.com/uploads/2021/01/04/histogram-1.jpg)
+![img](https://assets.leetcode.com/uploads/2021/01/04/histogram-1.jpg)
 
 ```
 输入： heights = [2,4]
@@ -323,9 +315,7 @@ public:
 };
 ```
 
-## leetcode LCR 040. 最大矩形
-
-[原题](https://leetcode.cn/problems/PLYXKQ/description/)
+## [leetcode LCR 040. 最大矩形](https://leetcode.cn/problems/PLYXKQ/description/)
 
 给定一个由 `0` 和 `1` 组成的矩阵 `matrix` ，找出只包含 `1` 的最大矩形，并返回其面积。
 
@@ -335,7 +325,7 @@ public:
 
 **示例 1：**
 
-[原题配图](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg)
+![img](https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg)
 
 ```
 输入：matrix = ["10100","10111","11111","10010"]
@@ -471,9 +461,7 @@ public:
 
 4）其实是 **先有对题目的分析**，进而**发现单调性**，然后利用**单调性的特征** 去实现
 
-## leetcode 962. 最大宽度坡
-
-[原题](https://leetcode.cn/problems/maximum-width-ramp/description/)
+## [leetcode 962. 最大宽度坡](https://leetcode.cn/problems/maximum-width-ramp/description/)
 
 给定一个整数数组 `A`，*坡*是元组 `(i, j)`，其中 `i < j` 且 `A[i] <= A[j]`。这样的坡的宽度为 `j - i`。
 
@@ -538,9 +526,7 @@ public:
 };
 ```
 
-## leetcode 316. 去除重复字母
-
-[原题](https://leetcode.cn/problems/remove-duplicate-letters/description/)
+## [leetcode 316. 去除重复字母](https://leetcode.cn/problems/remove-duplicate-letters/description/)
 
 给你一个字符串 `s` ，请你去除字符串中重复的字母，使得每个字母只出现一次。需保证 **返回结果的字典序最小**（要求不能打乱其他字符的相对位置）。
 
@@ -609,9 +595,7 @@ public:
 };
 ```
 
-## leetcode 大鱼吃小鱼
-
-[原题](https://www.nowcoder.com/practice/3fdfc63015df42c6a78fdae46709fa69?tpId=0)
+## [leetcode 大鱼吃小鱼](https://www.nowcoder.com/practice/3fdfc63015df42c6a78fdae46709fa69?tpId=0)
 
 牛牛最近喜欢上了俄罗斯套娃、大鱼吃小鱼这些大的包住小的类型的游戏。
 
@@ -654,9 +638,7 @@ public:
 };
 ```
 
-## leetcode 1504. 统计全 1 子矩形
-
-[原题](https://leetcode.cn/problems/count-submatrices-with-all-ones/description/)
+## [leetcode 1504. 统计全 1 子矩形](https://leetcode.cn/problems/count-submatrices-with-all-ones/description/)
 
 给你一个 `m x n` 的二进制矩阵 `mat` ，请你返回有多少个 **子矩形** 的元素全部都是 1 。
 
@@ -664,7 +646,7 @@ public:
 
 **示例 1：**
 
-[原题配图](https://assets.leetcode.com/uploads/2021/10/27/ones1-grid.jpg)
+![img](https://assets.leetcode.com/uploads/2021/10/27/ones1-grid.jpg)
 
 ```
 输入：mat = [[1,0,1],[1,1,0],[1,1,0]]
@@ -680,7 +662,7 @@ public:
 
 **示例 2：**
 
-[原题配图](https://assets.leetcode.com/uploads/2021/10/27/ones2-grid.jpg)
+![img](https://assets.leetcode.com/uploads/2021/10/27/ones2-grid.jpg)
 
 ```
 输入：mat = [[0,1,1,0],[0,1,1,1],[1,1,1,0]]

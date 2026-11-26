@@ -6,7 +6,7 @@
     <article class="shelf-entry">
       {% if entry.date %}<time datetime="{{ entry.date }}">{{ entry.date }}</time>{% endif %}
       <h3><a href="{{ entry.url }}"{% if view!="home" %} data-return-link{% endif %} lang="{{ entry.lang }}">{{ entry.title }}</a></h3>
-      <p lang="{{ entry.lang }}">{{ entry.summary }}</p>
+      {% if entry.summary %}<p lang="{{ entry.lang }}">{{ entry.summary }}</p>{% endif %}
       {% if entry.lang != locale %}<small>{{ ui.blog_original }} · {{ entry.lang }}</small>{% endif %}
     </article>
     {% else %}<p class="shelf-empty">{{ ui.shelf_empty }}</p>{% endfor %}

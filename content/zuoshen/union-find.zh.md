@@ -1,6 +1,6 @@
 # 并查集
 
-![课堂推演图 1](/assets/notes/zuoshen/union-find-01.jpg)
+![f8001736e95d635bf1d208cbbd5b2712_720](/assets/notes/zuoshen/union-find-01.jpg)
 
 经典并查集两处优化
 
@@ -60,9 +60,7 @@ void unionSet(int x, int y){
 }
 ```
 
-## luogu P3367 并查集
-
-[原题](https://www.luogu.com.cn/problem/P3367#ide)
+## [luogu P3367 并查集](https://www.luogu.com.cn/problem/P3367#ide)
 
 ```cpp
 #include <bits/stdc++.h>
@@ -123,9 +121,7 @@ int main(){
 }
 ```
 
-## leetcode No.765 情侣牵手
-
-[原题](https://leetcode.cn/problems/couples-holding-hands/description/)
+## [leetcode No.765 情侣牵手](https://leetcode.cn/problems/couples-holding-hands/description/)
 
 `n` 对情侣坐在连续排列的 `2n` 个座位上，想要牵到对方的手。
 
@@ -161,9 +157,9 @@ int main(){
 - `0 <= row[i] < 2n`
 - `row` 中所有元素均 **无重复**
 
-![课堂推演图 2](/assets/notes/zuoshen/union-find-02.jpg)
+![a42784557a4ec92d899d37cd8882b12d](/assets/notes/zuoshen/union-find-02.jpg)
 
-![课堂推演图 3](/assets/notes/zuoshen/union-find-03.jpg)
+![2895ca91d39fe336c7c687fb76993f7f](/assets/notes/zuoshen/union-find-03.jpg)
 
 k对混乱的情侣经过k-1次操作一定能配好（每操作一次都可以让一对情侣组好，最后两对情侣只需操作一次）
 
@@ -224,9 +220,7 @@ public:
 };
 ```
 
-## leetcode No.839 相似字符串组
-
-[原题](https://leetcode.cn/problems/similar-string-groups/description/)
+## [leetcode No.839 相似字符串组](https://leetcode.cn/problems/similar-string-groups/description/)
 
 如果交换字符串 `X` 中的两个不同位置的字母，使得它和字符串 `Y` 相等，那么称 `X` 和 `Y` 两个字符串相似。如果这两个字符串本身是相等的，那它们也是相似的。
 
@@ -328,9 +322,7 @@ public:
 };
 ```
 
-## leetcode No.200 岛屿数量
-
-[原题](https://leetcode.cn/problems/number-of-islands/)
+## [leetcode No.200 岛屿数量](https://leetcode.cn/problems/number-of-islands/)
 
 给你一个由 `'1'`（陆地）和 `'0'`（水）组成的的二维网格，请你计算网格中岛屿的数量。
 
@@ -444,9 +436,7 @@ public:
 };
 ```
 
-## leetcode No.947 移除最多的同行或同列石头
-
-[原题](https://leetcode.cn/problems/most-stones-removed-with-same-row-or-column/description/)
+## [leetcode No.947 移除最多的同行或同列石头](https://leetcode.cn/problems/most-stones-removed-with-same-row-or-column/description/)
 
 `n` 块石头放置在二维平面中的一些整数坐标点上。每个坐标点上最多只能有一块石头。
 
@@ -547,9 +537,7 @@ public:
 };
 ```
 
-## leetcode No.2092 找出知晓所有秘密的所有专家
-
-[原题](https://leetcode.cn/problems/find-all-people-with-secret/description/)
+## [leetcode No.2092 找出知晓所有秘密的所有专家](https://leetcode.cn/problems/find-all-people-with-secret/description/)
 
 给你一个整数 `n` ，表示有 `n` 个专家从 `0` 到 `n - 1` 编号。另外给你一个下标从 0 开始的二维整数数组 `meetings` ，其中 `meetings[i] = [xi, yi, timei]` 表示专家 `xi` 和专家 `yi` 在时间 `timei` 要开一场会。一个专家可以同时参加 **多场会议** 。最后，给你一个整数 `firstPerson` 。
 
@@ -707,9 +695,7 @@ public:
 };
 ```
 
-## leetcode No.2421 好路径的数目
-
-[原题](https://leetcode.cn/problems/number-of-good-paths/description/)
+## [leetcode No.2421 好路径的数目](https://leetcode.cn/problems/number-of-good-paths/description/)
 
 给你一棵 `n` 个节点的树（连通无向无环的图），节点编号从 `0` 到 `n - 1` 且恰好有 `n - 1` 条边。
 
@@ -728,7 +714,7 @@ public:
 
 **示例 1：**
 
-[原题配图](https://assets.leetcode.com/uploads/2022/08/04/f9caaac15b383af9115c5586779dec5.png)
+![img](https://assets.leetcode.com/uploads/2022/08/04/f9caaac15b383af9115c5586779dec5.png)
 
 ```
 输入：vals = [1,3,2,1,3], edges = [[0,1],[0,2],[2,3],[2,4]]
@@ -741,7 +727,7 @@ public:
 
 **示例 2：**
 
-[原题配图](https://assets.leetcode.com/uploads/2022/08/04/149d3065ec165a71a1b9aec890776ff.png)
+![img](https://assets.leetcode.com/uploads/2022/08/04/149d3065ec165a71a1b9aec890776ff.png)
 
 ```
 输入：vals = [1,1,2,2,3], edges = [[0,1],[1,2],[2,3],[2,4]]
@@ -752,7 +738,7 @@ public:
 
 **示例 3：**
 
-[原题配图](https://assets.leetcode.com/uploads/2022/08/04/31705e22af3d9c0a557459bc7d1b62d.png)
+![img](https://assets.leetcode.com/uploads/2022/08/04/31705e22af3d9c0a557459bc7d1b62d.png)
 
 ```
 输入：vals = [1], edges = []
@@ -773,7 +759,7 @@ public:
 - `ai != bi`
 - `edges` 表示一棵合法的树。
 
-![课堂推演图 4](/assets/notes/zuoshen/union-find-04.jpg)
+![bf823be3b01472d392a1b3e3fd99e24c_720](/assets/notes/zuoshen/union-find-04.jpg)
 
 
 
@@ -839,9 +825,7 @@ public:
 };
 ```
 
-## leetcode No.928 尽量减少恶意软件的传播II
-
-[原题](https://leetcode.cn/problems/minimize-malware-spread-ii/description/)
+## [leetcode No.928 尽量减少恶意软件的传播II](https://leetcode.cn/problems/minimize-malware-spread-ii/description/)
 
 给定一个由 `n` 个节点组成的网络，用 `n x n` 个邻接矩阵 `graph` 表示。在节点网络中，只有当 `graph[i][j] = 1` 时，节点 `i` 能够直接连接到另一个节点 `j`。
 
@@ -890,7 +874,7 @@ public:
 - `0 <= initial[i] <= n - 1`
 -  `initial` 中每个整数都**不同**
 
-![课堂推演图 5](/assets/notes/zuoshen/union-find-05.jpg)
+![1c398e0e20f66c570d88ea8f44be285f_720](/assets/notes/zuoshen/union-find-05.jpg)
 
 ```cpp
 const int maxn = 301;

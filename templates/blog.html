@@ -28,7 +28,7 @@
   {% for post in posts %}
   <article class="post-card" data-blog-post data-tags="{{ post.tags|tojson|forceescape }}">
     <h2><a href="{{ article_url(post) }}" lang="{{ post.locale }}">{{ post.title }}</a></h2>
-    <p class="excerpt" lang="{{ post.locale }}">{{ post.summary }}</p>
+    {% if post.summary %}<p class="excerpt" lang="{{ post.locale }}">{{ post.summary }}</p>{% endif %}
     {{ metadata(post, ui, reading_minutes) }}
     {% if post.locale!=locale %}<small class="blog-language">{{ ui.blog_original }} · {{ post.locale }}</small>{% endif %}
   </article>

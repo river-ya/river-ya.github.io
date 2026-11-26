@@ -14,9 +14,7 @@ int sumrange(int left, int right){//left和right是索引,[left, right]的区间
 }
 ```
 
-### T1 和等于k的最长子数组长度 newcode
-
-[原题](https://www.nowcoder.com/practice/704c8388a82e42e58b7f5751ec943a11)
+### [T1 和等于k的最长子数组长度 newcode](https://www.nowcoder.com/practice/704c8388a82e42e58b7f5751ec943a11)
 
 给定一个无序数组 arr , 其中元素可正、可负、可0。给定一个整数 k ，求 arr 所有连续子数组中累加和为k的最长连续子数组长度。保证至少存在一个合法的连续子数组。
 
@@ -152,9 +150,7 @@ public:
 
 只需要利用符号函数将正负数区分开,剩下的和本题一模一样
 
-### T2 和为K的子数组 leetcode LCR 010
-
-[原题](https://leetcode.cn/problems/QTMn0o/description/)
+### [T2 和为K的子数组 leetcode LCR 010](https://leetcode.cn/problems/QTMn0o/description/)
 
 给定一个整数数组和一个整数 `k` **，**请找到该数组中和为 `k` 的连续子数组的个数。
 
@@ -202,9 +198,7 @@ public:
 };
 ```
 
-### T3 表现良好的最长时间段 leetcode No.1124
-
-[原题](https://leetcode.cn/problems/longest-well-performing-interval/description/)
+### [T3 表现良好的最长时间段 leetcode No.1124](https://leetcode.cn/problems/longest-well-performing-interval/description/)
 
 给你一份工作时间表 `hours`，上面记录着某一位员工每天的工作小时数。
 
@@ -266,9 +260,7 @@ public:
 };
 ```
 
-### T4 使数组和能被P整除 leetcode No.1590
-
-[原题](https://leetcode.cn/problems/make-sum-divisible-by-p/)
+### [T4 使数组和能被P整除 leetcode No.1590](https://leetcode.cn/problems/make-sum-divisible-by-p/)
 
 给你一个正整数数组 `nums`，请你移除 **最短** 子数组（可以为 **空**），使得剩余元素的 **和** 能被 `p` 整除。 **不允许** 将整个数组都移除。
 
@@ -354,9 +346,7 @@ public:
 };
 ```
 
-### T5 每个元音包含偶数次的最长子字符串 leetcode N0.1371
-
-[原题](https://leetcode.cn/problems/find-the-longest-substring-containing-vowels-in-even-counts/description/)
+### [T5 每个元音包含偶数次的最长子字符串 leetcode N0.1371](https://leetcode.cn/problems/find-the-longest-substring-containing-vowels-in-even-counts/description/)
 
 给你一个字符串 `s` ，请你返回满足以下条件的最长子字符串的长度：每个元音字母，即 'a'，'e'，'i'，'o'，'u' ，在子字符串中都恰好出现了偶数次。
 

@@ -13,9 +13,7 @@ int lcm(int a, int b){
 }
 ```
 
-## leetcode No.878 第N个神奇的数字
-
-[原题](https://leetcode.cn/problems/nth-magical-number/description/)
+## [leetcode No.878 第N个神奇的数字](https://leetcode.cn/problems/nth-magical-number/description/)
 
 一个正整数如果能被 `a` 或 `b` 整除，那么它是神奇的。
 

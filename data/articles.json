@@ -43,8 +43,8 @@
     "slug": "p2678-jump-stones",
     "translationKey": "p2678-jump-stones",
     "locale": "zh-CN",
-    "title": "算法实验 · P2678 跳石头",
-    "summary": "用二分答案确定最小跳距，贪心统计要移走的石头，并解释为什么扫描终点时也可以计数。",
+    "title": "P2678 [NOIP 2015 提高组] 跳石头",
+    "summary": "",
     "status": "published",
     "publishedAt": "2026-11-25",
     "nodeIds": [],
@@ -54,15 +54,14 @@
       "二分答案",
       "贪心"
     ],
-    "file": "content/p2678-jump-stones.zh.md",
-    "sourceFile": "p2678.cpp"
+    "file": "content/p2678-jump-stones.zh.md"
   },
   {
     "slug": "p1242-new-hanoi",
     "translationKey": "p1242-new-hanoi",
     "locale": "zh-CN",
-    "title": "算法实验 · P1242 新汉诺塔",
-    "summary": "从三盘反例出发，比较最大盘直达和绕行的代价，再递归输出最短移动序列。",
+    "title": "P1242 新汉诺塔",
+    "summary": "",
     "status": "published",
     "publishedAt": "2026-11-25",
     "nodeIds": [],
@@ -72,15 +71,14 @@
       "递归",
       "最短路径"
     ],
-    "file": "content/p1242-new-hanoi.zh.md",
-    "sourceFile": "p1242.cpp"
+    "file": "content/p1242-new-hanoi.zh.md"
   },
   {
     "slug": "zuoshen-notes",
     "translationKey": "zuoshen-notes",
     "locale": "zh-CN",
     "title": "左神算法学习笔记",
-    "summary": "按专题整理左程云算法课程的随堂笔记、C++ 实现和 CSP 练习。",
+    "summary": "",
     "status": "published",
     "publishedAt": "2026-11-25",
     "nodeIds": [],

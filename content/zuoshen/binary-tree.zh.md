@@ -175,9 +175,7 @@ public:
 };
 ```
 ## 2.二叉树高频题目（不含树形dp）
-### T1 二叉树的层序遍历 leetcode No.102
-
-[原题](https://leetcode.cn/problems/binary-tree-level-order-traversal/description/)
+### T1 [二叉树的层序遍历 leetcode No.102](https://leetcode.cn/problems/binary-tree-level-order-traversal/description/)
 ```cpp
 vector<vector<int>> levelOrder(TreeNode* root) {
         vector<vector<int>> ans;
@@ -200,9 +198,7 @@ vector<vector<int>> levelOrder(TreeNode* root) {
         return ans;
     }
 ```
-### T2 二叉树的锯齿形层序遍历 leetcode No.103
-
-[原题](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/description/)
+### T2 [二叉树的锯齿形层序遍历 leetcode No.103](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/description/)
 ```cpp
 //version 1
 //使用数组模拟队列
@@ -273,3 +269,4 @@ vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
         return ans;
     }
 ```
+### T3

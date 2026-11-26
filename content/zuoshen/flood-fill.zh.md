@@ -39,9 +39,7 @@ public:
 };
 ```
 
-## leetcode No.130 被围绕的区域
-
-[原题](https://leetcode.cn/problems/surrounded-regions/description/)
+## [leetcode No.130 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/description/)
 
 给你一个 `m x n` 的矩阵 `board` ，由若干字符 `'X'` 和 `'O'` 组成，**捕获** 所有 **被围绕的区域**：
 
@@ -61,7 +59,7 @@ public:
 
 **解释：**
 
-[原题配图](https://pic.leetcode.cn/1718167191-XNjUTG-image.png)
+![img](https://pic.leetcode.cn/1718167191-XNjUTG-image.png)
 
 在上图中，底部的区域没有被捕获，因为它在 board 的边缘并且不能被围绕。
 
@@ -126,9 +124,7 @@ public:
 };
 ```
 
-## leetcode No.827 最大人工岛
-
-[原题](https://leetcode.cn/problems/making-a-large-island/description/)
+## [leetcode No.827 最大人工岛](https://leetcode.cn/problems/making-a-large-island/description/)
 
 给你一个大小为 `n x n` 二进制矩阵 `grid` 。**最多** 只能将一格 `0` 变成 `1` 。
 
@@ -245,7 +241,9 @@ public:
         return ans;
     }
 };
-cpp
+```
+
+```cpp
 //洪水填充做法
 class Solution {
 public:
@@ -305,9 +303,7 @@ public:
 };
 ```
 
-## leetcode No.803 打砖块
-
-[原题](https://leetcode.cn/problems/bricks-falling-when-hit/description/)
+## [leetcode No.803 打砖块](https://leetcode.cn/problems/bricks-falling-when-hit/description/)
 
 有一个 `m x n` 的二元网格 `grid` ，其中 `1` 表示砖块，`0` 表示空白。砖块 **稳定**（不会掉落）的前提是：
 

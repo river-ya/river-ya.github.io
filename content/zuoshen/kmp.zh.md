@@ -12,7 +12,7 @@ a	a	b	a	a	b	s	a	a	b	a	a	a	|终止位置
 
 2. 假设已经有了next数组，匹配过程是如何加速的，加速过程的理解
 
-![课堂推演图 1](/assets/notes/zuoshen/kmp-01.jpg)
+![89010c8ef4c2ae1cbdab4b08600667dc_720](/assets/notes/zuoshen/kmp-01.jpg)
 
 3.next数组如何快速生成
 

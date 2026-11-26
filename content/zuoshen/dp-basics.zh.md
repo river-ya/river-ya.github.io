@@ -49,9 +49,7 @@ int fib3(int n){
 }
 ```
 
-## leetcode No.983 最低票价
-
-[原题](https://leetcode.cn/problems/minimum-cost-for-tickets/description/)
+## [leetcode No.983 最低票价](https://leetcode.cn/problems/minimum-cost-for-tickets/description/)
 
 在一个火车旅行很受欢迎的国度，你提前一年计划了一些火车旅行。在接下来的一年里，你要旅行的日子将以一个名为 `days` 的数组给出。每一项是一个从 `1` 到 `365` 的整数。
 
@@ -171,9 +169,7 @@ public:
 };
 ```
 
-## leetcode No.91 解码方法
-
-[原题](https://leetcode.cn/problems/decode-ways/)
+## [leetcode No.91 解码方法](https://leetcode.cn/problems/decode-ways/)
 
 一条包含
 
@@ -308,9 +304,7 @@ public:
 };
 ```
 
-## leetcode No.639 解码方法 II
-
-[原题](https://leetcode.cn/problems/decode-ways-ii/description/)
+## [leetcode No.639 解码方法 II](https://leetcode.cn/problems/decode-ways-ii/description/)
 
 一条包含字母 `A-Z` 的消息通过以下的方式进行了 **编码** ：
 
@@ -535,9 +529,7 @@ public:
 };
 ```
 
-## leetcode No.264 丑数 II
-
-[原题](https://leetcode.cn/problems/ugly-number-ii/)
+## [leetcode No.264 丑数 II](https://leetcode.cn/problems/ugly-number-ii/)
 
 给你一个整数 `n` ，请你找出并返回第 `n` 个 **丑数** 。
 
@@ -571,11 +563,11 @@ public:
 
 下一项丑数总是前面丑数的2/3/5倍
 
-![课堂推演图 1](/assets/notes/zuoshen/dp-basics-01.jpg)
+![5389bc973ba5da9687b7eb8197cbcda0_720](/assets/notes/zuoshen/dp-basics-01.jpg)
 
 三指针保证单调性
 
-![课堂推演图 2](/assets/notes/zuoshen/dp-basics-02.jpg)
+![ec25104a5bf6bab72f83e2872ea31581](/assets/notes/zuoshen/dp-basics-02.jpg)
 
 ```cpp
 //有一种很好理解的方法：优先队列的方法，但需要unordered_set去重
@@ -631,9 +623,7 @@ public:
 };
 ```
 
-## leetcode No32 最长有效括号
-
-[原题](https://leetcode.cn/problems/longest-valid-parentheses/description/)
+## [leetcode No32 最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses/description/)
 
 给你一个只包含 `'('` 和 `')'` 的字符串，找出最长有效（格式正确且连续）括号 子串 的长度。
 
@@ -758,9 +748,7 @@ public:
 };
 ```
 
-## leetcode No.467 环绕字符串中唯一的子字符串
-
-[原题](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/)
+## [leetcode No.467 环绕字符串中唯一的子字符串](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/)
 
 定义字符串 `base` 为一个 `"abcdefghijklmnopqrstuvwxyz"` 无限环绕的字符串，所以 `base` 看起来是这样的：
 
@@ -801,7 +789,7 @@ public:
 - `1 <= s.length <= 105`
 - s 由小写英文字母组成
 
-![课堂推演图 3](/assets/notes/zuoshen/dp-basics-03.jpg)
+![e874ccf83d4e7a3b2c969ce2e131a8ae_720](/assets/notes/zuoshen/dp-basics-03.jpg)
 
 ```cpp
 //超时版，重复计算了很多子串
@@ -849,9 +837,7 @@ public:
 };
 ```
 
-## leetcode No.940 不同的子序列 II
-
-[原题](https://leetcode.cn/problems/distinct-subsequences-ii/)
+## [leetcode No.940 不同的子序列 II](https://leetcode.cn/problems/distinct-subsequences-ii/)
 
 给定一个字符串 `s`，计算 `s` 的 **不同非空子序列** 的个数。因为结果可能很大，所以返回答案需要对 **`10^9 + 7` 取余** 。
 
@@ -896,7 +882,7 @@ public:
 
 实际上可以理解为，纯新的就是先把老的all都保留下来，上次加的同样字符记录此次会同样出现，需要减去
 
-![课堂推演图 4](/assets/notes/zuoshen/dp-basics-04.jpg)
+![3fe53c2192cf084f120664626a75f01a_720](/assets/notes/zuoshen/dp-basics-04.jpg)
 
 之前有以a结尾的，现在再往前推会再算一次以a结尾，所以需要减去当前字符上次记录的
 
@@ -946,9 +932,7 @@ public:
 
 尝试函数有2个可变参数可以**完全决定返回值**，进而可以改出2维动态规划表的实现
 
-## leetcode LCR 099. 最小路径和
-
-[原题](https://leetcode.cn/problems/0i0mDW/)
+## [leetcode LCR 099. 最小路径和](https://leetcode.cn/problems/0i0mDW/)
 
 给定一个包含非负整数的 `*m* x *n*` 网格 `grid` ，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。
 
@@ -958,7 +942,7 @@ public:
 
 **示例 1：**
 
-[原题配图](https://assets.leetcode.com/uploads/2020/11/05/minpath.jpg)
+![img](https://assets.leetcode.com/uploads/2020/11/05/minpath.jpg)
 
 ```
 输入：grid = [[1,3,1],[1,5,1],[4,2,1]]
@@ -1089,9 +1073,7 @@ public:
 
 依然是 **从简单格子填写到复杂格子**的过程，即**严格位置依赖的动态规划**（从底到顶）
 
-## leetcode 79. 单词搜索
-
-[原题](https://leetcode.cn/problems/word-search/)
+## [leetcode 79. 单词搜索](https://leetcode.cn/problems/word-search/)
 
 给定一个 `m x n` 二维字符网格 `board` 和一个字符串单词 `word` 。如果 `word` 存在于网格中，返回 `true` ；否则，返回 `false` 。
 
@@ -1101,7 +1083,7 @@ public:
 
 **示例 1：**
 
-[原题配图](https://assets.leetcode.com/uploads/2020/11/04/word2.jpg)
+![img](https://assets.leetcode.com/uploads/2020/11/04/word2.jpg)
 
 ```
 输入：board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = "ABCCED"
@@ -1110,7 +1092,7 @@ public:
 
 **示例 2：**
 
-[原题配图](https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg)
+![img](https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg)
 
 ```
 输入：board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = "SEE"
@@ -1119,7 +1101,7 @@ public:
 
 **示例 3：**
 
-[原题配图](https://assets.leetcode.com/uploads/2020/10/15/word3.jpg)
+![img](https://assets.leetcode.com/uploads/2020/10/15/word3.jpg)
 
 ```
 输入：board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = "ABCB"
@@ -1188,9 +1170,7 @@ public:
 
 **决定返回值的可变参数类型往往都比较简单，一般不会比int类型更复杂**
 
-## leetcode LCR 095. 最长公共子序列
-
-[原题](https://leetcode.cn/problems/qJnOS7/description/)
+## [leetcode LCR 095. 最长公共子序列 ](https://leetcode.cn/problems/qJnOS7/description/)
 
 给定两个字符串 `text1` 和 `text2`，返回这两个字符串的最长 **公共子序列** 的长度。如果不存在 **公共子序列** ，返回 `0` 。
 
@@ -1278,7 +1258,9 @@ public:
 		return f2(text1, text2, n, m);
     }
 };
-cpp
+```
+
+```cpp
 //记忆化搜索
 class Solution {
 public:
@@ -1307,7 +1289,9 @@ public:
 		return f2(text1, text2, n, m, dp);
     }
 };
-cpp
+```
+
+```cpp
 //严格位置依赖
 class Solution {
 public:
@@ -1365,9 +1349,7 @@ public:
 };
 ```
 
-## leetcode 516. 最长回文子序列
-
-[原题](https://leetcode.cn/problems/longest-palindromic-subsequence/description/)
+## [leetcode 516. 最长回文子序列](https://leetcode.cn/problems/longest-palindromic-subsequence/description/)
 
 给你一个字符串 `s` ，找出其中最长的回文子序列，并返回该序列的长度。
 
@@ -1557,9 +1539,7 @@ public:
 };
 ```
 
-## nowcode 二叉树
-
-[原题](https://www.nowcoder.com/questionTerminal/aaefe5896cce4204b276e213e725f3ea)
+## [nowcode 二叉树](https://www.nowcoder.com/questionTerminal/aaefe5896cce4204b276e213e725f3ea)
 
 小强现在有n个节点,他想请你帮他计算出有多少种不同的二叉树满足节点个数为n且树的高度不超过m的方案.因为答案很大,所以答案需要模上1e9+7后输出.
  树的高度: 定义为所有叶子到根路径上节点个数的最大值.
@@ -1585,7 +1565,9 @@ public:
 
 ```
 输出一个答案表示方案数
-cpp
+```
+
+```cpp
 //记忆化搜索
 #include<bits/stdc++.h>
 using namespace std;
@@ -1672,9 +1654,7 @@ int main(){
 }
 ```
 
-## leetcode LCR 112. 矩阵中的最长递增路径 ）
-
-[原题](https://leetcode.cn/problems/fpTFWP/)
+## [leetcode LCR 112. 矩阵中的最长递增路径 ）](https://leetcode.cn/problems/fpTFWP/)
 
 给定一个 `m x n` 整数矩阵 `matrix` ，找出其中 **最长递增路径** 的长度。
 
@@ -1684,7 +1664,7 @@ int main(){
 
 **示例 1：**
 
-[原题配图](https://assets.leetcode.com/uploads/2021/01/05/grid1.jpg)
+![img](https://assets.leetcode.com/uploads/2021/01/05/grid1.jpg)
 
 ```
 输入：matrix = [[9,9,4],[6,6,8],[2,1,1]]
@@ -1694,7 +1674,7 @@ int main(){
 
 **示例 2：**
 
-[原题配图](https://assets.leetcode.com/uploads/2021/01/27/tmp-grid.jpg)
+![img](https://assets.leetcode.com/uploads/2021/01/27/tmp-grid.jpg)
 
 ```
 输入：matrix = [[3,4,5],[3,2,6],[2,2,1]]
@@ -1761,9 +1741,7 @@ public:
 
 # 直接分析二维动态规划
 
-## leetcode LCR 097. 不同的子序列
-
-[原题](https://leetcode.cn/problems/21dk04/description/)
+## [leetcode LCR 097. 不同的子序列](https://leetcode.cn/problems/21dk04/description/)
 
 给定一个字符串 `s` 和一个字符串 `t` ，计算在 `s` 的子序列中 `t` 出现的个数。
 
@@ -1859,9 +1837,7 @@ public:
 };
 ```
 
-## leetcode 72. 编辑距离
-
-[原题](https://leetcode.cn/problems/edit-distance/description/)
+## [leetcode 72. 编辑距离](https://leetcode.cn/problems/edit-distance/description/)
 
 给你两个单词 `word1` 和 `word2`， *请返回将 `word1` 转换成 `word2` 所使用的最少操作数* 。
 
@@ -2001,9 +1977,7 @@ public:
 };
 ```
 
-## leetcode LCR 096. 交错字符串
-
-[原题](https://leetcode.cn/problems/IY6buf/description/)
+## [leetcode LCR 096. 交错字符串](https://leetcode.cn/problems/IY6buf/description/)
 
 给定三个字符串 `s1`、`s2`、`s3`，请判断 `s3` 能不能由 `s1` 和 `s2` **交织（交错）** 组成。
 
@@ -2020,7 +1994,7 @@ public:
 
 **示例 1：**
 
-[原题配图](https://assets.leetcode.com/uploads/2020/09/02/interleave.jpg)
+![img](https://assets.leetcode.com/uploads/2020/09/02/interleave.jpg)
 
 ```
 输入：s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac"
@@ -2205,9 +2179,7 @@ int main(){
 
 # 从递归入手三维动态规划
 
-## leetcode 474. 一和零 - 力扣
-
-[原题](https://leetcode.cn/problems/ones-and-zeroes/description/)
+## [leetcode 474. 一和零 - 力扣](https://leetcode.cn/problems/ones-and-zeroes/description/)
 
 给你一个二进制字符串数组 `strs` 和两个整数 `m` 和 `n` 。
 
@@ -2375,9 +2347,7 @@ int main(){
  };
  ```
 
-## leetcode 879. 盈利计划 - 力扣
-
-[原题](https://leetcode.cn/problems/profitable-schemes/description/)
+## [leetcode 879. 盈利计划 - 力扣](https://leetcode.cn/problems/profitable-schemes/description/)
 
 集团里有 `n` 名员工，他们可以完成各种各样的工作创造利润。
 

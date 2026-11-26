@@ -128,8 +128,11 @@ def reading_minutes(file):
     return max(1,math.ceil(chinese/400+words/220))
 
 def code_highlight(code,lang,*args):
-    try:return highlight(code,get_lexer_by_name(lang or 'text'),HtmlFormatter())
-    except Exception:return '<pre><code>'+html.escape(code)+'</code></pre>'
+    try:
+        formatted = highlight(code, get_lexer_by_name(lang or 'text'), HtmlFormatter(nowrap=True))
+    except Exception:
+        formatted = html.escape(code)
+    return '<pre class="highlight"><code>'+formatted+'</code></pre>'
 MD=MarkdownIt('commonmark',{'html':True,'highlight':code_highlight}).enable('table')
 def markdown_file(file):
     if not file:return '',[]
@@ -142,7 +145,9 @@ def markdown_file(file):
             if t.type in ['heading_open','heading_close']:t.tag='h'+str(min(6,int(t.tag[1])+1))
     for i,token in enumerate(tokens):
         if token.type=='heading_open':
-            label=tokens[i+1].content
+            inline = tokens[i+1]
+            label = ''.join(child.content for child in inline.children
+                            if child.type in {'text', 'code_inline', 'image'}).strip() or inline.content
             slug=re.sub(r'[^\w\-]+','-',label.lower()).strip('-') or 'section'
             counts[slug]+=1
             if counts[slug]>1:slug+='-'+str(counts[slug])

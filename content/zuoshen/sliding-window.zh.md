@@ -8,9 +8,7 @@
 
 求解大流程:求子数组在每个位置或结尾情况下的答案（开头还是结尾在于个人习惯）
 
-## leetcode LCR 008. 长度最小的子数组
-
-[原题](https://leetcode.cn/problems/2VG8Kg/)
+## [leetcode LCR 008. 长度最小的子数组](https://leetcode.cn/problems/2VG8Kg/)
 
 求>=target的最短子数组长度
 
@@ -65,9 +63,7 @@ int minsubarraysum(int target, vector<int> & nums){
 }
 ```
 
-## leetcode LCR 016. 无重复字符的最长子串
-
-[原题](https://leetcode.cn/problems/wtcaE1/description/)
+## [leetcode LCR 016. 无重复字符的最长子串](https://leetcode.cn/problems/wtcaE1/description/)
 
 无重复字符的最长子串
 
@@ -131,9 +127,7 @@ public:
 };
 ```
 
-## leetcode LCR 017. 最小覆盖子串
-
-[原题](https://leetcode.cn/problems/M1oyTv/description/)
+## [leetcode LCR 017. 最小覆盖子串](https://leetcode.cn/problems/M1oyTv/description/)
 
 给定两个字符串 `s` 和 `t` 。返回 `s` 中包含 `t` 的所有字符的最短子字符串。如果 `s` 中不存在符合条件的子字符串，则返回空字符串 `""` 。
 
@@ -224,9 +218,7 @@ public:
 };
 ```
 
-## leetcode 134. 加油站
-
-[原题](https://leetcode.cn/problems/gas-station/description/)
+## [leetcode 134. 加油站](https://leetcode.cn/problems/gas-station/description/)
 
 在一条环路上有 `n` 个加油站，其中第 `i` 个加油站有汽油 `gas[i]` 升。
 

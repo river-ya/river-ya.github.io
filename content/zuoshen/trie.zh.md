@@ -185,9 +185,7 @@ public:
 
 ## 4.前缀树的相关题目
 
-### T1 接头密匙 newcode
-
-[原题](https://www.nowcoder.com/practice/c552d3b4dfda49ccb883a6371d9a6932)
+### T1 [接头密匙 newcode](https://www.nowcoder.com/practice/c552d3b4dfda49ccb883a6371d9a6932)
 
 描述
 牛牛和他的朋友们约定了一套接头密匙系统，用于确认彼此身份。密匙由一组数字序列表示，两个密匙被认为是一致的，如果满足以下条件：
@@ -374,9 +372,7 @@ class Solution {
 
 ```
 
-### T2 数组中两个数的最大异或值 leetcode LCR 067
-
-[原题](https://leetcode.cn/problems/ms70jA/)
+### T2 [数组中两个数的最大异或值 leetcode LCR 067](https://leetcode.cn/problems/ms70jA/)
 
 给定一个长度为 n 的数组，请你返回任选两个数的最大异或值。
 数据范围：1 <= n <= 10^4, 数组中的满足 0 <= val <= 10^9
@@ -505,9 +501,7 @@ public:
 //空间复杂度： O(n * log max)
 ```
 
-### T3 单词搜索II leetcode No.212
-
-[原题](https://leetcode.cn/problems/word-search-ii/description/?envType=problem-list-v2&envId=trie)
+### [T3 单词搜索II leetcode No.212](https://leetcode.cn/problems/word-search-ii/description/?envType=problem-list-v2&envId=trie)
 
 给定一个 `m x n` 二维字符网格 `board` 和一个单词（字符串）列表 `words`， *返回所有二维网格上的单词* 。
 
@@ -517,7 +511,7 @@ public:
 
 **示例 1：**
 
-[原题配图](https://assets.leetcode.com/uploads/2020/11/07/search1.jpg)
+![img](https://assets.leetcode.com/uploads/2020/11/07/search1.jpg)
 
 ```
 输入：board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"]
@@ -526,7 +520,7 @@ public:
 
 **示例 2：**
 
-[原题配图](https://assets.leetcode.com/uploads/2020/11/07/search2.jpg)
+![img](https://assets.leetcode.com/uploads/2020/11/07/search2.jpg)
 
 ```
 输入：board = [["a","b"],["c","d"]], words = ["abcb"]

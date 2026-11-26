@@ -1,6 +1,6 @@
 # 建图、链式前向星
 
-![课堂推演图 1](/assets/notes/zuoshen/topological-sort-01.jpg)
+![f5d870206a0f6eb26f13a6d0bb4fd146_720](/assets/notes/zuoshen/topological-sort-01.jpg)
 
 
 
@@ -131,9 +131,7 @@ void traversal(int n){
 
 4. 如果无法把所有的点都删掉，说明有向图里有环
 
-## leetcode No.207 课程表
-
-[原题](https://leetcode.cn/problems/course-schedule/)
+## [leetcode No.207 课程表](https://leetcode.cn/problems/course-schedule/)
 
 你这个学期必须选修 `numCourses` 门课程，记为 `0` 到 `numCourses - 1` 。
 
@@ -222,9 +220,7 @@ public:
 };
 ```
 
-## luogu 拓扑排序模板
-
-[原题](https://www.luogu.com.cn/problem/U107394)
+## [luogu 拓扑排序模板](https://www.luogu.com.cn/problem/U107394)
 
 有向无环图上有n个点，m条边。求这张图字典序最小的拓扑排序的结果。字典序最小指希望排好序的结果中，比较靠前的数字尽可能小。
 
@@ -308,9 +304,7 @@ int main(){
 }
 ```
 
-## leetcode 火星词典
-
-[原题](https://leetcode.cn/problems/Jf1JuT/description/)
+## [leetcode 火星词典](https://leetcode.cn/problems/Jf1JuT/description/)
 
 现有一种使用英语字母的外星文语言，这门语言的字母顺序与英语顺序不同。
 
@@ -420,9 +414,7 @@ public:
 };
 ```
 
-## leetcode No.936 戳印序列
-
-[原题](https://leetcode.cn/problems/stamping-the-sequence/description/)
+## [leetcode No.936 戳印序列](https://leetcode.cn/problems/stamping-the-sequence/description/)
 
 你想要用**小写字母**组成一个目标字符串 `target`。
 
@@ -533,9 +525,7 @@ public:
 };
 ```
 
-## luogu P4017 最大食物链计数
-
-[原题](https://www.luogu.com.cn/problem/P4017)
+## [luogu P4017 最大食物链计数](https://www.luogu.com.cn/problem/P4017)
 
 P4017 最大食物链计数
 
@@ -655,9 +645,7 @@ int main(){
 }
 ```
 
-## leetcode No.851 喧闹和富有
-
-[原题](https://leetcode.cn/problems/loud-and-rich/)
+## [leetcode No.851 喧闹和富有](https://leetcode.cn/problems/loud-and-rich/)
 
 有一组 `n` 个人作为实验对象，从 `0` 到 `n - 1` 编号，其中每个人都有不同数目的钱，以及不同程度的安静值（quietness）。为了方便起见，我们将编号为 `x` 的人简称为 "person `x` "。
 
@@ -758,9 +746,7 @@ public:
 };
 ```
 
-## leetcode No.2050 并行课程 III
-
-[原题](https://leetcode.cn/problems/parallel-courses-iii/description/)
+## [leetcode No.2050 并行课程 III](https://leetcode.cn/problems/parallel-courses-iii/description/)
 
 给你一个整数 `n` ，表示有 `n` 节课，课程编号从 `1` 到 `n` 。同时给你一个二维整数数组 `relations` ，其中 `relations[j] = [prevCoursej, nextCoursej]` ，表示课程 `prevCoursej` 必须在课程 `nextCoursej` **之前** 完成（先修课的关系）。同时给你一个下标从 **0** 开始的整数数组 `time` ，其中 `time[i]` 表示完成第 `(i+1)` 门课程需要花费的 **月份** 数。
 
@@ -777,7 +763,7 @@ public:
 
 **示例 1:**
 
-**[原题配图](https://assets.leetcode.com/uploads/2021/10/07/ex1.png)**
+**![img](https://assets.leetcode.com/uploads/2021/10/07/ex1.png)**
 
 ```
 输入：n = 3, relations = [[1,3],[2,3]], time = [3,2,5]
@@ -790,7 +776,7 @@ public:
 
 **示例 2：**
 
-**[原题配图](https://assets.leetcode.com/uploads/2021/10/07/ex2.png)**
+**![img](https://assets.leetcode.com/uploads/2021/10/07/ex2.png)**
 
 ```
 输入：n = 5, relations = [[1,5],[2,5],[3,5],[3,4],[4,5]], time = [1,2,3,4,5]
@@ -817,9 +803,7 @@ public:
 - `1 <= time[i] <= 104`
 - 先修课程图是一个有向无环图。
 
-## leetcode No.2127 参加会议的最多员工数
-
-[原题](https://leetcode.cn/problems/maximum-employees-to-be-invited-to-a-meeting/)
+## [leetcode No.2127 参加会议的最多员工数](https://leetcode.cn/problems/maximum-employees-to-be-invited-to-a-meeting/)
 
 一个公司准备组织一场会议，邀请名单上有 `n` 位员工。公司准备了一张 **圆形** 的桌子，可以坐下 **任意数目** 的员工。
 
@@ -831,7 +815,7 @@ public:
 
 **示例 1：**
 
-[原题配图](https://assets.leetcode.com/uploads/2021/12/14/ex1.png)
+![img](https://assets.leetcode.com/uploads/2021/12/14/ex1.png)
 
 ```
 输入：favorite = [2,2,1,2]
@@ -859,7 +843,7 @@ public:
 
 **示例 3：**
 
-[原题配图](https://assets.leetcode.com/uploads/2021/12/14/ex2.png)
+![img](https://assets.leetcode.com/uploads/2021/12/14/ex2.png)
 
 ```
 输入：favorite = [3,0,1,4,1]
@@ -880,11 +864,11 @@ public:
 - `0 <= favorite[i] <= n - 1`
 - `favorite[i] != i`
 
-![课堂推演图 2](/assets/notes/zuoshen/topological-sort-02.jpg)
+![48731cf20cc180c5792700a7dbf2a113_720](/assets/notes/zuoshen/topological-sort-02.jpg)
 
-![课堂推演图 3](/assets/notes/zuoshen/topological-sort-03.jpg)
+![a7b89aec90d94c49830507c382bc920d_720](/assets/notes/zuoshen/topological-sort-03.jpg)
 
-![课堂推演图 4](/assets/notes/zuoshen/topological-sort-04.jpg)
+![6f0cf43402825d721d97c9e0ca97b70a_720](/assets/notes/zuoshen/topological-sort-04.jpg)
 
 ```cpp
 //favorite就表示图，不需要额外建图 favorite[a] = b ： a -> b

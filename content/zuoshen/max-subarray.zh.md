@@ -1,8 +1,6 @@
 # 子数组最大累加和问题与扩展
 
-## leetcode 2560. 打家劫舍 IV
-
-[原题](https://leetcode.cn/problems/house-robber-iv/description/)
+## [leetcode 2560. 打家劫舍 IV](https://leetcode.cn/problems/house-robber-iv/description/)
 
 沿街有一排连续的房屋。每间房屋内都藏有一定的现金。现在有一位小偷计划从这些房屋中窃取现金。
 
@@ -94,9 +92,7 @@
  };
  ```
 
-## leetcode 17.24. 最大子矩阵
-
-[原题](https://leetcode.cn/problems/max-submatrix-lcci/description/)
+## [leetcode 17.24. 最大子矩阵](https://leetcode.cn/problems/max-submatrix-lcci/description/)
 
 给定一个正整数、负整数和 0 组成的 N × M 矩阵，编写代码找出元素总和最大的子矩阵。
 

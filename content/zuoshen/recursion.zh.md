@@ -18,9 +18,7 @@
 
 T1 - T4是带路径的递归，T5-T6是不带路径的递归
 
-### T1 字符串的全部子序列 newcode NC190
-
-[原题](https://www.nowcoder.com/practice/92e6247998294f2c933906fdedbc6e6a?tpId=196&tqId=39357&ru=/exam/oj)
+### T1 [字符串的全部子序列 newcode NC190](https://www.nowcoder.com/practice/92e6247998294f2c933906fdedbc6e6a?tpId=196&tqId=39357&ru=/exam/oj)
 给定一个字符串s，长度为n，求s的所有子序列
 1.子序列: 指一个字符串删掉部分字符（也可以不删）形成的字符串，可以是不连续的，比如"abcde"的子序列可以有"ace","ad"等等
 2.将所有的子序列的结果返回为一个字符串数组
@@ -88,9 +86,7 @@ public:
 
 **如果将path变成值传递，那么将不需要手动回溯，但是这样往往时间空间开销会很大，每次都需要拷贝O(n)时间的path，同时还会增加额外空间，所以一般我们采取回溯+址传递/全局变量**
 
-###  T2 子集II leetcode No.90
-
-[原题](https://leetcode.cn/problems/subsets-ii/description/)
+###  [T2 子集II leetcode No.90](https://leetcode.cn/problems/subsets-ii/description/)
 
 给你一个整数数组 `nums` ，其中可能包含重复元素，请你返回该数组所有可能的 子集（幂集）。
 
@@ -184,9 +180,7 @@ vector<vector<int>> ans;
     }
 ```
 
-### T3 全排列 leetcode LCR 083
-
-[原题](https://leetcode.cn/problems/VvJkup/description/)
+### [T3 全排列 leetcode LCR 083](https://leetcode.cn/problems/VvJkup/description/)
 
 给定一个不含重复数字的整数数组 `nums` ，返回其 **所有可能的全排列** 。可以 **按任意顺序** 返回答案。
 
@@ -236,9 +230,7 @@ vector<vector<int>> ans;
         return ans;
     }
 ```
-### T4 全排列II leetcode LCR 084
-
-[原题](https://leetcode.cn/problems/7p8L0Z/description/)
+### [T4 全排列II leetcode LCR 084](https://leetcode.cn/problems/7p8L0Z/description/)
 
 给定一个可包含重复数字的整数集合 `nums` ，**按任意顺序** 返回它所有不重复的全排列。
 
@@ -392,9 +384,7 @@ void Sort_recursion(stack<int> & stk){
 1. 如果f(i)遇到嵌套条件开始，就调用下级递归去处理嵌套，下级会负责嵌套部分的计算结果
 2. f(i)下级处理完成后，f(i)可以根据下级更新的全局变量where，知道从什么位置继续解析
 
-### T1 leetcode 基本计算器III
-
-[原题](https://leetcode.cn/problems/basic-calculator-iii)
+### [T1 leetcode 基本计算器III](https://leetcode.cn/problems/basic-calculator-iii)
 
 实现一个基本的计算器来计算简单的表达式字符串。
 
@@ -507,9 +497,7 @@ int main(){
 }
 ```
 
-### T2 leetcode No.394 字符串解码
-
-[原题](https://leetcode.cn/problems/decode-string/description/)
+### [T2 leetcode No.394 字符串解码](https://leetcode.cn/problems/decode-string/description/)
 
 给定一个经过编码的字符串，返回它解码后的字符串。
 
@@ -595,9 +583,7 @@ int main(){
 }
 ```
 
-### T3 leetcode No.726 原子的数量
-
-[原题](https://leetcode.cn/problems/number-of-atoms/description/)
+### [T3 leetcode No.726 原子的数量](https://leetcode.cn/problems/number-of-atoms/description/)
 
 给你一个字符串化学式 `formula` ，返回 **每种原子的数量** 。
 
@@ -798,8 +784,42 @@ int main(){
 
 ## P1928 外星密码
 
-用递归读取一层字符串。遇到左括号读取重复次数，再展开内层；遇到右括号返回当前结果。例如 `AC[3FUN]` 展开为 `ACFUNFUNFUN`。
+[洛谷 P1928](https://www.luogu.com.cn/problem/P1928)
 
+
+### 题目描述
+
+有了防护伞，并不能完全避免 2012 的灾难。地球防卫小队决定去求助外星种族的帮助。经过很长时间的努力，小队终于收到了外星生命的回信。但是外星人发过来的却是一串密码。只有解开密码，才能知道外星人给的准确回复。解开密码的第一道工序就是解压缩密码，外星人对于连续的若干个相同的子串 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext mathvariant="monospace">X</mtext></mrow></math> 会压缩为 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext mathvariant="monospace">[DX]</mtext></mrow></math> 的形式（<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>D</mi></mrow></math> 是一个整数且 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>&#x02264;</mo><mi>D</mi><mo>&#x02264;</mo><mn>99</mn></mrow></math>），比如说字符串 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext mathvariant="monospace">CBCBCBCB</mtext></mrow></math> 就压缩为 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext mathvariant="monospace">[4CB]</mtext></mrow></math> 或者<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext mathvariant="monospace">[2[2CB]]</mtext></mrow></math>，类似于后面这种压缩之后再压缩的称为二重压缩。如果是 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext mathvariant="monospace">[2[2[2CB]]]</mtext></mrow></math> 则是三重的。现在我们给你外星人发送的密码，请你对其进行解压缩。
+
+### 输入格式
+
+输入一行，一个字符串，表示外星人发送的密码。
+
+### 输出格式
+
+输出一行，一个字符串，表示解压缩后的结果。
+
+### 输入输出样例 #1
+
+#### 输入 #1
+
+```
+AC[3FUN]
+```
+
+#### 输出 #1
+
+```
+ACFUNFUNFUN
+```
+
+### 说明/提示
+
+【数据范围】
+
+对于 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>50</mn><mi>&#x00025;</mi></mrow></math> 的数据：解压后的字符串长度在 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1000</mn></mrow></math> 以内，最多只有三重压缩。
+
+对于 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>100</mn><mi>&#x00025;</mi></mrow></math> 的数据：解压后的字符串长度在 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>20000</mn></mrow></math> 以内，最多只有十重压缩。保证只包含数字、大写字母、`[` 和 `]`。
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -828,11 +848,49 @@ int main()
 }
 ```
 
-
 ## P5461 赦免战俘
 
-每次把方阵分成四块，只递归访问右上、左下和右下三块。未访问的位置保留为零，访问到单个格子时写一。
+[洛谷 P5461](https://www.luogu.com.cn/problem/P5461)
 
+
+### 题目背景
+
+借助反作弊系统，一些在月赛有抄袭作弊行为的选手被抓出来了！
+
+### 题目描述
+
+现有 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>&#x000D7;</mo><msup><mn>2</mn><mi>n</mi></msup><mo stretchy="false">&#x00028;</mo><mi>n</mi><mo>&#x02264;</mo><mn>10</mn><mo stretchy="false">&#x00029;</mo></mrow></math> 名作弊者站成一个正方形方阵等候 kkksc03 的发落。kkksc03 决定赦免一些作弊者。他将正方形矩阵均分为 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn></mrow></math> 个更小的正方形矩阵，每个更小的矩阵的边长是原矩阵的一半。其中左上角那一个矩阵的所有作弊者都将得到赦免，剩下 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn></mrow></math> 个小矩阵中，每一个矩阵继续分为 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn></mrow></math> 个更小的矩阵，然后通过同样的方式赦免作弊者……直到矩阵无法再分下去为止。所有没有被赦免的作弊者都将被处以棕名处罚。
+
+给出 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi></mrow></math>，请输出每名作弊者的命运，其中 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn></mrow></math> 代表被赦免，<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn></mrow></math> 代表不被赦免。
+
+### 输入格式
+
+一个整数 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi></mrow></math>。
+
+### 输出格式
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>&#x000D7;</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></math> 的 01 矩阵，代表每个人是否被赦免。数字之间有一个空格。
+
+### 输入输出样例 #1
+
+#### 输入 #1
+
+```
+3
+```
+
+#### 输出 #1
+
+```
+0 0 0 0 0 0 0 1
+0 0 0 0 0 0 1 1
+0 0 0 0 0 1 0 1
+0 0 0 0 1 1 1 1
+0 0 0 1 0 0 0 1
+0 0 1 1 0 0 1 1
+0 1 0 1 0 1 0 1
+1 1 1 1 1 1 1 1
+```
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

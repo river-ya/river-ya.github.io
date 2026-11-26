@@ -10,9 +10,7 @@
 
 [r+1] -= v;
 
-### T1 航班预定统计 leetcode No.1109
-
-[原题](https://leetcode.cn/problems/corporate-flight-bookings/description/)
+### [T1 航班预定统计 leetcode No.1109](https://leetcode.cn/problems/corporate-flight-bookings/description/)
 
 这里有 `n` 个航班，它们分别从 `1` 到 `n` 进行编号。
 
@@ -80,9 +78,7 @@ public:
 };
 ```
 
-### T2 三步必杀 luogu P4231
-
-[原题](https://www.luogu.com.cn/problem/P4231)
+### [T2 三步必杀 luogu P4231](https://www.luogu.com.cn/problem/P4231)
 
 板子题,理解等差数列差分的两步走:
 
@@ -124,9 +120,7 @@ int main(){
 }
 ```
 
-### T3 Lycanthropy luogu P5026
-
-[原题](https://www.luogu.com.cn/problem/P5026)
+### [T3 Lycanthropy luogu P5026](https://www.luogu.com.cn/problem/P5026)
 
 ```cpp
 #include <bits/stdc++.h>

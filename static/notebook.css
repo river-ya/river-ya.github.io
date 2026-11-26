@@ -150,3 +150,6 @@ html[lang="en"] .hero h1 { font-style: italic; max-width: 8em; font-size: clamp(
 @media (max-width: 440px) {
   .hero-foot { display: grid; grid-template-columns: 1fr 1fr; }
 }
+.article-layout .prose { overflow-wrap: anywhere; }
+.article-layout .prose math { font-size: inherit; margin: 0; max-width: 100%; overflow: auto; }
+.article-layout .prose math[display="block"] { margin-block: 1em; }

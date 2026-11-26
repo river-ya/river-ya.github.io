@@ -128,7 +128,7 @@ Markdown 支持常规段落、列表、引用、围栏代码、表格和图片�
 
 在 `data/articles.json` 中设置 `status: published`，并填写真实发布日期和标签。AI、算法、Infra 标签匹配对应分类，关联 AI 节点或算法条目的文章也自动归类。计算机视觉节点或 `计算机视觉`、`Computer vision` 标签会将文章列入 AI 的计算机视觉子目录。同一作品的译文共享分类，列表按 `updatedAt` 或 `publishedAt` 倒序排列。
 
-已发布且有 Markdown 正文的算法专题也会出现在算法笔记页。可选的文章字段 `sourceFile` 对应 `static/source/` 中的 Python 文件，构建器将其高亮展示；正文可链接同一静态文件供下载。
+已发布且有 Markdown 正文的算法专题也会出现在算法笔记页。文章字段 `sourceFile` 可指向 `static/source/` 中的 Python 或 C++ 文件，正文可链接同一份高亮源码供下载。
 
 ## GitHub Pages 发布
 

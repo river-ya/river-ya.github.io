@@ -25,7 +25,8 @@ def main():
             expect(page.locator('.site-header, #intro, .site-footer')).to_have_count(0)
             expect(page.locator('.blog-nav')).to_have_count(1)
             expect(page.locator('.crane-sheet')).to_have_count(0)
-            assert page.locator('.post-card').bounding_box()['width'] <= 721
+            for card in page.locator('.post-card').all():
+                assert card.bounding_box()['width'] <= 721
             expect(page.locator('html')).to_have_attribute('data-theme','light')
             published = {a['translationKey'] for a in json.loads((ROOT/'data/articles.json').read_text())
                          if a['status']=='published' and not a.get('demo')}

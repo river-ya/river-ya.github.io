@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
 {% block head %}<link rel="stylesheet" href="/assets/notes-dock.css">{% if category %}<script defer src="/assets/collection-signal.js"></script>{% endif %}{% endblock %}
+{% macro shelf_group(label, items) %}
+    <div class="shelf-heading"><h2>{{ label }}</h2><span>{{ items|length }} {{ 'note' if locale=='en' and items|length==1 else ui.entry_unit }}</span></div>
+    {% for entry in items %}
+    <article class="shelf-entry">
+      {% if entry.date %}<time datetime="{{ entry.date }}">{{ entry.date }}</time>{% endif %}
+      <h3><a href="{{ entry.url }}"{% if view!="home" %} data-return-link{% endif %} lang="{{ entry.lang }}">{{ entry.title }}</a></h3>
+      <p lang="{{ entry.lang }}">{{ entry.summary }}</p>
+      {% if entry.lang != locale %}<small>{{ ui.blog_original }} · {{ entry.lang }}</small>{% endif %}
+    </article>
+    {% else %}<p class="shelf-empty">{{ ui.shelf_empty }}</p>{% endfor %}
+{% endmacro %}
 {% block content %}
 <div class="desk">
   {% if view=='home' %}
@@ -31,15 +42,16 @@
   </header>
   {% endif %}
   <section class="shelf" aria-label="{{ ui.recent }}">
-    <div class="shelf-heading"><h2>{{ ui.recent }}</h2><span>{{ entries|length }} {{ 'note' if locale=='en' and entries|length==1 else ui.entry_unit }}</span></div>
-    {% for entry in entries %}
-    <article class="shelf-entry">
-      {% if entry.date %}<time datetime="{{ entry.date }}">{{ entry.date }}</time>{% endif %}
-      <h3><a href="{{ entry.url }}"{% if view!="home" %} data-return-link{% endif %} lang="{{ entry.lang }}">{{ entry.title }}</a></h3>
-      <p lang="{{ entry.lang }}">{{ entry.summary }}</p>
-      {% if entry.lang != locale %}<small>{{ ui.blog_original }} · {{ entry.lang }}</small>{% endif %}
-    </article>
-    {% else %}<p class="shelf-empty">{{ ui.shelf_empty }}</p>{% endfor %}
+    {% if category=='algorithms' and entries %}
+      {% set labs = entries|selectattr('kind','equalto','lab')|list %}
+      {% set notes = entries|selectattr('kind','equalto','article')|list %}
+      {% set topics = entries|selectattr('kind','equalto','topic')|list %}
+      {% if labs %}{{ shelf_group(ui.algorithm_labs, labs) }}{% endif %}
+      {% if notes %}{{ shelf_group(ui.study_notes, notes) }}{% endif %}
+      {% if topics %}<details class="course-notes"><summary>{{ ui.course_topics }} ({{ topics|length }})</summary>
+        <ul>{% for item in topics|sort(attribute='title') %}<li><a href="{{ item.url }}" data-return-link lang="{{ item.lang }}">{{ item.title }}</a></li>{% endfor %}</ul>
+      </details>{% endif %}
+    {% else %}{{ shelf_group(ui.recent, entries) }}{% endif %}
   </section>
   {% include 'partials/notes-dock.html' %}
 </div>

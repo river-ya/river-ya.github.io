@@ -59,6 +59,8 @@ def notebook_entries(locale):
         groups = topics_by_work[article['translationKey']]
         tags = {part.strip().casefold() for tag in article['tags'] for part in tag.split('/')}
         groups.update(key for key, names in SHELF_TAGS.items() if names & tags)
+        if tags & {'算法实验', 'algorithm lab'}:
+            groups.update(('algorithms', 'lab'))
         if article['nodeIds']:
             groups.add('ai')
         if vision_nodes.intersection(article['nodeIds']) or VISION_TAGS & tags:
@@ -71,7 +73,8 @@ def notebook_entries(locale):
         notes.append(dict(title=a['title'], summary=a['summary'], lang=a['locale'],
                           url=url('/blog/'+a['slug']+'/', a['locale']),
                           date=a.get('updatedAt') or a['publishedAt'],
-                          groups=topics_by_work[a['translationKey']]))
+                          groups=topics_by_work[a['translationKey']],
+                          kind='lab' if 'lab' in topics_by_work[a['translationKey']] else 'article'))
     for topic in TOPICS.values():
         versions = topic['mainContentFiles']
         if topic['contentStatus'] != 'published' or not versions:
@@ -80,7 +83,7 @@ def notebook_entries(locale):
         notes.append(dict(title=topic['title'][lang], summary=topic['summary'][lang], lang=lang,
                           url=url('/knowledge/algorithms/'+topic['slug']+'/', lang),
                           date=topic.get('updatedAt') or topic.get('publishedAt', ''),
-                          groups={'algorithms'}))
+                          groups={'algorithms'}, kind='topic'))
     return sorted(notes, key=lambda entry: (entry['date'], entry['url']), reverse=True)
 
 
@@ -233,7 +236,8 @@ def main():
         other_url=url('/blog/'+other['slug']+'/',other['locale']) if other else url('/blog/'+a['slug']+'/',locale)+'?translation=unavailable'
         source = ''
         if a.get('sourceFile'):
-            source = Markup(code_highlight((ROOT/'static/source'/a['sourceFile']).read_text(), 'python'))
+            source_path = ROOT/'static/source'/a['sourceFile']
+            source = Markup(code_highlight(source_path.read_text(), source_path.suffix[1:]))
         render('/blog/'+a['slug']+'/','article.html',a['title'],locale,a['summary'],article=a,source=source,body=body,toc=toc,previous=same[position-1] if position else None,next_article=same[position+1] if position+1<len(same) else None,language_url=other_url,translation_unavailable=not bool(other),article_alternates=pairs)
     for locale in UI:
         for a in preferred_articles(locale):

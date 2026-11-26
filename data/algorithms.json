@@ -15,8 +15,10 @@
       "003"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/bits-basics.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "位运算基础",
@@ -88,8 +90,10 @@
       "006"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/binary-search.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "二分搜索",
@@ -165,8 +169,10 @@
       "034"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/linked-list.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "链表",
@@ -192,8 +198,10 @@
       "035"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/stack-queue.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "栈与队列",
@@ -243,8 +251,10 @@
       "037"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/binary-tree.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "二叉树遍历",
@@ -292,8 +302,10 @@
       "022"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/merge-sort.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "归并与分治",
@@ -342,8 +354,10 @@
       "027"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/heap.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "堆与优先队列",
@@ -442,8 +456,10 @@
       "039"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/recursion.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "递归枚举",
@@ -491,8 +507,10 @@
       "048"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/prefix-sum.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "前缀和",
@@ -516,8 +534,10 @@
       "048"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/difference.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "差分与离散化",
@@ -540,8 +560,10 @@
       "049"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/sliding-window.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "滑动窗口",
@@ -590,8 +612,10 @@
     "prerequisiteIds": [
       "binary-search"
     ],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/binary-answer.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "二分答案",
@@ -617,8 +641,10 @@
     "prerequisiteIds": [
       "stack-queue"
     ],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/monotonic-stack.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "单调栈",
@@ -667,8 +693,10 @@
       "057"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/union-find.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "并查集",
@@ -691,8 +719,10 @@
       "058"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/flood-fill.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "洪水填充",
@@ -716,8 +746,10 @@
       "060"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/topological-sort.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "建图与拓扑排序",
@@ -790,8 +822,10 @@
       "065"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/shortest-path.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "最短路",
@@ -817,8 +851,10 @@
       "069"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/dp-basics.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "从递归到动态规划",
@@ -842,8 +878,10 @@
       "071"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/max-subarray.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "子数组问题",
@@ -1046,8 +1084,10 @@
       "041"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/gcd.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "公约数与同余",
@@ -1197,8 +1237,10 @@
       "045"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/trie.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "前缀树",
@@ -1222,8 +1264,10 @@
       "101"
     ],
     "prerequisiteIds": [],
-    "contentStatus": "planned",
-    "mainContentFiles": {},
+    "contentStatus": "published",
+    "mainContentFiles": {
+      "zh-CN": "content/zuoshen/kmp.zh.md"
+    },
     "relatedArticleSlugs": [],
     "aliases": [
       "KMP",

@@ -7,6 +7,13 @@
 }
 :root[data-type="print"] { --chinese-type: var(--chinese-print); }
 body { font-family: var(--editorial); }
+.prose math[display="inline"] {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+.prose .math.block { max-width: 100%; overflow-x: auto; }
 .type-toggle {
   font: 18px/1 var(--chinese-type);
   cursor: pointer;

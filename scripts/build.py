@@ -9,8 +9,10 @@ from pathlib import Path
 from collections import defaultdict
 from datetime import date
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from latex2mathml.converter import convert
 from markupsafe import Markup
 from markdown_it import MarkdownIt
+from mdit_py_plugins.dollarmath import dollarmath_plugin
 from pygments import highlight
 from pygments.lexers import get_lexer_by_name
 from pygments.formatters import HtmlFormatter
@@ -133,7 +135,12 @@ def code_highlight(code,lang,*args):
     except Exception:
         formatted = html.escape(code)
     return '<pre class="highlight"><code>'+formatted+'</code></pre>'
-MD=MarkdownIt('commonmark',{'html':True,'highlight':code_highlight}).enable('table')
+def render_math(latex, options):
+    return convert(latex, display='block' if options['display_mode'] else 'inline')
+
+MD = (MarkdownIt('commonmark', {'html': True, 'highlight': code_highlight})
+      .enable('table')
+      .use(dollarmath_plugin, renderer=render_math, allow_labels=False))
 def markdown_file(file):
     if not file:return '',[]
     path=(ROOT/file).resolve()

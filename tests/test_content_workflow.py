@@ -46,6 +46,20 @@ class ContentWorkflow(unittest.TestCase):
         self.assertIn('id="核心思想"',(self.root/'dist/knowledge/algorithms/binary-search/index.html').read_text())
         en=(self.root/'dist/en/knowledge/algorithms/binary-search/index.html').read_text();self.assertIn('English translation is not available yet',en)
         self.assertNotIn('只用于自动测试的正文',en)
+    def test_math_renders_across_lines_without_touching_code(self):
+        article = self.article()
+        (self.root/article['file']).write_text(
+            '范围是 $0 \\le N \\le 50000,1 \\le L\n \\le 10^9$。\n\n'
+            '$$\nF(k) = 2^k - 1\n$$\n\n'
+            '命令是 `echo "$x$"`。\n'
+        )
+        self.write('articles', [article])
+        self.build()
+        doc = (self.root/'dist/blog/test-note/index.html').read_text()
+        for mode in ('inline', 'block'):
+            self.assertIn(f'display="{mode}"', doc)
+        self.assertIn('<msup><mn>10</mn><mn>9</mn></msup>', doc)
+        self.assertIn('<code>echo &quot;$x$&quot;</code>', doc)
     def test_blog_indexes_only_published_posts_and_counts_translations_once(self):
         zh=self.article();zh['tags']=['AI / 实验','C++']
         en=self.article('en','english-note');en['tags']=['AI / 实验','C++']

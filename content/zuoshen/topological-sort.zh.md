@@ -539,19 +539,19 @@ P4017 最大食物链计数
 
 （这里的“最大食物链”，指的是**生物学意义上的食物链**，即**最左端是不会捕食其他生物的生产者，最右端是不会被其他生物捕食的消费者**。）
 
-Delia 非常急，所以你只有 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn></mrow></math> 秒的时间。
+Delia 非常急，所以你只有 $1$ 秒的时间。
 
-由于这个结果可能过大，你只需要输出总数模上 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80112002</mn></mrow></math> 的结果。
+由于这个结果可能过大，你只需要输出总数模上 $80112002$ 的结果。
 
 输入格式
 
-第一行，两个正整数 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi></mrow></math>、<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi></mrow></math>，表示生物种类 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi></mrow></math> 和吃与被吃的关系数 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi></mrow></math>。
+第一行，两个正整数 $n$、$m$，表示生物种类 $n$ 和吃与被吃的关系数 $m$。
 
-接下来 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi></mrow></math> 行，每行两个正整数，表示被吃的生物 A 和吃 A 的生物 B。
+接下来 $m$ 行，每行两个正整数，表示被吃的生物 A 和吃 A 的生物 B。
 
 输出格式
 
-一行一个整数，为最大食物链数量模上 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>80112002</mn></mrow></math> 的结果。
+一行一个整数，为最大食物链数量模上 $80112002$ 的结果。
 
 输入输出样例 #1
 
@@ -578,15 +578,15 @@ Delia 非常急，所以你只有 <math xmlns="http://www.w3.org/1998/Math/MathM
 
 各测试点满足以下约定：
 
-| 测试点编号 |        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>n</mi></mrow></math>         |        <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi></mrow></math>         |
+| 测试点编号 |        $n$         |        $m$         |
 | :--------: | :----------------: | :----------------: |
-|   <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>&#x0002C;</mo><mn>2</mn></mrow></math>    |      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02264;</mo><mn>40</mn></mrow></math>      |     <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02264;</mo><mn>400</mn></mrow></math>      |
-|   <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>3</mn><mo>&#x0002C;</mo><mn>4</mn></mrow></math>    |     <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02264;</mo><mn>100</mn></mrow></math>      | <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02264;</mo><mn>2</mn><mo>&#x000D7;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></math> |
-|   <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>5</mn><mo>&#x0002C;</mo><mn>6</mn></mrow></math>    |     <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02264;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></math>     | <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02264;</mo><mn>6</mn><mo>&#x000D7;</mo><msup><mn>10</mn><mn>4</mn></msup></mrow></math> |
-|   <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>7</mn><mo>&#x0002C;</mo><mn>8</mn></mrow></math>    | <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02264;</mo><mn>2</mn><mo>&#x000D7;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></math> | <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02264;</mo><mn>2</mn><mo>&#x000D7;</mo><msup><mn>10</mn><mn>5</mn></msup></mrow></math> |
-|   <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>9</mn><mo>&#x0002C;</mo><mn>10</mn></mrow></math>   | <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02264;</mo><mn>5</mn><mo>&#x000D7;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></math> | <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02264;</mo><mn>5</mn><mo>&#x000D7;</mo><msup><mn>10</mn><mn>5</mn></msup></mrow></math> |
+|   $1,2$    |      $\le 40$      |     $\le 400$      |
+|   $3,4$    |     $\le 100$      | $\le 2\times 10^3$ |
+|   $5,6$    |     $\le 10^3$     | $\le 6\times 10^4$ |
+|   $7,8$    | $\le 2\times 10^3$ | $\le 2\times 10^5$ |
+|   $9,10$   | $\le 5\times 10^3$ | $\le 5\times 10^5$ |
 
-对于 <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>100</mn><mi>&#x00025;</mi></mrow></math> 的数据，<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mo>&#x02264;</mo><mi>n</mi><mo>&#x02264;</mo><mn>5</mn><mo>&#x000D7;</mo><msup><mn>10</mn><mn>3</mn></msup><mo>&#x0002C;</mo><mn>1</mn><mo>&#x02264;</mo><mi>m</mi><mo>&#x02264;</mo><mn>5</mn><mo>&#x000D7;</mo><msup><mn>10</mn><mn>5</mn></msup></mrow></math>
+对于 $100\%$ 的数据，$1 \le n \le 5\times 10^3,1\le m \le 5\times 10^5$
 
 【补充说明】
 

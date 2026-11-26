@@ -31,9 +31,9 @@
 
 提示：
 
-1 <= piles.length <= <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>10</mn><mn>4</mn></msup></mrow></math>
-piles.length <= h <= <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>10</mn><mn>9</mn></msup></mrow></math>
-1 <= piles[i] <= <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>10</mn><mn>9</mn></msup></mrow></math>
+1 <= piles.length <= $10^4$
+piles.length <= h <= $10^9$
+1 <= piles[i] <= $10^9$
 
 ```cpp
 //1.确定范围：l = 0, r = max(piles[i])
@@ -70,7 +70,7 @@ bool check(vector<int> & piles, int k, int h){
     }
 ```
 
-时间复杂度：<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msub><mi>log</mi><mn>2</mn></msub><mo stretchy="false">&#x00028;</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002A;</mo><mi>n</mi><mo stretchy="false">&#x00029;</mo></mrow></math>
+时间复杂度：$O(\log_2 (max) * n)$
 额外空间复杂度： O(1)
 
 ### T2 [分割数组的最大值(画匠问题) leetcode No.410](https://leetcode.cn/problems/split-array-largest-sum/)
@@ -102,7 +102,7 @@ bool check(vector<int> & piles, int k, int h){
 提示：
 
 1 <= nums.length <= 1000
-0 <= nums[i] <= <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>10</mn><mn>6</mn></msup></mrow></math>
+0 <= nums[i] <= $10^6$
 1 <= k <= min(50, nums.length)
 
 ```cpp
@@ -144,7 +144,7 @@ bool check(vector<int> & nums, int k, int max_val){
     }
 ```
 
-时间复杂度：<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msub><mi>log</mi><mn>2</mn></msub><mo stretchy="false">&#x00028;</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002A;</mo><mi>n</mi><mo stretchy="false">&#x00029;</mo></mrow></math>
+时间复杂度：$O(\log_2 (max) * n)$
 额外空间复杂度： O(1)
 
 ### T3 [机器人跳跃问题 newcode REAL254](https://www.nowcoder.com/practice/7037a3d57bbd4336856b8e16a9cafd71)
@@ -230,7 +230,7 @@ int main() {
 }
 ```
 
-时间复杂度：<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msub><mi>log</mi><mn>2</mn></msub><mo stretchy="false">&#x00028;</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002A;</mo><mi>n</mi><mo stretchy="false">&#x00029;</mo></mrow></math>
+时间复杂度：$O(\log_2 (max) * n)$
 额外空间复杂度： O(1)
 
 ### T4 [找出第K小的数对距离 leetcode No.719](https://leetcode.cn/problems/find-k-th-smallest-pair-distance/description/)
@@ -260,8 +260,8 @@ int main() {
 提示：
 
 n == nums.length
-2 <= n <= <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>10</mn><mn>4</mn></msup></mrow></math>
-0 <= nums[i] <= <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>10</mn><mn>6</mn></msup></mrow></math>
+2 <= n <= $10^4$
+0 <= nums[i] <= $10^6$
 1 <= k <= n * (n - 1) / 2
 
 ```cpp
@@ -299,7 +299,7 @@ n == nums.length
     }
 ```
 
-时间复杂度：<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><mi>n</mi><mo>&#x0002A;</mo><mi>log</mi><mi>n</mi><mo>&#x0002B;</mo><mi>n</mi><mo>&#x0002A;</mo><msub><mi>log</mi><mn>2</mn></msub><mo stretchy="false">&#x00028;</mo><mi>m</mi><mi>a</mi><mi>x</mi><mo>&#x02212;</mo><mi>m</mi><mi>i</mi><mi>n</mi><mo stretchy="false">&#x00029;</mo><mo stretchy="false">&#x00029;</mo></mrow></math>
+时间复杂度：$O(n * \log n + n * \log_2 (max - min))$
 额外空间复杂度： O(1)
 
 ### T5 [同时运行N台电脑的最长时间 leetcode No.2141](https://leetcode.cn/problems/maximum-running-time-of-n-computers/description/)
@@ -433,7 +433,7 @@ n == nums.length
     }
 ```
 
-时间复杂度：<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><msub><mi>log</mi><mn>2</mn></msub><mo stretchy="false">&#x00028;</mo><mi>s</mi><mi>u</mi><mi>m</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002A;</mo><mi>n</mi><mo stretchy="false">&#x00029;</mo></mrow></math>
+时间复杂度：$O(\log_2 (sum) * n)$
 额外空间复杂度： O(1)
 
 ### T6 计算等位时间 google 面试

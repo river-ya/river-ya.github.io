@@ -2,7 +2,7 @@
 
 ## 1.二分搜索
 
-时间复杂度： <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>O</mi><mo stretchy="false">&#x00028;</mo><mi>log</mi><mi>n</mi><mo stretchy="false">&#x00029;</mo></mrow></math>
+时间复杂度： $ O(\log n) $
 
 ### 1.1 在有序数组中查找某个target值是否存在
 
